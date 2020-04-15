@@ -64,7 +64,7 @@ public class MouseLook : MonoBehaviour
 
             if (followCamPoint.localPosition.y <= maxYcam && followCamPoint.localPosition.y >= -maxYcam)
             {
-                followCamPoint.localPosition = new Vector3(followCamPoint.localPosition.x, followCamPoint.localPosition.y + MouseY * smoothCamV * Time.deltaTime, followCamPoint.localPosition.z);
+                followCamPoint.localPosition = new Vector3(followCamPoint.localPosition.x, followCamPoint.localPosition.y - MouseY * smoothCamV * Time.deltaTime, followCamPoint.localPosition.z);
             }
                 
 

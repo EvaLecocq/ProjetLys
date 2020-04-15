@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode rightWalk;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+    private bool backWalking = false;
+    private Vector3 backVector = new Vector3(0, 180, 0);
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -64,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
        // model.transform.localEulerAngles = Vector3.zero;
 
 
-        if (Input.GetKey(runKey))
+        if (Input.GetKey(runKey))//course et marche
         {
             controller.Move(move * speed * Time.deltaTime);
         
@@ -79,22 +81,28 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if(Input.GetKey(leftWalk)/* && Time.time - nextActionTime >= period*/)
+        if(Input.GetKey(leftWalk)/* && Time.time - nextActionTime >= period*/)//virage a gauche
         {
             //nextActionTime = Time.time;
 
             transform.Rotate(Vector3.up * -1f);
 
-            if (orientation == true)
-            {
-                model.transform.localEulerAngles = Vector3.zero;
-            }
            
-            if (model.transform.localEulerAngles.y > 270 || model.transform.localEulerAngles.y == 0)
+           
+            if(backWalking == false)
             {
-                model.transform.Rotate(Vector3.up * -1f);
-                orientation = false;
+                if (orientation == true)
+                {
+                    model.transform.localEulerAngles = Vector3.zero;
+                }
+
+                if (model.transform.localEulerAngles.y > 270 || model.transform.localEulerAngles.y == 0)
+                {
+                    model.transform.Rotate(Vector3.up * -1f);
+                    orientation = false;
+                }
             }
+            
 
             //model.transform.Rotate(model.transform.localEulerAngles.x, 90 , model.transform.localEulerAngles.z, Space.Self);
 
@@ -102,52 +110,75 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            look.playerFollowMouse = true;
+            //look.playerFollowMouse = true;
         }
 
 
-        if (Input.GetKey(rightWalk))
+        if (Input.GetKey(rightWalk))//virage a droite
         {
             transform.Rotate(Vector3.up * 1f);
 
-            if(orientation == false)
-            {
-                model.transform.localEulerAngles = Vector3.zero;
-            }
 
-            if (model.transform.localEulerAngles.y < 90)
+            if(backWalking == false)
             {
-                model.transform.Rotate(Vector3.up * 1f);
-                orientation = true;
+
+                if (orientation == false)
+                {
+                    model.transform.localEulerAngles = Vector3.zero;
+                }
+
+                if (model.transform.localEulerAngles.y < 90)
+                {
+                    model.transform.Rotate(Vector3.up * 1f);
+                    orientation = true;
+                }
             }
+          
 
             look.playerFollowMouse = false;
         }
         else
         {
-            look.playerFollowMouse = true;         
+            //look.playerFollowMouse = true;         
         }
 
 
-        if (Input.GetKeyDown(backWalk) )
+        if (Input.GetKeyDown(backWalk) )//arriere
         {
-            transform.Rotate(Vector3.up * 180);
+            //transform.Rotate(Vector3.up * 180);
 
-            model.transform.localEulerAngles = Vector3.zero;
+            //model.transform.localEulerAngles = Vector3.zero;
+
+            //model.transform.Rotate(Vector3.up * 180);
+            model.transform.localEulerAngles = backVector;
 
             look.playerFollowMouse = false;
+
+            backWalking = true;
         }
         else
         {
-            look.playerFollowMouse = true;  
+            
+            //look.playerFollowMouse = true;  
         }
 
-        if (Input.GetKey(frontWalk))
+        if (Input.GetKey(frontWalk))//avant
         {
             model.transform.localEulerAngles = Vector3.zero;
+            backWalking = false;
 
         }
 
+        if(!Input.GetKey(frontWalk) && !Input.GetKey(backWalk) && !Input.GetKey(rightWalk) && !Input.GetKey(leftWalk))//aucune touche appuyer
+        {
+            look.playerFollowMouse = true;
+            backWalking = false;
+        }
+
+        if(look.playerFollowMouse)//reset rotation du model
+        {
+           model.transform.localEulerAngles = Vector3.zero;
+        }
 
         /*
          if (Time.time > nextActionTime && isGrounded && (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S)))
