@@ -276,8 +276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61675d5a479b3ed4e9b17d8b3b055702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightLamp: {fileID: 376359063213075708}
-  halo: {fileID: 376359061720000987}
+  lightLamp:
+  - {fileID: 376359063213075708}
+  - {fileID: 376359061720000987}
   nightHour: 18
   morningHour: 6
 --- !u!136 &6072951434426716346

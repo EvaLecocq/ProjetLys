@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class lampadaire : MonoBehaviour
 {
-    public Light lightLamp;
-    public Light halo;
+    public Light[] lightLamp;
+   
     public float nightHour = 20f;
     public float morningHour = 6f;
 
@@ -20,13 +20,18 @@ public class lampadaire : MonoBehaviour
     {
         if(GameManager.s_Singleton.time >= 20f || GameManager.s_Singleton.time < 6f)
         {
-            lightLamp.enabled = true;
-            halo.enabled = true;
+            foreach(Light lg in lightLamp )
+            {
+                lg.enabled = true;
+            }
+           
         }
         else
         {
-            lightLamp.enabled = false;
-            halo.enabled = false;
+            foreach (Light lg in lightLamp)
+            {
+                lg.enabled = false;
+            }
         }
     }
 }

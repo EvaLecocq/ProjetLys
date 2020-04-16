@@ -38,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
     private float period = 1.5f;
 
     private itemPick item;
-    public Transform itemPick;
+    public Transform itemHand;
+    public float timeItemDispawnHand = 1;
 
     private void Start()
     {
@@ -63,7 +64,11 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-
+        if(item != null)
+        {
+            item.transform.position = itemHand.position;
+            item.transform.rotation = itemHand.rotation;
+        }
 
     }
 
@@ -197,12 +202,14 @@ public class PlayerMovement : MonoBehaviour
             item = other.gameObject.GetComponent<itemPick>();
             item.isPick = true;
 
-            CollectItem();//debug
+            StartCoroutine(CollectItem());
         }
     }
 
-    public void CollectItem()
+    public IEnumerator CollectItem()
     {
+        yield return new WaitForSeconds(timeItemDispawnHand);
+
         item.AddItemToManager();
 
         item = null;
