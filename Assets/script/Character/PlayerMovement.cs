@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode frontWalk;
     public KeyCode leftWalk;
     public KeyCode rightWalk;
+    public KeyCode interactionKey;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     private bool backWalking = false;
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     private float nextActionTime = 0.0f;
     private float period = 1.5f;
 
-
+    private itemPick item;
 
     private void Start()
     {
@@ -54,42 +55,25 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-
-       
-
-        Vector3 move = transform.right * x + transform.forward * z;
-
-
-       // model.transform.localEulerAngles = Vector3.zero;
-
-
-        if (Input.GetKey(runKey))//course et marche
-        {
-            controller.Move(move * speed * Time.deltaTime);
         
-            source.pitch = 1.2f;
-        }
-        else
+        MoveControl();
+        RunControl();
+        JumpControl();
+
+        controller.Move(velocity * Time.deltaTime);
+
+      
+
+    }
+
+    public void MoveControl()
+    {
+        if (Input.GetKey(leftWalk))//virage a gauche
         {
-            controller.Move(move * speed * runMultiplier * Time.deltaTime);
-           
-            source.pitch = 1;  
-            
-        }
-
-
-        if(Input.GetKey(leftWalk)/* && Time.time - nextActionTime >= period*/)//virage a gauche
-        {
-            //nextActionTime = Time.time;
-
+    
             transform.Rotate(Vector3.up * -1f);
 
-           
-           
-            if(backWalking == false)
+            if (backWalking == false)
             {
                 if (orientation == true)
                 {
@@ -102,16 +86,10 @@ public class PlayerMovement : MonoBehaviour
                     orientation = false;
                 }
             }
-            
 
-            //model.transform.Rotate(model.transform.localEulerAngles.x, 90 , model.transform.localEulerAngles.z, Space.Self);
+            look.playerFollowMouse = false;
+        }
 
-           look.playerFollowMouse = false;
-        }
-        else
-        {
-            //look.playerFollowMouse = true;
-        }
 
 
         if (Input.GetKey(rightWalk))//virage a droite
@@ -119,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(Vector3.up * 1f);
 
 
-            if(backWalking == false)
+            if (backWalking == false)
             {
 
                 if (orientation == false)
@@ -133,34 +111,22 @@ public class PlayerMovement : MonoBehaviour
                     orientation = true;
                 }
             }
-          
+
 
             look.playerFollowMouse = false;
         }
-        else
+
+
+        if (Input.GetKeyDown(backWalk))//arriere
         {
-            //look.playerFollowMouse = true;         
-        }
 
-
-        if (Input.GetKeyDown(backWalk) )//arriere
-        {
-            //transform.Rotate(Vector3.up * 180);
-
-            //model.transform.localEulerAngles = Vector3.zero;
-
-            //model.transform.Rotate(Vector3.up * 180);
             model.transform.localEulerAngles = backVector;
 
             look.playerFollowMouse = false;
 
             backWalking = true;
         }
-        else
-        {
-            
-            //look.playerFollowMouse = true;  
-        }
+
 
         if (Input.GetKey(frontWalk))//avant
         {
@@ -169,33 +135,49 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if(!Input.GetKey(frontWalk) && !Input.GetKey(backWalk) && !Input.GetKey(rightWalk) && !Input.GetKey(leftWalk))//aucune touche appuyer
+        if (!Input.GetKey(frontWalk) && !Input.GetKey(backWalk) && !Input.GetKey(rightWalk) && !Input.GetKey(leftWalk))//aucune touche appuyer
         {
             look.playerFollowMouse = true;
             backWalking = false;
         }
 
-        if(look.playerFollowMouse)//reset rotation du model
+        if (look.playerFollowMouse)//reset rotation du model
         {
-           model.transform.localEulerAngles = Vector3.zero;
+            model.transform.localEulerAngles = Vector3.zero;
         }
+    }
 
-        /*
-         if (Time.time > nextActionTime && isGrounded && (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S)))
-         {
-
-             nextActionTime += period;
-             walk();
-         }*/
-        if (Input.GetButtonDown("Jump") &&( isGrounded))
+    public void JumpControl()
+    {
+        if (Input.GetButtonDown("Jump") && (isGrounded))
         {
-           
+
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         velocity.y += gravity * Time.deltaTime;
+    }
 
-        controller.Move(velocity * Time.deltaTime);
+    public void RunControl()
+    {
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * x + transform.forward * z;
+
+        if (Input.GetKey(runKey))//course et marche
+        {
+            controller.Move(move * speed * Time.deltaTime);
+
+            source.pitch = 1.2f;
+        }
+        else
+        {
+            controller.Move(move * speed * runMultiplier * Time.deltaTime);
+
+            source.pitch = 1;
+
+        }
     }
 
     public void walk()
@@ -205,5 +187,24 @@ public class PlayerMovement : MonoBehaviour
         source.Play();
     }
 
+    private void OnTriggerStay(Collider other)
+    {
     
+
+        if(other.CompareTag("item") && Input.GetKeyDown(interactionKey) && item == null)
+        {
+            item = other.gameObject.GetComponent<itemPick>();
+            item.isPick = true;
+
+            CollectItem();//debug
+        }
+    }
+
+    public void CollectItem()
+    {
+        item.AddItemToManager();
+
+        item = null;
+    }
+        
 }
