@@ -38,7 +38,8 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 239568513}
-  m_IndirectSpecularColor: {r: 0.029095292, g: 0.00050788757, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0039957035, g: 0.00021792635, b: 0.000000051515347,
+    a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1256,6 +1257,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnfantV5
       objectReference: {fileID: 0}
+    - target: {fileID: 4383090829294758705, guid: 753e4e74a834a6b4ba7f9c52e7006780,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.10488929
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383090829294758705, guid: 753e4e74a834a6b4ba7f9c52e7006780,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000000013763995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383090829294758705, guid: 753e4e74a834a6b4ba7f9c52e7006780,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000001305001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 753e4e74a834a6b4ba7f9c52e7006780, type: 3}
 --- !u!1001 &5592620598797472098
@@ -1574,17 +1590,17 @@ PrefabInstance:
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.104889296
+      value: 0.10488929
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000060330843
+      value: -0.0000000013763995
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000012268524
+      value: 0.00000001305001
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
