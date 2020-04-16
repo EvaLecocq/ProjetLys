@@ -26,6 +26,7 @@ public class DayNightCycle : MonoBehaviour
     private bool use24Clock = true;
     [SerializeField]
     private TextMeshProUGUI clockText;
+    public bool useTextClock;
     [SerializeField]
     [Range(0f, 1f)]
     private float _timeOfDay;
@@ -198,18 +199,22 @@ public class DayNightCycle : MonoBehaviour
             minuteString = minute.ToString();
         }
 
-        if(use24Clock)
+        if(useTextClock)
         {
-            clockText.text = hourString + " : " + minuteString;
+            if (use24Clock)
+            {
+                clockText.text = hourString + " : " + minuteString;
+            }
+            else if (time > 0.5f)
+            {
+                clockText.text = hourString + " : " + minuteString + " PM";
+            }
+            else
+            {
+                clockText.text = hourString + " : " + minuteString + " AM";
+            }
         }
-        else if(time > 0.5f)
-        {
-            clockText.text = hourString + " : " + minuteString + " PM";
-        }
-        else
-        {
-            clockText.text = hourString + " : " + minuteString + " AM";
-        }
+        
         
         
     }
