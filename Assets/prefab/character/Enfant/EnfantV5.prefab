@@ -985,6 +985,7 @@ MonoBehaviour:
   frontWalk: 122
   leftWalk: 113
   rightWalk: 100
+  interactionKey: 101
   gravity: -9.81
   jumpHeight: 1
   groundCheck: {fileID: 4383090828013284482}
@@ -996,6 +997,7 @@ MonoBehaviour:
   jumpSFX: {fileID: 0}
   fallSFX: {fileID: 0}
   walkSFX: []
+  itemPick: {fileID: 0}
 --- !u!82 &4383090828036579469
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1378,6 +1380,7 @@ Transform:
   - {fileID: 4383090828241271092}
   - {fileID: 4383090827738955920}
   - {fileID: 4383090829013707695}
+  - {fileID: 3892429594787007054}
   m_Father: {fileID: 4383090828036579569}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2455,7 +2458,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4383090829294758706}
-  m_LocalRotation: {x: 0.10488929, y: -0.0000000013764004, z: 0.000000013050011, w: 0.99448395}
+  m_LocalRotation: {x: 0.104889296, y: 0.0000000060330843, z: 0.000000012268524, w: 0.99448395}
   m_LocalPosition: {x: 0.07999992, y: 2.2459793, z: -4.0025578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2672,4 +2675,34 @@ Transform:
   - {fileID: 4383090829227316629}
   m_Father: {fileID: 4383090828688668554}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8815536199575161568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3892429594787007054}
+  m_Layer: 0
+  m_Name: itemPickHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3892429594787007054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8815536199575161568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.896, y: 1.352, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4383090828363992976}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private float period = 1.5f;
 
     private itemPick item;
+    public Transform itemPick;
 
     private void Start()
     {
@@ -62,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-      
+
 
     }
 
