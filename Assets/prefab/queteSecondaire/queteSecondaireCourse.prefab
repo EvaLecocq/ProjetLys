@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1854864648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854864649}
+  m_Layer: 0
+  m_Name: finJoueur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854864649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854864648}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.00000017881393}
+  m_LocalPosition: {x: -0.82, y: 0.1, z: 2.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2537100342859995385}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
 --- !u!1 &2537100341478900177
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +86,7 @@ Transform:
   m_GameObject: {fileID: 2537100341956172998}
   m_LocalRotation: {x: -0.7071067, y: -0, z: -0, w: 0.70710695}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 4.258149}
+  m_LocalScale: {x: 1, y: 1, z: 11.201493}
   m_Children: []
   m_Father: {fileID: 2537100343245866177}
   m_RootOrder: 0
@@ -104,7 +134,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.25
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -218,6 +248,7 @@ Transform:
   - {fileID: 2537100341478900182}
   - {fileID: 2537100342189106100}
   - {fileID: 2537100343245866177}
+  - {fileID: 1854864649}
   m_Father: {fileID: 2537100343121401431}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -240,7 +271,8 @@ MonoBehaviour:
   playerStart: {fileID: 2537100341478900182}
   animalStart: {fileID: 2537100342189106100}
   end: {fileID: 2537100343245866177}
-  distanceEnd: 1
+  playerEndPos: {fileID: 1854864649}
+  distanceEnd: 3
   animal: {fileID: 2537100343377024315}
 --- !u!1 &2537100343121401425
 GameObject:
@@ -288,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minijeu: 0
-  activeQuest: 1
+  activeQuest: 0
   endQuest: 0
 --- !u!1 &2537100343245866176
 GameObject:
@@ -314,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2537100343245866176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.62, y: -0.55999756, z: -17.01}
+  m_LocalPosition: {x: 0.62, y: -0.97, z: -17.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2537100341956172999}

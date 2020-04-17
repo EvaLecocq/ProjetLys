@@ -19,6 +19,7 @@ public class minijeuCourse : MonoBehaviour
     public Transform playerStart;
     public Transform animalStart;
     public Transform end;
+    public Transform playerEndPos;
     public float distanceEnd;
 
     [Header("Animal")]
@@ -88,10 +89,12 @@ public class minijeuCourse : MonoBehaviour
 
             if(AnimalDistance() < distanceEnd)
             {
+                StartCoroutine(ReplaceCharacter());
                 Defeat();
             }
             if (PlayerDistance() < distanceEnd)
             {
+                StartCoroutine(ReplaceCharacter());
                 Victory();
             }
         }
@@ -113,6 +116,8 @@ public class minijeuCourse : MonoBehaviour
 
     public void Victory()
     {
+        
+
         courseActive = false;
         startQuest = true;
         animal.enabled = false;
@@ -121,6 +126,8 @@ public class minijeuCourse : MonoBehaviour
         end.gameObject.SetActive(false);
         playerStart.gameObject.SetActive(false);
         animalStart.gameObject.SetActive(false);
+
+        
 
         quest.EndQuest();
         quest.DesactiveQuest();
@@ -128,6 +135,8 @@ public class minijeuCourse : MonoBehaviour
 
     public void Defeat()
     {
+        
+
         courseActive = false;
         startQuest = true;
         animal.enabled = false;
@@ -137,6 +146,18 @@ public class minijeuCourse : MonoBehaviour
         playerStart.gameObject.SetActive(false);
         animalStart.gameObject.SetActive(false);
 
+        
+
         quest.DesactiveQuest();
+    }
+
+    public IEnumerator ReplaceCharacter()
+    {
+        player.enabled = false;
+        player.gameObject.transform.position = playerEndPos.position;
+        
+        yield return new WaitForSeconds(0.5f);
+
+        player.enabled = true;
     }
 }
