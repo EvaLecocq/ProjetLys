@@ -28,8 +28,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338112795733642443}
-  m_LocalRotation: {x: 0.10488929, y: -0.0000000013763995, z: 0.00000001305001, w: 0.99448395}
-  m_LocalPosition: {x: 0.07999992, y: 2.2459793, z: -4.0025578}
+  m_LocalRotation: {x: 0.14433983, y: -0.0000000019329975, z: 0.000000013251466, w: 0.98952824}
+  m_LocalPosition: {x: 0.003036499, y: 1.562851, z: -3.0223618}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1338112797479708950}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a70aa85b52d7d949a85903a348991d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 25
+  mouseSensitivity: 30
   smoothPlayer: 1.2
   smoothCamH: 0.75
   smoothCamV: 5
@@ -296,7 +296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338112796616576725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.21796417, y: 0.5638962, z: -0.062776566}
+  m_LocalPosition: {x: 0.141, y: -0.12, z: -0.062776566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1338112796780247582}
@@ -330,7 +330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338112796780247569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07999992, y: 0.5899992, z: -3.37}
+  m_LocalPosition: {x: 0.07999992, y: 0.5899992, z: -2.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1338112796616576722}
@@ -401,13 +401,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 1.5
+  m_Radius: 0.25
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.2, z: 0}
 --- !u!114 &1338112797126264585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   gravity: -9.81
   jumpHeight: 1
   groundCheck: {fileID: 1338112797148973947}
-  groundDistance: 0.2
+  groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 1
@@ -451,7 +451,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338112797126264587}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -564,7 +564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338112797148973946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.988, z: 0}
+  m_LocalPosition: {x: 0, y: -0.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1338112797126264584}
