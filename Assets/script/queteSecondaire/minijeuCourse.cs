@@ -55,9 +55,12 @@ public class minijeuCourse : MonoBehaviour
             {
                 player.enabled = false;
                 player.gameObject.transform.position = playerStart.position;
-                animal.gameObject.transform.position = animalStart.position;
+                player.gameObject.transform.rotation = playerStart.rotation;
 
-                if(timer > 0)
+                animal.gameObject.transform.position = animalStart.position;
+                animal.gameObject.transform.rotation = animalStart.rotation;
+
+                if (timer > 0)
                 {
                     timerText.gameObject.SetActive(true);
                     timerText.text = timer.ToString("0");

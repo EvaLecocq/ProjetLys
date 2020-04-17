@@ -424,6 +424,8 @@ MonoBehaviour:
   model: {fileID: 1784991674878616971}
   look: {fileID: 1338112795733642550}
   speed: 4
+  lateralSpeed: 0.4
+  rotationSpeed: 0.8
   runMultiplier: 1.5
   runKey: 304
   backWalk: 115

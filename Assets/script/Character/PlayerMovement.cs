@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public MouseLook look;
 
     public float speed = 12f;
+    public float lateralSpeed = 0.4f;
+    public float rotationSpeed = 1f;
     public float runMultiplier;
     public KeyCode runKey;
     public KeyCode backWalk;
@@ -64,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        if(item != null)
+        if(item != null && item.isPick)//place l item ds la main
         {
             item.transform.position = itemHand.position;
             item.transform.rotation = itemHand.rotation;
@@ -77,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(leftWalk))//virage a gauche
         {
     
-            transform.Rotate(Vector3.up * -1f);
+            transform.Rotate(Vector3.up * -rotationSpeed);
 
             if (backWalking == false)
             {
@@ -100,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(rightWalk))//virage a droite
         {
-            transform.Rotate(Vector3.up * 1f);
+            transform.Rotate(Vector3.up * rotationSpeed);
 
 
             if (backWalking == false)
@@ -169,7 +171,7 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = transform.right * x * lateralSpeed + transform.forward * z;
 
         if (Input.GetKey(runKey))//course et marche
         {
@@ -197,20 +199,17 @@ public class PlayerMovement : MonoBehaviour
     {
     
 
-        if(other.CompareTag("item") && Input.GetKeyDown(interactionKey) && item == null)
+        if(other.CompareTag("item") && Input.GetKeyDown(interactionKey) && item != null)
         {
-            item = other.gameObject.GetComponent<itemPick>();
-            item.isPick = true;
-            
+           
+            item.isPick = true; 
 
             StartCoroutine(CollectItem());
         }
-        
-        
 
-        if (other.CompareTag("item") && item != null)
+        if (other.CompareTag("item") && item == null)
         {
-           
+            item = other.gameObject.GetComponent<itemPick>();
             item.outlinerItem.enabled = true;
  
         }
@@ -223,6 +222,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             item.outlinerItem.enabled = false;
+            item = null;
 
         }
     }
