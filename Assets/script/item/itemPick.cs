@@ -10,10 +10,16 @@ public class itemPick : MonoBehaviour
     pierre, baton, gland};
 
     public type itemType;
+    public Outline outlinerItem;
 
     public bool isPick = false;
 
-   public void AddItemToManager()
+    private void Start()
+    {
+        outlinerItem = GetComponentInChildren<Outline>();
+    }
+
+    public void AddItemToManager()
     {
         if(itemType == itemPick.type.Agapanthe)
         {

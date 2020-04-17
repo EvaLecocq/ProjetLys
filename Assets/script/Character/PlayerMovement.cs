@@ -201,8 +201,29 @@ public class PlayerMovement : MonoBehaviour
         {
             item = other.gameObject.GetComponent<itemPick>();
             item.isPick = true;
+            
 
             StartCoroutine(CollectItem());
+        }
+        
+        
+
+        if (other.CompareTag("item") && item != null)
+        {
+           
+            item.outlinerItem.enabled = true;
+ 
+        }
+        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("item") && item != null)
+        {
+
+            item.outlinerItem.enabled = false;
+
         }
     }
 
