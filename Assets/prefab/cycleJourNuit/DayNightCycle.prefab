@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8585b093c91414d878bbb285eee4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetDayLength: 30
+  _targetDayLength: 0.2
   elapseTime: 0
   elapsedTime: 900
   use24Clock: 1
@@ -219,15 +219,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.59562457
-      outSlope: -0.59562457
+      inSlope: -0.7526613
+      outSlope: -0.7526613
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.25186467
-      value: 0.8499832
+      time: 0.19980168
+      value: 0.849617
       inSlope: -0.019424077
       outSlope: -0.019424077
       tangentMode: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.090909086
     - serializedVersion: 3
-      time: 0.751017
+      time: 0.8006996
       value: 0.8497041
       inSlope: 0.016058676
       outSlope: 0.016058676
@@ -246,8 +246,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0.6036392
-      outSlope: 0.6036392
+      inSlope: 0.7541174
+      outSlope: 0.7541174
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -258,21 +258,21 @@ MonoBehaviour:
   DailyRotation: {fileID: 5605713185124898475}
   sun: {fileID: 5605713186866599712}
   sunBaseIntensity: 1
-  sunVariation: 1.5
+  sunVariation: 1.8
   sunColor:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0.8113208, g: 0.4494083, b: 0.14925243, a: 1}
-    key2: {r: 1, g: 0.8696898, b: 0.48584908, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key1: {r: 0.8584906, g: 0.53694224, b: 0.2713154, a: 1}
+    key2: {r: 0.9811321, g: 0.62590027, b: 0.32858673, a: 0}
+    key3: {r: 1, g: 0.8696898, b: 0.48584908, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 11794
-    ctime2: 65535
-    ctime3: 0
+    ctime1: 3554
+    ctime2: 11774
+    ctime3: 65535
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 4
     m_NumAlphaKeys: 2
   sunSeasonalRotation: {fileID: 5605713186135464150}
   maxSeasonalTilt: 25
@@ -333,7 +333,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  baseIntensity: 0.35
+  baseIntensity: 0.5
 --- !u!114 &5605713186619105664
 MonoBehaviour:
   m_ObjectHideFlags: 0
