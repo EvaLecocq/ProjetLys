@@ -14,6 +14,8 @@ public class minijeuCourse : MonoBehaviour
     public TextMeshProUGUI timerText;
     private bool startQuest = true;
     private Vector3 animalStartPos;
+    public Animator animFondu;
+   
 
     [Header("Zone de course")]
     public Transform playerStart;
@@ -43,7 +45,8 @@ public class minijeuCourse : MonoBehaviour
     {
         if(quest.activeQuest)
         {
-            courseActive = true;
+            
+            StartCoroutine(StartQuestFondu());
 
             end.gameObject.SetActive(true);
             playerStart.gameObject.SetActive(true);
@@ -54,12 +57,7 @@ public class minijeuCourse : MonoBehaviour
         {
             if(startQuest)
             {
-                player.enabled = false;
-                player.gameObject.transform.position = playerStart.position;
-                player.gameObject.transform.rotation = playerStart.rotation;
-
-                animal.gameObject.transform.position = animalStart.position;
-                animal.gameObject.transform.rotation = animalStart.rotation;
+                
 
                 if (timer > 0)
                 {
@@ -89,13 +87,19 @@ public class minijeuCourse : MonoBehaviour
 
             if(AnimalDistance() < distanceEnd)
             {
-                StartCoroutine(ReplaceCharacter());
+                
+               
+                StartCoroutine(QuestFonduFin());
                 Defeat();
+
             }
             if (PlayerDistance() < distanceEnd)
             {
-                StartCoroutine(ReplaceCharacter());
+                
+                
+                StartCoroutine(QuestFonduFin());
                 Victory();
+
             }
         }
     }
@@ -155,9 +159,48 @@ public class minijeuCourse : MonoBehaviour
     {
         player.enabled = false;
         player.gameObject.transform.position = playerEndPos.position;
-        
+        player.gameObject.transform.rotation = playerEndPos.rotation;
+
+
         yield return new WaitForSeconds(0.5f);
 
         player.enabled = true;
     }
+
+    public IEnumerator StartQuestFondu()
+    {
+        animFondu.gameObject.SetActive(true);
+        //animFondu.SetBool("etat", false);
+
+        yield return new WaitForSeconds(1);
+
+        player.enabled = false;
+        player.gameObject.transform.position = playerStart.position;
+        player.gameObject.transform.rotation = playerStart.rotation;
+
+        animal.gameObject.transform.position = animalStart.position;
+        animal.gameObject.transform.rotation = animalStart.rotation;
+
+        yield return new WaitForSeconds(1);
+
+        animFondu.gameObject.SetActive(false);
+        courseActive = true;
+        quest.activeQuest = false;
+    }
+
+    public IEnumerator QuestFonduFin()
+    {
+        animFondu.gameObject.SetActive(true);
+        //animFondu.SetBool("etat", false);
+        yield return new WaitForSeconds(1);
+
+        StartCoroutine(ReplaceCharacter());
+
+        yield return new WaitForSeconds(1);
+
+        animFondu.gameObject.SetActive(false);
+      
+    }
+
+
 }
