@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854864648}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.00000017881393}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -0.82, y: 0.1, z: 2.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2537100342859995385}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
 --- !u!1 &2537100341478900177
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +268,7 @@ MonoBehaviour:
   courseActive: 0
   timer: 3
   timerText: {fileID: 0}
+  animFondu: {fileID: 0}
   playerStart: {fileID: 2537100341478900182}
   animalStart: {fileID: 2537100342189106100}
   end: {fileID: 2537100343245866177}
@@ -320,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minijeu: 0
-  activeQuest: 0
+  activeQuest: 1
   endQuest: 0
 --- !u!1 &2537100343245866176
 GameObject:
