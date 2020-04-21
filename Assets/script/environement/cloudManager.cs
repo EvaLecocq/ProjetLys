@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class cloudManager : MonoBehaviour
 {
+    public enum mode { soleil, pluie, tempete, brouillard }
+    public mode meteoActive;
+
+    private SkyboxModule skyColor;
+
     public bool useRootPoint = true;
     public GameObject rootPoint;
 
     public GameObject[] cloudRound;
     public float[] cloudRoundSpeed;
+    public float[] cloudRoundSpeedDefault;
+    public float[] cloudSpeedMultiplicatorTempete;
+
+    public GameObject pluie;
+    public GameObject tempete;
+    public GameObject brouillard;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        skyColor = SkyboxModule.FindObjectOfType<SkyboxModule>();
+
+
+        for (int i = 0; i < cloudRoundSpeedDefault.Length; i++)
+        {
+            cloudRoundSpeedDefault[i] = cloudRoundSpeed[i];
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +44,59 @@ public class cloudManager : MonoBehaviour
         for (int i = 0; i < cloudRound.Length; i++)
         {
             cloudRound[i].transform.Rotate(Vector3.up * cloudRoundSpeed[i]);
+        }
+
+        if (meteoActive == cloudManager.mode.soleil)
+        {
+            pluie.SetActive(false);
+            brouillard.SetActive(false);
+            tempete.SetActive(false);
+
+            skyColor.meteo = SkyboxModule.temp.soleil;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudRoundSpeedDefault[i];
+            }
+        }
+        if (meteoActive == cloudManager.mode.pluie)
+        {
+            pluie.SetActive(true);
+            brouillard.SetActive(false);
+            tempete.SetActive(false);
+
+            skyColor.meteo = SkyboxModule.temp.pluie;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudRoundSpeedDefault[i];
+            }
+        }
+        if (meteoActive == cloudManager.mode.tempete)
+        {
+            pluie.SetActive(false);
+            brouillard.SetActive(false);
+            tempete.SetActive(true);
+
+            skyColor.meteo = SkyboxModule.temp.tempete;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudSpeedMultiplicatorTempete[i];
+            }
+        }
+        if (meteoActive == cloudManager.mode.brouillard)
+        {
+            pluie.SetActive(false);
+            brouillard.SetActive(true);
+            tempete.SetActive(false);
+
+            skyColor.meteo = SkyboxModule.temp.brouillard;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudRoundSpeedDefault[i];
+            }
         }
     }
 }
