@@ -14,6 +14,8 @@ public class cloudManager : MonoBehaviour
 
     public GameObject[] cloudRound;
     public float[] cloudRoundSpeed;
+    public float[] cloudRoundSpeedDefault;
+    public float[] cloudSpeedMultiplicatorTempete;
 
     public GameObject pluie;
     public GameObject tempete;
@@ -23,6 +25,12 @@ public class cloudManager : MonoBehaviour
     void Start()
     {
         skyColor = SkyboxModule.FindObjectOfType<SkyboxModule>();
+
+
+        for (int i = 0; i < cloudRoundSpeedDefault.Length; i++)
+        {
+            cloudRoundSpeedDefault[i] = cloudRoundSpeed[i];
+        }
     }
 
     // Update is called once per frame
@@ -45,6 +53,11 @@ public class cloudManager : MonoBehaviour
             tempete.SetActive(false);
 
             skyColor.meteo = SkyboxModule.temp.soleil;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudRoundSpeedDefault[i];
+            }
         }
         if (meteoActive == cloudManager.mode.pluie)
         {
@@ -53,6 +66,11 @@ public class cloudManager : MonoBehaviour
             tempete.SetActive(false);
 
             skyColor.meteo = SkyboxModule.temp.pluie;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudRoundSpeedDefault[i];
+            }
         }
         if (meteoActive == cloudManager.mode.tempete)
         {
@@ -61,6 +79,11 @@ public class cloudManager : MonoBehaviour
             tempete.SetActive(true);
 
             skyColor.meteo = SkyboxModule.temp.tempete;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudSpeedMultiplicatorTempete[i];
+            }
         }
         if (meteoActive == cloudManager.mode.brouillard)
         {
@@ -69,6 +92,11 @@ public class cloudManager : MonoBehaviour
             tempete.SetActive(false);
 
             skyColor.meteo = SkyboxModule.temp.brouillard;
+
+            for (int i = 0; i < cloudRoundSpeed.Length; i++)
+            {
+                cloudRoundSpeed[i] = cloudRoundSpeedDefault[i];
+            }
         }
     }
 }
