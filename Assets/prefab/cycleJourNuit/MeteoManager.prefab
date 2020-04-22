@@ -25917,7 +25917,7 @@ MonoBehaviour:
   - {fileID: 3562491201258773975}
   - {fileID: 7897101402890422011}
   - {fileID: 1864065261635700001}
-  speedSpawn: 2
+  speedSpawn: 5
 --- !u!1 &4550362987660663513
 GameObject:
   m_ObjectHideFlags: 0
