@@ -1376,6 +1376,16 @@ PrefabInstance:
       propertyPath: rootPoint
       value: 
       objectReference: {fileID: 1012843722}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: morningCloudAppear
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: nightCloudDispawn
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4550362987622508308, guid: 7037eb7ad8d8b1146b797251819437b7,
         type: 3}
       propertyPath: m_Name
@@ -1648,6 +1658,21 @@ PrefabInstance:
       propertyPath: clockText
       value: 
       objectReference: {fileID: 49166149}
+    - target: {fileID: 5605713186619105727, guid: 53c74b122d534ac44bf0703e1761d58b,
+        type: 3}
+      propertyPath: _targetDayLength
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605713186619105727, guid: 53c74b122d534ac44bf0703e1761d58b,
+        type: 3}
+      propertyPath: elapsedTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605713186619105727, guid: 53c74b122d534ac44bf0703e1761d58b,
+        type: 3}
+      propertyPath: _timeOfDay
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c74b122d534ac44bf0703e1761d58b, type: 3}
 --- !u!1001 &7496240654109294145

@@ -21,7 +21,7 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField]
     private float elapseTime;
     [SerializeField]
-    private float elapsedTime;
+    public float elapsedTime;
     [SerializeField]
     private bool use24Clock = true;
     [SerializeField]

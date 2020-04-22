@@ -31,6 +31,9 @@ public class cloudManager : MonoBehaviour
     public float[] cloudRoundSpeedDefault;
     public float[] cloudSpeedMultiplicatorTempete;
 
+    public int morningCloudAppear;
+    public int nightCloudDispawn;
+
     [Header("meteo")]
     public GameObject pluie;
     public GameObject tempete;
@@ -83,6 +86,11 @@ public class cloudManager : MonoBehaviour
 
         meteoChange();
 
+        if(GameManager.s_Singleton.meteoActive != GameManager.mode.tempete)
+        {
+            CloudSpawn();
+        }
+       
     }
 
     public void meteoChange()
@@ -193,5 +201,23 @@ public class cloudManager : MonoBehaviour
         
     }
 
-  
+    public void CloudSpawn()
+    {
+        if (GameManager.s_Singleton.time >= nightCloudDispawn || GameManager.s_Singleton.time < morningCloudAppear)
+        {
+            foreach(Transform go in cloudRound)
+            {
+                go.gameObject.SetActive(false);
+            }
+
+        }
+        else
+        {
+            foreach (Transform go in cloudRound)
+            {
+                go.gameObject.SetActive(true);
+            }
+        }
+
+    }
 }
