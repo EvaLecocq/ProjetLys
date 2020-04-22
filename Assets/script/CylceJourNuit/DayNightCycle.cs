@@ -80,9 +80,9 @@ public class DayNightCycle : MonoBehaviour
     private Light sun;
     private float intensity;
     [SerializeField]
-    private float sunBaseIntensity = 1.0f;
+    public float sunBaseIntensity = 1.0f;
     [SerializeField]
-    private float sunVariation = 1.5f;
+    public float sunVariation = 1.5f;
     [SerializeField]
     private Gradient sunColor;
 

@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public enum mode { soleil, pluie, tempete, brouillard }
+    public mode meteoActive;
 
 
     public float time;
