@@ -1373,9 +1373,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
         type: 3}
+      propertyPath: cloudSpeedMultiplicatorTempete.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: cloudRoundSpeedDefault.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
       propertyPath: rootPoint
       value: 
       objectReference: {fileID: 1012843722}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: cloudSpeedMultiplicatorTempete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: cloudSpeedMultiplicatorTempete.Array.data[0]
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: cloudSpeedMultiplicatorTempete.Array.data[1]
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550362987622508306, guid: 7037eb7ad8d8b1146b797251819437b7,
+        type: 3}
+      propertyPath: cloudSpeedMultiplicatorTempete.Array.data[2]
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4550362987622508308, guid: 7037eb7ad8d8b1146b797251819437b7,
         type: 3}
       propertyPath: m_Name

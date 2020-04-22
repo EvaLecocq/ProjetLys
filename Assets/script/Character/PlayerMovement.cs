@@ -213,9 +213,6 @@ public class PlayerMovement : MonoBehaviour
             item.outlinerItem.enabled = true;
  
         }
-
-        ///Met tes truc en dessous
-
         
     }
 
@@ -228,11 +225,6 @@ public class PlayerMovement : MonoBehaviour
             item = null;
 
         }
-
-        ///Met tes trucs en dessous
-
-
-
     }
 
     public IEnumerator CollectItem()
@@ -243,18 +235,5 @@ public class PlayerMovement : MonoBehaviour
 
         item = null;
     }
-
-
-    ///Espace de clement
-    /// 
-    /// si tu veut y'a le trigger stay plus haut
-    /// 
-
-    private void OnTriggerEnter(Collider other)
-    {
         
-    }
-
-
-
 }
