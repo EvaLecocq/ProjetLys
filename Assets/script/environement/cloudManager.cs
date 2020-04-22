@@ -5,8 +5,6 @@ using UnityEngine;
 public class cloudManager : MonoBehaviour
 {
    
-    public enum mode { soleil, pluie, tempete, brouillard }
-    public mode meteoActive;
 
     [Header("eclairage")]
     private SkyboxModule skyColor;
@@ -89,8 +87,8 @@ public class cloudManager : MonoBehaviour
 
     public void meteoChange()
     {
-
-        if (meteoActive == cloudManager.mode.soleil)
+        
+        if (GameManager.s_Singleton.meteoActive == GameManager.mode.soleil)
         {
             pluie.SetActive(false);
             brouillard.SetActive(false);
@@ -112,7 +110,7 @@ public class cloudManager : MonoBehaviour
             sunColor.sunVariation = sunIntensityVariationBase;
         }
 
-        if (meteoActive == cloudManager.mode.pluie)
+        if (GameManager.s_Singleton.meteoActive == GameManager.mode.pluie)
         {
             pluie.SetActive(true);
             brouillard.SetActive(false);
@@ -134,7 +132,7 @@ public class cloudManager : MonoBehaviour
             sunColor.sunVariation = sunIntensityVariationPluie;
         }
 
-        if (meteoActive == cloudManager.mode.tempete)
+        if (GameManager.s_Singleton.meteoActive == GameManager.mode.tempete)
         {
             pluie.SetActive(false);
             brouillard.SetActive(false);
@@ -158,7 +156,7 @@ public class cloudManager : MonoBehaviour
             
         }
 
-        if (meteoActive == cloudManager.mode.brouillard)
+        if (GameManager.s_Singleton.meteoActive == GameManager.mode.brouillard)
         {
             pluie.SetActive(false);
             brouillard.SetActive(true);
@@ -183,22 +181,17 @@ public class cloudManager : MonoBehaviour
 
     public void ThunderStruck()
     {
-        int range = Random.Range(0, 3);
-
-        thunder[range].SetActive(true);
-
-
-
-        StartCoroutine(timeThunderDespawn());
-    }
-
-    public IEnumerator timeThunderDespawn()
-    {
-        yield return new WaitForSeconds(1f);
-
         foreach (GameObject go in thunder)
         {
             go.SetActive(false);
         }
+
+        int range = Random.Range(0, thunder.Length);
+
+        thunder[range].SetActive(true);
+
+        
     }
+
+  
 }
