@@ -16,7 +16,14 @@ public class Dialogue_Manager : MonoBehaviour
     {
         sentences = new Queue<string>();
     }
-   
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
         dialogueapparition.gameObject.SetActive(true);
