@@ -43,5 +43,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b734108a5f2969e469babeea81f659e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meteoActive: 0
+  actualDay: 0
+  actualEvent: 0
+  activeMeteo: 0
   time: 0
   day: 0
+  Tulipe: 0
+  CirseCommun: 0
+  Chrysantheme: 0
+  Orchidee: 0
+  Hibiscus: 0
+  PaeoniaOfficinalis: 0
+  EuphorbeReveilleMatin: 0
+  GazaniaRigens: 0
+  HelleboreOrient: 0
+  FumariaOfficinalis: 0
+  BleuMarie: 0
+  AncolieDuCanada: 0
+  Kalanchoe: 0
+  Gerbera: 0
+  AngeliqueDesEstuaires: 0
+  Agapanthe: 0
+  Rose: 0
+  Fritillaire: 0
+  FleurDeLys: 0
+  pierre: 0
+  baton: 0
+  gland: 0
