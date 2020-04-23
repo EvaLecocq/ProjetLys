@@ -71,5 +71,14 @@ public class AutoFlip : MonoBehaviour
                 nextPageCountDown -= Time.deltaTime;
             }
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            FlipRightPage();
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            FlipLeftPage();
+        }
     }
+    
 }
