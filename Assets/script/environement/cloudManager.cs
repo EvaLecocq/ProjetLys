@@ -20,6 +20,7 @@ public class cloudManager : MonoBehaviour
     public GameObject pluie;
     public GameObject tempete;
     public GameObject brouillard;
+    public GameObject soleil;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,7 @@ public class cloudManager : MonoBehaviour
             pluie.SetActive(false);
             brouillard.SetActive(false);
             tempete.SetActive(false);
+            soleil.SetActive(true);
 
             skyColor.meteo = SkyboxModule.temp.soleil;
 
@@ -64,6 +66,7 @@ public class cloudManager : MonoBehaviour
             pluie.SetActive(true);
             brouillard.SetActive(false);
             tempete.SetActive(false);
+            soleil.SetActive(false);
 
             skyColor.meteo = SkyboxModule.temp.pluie;
 
@@ -77,6 +80,7 @@ public class cloudManager : MonoBehaviour
             pluie.SetActive(false);
             brouillard.SetActive(false);
             tempete.SetActive(true);
+            soleil.SetActive(false);
 
             skyColor.meteo = SkyboxModule.temp.tempete;
 
@@ -90,6 +94,7 @@ public class cloudManager : MonoBehaviour
             pluie.SetActive(false);
             brouillard.SetActive(true);
             tempete.SetActive(false);
+            soleil.SetActive(false);
 
             skyColor.meteo = SkyboxModule.temp.brouillard;
 
