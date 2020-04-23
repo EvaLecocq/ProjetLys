@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public enum dayWeek { lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche}
     public dayWeek actualDay;
 
-    public enum eventPark { glacier, cirque, expoArt, expoVin }
+    public enum eventPark { glacier, cirque, expoArt, expoVin, none }
     public eventPark actualEvent;
 
     public bool activeMeteo = false;
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
         if (cycle.elapsedTime == 0f)
         {
             activeMeteo = true;
-            Debug.Log("fonctionne");
+            //Debug.Log("fonctionne");
         }
 
         UpdateDayWeek();
@@ -104,6 +104,8 @@ public class GameManager : MonoBehaviour
         if (day == 2)
         {
             actualDay = GameManager.dayWeek.mardi;
+
+            actualEvent = GameManager.eventPark.none;
 
             if (activeMeteo)
             {
@@ -155,6 +157,8 @@ public class GameManager : MonoBehaviour
         {
             actualDay = GameManager.dayWeek.jeudi;
 
+            actualEvent = GameManager.eventPark.none;
+
             if (activeMeteo)
             {
                 int meteo = Random.Range(0, 2);
@@ -176,6 +180,8 @@ public class GameManager : MonoBehaviour
         if (day == 5)
         {
             actualDay = GameManager.dayWeek.vendredi;
+
+            actualEvent = GameManager.eventPark.none;
 
             if (activeMeteo)
             {

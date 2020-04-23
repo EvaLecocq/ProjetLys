@@ -49,5 +49,13 @@ public class eventManager : MonoBehaviour
             expoArt.SetActive(true);
             expoVin.SetActive(false);
         }
+
+        if (GameManager.s_Singleton.actualEvent == GameManager.eventPark.none)
+        {
+            glacier.SetActive(false);
+            cirque.SetActive(false);
+            expoArt.SetActive(false);
+            expoVin.SetActive(false);
+        }
     }
 }

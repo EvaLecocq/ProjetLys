@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8585b093c91414d878bbb285eee4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetDayLength: 0.1
+  _targetDayLength: 0.5
   elapseTime: 0
   elapsedTime: 0
   use24Clock: 1
