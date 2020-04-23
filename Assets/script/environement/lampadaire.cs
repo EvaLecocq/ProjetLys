@@ -18,7 +18,7 @@ public class lampadaire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.s_Singleton.time >= nightHour || GameManager.s_Singleton.time < morningHour)
+        if(GameManager.s_Singleton.time >= 20f || GameManager.s_Singleton.time < 6f)
         {
             foreach(Light lg in lightLamp )
             {

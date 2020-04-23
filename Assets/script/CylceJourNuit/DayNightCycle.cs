@@ -21,7 +21,7 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField]
     private float elapseTime;
     [SerializeField]
-    public float elapsedTime;
+    private float elapsedTime;
     [SerializeField]
     private bool use24Clock = true;
     [SerializeField]
@@ -80,9 +80,9 @@ public class DayNightCycle : MonoBehaviour
     private Light sun;
     private float intensity;
     [SerializeField]
-    public float sunBaseIntensity = 1.0f;
+    private float sunBaseIntensity = 1.0f;
     [SerializeField]
-    public float sunVariation = 1.5f;
+    private float sunVariation = 1.5f;
     [SerializeField]
     private Gradient sunColor;
 
