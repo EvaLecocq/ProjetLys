@@ -18,7 +18,18 @@ public class UI_Herbier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            carte.gameObject.SetActive(true);
+            inventaire.gameObject.SetActive(true);
+           
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            carte.gameObject.SetActive(false);
+            inventaire.gameObject.SetActive(false);
+
+        }
     }
     public void OpenHerbier()
     {
