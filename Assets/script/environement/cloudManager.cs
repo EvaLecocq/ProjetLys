@@ -87,10 +87,8 @@ public class cloudManager : MonoBehaviour
 
         meteoChange();
 
-        if(GameManager.s_Singleton.meteoActive != GameManager.mode.tempete)
-        {
             CloudSpawn();
-        }
+        
        
     }
 
@@ -208,13 +206,17 @@ public class cloudManager : MonoBehaviour
 
     public void CloudSpawn()
     {
+
         if (GameManager.s_Singleton.time >= nightCloudDispawn || GameManager.s_Singleton.time < morningCloudAppear)
         {
-            foreach(Transform go in cloudRound)
-            {
-                go.gameObject.SetActive(false);
-            }
 
+            if (GameManager.s_Singleton.meteoActive != GameManager.mode.tempete)
+            {
+                foreach (Transform go in cloudRound)
+                {
+                    go.gameObject.SetActive(false);
+                }
+            }
         }
         else
         {
