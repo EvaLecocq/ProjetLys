@@ -90,7 +90,7 @@ Material:
     - _WaterFalloff: 0
     - _WaterOpacity: 0.6
     - _WaterReflection: 1
-    - _WaterScale: 0.233
+    - _WaterScale: 0
     - _WaterSmoothness: 0
     - _WaterSpecular: 0
     - _WaterSpeed: 1
