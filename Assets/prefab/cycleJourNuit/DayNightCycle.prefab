@@ -200,13 +200,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8585b093c91414d878bbb285eee4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetDayLength: 0.5
+  _targetDayLength: 30
   elapseTime: 0
-  elapsedTime: 0
+  elapsedTime: 900
   use24Clock: 1
   clockText: {fileID: 0}
   useTextClock: 0
-  _timeOfDay: 0
+  _timeOfDay: 0.5
   _dayNumber: 0
   dayNumberWeek: 1
   weekLenght: 7
