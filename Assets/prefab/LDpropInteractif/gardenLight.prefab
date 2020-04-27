@@ -111,10 +111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightLamp:
-  - {fileID: 5511903305903921198}
-  - {fileID: 6718218114006346542}
-  - {fileID: 779014323634274356}
-  - {fileID: 7200132377977882603}
+  - {fileID: 4868476777509521890}
+  - {fileID: 8000595126514667758}
+  - {fileID: 5314360007108645475}
+  - {fileID: 6851980195941270280}
   nightHour: 18
   morningHour: 6
 --- !u!1 &4868476777509521890

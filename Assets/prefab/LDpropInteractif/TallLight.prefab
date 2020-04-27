@@ -277,8 +277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightLamp:
-  - {fileID: 376359063213075708}
-  - {fileID: 376359061720000987}
+  - {fileID: 376359063213075707}
+  - {fileID: 376359061720000986}
   nightHour: 18
   morningHour: 6
 --- !u!136 &6072951434426716346

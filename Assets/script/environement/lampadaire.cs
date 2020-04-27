@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class lampadaire : MonoBehaviour
 {
-    public Light[] lightLamp;
+    public GameObject[] lightLamp;
    
     public float nightHour = 20f;
     public float morningHour = 6f;
@@ -20,17 +20,17 @@ public class lampadaire : MonoBehaviour
     {
         if(GameManager.s_Singleton.time >= nightHour || GameManager.s_Singleton.time < morningHour)
         {
-            foreach(Light lg in lightLamp )
+            foreach(GameObject lg in lightLamp )
             {
-                lg.enabled = true;
+                lg.SetActive(true);
             }
            
         }
         else
         {
-            foreach (Light lg in lightLamp)
+            foreach (GameObject lg in lightLamp)
             {
-                lg.enabled = false;
+                lg.SetActive(false);
             }
         }
     }
