@@ -21,7 +21,7 @@ public class UI_Herbier : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             carte.gameObject.SetActive(true);
-            inventaire.gameObject.SetActive(true);
+            
            
         }
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -29,6 +29,10 @@ public class UI_Herbier : MonoBehaviour
             carte.gameObject.SetActive(false);
             inventaire.gameObject.SetActive(false);
 
+        }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            inventaire.gameObject.SetActive(true);
         }
     }
     public void OpenHerbier()
