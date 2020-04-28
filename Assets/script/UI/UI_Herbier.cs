@@ -6,9 +6,10 @@ using TMPro;
 public class UI_Herbier : MonoBehaviour
 {
     
-    public GameObject carte;
+    public GameObject herbier;
     public GameObject inventaire;
-    
+    public GameObject carte;
+    public GameObject buttoncarte;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,30 +21,37 @@ public class UI_Herbier : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            carte.gameObject.SetActive(true);
-            
+            herbier.gameObject.SetActive(true);
+            buttoncarte.SetActive(false);
            
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            carte.gameObject.SetActive(false);
+            herbier.gameObject.SetActive(false);
             inventaire.gameObject.SetActive(false);
+            buttoncarte.gameObject.SetActive(true);
+            carte.gameObject.SetActive(false);
 
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             inventaire.gameObject.SetActive(true);
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            carte.gameObject.SetActive(true);
+            buttoncarte.gameObject.SetActive(false);
+        }
     }
     public void OpenHerbier()
     {
-        carte.gameObject.SetActive(true);
+        herbier.gameObject.SetActive(true);
         inventaire.gameObject.SetActive(true);
        
     }
     public void CloseHerbier()
     {
-        carte.gameObject.SetActive(false);
+        herbier.gameObject.SetActive(false);
         inventaire.gameObject.SetActive(false);
     }
 }
