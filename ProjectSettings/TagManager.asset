@@ -6,6 +6,7 @@ TagManager:
   tags:
   - item
   - banc
+  - dialogue
   layers:
   - Default
   - TransparentFX

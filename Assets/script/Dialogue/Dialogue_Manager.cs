@@ -10,7 +10,9 @@ public class Dialogue_Manager : MonoBehaviour
     private Queue<string> sentences;
     public GameObject dialogueapparition;
     public GameObject quete;
-    
+
+    public bool dialogueActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class Dialogue_Manager : MonoBehaviour
             DisplayNextSentence();
         }
     }
+
 
     public void StartDialogue(Dialogue dialogue)
     {
@@ -39,6 +42,8 @@ public class Dialogue_Manager : MonoBehaviour
         }
         DisplayNextSentence();
     }
+
+
     public void StartDialogue2(Dialogue2 _dialogue2)
     {
         dialogueapparition.gameObject.SetActive(true);
@@ -54,6 +59,8 @@ public class Dialogue_Manager : MonoBehaviour
         }
         DisplayNextSentence2();
     }
+
+
     public void DisplayNextSentence()
     {
         if(sentences.Count == 0)
@@ -65,6 +72,8 @@ public class Dialogue_Manager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
+
+
     public void DisplayNextSentence2()
     {
         if (sentences.Count == 0)
@@ -85,10 +94,13 @@ public class Dialogue_Manager : MonoBehaviour
             yield return null;
         }
     }
+
+
     public void EndDialogue()
     {
         dialogueapparition.gameObject.SetActive(false);
 
+        dialogueActive = false;
             //quete.gameObject.SetActive(true);
         
     }

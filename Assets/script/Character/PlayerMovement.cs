@@ -197,8 +197,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-    
-
         if(other.CompareTag("item") && Input.GetKeyDown(interactionKey) && item != null)
         {
            
@@ -213,6 +211,7 @@ public class PlayerMovement : MonoBehaviour
             item.outlinerItem.enabled = true;
  
         }
+
         
     }
 
@@ -224,6 +223,25 @@ public class PlayerMovement : MonoBehaviour
             item.outlinerItem.enabled = false;
             item = null;
 
+        }
+
+        if (other.CompareTag("dialogue"))
+        {
+            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == true)
+            {
+                other.GetComponent<Dialogue_Trigger>().StopDialogue();
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("dialogue"))
+        {
+            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+            {
+                other.GetComponent<Dialogue_Trigger>().EventDialogue();
+            }
         }
     }
 
