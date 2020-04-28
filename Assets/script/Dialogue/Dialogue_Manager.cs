@@ -18,7 +18,7 @@ public class Dialogue_Manager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             DisplayNextSentence();
         }
