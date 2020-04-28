@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6986989124654586704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.6, y: 3.47, z: -33.78}
-  m_LocalScale: {x: 4.6908, y: 4.6908, z: 4.6908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   _dialogue:
     name: Sanglier
     sentences:
-    - "\"J'ALLAIS GAGNER ! J'AI UNIQUEMENT PERDU \xC0 CAUSE DE SES BOIX, JE SUIS LE
+    - "J'ALLAIS GAGNER ! J'AI UNIQUEMENT PERDU \xC0 CAUSE DE SES BOIX, JE SUIS LE
       PLUS FORT. "
     - QUOI ?
     - TU VEUX TE BATTRE GAMIN ?
@@ -116,7 +116,7 @@ MonoBehaviour:
     - TU VEUX PAS TE BATTRE ?
     - "\xC7A VEUT DIRE QUE J'AI GAGNER, ET UN GAGNANT \xC7A M\xC9RITE UN PRIX. APPORTE
       MOI UN TROPH\xC9E. "
-    - ALLEZ ! PLUS VITE PETIT PERDANT."
+    - ALLEZ ! PLUS VITE PETIT PERDANT.
   _dialogue2:
     name: Sanglier
     sentences:
@@ -124,12 +124,3 @@ MonoBehaviour:
     - 'J''ATTEND MON PRIX!
 
 '
-  quest:
-    isActive: 0
-    title: 
-    description: 
-    experience: 0
-    goal:
-      goaltype: 0
-      fruit: 0
-      currentfruit: 0
