@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject model;
     bool orientation;
     public MouseLook look;
+    public CinemachineVirtualCamera cam;
 
     public float speed = 12f;
     public float lateralSpeed = 0.4f;
@@ -212,7 +214,21 @@ public class PlayerMovement : MonoBehaviour
  
         }
 
-        
+        //dialogue
+        if (other.CompareTag("dialogue") && Input.GetKeyDown(interactionKey))
+        {
+            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+            {
+                other.GetComponent<Dialogue_Trigger>().EventDialogue();
+            }
+        }
+        else if(other.CompareTag("dialogue"))
+        {
+            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+            {
+                other.GetComponent<Dialogue_Trigger>().ActiveOutline();
+            }
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -225,24 +241,19 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        //dialogue
         if (other.CompareTag("dialogue"))
         {
-            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == true)
+            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
             {
-                other.GetComponent<Dialogue_Trigger>().StopDialogue();
+                other.GetComponent<Dialogue_Trigger>().DesactiveOutline();
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("dialogue"))
-        {
-            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
-            {
-                other.GetComponent<Dialogue_Trigger>().EventDialogue();
-            }
-        }
+        
     }
 
     public IEnumerator CollectItem()

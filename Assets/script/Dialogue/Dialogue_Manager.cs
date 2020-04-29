@@ -30,7 +30,7 @@ public class Dialogue_Manager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         dialogueapparition.gameObject.SetActive(true);
-        Debug.Log("Sart" + dialogue.name);
+        //Debug.Log("Sart" + dialogue.name);
 
         Textname.text = dialogue.name;
 
@@ -47,7 +47,7 @@ public class Dialogue_Manager : MonoBehaviour
     public void StartDialogue2(Dialogue2 _dialogue2)
     {
         dialogueapparition.gameObject.SetActive(true);
-        Debug.Log("Sart" + _dialogue2.name);
+        //Debug.Log("Sart" + _dialogue2.name);
 
         Textname.text = _dialogue2.name;
 
