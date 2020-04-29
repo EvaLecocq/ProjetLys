@@ -23,9 +23,10 @@ public class Dialogue_Trigger : MonoBehaviour
 
     private void Update()
     {
-        if(FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+        if(FindObjectOfType<Dialogue_Manager>().triggerEnd == true)
         {
-            StopDialogue();
+            StartCoroutine(StopDialogue());
+            
         }
     }
 
@@ -60,13 +61,19 @@ public class Dialogue_Trigger : MonoBehaviour
         outliner.enabled = false;
     }
 
-    public void StopDialogue()
+    public IEnumerator StopDialogue()
     {
         FindObjectOfType<Dialogue_Manager>().dialogueActive = false;
         FindObjectOfType<Dialogue_Manager>().EndDialogue();
         
         player.enabled = true;
         camDialogue.Priority = 0;
+
+        //Debug.Log("fin");
+
+        yield return new WaitForSeconds(0.5f);
+
+        FindObjectOfType<Dialogue_Manager>().triggerEnd = false;
     }
   
 }

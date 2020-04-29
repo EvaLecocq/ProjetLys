@@ -11,6 +11,7 @@ public class Dialogue_Manager : MonoBehaviour
     public GameObject dialogueapparition;
     public GameObject quete;
 
+    public bool triggerEnd = false;
     public bool dialogueActive = false;
 
     // Start is called before the first frame update
@@ -101,6 +102,7 @@ public class Dialogue_Manager : MonoBehaviour
         dialogueapparition.gameObject.SetActive(false);
 
         dialogueActive = false;
+        triggerEnd = true;
             //quete.gameObject.SetActive(true);
         
     }

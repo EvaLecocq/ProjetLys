@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour
     public int day;
     private DayNightCycle cycle;
 
+    [Header("principale")]
+    public int progression = 0;
+
     [Header("fleur")]
     public int Tulipe;
     public int CirseCommun;

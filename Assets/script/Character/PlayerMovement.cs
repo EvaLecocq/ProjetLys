@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     bool orientation;
     public MouseLook look;
     public CinemachineVirtualCamera cam;
+    public CinemachineVirtualCamera camFPV;
+    public bool isBanc = false;
 
     public float speed = 12f;
     public float lateralSpeed = 0.4f;
@@ -229,6 +231,22 @@ public class PlayerMovement : MonoBehaviour
                 other.GetComponent<Dialogue_Trigger>().ActiveOutline();
             }
         }
+
+        //banc
+        
+        if(other.CompareTag("banc") && Input.GetKeyDown(interactionKey))
+        {
+            if(other.GetComponent<banc>().isBanc == false)
+            {
+                other.GetComponent<banc>().EnterBanc();
+            }
+            
+        }
+        else if(other.CompareTag("banc"))
+        {
+            other.GetComponent<banc>().ActiveOutline();
+        }
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -249,12 +267,21 @@ public class PlayerMovement : MonoBehaviour
                 other.GetComponent<Dialogue_Trigger>().DesactiveOutline();
             }
         }
+
+        //banc
+        
+        else if (other.CompareTag("banc"))
+        {
+            other.GetComponent<banc>().DesactiveOutline();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         
     }
+
+   
 
     public IEnumerator CollectItem()
     {
