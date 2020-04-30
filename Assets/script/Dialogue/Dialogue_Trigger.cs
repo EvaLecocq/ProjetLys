@@ -15,6 +15,8 @@ public class Dialogue_Trigger : MonoBehaviour
     public Dialogue dialogueCerf;
 
     public Dialogue dialogueQueteNonValide;
+    public Dialogue dialogueQueteNonValide2;
+    public Dialogue dialogueQueteNonValide3;
 
     public CinemachineVirtualCamera camDialogue;
     public Transform playerPos;
