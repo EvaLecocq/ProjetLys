@@ -66,19 +66,6 @@ public class UI_Herbier : MonoBehaviour
             }
         }
       
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            herbier.gameObject.SetActive(false);            
-           // buttoncarte.gameObject.SetActive(true);
-            carte.gameObject.SetActive(false);
-
-        }
-       
-      /*  if (Input.GetKeyDown(KeyCode.M))
-        {
-            carte.gameObject.SetActive(true);
-            buttoncarte.gameObject.SetActive(false);
-        }*/
     }
     public void OpenHerbier()
     {
