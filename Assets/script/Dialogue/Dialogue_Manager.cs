@@ -86,6 +86,7 @@ public class Dialogue_Manager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
+
     IEnumerator TypeSentence(string sentence)
     {
         dialogue.text = "";

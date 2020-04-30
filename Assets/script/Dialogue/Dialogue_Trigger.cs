@@ -5,6 +5,7 @@ using Cinemachine;
 
 public class Dialogue_Trigger : MonoBehaviour
 {
+    public Dialogue dialogueDebut;
     public Dialogue dialogueLapin;
     public Dialogue dialogueSanglier;
     public Dialogue dialogueSerpent;
@@ -67,7 +68,11 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public void StartDialogue()
     {
-        if(GameManager.s_Singleton.principale == GameManager.quete.lapin)
+        if (GameManager.s_Singleton.principale == GameManager.quete.debut)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
+        }
+        if (GameManager.s_Singleton.principale == GameManager.quete.lapin)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
         }

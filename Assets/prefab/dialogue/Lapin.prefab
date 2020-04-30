@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6442879446222629959
+--- !u!1 &1508123271544184488
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6442879446222629954}
-  - component: {fileID: 6442879446222629955}
-  - component: {fileID: 6442879446222629956}
-  - component: {fileID: 6442879446222629957}
-  - component: {fileID: 6442879446222629958}
+  - component: {fileID: 1508123271544184492}
+  - component: {fileID: 1508123271544184491}
+  - component: {fileID: 1508123271544184490}
+  - component: {fileID: 1508123271544184489}
+  - component: {fileID: 1508123271544184493}
+  - component: {fileID: 3798305078817265547}
   m_Layer: 0
   m_Name: Lapin
-  m_TagString: Untagged
+  m_TagString: dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6442879446222629954
+--- !u!4 &1508123271544184492
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6442879446222629959}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.96, y: 3.01, z: -34.15}
-  m_LocalScale: {x: 3.7684, y: 3.7684, z: 3.7684}
-  m_Children: []
+  m_GameObject: {fileID: 1508123271544184488}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
+  m_LocalPosition: {x: 2.94, y: -0.35, z: 14.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1454089064695723542}
+  - {fileID: 8188232113656421740}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6442879446222629955
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!33 &1508123271544184491
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6442879446222629959}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6442879446222629956
+  m_GameObject: {fileID: 1508123271544184488}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1508123271544184490
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6442879446222629959}
+  m_GameObject: {fileID: 1508123271544184488}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -80,54 +83,258 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6442879446222629957
-BoxCollider:
+--- !u!135 &1508123271544184489
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6442879446222629959}
+  m_GameObject: {fileID: 1508123271544184488}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6442879446222629958
+--- !u!114 &1508123271544184493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6442879446222629959}
+  m_GameObject: {fileID: 1508123271544184488}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue:
-    name: Renard
+  dialogueDebut:
+    name: Lapin
     sentences:
     - "HEY TOI L\xC0 ! "
     - "Qu'est ce que tu fais ici ? le portail est ferm\xE9, \xE7a veut dire que le
-      parc est ferm\xE9."
-    - "C'est pas normal que tu sois de ce c\xF4t\xE9 du portail....... Tu t'es perdu
-      ?"
-    - "C'est emb\xEAtant, je vais te donner un coup de patte !"
+      parc est ferm\xE9. "
+    - "C'est pas normal que tu sois de ce c\xF4t\xE9 du portail... Tu t'es perdu ?"
+    - "C'est emb\xEAtant, je vais te donner un coup de patte ! "
     - "J'ai un ami dans le parc qui peut t'aider, il a la grande cl\xE9 du portail,
       il peut l'ouvrir."
-    - 'Faut que tu cherches le cerf, c''est lui le chef. Mais je l''ai pas vu depuis
-      un moment..... '
-    - "Je me souviens l'avoir vu pr\xE8s d'un pont, mais l'endroit pr\xE9cis m'\xE9chappe. "
-  _dialogue2:
+    - Faut que tu cherches le cerf, c'est lui le chef. Mais je l'ai pas vu depuis
+      un moment...
+    - "Je me souviens l'avoir vu pr\xE8s d'un pont, mais l'endroit pr\xE9cis m'\xE9chappe."
+  dialogueLapin:
+    name: Lapin
+    sentences:
+    - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
+    - "Tu as trouv\xE9 le cerf ?"
+    - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
+  dialogueSanglier:
+    name: Lapin
+    sentences:
+    - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
+    - "Tu as trouv\xE9 le cerf ?"
+    - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
+  dialogueSerpent:
+    name: Lapin
+    sentences:
+    - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
+    - "Tu as trouv\xE9 le cerf ? Le sanglier s'est battu avec lui ?"
+    - Impressionnant !
+    - "Et apr\xE8s il est partie dans les hautes herbes ?"
+    - Je me demande quel animal pourrait s'y trouver...
+  dialogueRatonLaveur:
+    name: Lapin
+    sentences:
+    - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
+    - "H\xE9 bien, tu as rencontr\xE9 plein d'animaux du parc !"
+    - "Un animal malin et rus\xE9 ?"
+    - Hmm, plusieurs animaux pourraient correspondre, les deux principaux seraient
+      le furet et le renard, ou le raton laveur.
+  dialogueRenard:
+    name: Lapin
+    sentences:
+    - Je suis mort.
+    - Les morts ne parlent pas
+  dialogueChianChat:
+    name: Lapin
+    sentences:
+    - Je suis mort.
+    - Les morts ne parlent pas
+  dialogueRenard2:
+    name: Lapin
+    sentences:
+    - Je suis mort.
+    - Les morts ne parlent pas
+  dialogueCerf:
+    name: Lapin
+    sentences:
+    - Je suis mort.
+    - Les morts ne parlent pas
+  dialogueQueteNonValide:
     name: 
     sentences: []
-  quest:
-    isActive: 0
-    title: 
-    description: 
-    experience: 0
-    goal:
-      goaltype: 0
-      fruit: 0
-      currentfruit: 0
+  dialogueQueteNonValide2:
+    name: 
+    sentences: []
+  dialogueQueteNonValide3:
+    name: 
+    sentences: []
+  camDialogue: {fileID: 1878103637803205852}
+  playerPos: {fileID: 8188232113656421740}
+--- !u!114 &3798305078817265547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508123271544184488}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!1 &6402804705388992824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454089064695723542}
+  - component: {fileID: 1878103637803205852}
+  m_Layer: 0
+  m_Name: cam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454089064695723542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6402804705388992824}
+  m_LocalRotation: {x: -0, y: -0.415988, z: -0, w: 0.9093701}
+  m_LocalPosition: {x: 2.06, y: 0.58, z: -3.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7810484169927730301}
+  m_Father: {fileID: 1508123271544184492}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -49.163002, z: 0}
+--- !u!114 &1878103637803205852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6402804705388992824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 0
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 7810484169927730301}
+--- !u!1 &6640893711026624632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8188232113656421740}
+  m_Layer: 0
+  m_Name: pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8188232113656421740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640893711026624632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.56, z: -1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1508123271544184492}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7628023632620388430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7810484169927730301}
+  - component: {fileID: 4967371618479861817}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7810484169927730301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7628023632620388430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.16041, y: 80.556526, z: 24.467375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1454089064695723542}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4967371618479861817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7628023632620388430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
