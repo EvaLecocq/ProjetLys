@@ -19,7 +19,7 @@ public class UI_Herbier : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = PlayerMovement.FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -34,8 +34,8 @@ public class UI_Herbier : MonoBehaviour
                 openhebier = true;
                 player.enabled = false;
 
-                player.transform.position = playerPos.position;
-                player.transform.rotation = playerPos.rotation;
+                //player.transform.position = playerPos.position;
+               // player.transform.rotation = playerPos.rotation;
             }
         }
         else
@@ -46,6 +46,7 @@ public class UI_Herbier : MonoBehaviour
                 {
                     herbier.gameObject.SetActive(false);
                     openhebier = false;
+                    player.enabled = true;
                 }
                
             }

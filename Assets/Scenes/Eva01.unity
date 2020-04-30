@@ -16096,7 +16096,7 @@ GameObject:
   - component: {fileID: 1118612609}
   - component: {fileID: 1118612608}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23275,6 +23275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   herbier: {fileID: 489449723}
   inventaire: {fileID: 1449484496}
+  tab: {fileID: 1118612608}
   openhebier: 0
   openInv: 0
   playerPos: {fileID: 1119716871}
