@@ -5,8 +5,16 @@ using Cinemachine;
 
 public class Dialogue_Trigger : MonoBehaviour
 {
-    public Dialogue _dialogue;
-    public Dialogue2 _dialogue2;
+    public Dialogue dialogueLapin;
+    public Dialogue dialogueSanglier;
+    public Dialogue dialogueSerpent;
+    public Dialogue dialogueRatonLaveur;
+    public Dialogue dialogueRenard;
+    public Dialogue dialogueChianChat;
+    public Dialogue dialogueRenard2;
+    public Dialogue dialogueCerf;
+
+    public Dialogue dialogueQueteNonValide;
 
     public CinemachineVirtualCamera camDialogue;
     public Transform playerPos;
@@ -57,7 +65,40 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public void StartDialogue()
     {
-        FindObjectOfType<Dialogue_Manager>().StartDialogue(_dialogue);
+        if(GameManager.s_Singleton.principale == GameManager.quete.lapin)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSanglier);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.serpent)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.ratonLaveur)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRatonLaveur);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.renard)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueChianChat);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.renard2)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
+        }
+        else if (GameManager.s_Singleton.principale == GameManager.quete.cerf)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);
+        }
+
+
         outliner.enabled = false;
     }
 

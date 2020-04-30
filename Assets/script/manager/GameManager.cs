@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+  
     public enum mode { soleil, pluie, tempete, brouillard }
     public mode meteoActive;
 
@@ -35,6 +36,9 @@ public class GameManager : MonoBehaviour
 
     [Header("principale")]
     public int progression = 0;
+
+    public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf };
+    public quete principale;
 
     [Header("fleur")]
     public int Tulipe;

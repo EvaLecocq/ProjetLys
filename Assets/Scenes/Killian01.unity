@@ -4241,11 +4241,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sanglier
       objectReference: {fileID: 0}
-    - target: {fileID: 6986989124654586704, guid: e04384b43ff14ba4fa98fc469f901555,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6986989124654586708, guid: e04384b43ff14ba4fa98fc469f901555,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6220,6 +6215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: banc
       objectReference: {fileID: 0}
+    - target: {fileID: 1930051766990769486, guid: 52188453a918f444b9612784373a5254,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1930051766991020136, guid: 52188453a918f444b9612784373a5254,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6923,6 +6923,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5592620599128096000, guid: 1b0c38d49cad93747af83b199624e44a,
+        type: 3}
+      propertyPath: principale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5592620599128096001, guid: 1b0c38d49cad93747af83b199624e44a,
         type: 3}
       propertyPath: m_LocalPosition.x
