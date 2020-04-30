@@ -8,6 +8,7 @@ public class UI_Herbier : MonoBehaviour
     
     public GameObject herbier;
     public GameObject inventaire;
+    public TextMeshProUGUI tab;
 
     public bool openhebier = false;
     public bool openInv = false;
@@ -55,6 +56,7 @@ public class UI_Herbier : MonoBehaviour
             {
                 inventaire.gameObject.SetActive(true);
                 openInv = true;
+                tab.text = "";
             }
           
         }
@@ -66,6 +68,7 @@ public class UI_Herbier : MonoBehaviour
                 {
                     inventaire.gameObject.SetActive(false);
                     openInv = false;
+                    tab.text = "(TAB)";
                 }
             }
         }
