@@ -8,11 +8,13 @@ public class UI_Herbier : MonoBehaviour
     
     public GameObject herbier;
     public GameObject inventaire;
-    public GameObject carte;
-    public GameObject buttoncarte;
+
     public bool openhebier = false;
     public bool openInv = false;
-    
+    public Transform playerPos;
+
+    private PlayerMovement player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +29,12 @@ public class UI_Herbier : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 herbier.gameObject.SetActive(true);
-                buttoncarte.SetActive(false);
+               
                 openhebier = true;
-             
+                player.enabled = false;
 
+                player.transform.position = playerPos.position;
+                player.transform.rotation = playerPos.rotation;
             }
         }
         else

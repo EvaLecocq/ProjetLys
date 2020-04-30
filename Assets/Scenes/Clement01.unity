@@ -2561,12 +2561,12 @@ PrefabInstance:
     - target: {fileID: 1338112795733642440, guid: 3b0696f89c513fc4cad78c6463deb536,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000027850598
+      value: -0.000000027850602
       objectReference: {fileID: 0}
     - target: {fileID: 1338112795733642440, guid: 3b0696f89c513fc4cad78c6463deb536,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000017039826
+      value: 0.000000017039842
       objectReference: {fileID: 0}
     - target: {fileID: 1338112795733642440, guid: 3b0696f89c513fc4cad78c6463deb536,
         type: 3}
@@ -4723,6 +4723,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884980898}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &902278018 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1338112797817155252, guid: 3b0696f89c513fc4cad78c6463deb536,
+    type: 3}
+  m_PrefabInstance: {fileID: 359311028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &915082857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4753,12 +4759,12 @@ PrefabInstance:
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000027850598
+      value: -0.000000027850602
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000017039826
+      value: 0.000000017039842
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 7500fb024d1201e4eb6edcecc69ff583,
         type: 3}
@@ -6852,10 +6858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   herbier: {fileID: 146647656}
   inventaire: {fileID: 465576971}
-  carte: {fileID: 0}
-  buttoncarte: {fileID: 0}
   openhebier: 0
   openInv: 0
+  playerPos: {fileID: 902278018}
 --- !u!1 &1399054667
 GameObject:
   m_ObjectHideFlags: 0
