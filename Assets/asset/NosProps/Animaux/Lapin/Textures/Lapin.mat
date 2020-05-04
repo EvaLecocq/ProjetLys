@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tulipe_Clos
+  m_Name: Lapin
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 4
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: ad909c7537c2b8c4e880806fbaae333e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 956d26c81e03af14aac4f1b6d99b0b3d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -40,19 +40,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c253e790da8679d46acd930820c5e8f0, type: 3}
+        m_Texture: {fileID: 2800000, guid: ea05628061427fb4ca99a46d39b685c1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 6ec42fe34a55c0340b0aa96d32da2035, type: 3}
+        m_Texture: {fileID: 2800000, guid: a3e0db0abbe3a0a4cbafdf78b3f28767, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 0a07433c9622fc642903caff60a6e3e3, type: 3}
+        m_Texture: {fileID: 2800000, guid: c06da75c8aeb05f45958b892e736eaee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: b527405a1d324c44296feaaae7fff77a, type: 3}
+        m_Texture: {fileID: 2800000, guid: efc04511a432a8440b112e32caaed8ba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
