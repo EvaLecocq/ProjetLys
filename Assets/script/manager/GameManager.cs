@@ -37,8 +37,10 @@ public class GameManager : MonoBehaviour
     [Header("principale")]
     public int progression = 0;
 
-    public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf };
+    public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf, fin };
     public quete principale;
+
+    public bool queteActuelValider = false;
 
     [Header("fleur")]
     public int Tulipe;
@@ -88,8 +90,68 @@ public class GameManager : MonoBehaviour
         }
 
         UpdateDayWeek();
+
+        if(queteActuelValider)
+        {
+            queteActuelValider = false;
+            ProgressionPlus();
+        }
     }
 
+    public void ProgressionPlus()
+    {
+        progression++;
+        EtatQueteEnum();
+    }
+
+    public void QueteFini()
+    {
+        queteActuelValider = true;
+    }
+
+    public void EtatQueteEnum()
+    {
+        if(progression == 0)
+        {
+            principale = quete.debut;
+        }
+        if (progression == 1)
+        {
+            principale = quete.lapin;
+        }
+        if (progression == 2)
+        {
+            principale = quete.sanglier;
+        }
+        if (progression == 3)
+        {
+            principale = quete.serpent;
+        }
+        if (progression == 4)
+        {
+            principale = quete.ratonLaveur;
+        }
+        if (progression == 5)
+        {
+            principale = quete.renard;
+        }
+        if (progression == 6)
+        {
+            principale = quete.chienChat;
+        }
+        if (progression == 7)
+        {
+            principale = quete.renard2;
+        }
+        if (progression == 8)
+        {
+            principale = quete.cerf;
+        }
+        if (progression == 9)
+        {
+            principale = quete.fin;
+        }
+    }
 
     public void UpdateDayWeek()
     {
