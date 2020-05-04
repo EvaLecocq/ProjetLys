@@ -33,6 +33,7 @@ public class UI_Herbier : MonoBehaviour
                
                 openhebier = true;
                 player.enabled = false;
+                inventaire.SetActive(false);
 
                 //player.transform.position = playerPos.position;
                // player.transform.rotation = playerPos.rotation;
@@ -73,7 +74,7 @@ public class UI_Herbier : MonoBehaviour
                 }
             }
         }
-      
+     
     }
     public void OpenHerbier()
     {

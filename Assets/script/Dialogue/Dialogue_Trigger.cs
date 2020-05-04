@@ -25,6 +25,7 @@ public class Dialogue_Trigger : MonoBehaviour
     private PlayerMovement player;
     private Outline outliner;
 
+    public bool quest1active;
 
     private void Start()
     {
