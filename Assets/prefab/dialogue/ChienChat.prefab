@@ -1,0 +1,384 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &744467448816630120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2873192310751870076}
+  m_Layer: 0
+  m_Name: pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2873192310751870076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744467448816630120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.56, z: -1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4796402556176990140}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1055676722792986664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4778361925499590406}
+  - component: {fileID: 5507213881215378892}
+  m_Layer: 0
+  m_Name: cam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4778361925499590406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055676722792986664}
+  m_LocalRotation: {x: -0, y: -0.415988, z: -0, w: 0.9093701}
+  m_LocalPosition: {x: 2.06, y: 0.58, z: -3.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4186581214692033901}
+  m_Father: {fileID: 4796402556176990140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -49.163002, z: 0}
+--- !u!114 &5507213881215378892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055676722792986664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 0
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 4186581214692033901}
+--- !u!1 &4585226830890393950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4186581214692033901}
+  - component: {fileID: 1338262594871955753}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4186581214692033901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585226830890393950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.16041, y: 80.556526, z: 24.467375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4778361925499590406}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338262594871955753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585226830890393950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4796402556176990136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4796402556176990140}
+  - component: {fileID: 4796402556176990139}
+  - component: {fileID: 4796402556176990138}
+  - component: {fileID: 4796402556176990137}
+  - component: {fileID: 4796402556176990141}
+  - component: {fileID: 7118953846317479579}
+  m_Layer: 0
+  m_Name: ChienChat
+  m_TagString: dialogue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4796402556176990140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796402556176990136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.76, y: -0.35, z: -4.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4778361925499590406}
+  - {fileID: 2873192310751870076}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4796402556176990139
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796402556176990136}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4796402556176990138
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796402556176990136}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &4796402556176990137
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796402556176990136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4796402556176990141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796402556176990136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueDebut:
+    name: Chien - Chat
+    sentences: []
+  dialogueLapin:
+    name: Chien - Chat
+    sentences:
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nOh d'accord...\n"
+    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
+    - "Chien :\r\nOH OUI LES CANARDS."
+    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
+    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
+  dialogueSanglier:
+    name: Chien - Chat
+    sentences:
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nOh d'accord...\n"
+    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
+    - "Chien :\r\nOH OUI LES CANARDS."
+    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
+    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
+  dialogueSerpent:
+    name: Chien - Chat
+    sentences:
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nOh d'accord...\n"
+    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
+    - "Chien :\r\nOH OUI LES CANARDS."
+    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
+    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
+  dialogueRatonLaveur:
+    name: Chien - Chat
+    sentences:
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nOh d'accord...\n"
+    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
+    - "Chien :\r\nOH OUI LES CANARDS."
+    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
+    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
+  dialogueRenard:
+    name: Chien - Chat
+    sentences:
+    - "Chien :\r\nOH UN COPAIN, H\xC9 H\xC9 TU VEUX JOUER ?"
+    - "Chat :\r\nCalme toi le chien, tu m'\xE9nerves."
+    - "Chien :\r\nOh d'accord...."
+    - "Chat :\r\nSalut \xE0 toi petit bonhomme, que fait un enfant \xE0 se promener
+      par ici ? "
+    - "Chien :\r\nPROMENER ? ON VA SE PROMENER ? \r\n"
+    - "Chat :\r\nNON couch\xE9 !"
+    - "Chien :\r\nOh....d'accord\r\n"
+    - "Chat :\r\n...Bref, ne fais pas attention \xE0 lui il est hyperactif. Es tu
+      perdu ? Oui ? "
+    - "Chat :\r\nTu cherches le lapin et le cerf ? c'est vrai qu'on les voit souvent."
+    - "Chat :\r\nH\xE9 bien..... je pourrais t'aider mais tu vas faire quelque chose
+      pour nous en \xE9change... "
+    - "Chat :\r\nVois-tu, mon ami et moi, on arrive pas \xE0 se mettre d'accord, pour
+      moi la fleur la plus jolie est la fleur de lys."
+    - "Chien :\r\nNON C'EST PAS ELLE C'EST L'ORCHID\xC9E ELLE EST VIOLETTE"
+    - "Chat :\r\nTu vois ? c'est comme \xE7a sans arr\xEAt, donc,\r tu vas nous trouver
+      une fleur qui est \xE0 la fois blanche et pure comme le lys et violette comme
+      l'orchid\xE9e."
+    - "Chat :\nQuand tu l'auras tu reviens nous la donner et on te dira o\xF9 on a
+      vu le cerf.\r\n"
+  dialogueChianChat:
+    name: Chien - Chat
+    sentences:
+    - "Chat :\r\nWow, quelle magnifique fleur que tu as l\xE0, une forme et une couleur
+      blan..."
+    - "Chien :\r\nELLE EST VIOLETTE ELLE EST JOLIE."
+    - "Chat :\r\nOui c'est vrai elle est \xE0 la fois blanche et violette, pure et
+      l\xE9g\xE8re, l'Hellebore, c'est par-fait. "
+    - "Ta partie est remplie, maintenant \xE0 nous. Le cerf est pass\xE9 nous dire
+      bonjour et est ensuite parti en direction du batiment du jardin botanique."
+    - Et nous n'avons pas vu le lapin depuis un bon moment, c'est tout.
+  dialogueRenard2:
+    name: Chien - Chat
+    sentences:
+    - "Chat :\r\nSalut petit bonhomme."
+    - "Chien :\r\nSALUT."
+    - "Chat :\r\nAs tu trouv\xE9 le cerf ? non ? "
+    - "Chat :\nH\xE9 bien, nous n'allons pas te d\xE9ranger plus longtemps."
+  dialogueCerf:
+    name: Chien - Chat
+    sentences:
+    - "Chat :\r\nTu as rencontr\xE9 le cerf ? bravo, j'imagine qu'il a pu r\xE9pondre
+      \xE0 tes questions."
+    - "Chien :\r\nLE CERF EST SUPER GRAND, J'AIME BIEN JOUER AVEC LUI."
+  dialogueQueteNonValide:
+    name: Chien - Chat
+    sentences:
+    - "Chat :\r\nNon tu n'as pas la bonne fleur."
+    - "Chien :\r\nNON ELLE EST PAS JOLIE."
+  dialogueQueteNonValide2:
+    name: Renard
+    sentences:
+    - 'ZZzzzz, hein ? heu, quoi ? '
+    - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
+  dialogueQueteNonValide3:
+    name: Renard
+    sentences:
+    - MAIS ...
+    - LAISSES MOI DORMIR !
+  camDialogue: {fileID: 5507213881215378892}
+  playerPos: {fileID: 2873192310751870076}
+--- !u!114 &7118953846317479579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796402556176990136}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

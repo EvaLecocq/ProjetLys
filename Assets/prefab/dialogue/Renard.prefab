@@ -1,0 +1,360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &990957181507550514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610467147464055041}
+  - component: {fileID: 2374276000443256133}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &610467147464055041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990957181507550514}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.16041, y: 80.556526, z: 24.467375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8084329764347267946}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2374276000443256133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990957181507550514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4050294070753404164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566910598712746000}
+  m_Layer: 0
+  m_Name: pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1566910598712746000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050294070753404164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.56, z: -1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8138382184510301136}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4379730498131829828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8084329764347267946}
+  - component: {fileID: 9082885325220460960}
+  m_Layer: 0
+  m_Name: cam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8084329764347267946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379730498131829828}
+  m_LocalRotation: {x: -0, y: -0.415988, z: -0, w: 0.9093701}
+  m_LocalPosition: {x: 2.06, y: 0.58, z: -3.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 610467147464055041}
+  m_Father: {fileID: 8138382184510301136}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -49.163002, z: 0}
+--- !u!114 &9082885325220460960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379730498131829828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 0
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 610467147464055041}
+--- !u!1 &8138382184510301140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8138382184510301136}
+  - component: {fileID: 8138382184510301143}
+  - component: {fileID: 8138382184510301142}
+  - component: {fileID: 8138382184510301141}
+  - component: {fileID: 8138382184510301137}
+  - component: {fileID: 5812725459469314807}
+  m_Layer: 0
+  m_Name: Renard
+  m_TagString: dialogue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8138382184510301136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138382184510301140}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.84, y: -0.35, z: 9.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8084329764347267946}
+  - {fileID: 1566910598712746000}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8138382184510301143
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138382184510301140}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8138382184510301142
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138382184510301140}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &8138382184510301141
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138382184510301140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8138382184510301137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138382184510301140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueDebut:
+    name: Renard
+    sentences: []
+  dialogueLapin:
+    name: Renard
+    sentences:
+    - Bonjour petit humain, tu es bien loin de ta maison.
+    - Tout seul qui plus est.
+    - Tu ferais mieux de rentrer chez toi, si tu le peux.
+    - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
+    - "Surtout pour un petit \xEAtre comme toi."
+  dialogueSanglier:
+    name: Renard
+    sentences:
+    - Bonjour petit humain, tu es bien loin de ta maison.
+    - Tout seul qui plus est.
+    - Tu ferais mieux de rentrer chez toi, si tu le peux.
+    - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
+    - "Surtout pour un petit \xEAtre comme toi."
+  dialogueSerpent:
+    name: Renard
+    sentences:
+    - Bonjour petit humain, tu es bien loin de ta maison.
+    - Tout seul qui plus est.
+    - Tu ferais mieux de rentrer chez toi, si tu le peux.
+    - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
+    - "Surtout pour un petit \xEAtre comme toi."
+  dialogueRatonLaveur:
+    name: Renard
+    sentences:
+    - "H\xE9 bien, qu'avons nous l\xE0 ? Belle journ\xE9e petit \xEAtre, que viens
+      tu faire dans mon domaine ?"
+    - "Le cerf ? Oui je lui ai parl\xE9, je saurais ais\xE9ment te montrer la marche
+      \xE0 suivre mais..... en ai je l'envie ?"
+    - "J'ai si faim, c'est tr\xE8s p\xE9nible pour moi de parler, mais je ne peux
+      pas manger n'importe quoi..."
+    - Je suis un carnivore ! j'ai besoin de viande !
+    - 'Oh je sais, un lapin. Il se balade toujours devant le portail, peux tu me l''amener
+      ? '
+    - "Non pas besoin, la seule pens\xE9e suffit \xE0 me revigorer,\r je vais le chercher
+      moi m\xEAme !"
+    - 'Comment ? Ne pas le manger ? HA HA HA HA quel comique, n''as tu pas compris
+      ? '
+    - "La nature est ainsi faite, peut importe que tu le veuilles ou non, des \xE9v\xE8nements
+      arriveront et cela, \rpeu importe ta vision des choses, ainsi est la vie."
+    - "Apr\xE8s, si le lapin \xE9tait pr\xE9venu de mon arriv\xE9e, il pourrait s'enfuir
+      et retarder l'\xE9ch\xE9ance..."
+    - "L'heure tourne petit \xEAtre, et mon estomac r\xE9clame un tribu."
+  dialogueRenard:
+    name: Renard
+    sentences:
+    - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
+    - Tu ne voudrais pas qu'il lui arrrive quelque chose ?
+  dialogueChianChat:
+    name: Renard
+    sentences:
+    - "Trop tard petit \xEAtre, la vie t'a rattrap\xE9, et la sienne l'a quitt\xE9,
+      mais ne t'en fais pas, tu n'y est pour rien, ainsi va la nature et la vie..."
+    - "Tu me fais de la peine petit \xEAtre,\r je vais te dire comment faire venir
+      le cerf."
+    - Pour cela tu dois aller au grand batiment de pierre sur la petite colline et
+      poser une fleur dans chaque pots.
+    - "Devant chaque pots se trouve une devinette \xE0 r\xE9soudre."
+    - "Et maintenant va, petit \xEAtre et fais attention \xE0 toi."
+  dialogueRenard2:
+    name: Renard
+    sentences:
+    - "Va sur la petite colline petit \xEAtre, et r\xE9sout les \xE9nigmes."
+    - "Va sur la petite colline petit \xEAtre, et r\xE9sout les \xE9nigmes."
+  dialogueCerf:
+    name: Renard
+    sentences:
+    - "Maintenant que tu as rencontr\xE9 le cerf, je te sugg\xE8re de partir petit
+      \xEAtre ..."
+    - Ta famille t'attend.
+  dialogueQueteNonValide:
+    name: Renard
+    sentences:
+    - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
+    - Tu ne voudrais pas qu'il lui arrrive quelque chose ?
+  dialogueQueteNonValide2:
+    name: Renard
+    sentences:
+    - 'ZZzzzz, hein ? heu, quoi ? '
+    - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
+  dialogueQueteNonValide3:
+    name: Renard
+    sentences:
+    - MAIS ...
+    - LAISSES MOI DORMIR !
+  camDialogue: {fileID: 9082885325220460960}
+  playerPos: {fileID: 1566910598712746000}
+--- !u!114 &5812725459469314807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138382184510301140}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
