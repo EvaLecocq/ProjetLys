@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
     public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf, fin };
     public quete principale;
 
+    public GameObject lapin;
+    public bool clesDuParc = false;
+
     public bool queteActuelValider = false;
 
     [Header("fleur")]
@@ -64,9 +67,10 @@ public class GameManager : MonoBehaviour
     public int FleurDeLys;
 
     [Header("objet")]
-    public int pierre;
+    public int feuille;
     public int baton;
-    public int gland;
+    public int graineGland;
+    public int terre;
 
     // Start is called before the first frame update
     void Start()

@@ -7,7 +7,7 @@ public class itemPick : MonoBehaviour
 
     public enum type { Tulipe , CirseCommun , Chrysantheme , Orchidee , Hibiscus , PaeoniaOfficinalis , EuphorbeReveilleMatin , GazaniaRigens , HelleboreOrient ,
         FumariaOfficinalis , BleuMarie , AncolieDuCanada, Kalanchoe, Gerbera, AngeliqueDesEstuaires, Agapanthe, Rose, Fritillaire, FleurDeLys,
-    pierre, baton, gland};
+    feuille, baton, graineGland, terre};
 
     public type itemType;
     public Outline outlinerItem;
@@ -73,9 +73,9 @@ public class itemPick : MonoBehaviour
         {
             GameManager.s_Singleton.Gerbera++;
         }
-        else if (itemType == itemPick.type.gland)
+        else if (itemType == itemPick.type.graineGland)
         {
-            GameManager.s_Singleton.gland++;
+            GameManager.s_Singleton.graineGland++;
         }
         else if (itemType == itemPick.type.HelleboreOrient)
         {
@@ -97,9 +97,9 @@ public class itemPick : MonoBehaviour
         {
             GameManager.s_Singleton.PaeoniaOfficinalis++;
         }
-        else if (itemType == itemPick.type.pierre)
+        else if (itemType == itemPick.type.feuille)
         {
-            GameManager.s_Singleton.pierre++;
+            GameManager.s_Singleton.feuille++;
         }
         else if (itemType == itemPick.type.Rose)
         {
@@ -108,6 +108,10 @@ public class itemPick : MonoBehaviour
         else if (itemType == itemPick.type.Tulipe)
         {
             GameManager.s_Singleton.Tulipe++;
+        }
+        else if (itemType == itemPick.type.terre)
+        {
+            GameManager.s_Singleton.terre++;
         }
 
         Destroy(gameObject);

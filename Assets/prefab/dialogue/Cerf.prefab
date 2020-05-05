@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749661668727693844}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.74, y: -0.35, z: -1.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -103,11 +103,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749661668727693844}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 6
   dialogueDebut:
     name: Cerf
     sentences: []
@@ -160,6 +161,8 @@ MonoBehaviour:
     - LAISSES MOI DORMIR !
   camDialogue: {fileID: 1636424502997203040}
   playerPos: {fileID: 9009331886067704272}
+  RatonSpam: 0
+  quest1active: 0
 --- !u!114 &4040758544687082295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +222,7 @@ GameObject:
   - component: {fileID: 1767685292140153514}
   - component: {fileID: 1636424502997203040}
   m_Layer: 0
-  m_Name: cam
+  m_Name: camCerf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

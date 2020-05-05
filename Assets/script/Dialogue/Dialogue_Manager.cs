@@ -21,7 +21,7 @@ public class Dialogue_Manager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && dialogueActive)
         {
             DisplayNextSentence();
         }
@@ -45,22 +45,6 @@ public class Dialogue_Manager : MonoBehaviour
     }
 
 
-    public void StartDialogue2(Dialogue2 _dialogue2)
-    {
-        dialogueapparition.gameObject.SetActive(true);
-        //Debug.Log("Sart" + _dialogue2.name);
-
-        Textname.text = _dialogue2.name;
-
-        sentences.Clear();
-
-        foreach (string sentence in _dialogue2.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-        DisplayNextSentence2();
-    }
-
 
     public void DisplayNextSentence()
     {
@@ -75,17 +59,6 @@ public class Dialogue_Manager : MonoBehaviour
     }
 
 
-    public void DisplayNextSentence2()
-    {
-        if (sentences.Count == 0)
-        {
-            EndDialogue2();
-            return;
-        }
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-    }
 
     IEnumerator TypeSentence(string sentence)
     {
@@ -107,12 +80,5 @@ public class Dialogue_Manager : MonoBehaviour
             //quete.gameObject.SetActive(true);
         
     }
-    public void EndDialogue2()
-    {
-        dialogueapparition.gameObject.SetActive(false);
-
-       
-
-    }
-
+   
 }

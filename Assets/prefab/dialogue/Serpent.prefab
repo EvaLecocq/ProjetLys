@@ -103,11 +103,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314055689912866446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 2
   dialogueDebut:
     name: Serpent
     sentences: []
@@ -189,6 +190,8 @@ MonoBehaviour:
     sentences: []
   camDialogue: {fileID: 767314610934467834}
   playerPos: {fileID: 6995251739410142538}
+  RatonSpam: 0
+  quest1active: 0
 --- !u!114 &2594103639691845549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +221,7 @@ GameObject:
   - component: {fileID: 332043237510463024}
   - component: {fileID: 767314610934467834}
   m_Layer: 0
-  m_Name: cam
+  m_Name: camSerpent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

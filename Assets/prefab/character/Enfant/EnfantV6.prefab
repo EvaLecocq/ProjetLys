@@ -71,8 +71,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338112795733642443}
-  m_LocalRotation: {x: 0.14433983, y: -6.7720934e-10, z: 0.0000000046425366, w: 0.98952824}
-  m_LocalPosition: {x: 0.003036499, y: 1.562851, z: -3.0223618}
+  m_LocalRotation: {x: 0.14434133, y: 0.000000014067916, z: 0.0000000024916837, w: 0.989528}
+  m_LocalPosition: {x: 0.003036499, y: 1.5628586, z: -3.0223598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1338112797479708950}
@@ -137,8 +137,8 @@ MonoBehaviour:
   mouseSensitivity: 30
   smoothPlayer: 1.2
   smoothCamH: 0.75
-  smoothCamV: 5
-  maxYcam: 1.5
+  smoothCamV: 4
+  maxYcam: 0.75
   playerBody: {fileID: 1338112797126264584}
   aimCamPoint: {fileID: 1338112796439807615}
   pivotCamPoint: {fileID: 1338112796521164779}
@@ -486,7 +486,7 @@ MonoBehaviour:
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 512
   isGrounded: 0
   jumpSFX: {fileID: 0}
   fallSFX: {fileID: 0}

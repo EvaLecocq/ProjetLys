@@ -221,6 +221,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
             {
+                
                 other.GetComponent<Dialogue_Trigger>().EventDialogue();
             }
         }
@@ -228,6 +229,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
             {
+                other.GetComponent<Dialogue_Trigger>().enabled = true;
                 other.GetComponent<Dialogue_Trigger>().ActiveOutline();
             }
         }
@@ -264,6 +266,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
             {
+                other.GetComponent<Dialogue_Trigger>().enabled = false;
                 other.GetComponent<Dialogue_Trigger>().DesactiveOutline();
             }
         }

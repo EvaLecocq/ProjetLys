@@ -5,6 +5,9 @@ using Cinemachine;
 
 public class Dialogue_Trigger : MonoBehaviour
 {
+    public enum animal {  lapin, sanglier, serpent, ratonLaveur, renard, chienChat, cerf };
+    public animal type;
+
     public Dialogue dialogueDebut;
     public Dialogue dialogueLapin;
     public Dialogue dialogueSanglier;
@@ -24,6 +27,10 @@ public class Dialogue_Trigger : MonoBehaviour
 
     private PlayerMovement player;
     private Outline outliner;
+    
+
+    public int RatonSpam;
+
 
     public bool quest1active;
 
@@ -40,6 +47,13 @@ public class Dialogue_Trigger : MonoBehaviour
             StartCoroutine(StopDialogue());
             
         }
+
+        
+    }
+
+    public void UpgradeQuest()
+    {
+        GameManager.s_Singleton.QueteFini();
     }
 
 
@@ -53,6 +67,8 @@ public class Dialogue_Trigger : MonoBehaviour
         player.transform.rotation = playerPos.rotation;
 
         camDialogue.Priority = 10;
+
+        
 
         StartDialogue();
     }
@@ -118,11 +134,14 @@ public class Dialogue_Trigger : MonoBehaviour
         player.enabled = true;
         camDialogue.Priority = 0;
 
-        //Debug.Log("fin");
+        //Debug.Log(camDialogue.Priority);
 
-        yield return new WaitForSeconds(0.5f);
+        UpgradeQuest();
 
         FindObjectOfType<Dialogue_Manager>().triggerEnd = false;
+     
+        yield return new WaitForSeconds(0.0f);
+
     }
   
 }

@@ -50,7 +50,8 @@ MonoBehaviour:
   time: 0
   day: 0
   progression: 0
-  principale: 1
+  principale: 0
+  queteActuelValider: 0
   Tulipe: 0
   CirseCommun: 0
   Chrysantheme: 0

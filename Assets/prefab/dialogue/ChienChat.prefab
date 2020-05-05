@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4778361925499590406}
   - component: {fileID: 5507213881215378892}
   m_Layer: 0
-  m_Name: cam
+  m_Name: camChienChat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4796402556176990136}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.76, y: -0.35, z: -4.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -243,11 +243,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4796402556176990136}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 5
   dialogueDebut:
     name: Chien - Chat
     sentences: []
@@ -364,6 +365,8 @@ MonoBehaviour:
     - LAISSES MOI DORMIR !
   camDialogue: {fileID: 5507213881215378892}
   playerPos: {fileID: 2873192310751870076}
+  RatonSpam: 0
+  quest1active: 0
 --- !u!114 &7118953846317479579
 MonoBehaviour:
   m_ObjectHideFlags: 0
