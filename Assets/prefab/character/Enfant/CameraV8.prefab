@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4117043923750892074}
   - component: {fileID: 4117043923750892077}
   - component: {fileID: 4117043923750892078}
-  - component: {fileID: 1056002027}
   m_Layer: 0
   m_Name: CameraV8
   m_TagString: Untagged
@@ -50,7 +49,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 5
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -82,28 +81,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 3
-  height: 0.8
+  distance: 2.5
+  height: 0.2
   heightDamping: 1
   rotationDamping: 1.5
   lockerCam: 1
   playerFollowMouse: 1
   cameraLibre: 0
-  lookFree: {fileID: 1056002027}
---- !u!114 &1056002027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4117043923750892079}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c520485e796b2f140be7b775a0ec2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 100
-  target: {fileID: 0}
+  lookFree: {fileID: 0}
+  timeToLock: 4
+  freeLockMouseSensitive: 0.5
+  camTPV: {fileID: 4117043923750892077}
+  camFreeLook: {fileID: 0}
+  camFPV: {fileID: 0}
 --- !u!1 &4117043923815670120
 GameObject:
   m_ObjectHideFlags: 0

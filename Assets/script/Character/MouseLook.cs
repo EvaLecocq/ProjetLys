@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class MouseLook : MonoBehaviour
 {
@@ -20,12 +21,17 @@ public class MouseLook : MonoBehaviour
     public bool cameraLibre = false;
     public MouseLookFree lookFree;
     public float timeToLock = 1f;
- 
+    public float freeLockMouseSensitive = 1;
+
+    public CinemachineVirtualCamera camTPV;
+    public CinemachineVirtualCamera camFreeLook;
+    public CinemachineVirtualCamera camFPV;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.parent = null;               
     }
 
     void LateUpdate()
@@ -69,30 +75,34 @@ public class MouseLook : MonoBehaviour
             transform.LookAt(target);
 
             lookFree.enabled = false;
-            transform.parent = null;
+            camFreeLook.Priority = 0;
+            camTPV.Priority = 5;
+            //transform.parent = null;
         }
 
         if(cameraLibre)
         {
             lookFree.enabled = true;
-            transform.parent = target;
+            camFreeLook.Priority = 5;
+            camTPV.Priority = 0;
+            //transform.parent = target;
         }
 
 
-        if (Input.GetAxis("Mouse X") < 0)
+        if (Input.GetAxis("Mouse X") < -freeLockMouseSensitive)
         {
             cameraLibre = true;
             StopAllCoroutines();
-            print("Mouse moved left");
+            //print("Mouse moved left");
         }
-        if (Input.GetAxis("Mouse X") > 0)
+        if (Input.GetAxis("Mouse X") > freeLockMouseSensitive)
         {
             cameraLibre = true;
             StopAllCoroutines();
-            print("Mouse moved right");
+            //print("Mouse moved right");
         }
 
-        if(Input.GetAxis("Mouse X") == 0)
+        if(Input.GetAxis("Mouse X") < freeLockMouseSensitive || Input.GetAxis("Mouse X") > -freeLockMouseSensitive)
         {
             StartCoroutine(CamOpen());
         }
