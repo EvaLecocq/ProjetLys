@@ -19,6 +19,7 @@ public class MouseLook : MonoBehaviour
 
     public bool cameraLibre = false;
     public MouseLookFree lookFree;
+    public float timeToLock = 1f;
  
 
     // Start is called before the first frame update
@@ -99,7 +100,7 @@ public class MouseLook : MonoBehaviour
 
     public IEnumerator CamOpen()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(timeToLock);
 
         cameraLibre = false;
 

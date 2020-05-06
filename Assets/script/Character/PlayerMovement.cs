@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private float defaultSpeed;
     public float runSpeed = 3f;
     public float speedRotation = 10f;
+    public float timeToFlip = 0.5f;
     public float jumpSpeed = 8f;
     public float gravity = 20f;
     public float sens = 1;
@@ -120,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator FlipCharacter()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(timeToFlip);
 
         transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
         model.transform.localEulerAngles = Vector3.zero;
