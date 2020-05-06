@@ -30,7 +30,10 @@ public class UI_menu : MonoBehaviour
         {
             CreditsView();
         }
-        
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Quitter();
+        }
     }
     public void StartGame()
     {
@@ -46,7 +49,7 @@ public class UI_menu : MonoBehaviour
 
     public void CreditsView()
     {
-        camCredits.Priority = 11;
+        camCredits.Priority = 0;
         description.gameObject.SetActive(true);
         menu.SetActive(false);
 
