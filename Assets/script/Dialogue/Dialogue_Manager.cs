@@ -14,6 +14,8 @@ public class Dialogue_Manager : MonoBehaviour
     public bool triggerEnd = false;
     public bool dialogueActive = false;
 
+    private bool startDialogueFinish = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class Dialogue_Manager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && dialogueActive)
+        if (Input.GetKeyDown(KeyCode.E) && dialogueActive && startDialogueFinish)
         {
             DisplayNextSentence();
         }
@@ -42,6 +44,8 @@ public class Dialogue_Manager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
         DisplayNextSentence();
+
+        
     }
 
 
@@ -68,6 +72,7 @@ public class Dialogue_Manager : MonoBehaviour
             dialogue.text += letter;
             yield return null;
         }
+        startDialogueFinish = true;
     }
 
 
@@ -77,8 +82,8 @@ public class Dialogue_Manager : MonoBehaviour
 
         dialogueActive = false;
         triggerEnd = true;
-            //quete.gameObject.SetActive(true);
-        
+        //quete.gameObject.SetActive(true);
+        startDialogueFinish = false;
     }
    
 }

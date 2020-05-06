@@ -333,7 +333,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  baseIntensity: 0.5
+  baseIntensity: 0.8
 --- !u!114 &5605713186619105664
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -53,7 +53,40 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public void UpgradeQuest()
     {
-        GameManager.s_Singleton.QueteFini();
+        if(GameManager.s_Singleton.progression == 0 && type == Dialogue_Trigger.animal.lapin)
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 1 && type == Dialogue_Trigger.animal.sanglier)
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 2 && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 3 && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 4 && type == Dialogue_Trigger.animal.renard)
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 5 && type == Dialogue_Trigger.animal.chienChat)
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 6 && type == Dialogue_Trigger.animal.renard)// + finir quete chien chat
+        {
+            GameManager.s_Singleton.QueteFini();
+        }
+        if (GameManager.s_Singleton.progression == 8 && type == Dialogue_Trigger.animal.cerf)// apres avoir fait les pots
+        {
+            GameManager.s_Singleton.QueteFini();
+            GameManager.s_Singleton.clesDuParc = true;
+        }
+
     }
 
 

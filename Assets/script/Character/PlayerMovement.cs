@@ -5,35 +5,21 @@ using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
+
     public GameObject model;
-    bool orientation;
     public MouseLook look;
     public CinemachineVirtualCamera cam;
     public CinemachineVirtualCamera camFPV;
     public bool isBanc = false;
-
-    public float speed = 12f;
-    public float lateralSpeed = 0.4f;
-    public float rotationSpeed = 1f;
-    public float runMultiplier;
+   
     public KeyCode runKey;
     public KeyCode backWalk;
     public KeyCode frontWalk;
     public KeyCode leftWalk;
     public KeyCode rightWalk;
     public KeyCode interactionKey;
-    public float gravity = -9.81f;
-    public float jumpHeight = 3f;
-    private bool backWalking = false;
-    private Vector3 backVector = new Vector3(0, 180, 0);
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-
-    Vector3 velocity;
-    public bool isGrounded;
+  
     private Rigidbody rb;
     private AudioSource source;
     public AudioClip jumpSFX;
@@ -47,30 +33,46 @@ public class PlayerMovement : MonoBehaviour
     public Transform itemHand;
     public float timeItemDispawnHand = 1;
 
+    public float speed = 6f;
+    public float speedRotation = 10f;
+    public float jumpSpeed = 8f;
+    public float gravity = 20f;
+    private Vector3 moveDirection = Vector3.zero;
+    CharacterController Cc;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         source = GetComponent<AudioSource>();
+
+        Cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);  
-        
-        if ((isGrounded) && velocity.y < 0)
+
+
+        if (Cc.isGrounded)
         {
-            velocity.y = -2f;
+            moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                moveDirection.y = jumpSpeed;
+            }
         }
-        
-        MoveControl();
-        RunControl();
-        JumpControl();
 
-        controller.Move(velocity * Time.deltaTime);
+        moveDirection.y -= gravity * Time.deltaTime;
 
-        if(item != null && item.isPick)//place l item ds la main
+        transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speed * speedRotation);
+
+        Cc.Move(moveDirection * Time.deltaTime);
+
+
+        if (item != null && item.isPick)//place l item ds la main
         {
             item.transform.position = itemHand.position;
             item.transform.rotation = itemHand.rotation;
@@ -78,119 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void MoveControl()
-    {
-        if (Input.GetKey(leftWalk))//virage a gauche
-        {
     
-            transform.Rotate(Vector3.up * -rotationSpeed);
-
-            if (backWalking == false)
-            {
-                if (orientation == true)
-                {
-                    model.transform.localEulerAngles = Vector3.zero;
-                }
-
-                if (model.transform.localEulerAngles.y > 270 || model.transform.localEulerAngles.y == 0)
-                {
-                    model.transform.Rotate(Vector3.up * -1f);
-                    orientation = false;
-                }
-            }
-
-            look.playerFollowMouse = false;
-        }
-
-
-
-        if (Input.GetKey(rightWalk))//virage a droite
-        {
-            transform.Rotate(Vector3.up * rotationSpeed);
-
-
-            if (backWalking == false)
-            {
-
-                if (orientation == false)
-                {
-                    model.transform.localEulerAngles = Vector3.zero;
-                }
-
-                if (model.transform.localEulerAngles.y < 90)
-                {
-                    model.transform.Rotate(Vector3.up * 1f);
-                    orientation = true;
-                }
-            }
-
-
-            look.playerFollowMouse = false;
-        }
-
-
-        if (Input.GetKeyDown(backWalk))//arriere
-        {
-
-            model.transform.localEulerAngles = backVector;
-
-            look.playerFollowMouse = false;
-
-            backWalking = true;
-        }
-
-
-        if (Input.GetKey(frontWalk))//avant
-        {
-            model.transform.localEulerAngles = Vector3.zero;
-            backWalking = false;
-
-        }
-
-        if (!Input.GetKey(frontWalk) && !Input.GetKey(backWalk) && !Input.GetKey(rightWalk) && !Input.GetKey(leftWalk))//aucune touche appuyer
-        {
-            look.playerFollowMouse = true;
-            backWalking = false;
-        }
-
-        if (look.playerFollowMouse)//reset rotation du model
-        {
-            model.transform.localEulerAngles = Vector3.zero;
-        }
-    }
-
-    public void JumpControl()
-    {
-        if (Input.GetButtonDown("Jump") && (isGrounded))
-        {
-
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
-
-        velocity.y += gravity * Time.deltaTime;
-    }
-
-    public void RunControl()
-    {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-
-        Vector3 move = transform.right * x * lateralSpeed + transform.forward * z;
-
-        if (Input.GetKey(runKey))//course et marche
-        {
-            controller.Move(move * speed * Time.deltaTime);
-
-            source.pitch = 1.2f;
-        }
-        else
-        {
-            controller.Move(move * speed * runMultiplier * Time.deltaTime);
-
-            source.pitch = 1;
-
-        }
-    }
 
     public void walk()
     {     
@@ -279,12 +169,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
-
-   
+  
 
     public IEnumerator CollectItem()
     {

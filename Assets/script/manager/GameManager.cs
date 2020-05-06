@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf, fin };
     public quete principale;
 
-    public GameObject lapin;
+
     public bool clesDuParc = false;
 
     public bool queteActuelValider = false;

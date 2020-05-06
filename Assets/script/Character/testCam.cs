@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseLook : MonoBehaviour
+public class testCam : MonoBehaviour
 {
+    
+
     // The target we are following
     public Transform target;
     // The distance in the x-z plane to the target
@@ -13,17 +15,6 @@ public class MouseLook : MonoBehaviour
     // How much we 
     public float heightDamping = 2.0f;
     public float rotationDamping = 3.0f;
-
-    float xRotation = 0f;
-
-    public bool lockerCam = true;
-    public bool playerFollowMouse = true;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     void LateUpdate()
     {
@@ -56,21 +47,5 @@ public class MouseLook : MonoBehaviour
 
         // Always look at the target
         transform.LookAt(target);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       if(lockerCam)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-       else
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-       
     }
 }
