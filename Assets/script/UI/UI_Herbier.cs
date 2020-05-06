@@ -8,7 +8,7 @@ public class UI_Herbier : MonoBehaviour
     
     public GameObject herbier;
     public GameObject inventaire;
-    public TextMeshProUGUI tab;
+    public GameObject tab;
 
     public bool openhebier = false;
     public bool openInv = false;
@@ -32,9 +32,8 @@ public class UI_Herbier : MonoBehaviour
                 herbier.gameObject.SetActive(true);
                
                 openhebier = true;
-                player.enabled = false;
-                //player.transform.position = playerPos.position;
-               // player.transform.rotation = playerPos.rotation;
+                Time.timeScale = 0f;
+               
             }
         }
         else
@@ -45,7 +44,7 @@ public class UI_Herbier : MonoBehaviour
                 {
                     herbier.gameObject.SetActive(false);
                     openhebier = false;
-                    player.enabled = true;
+                    Time.timeScale = 1f;
                 }
                
             }
@@ -56,7 +55,7 @@ public class UI_Herbier : MonoBehaviour
             {
                 inventaire.gameObject.SetActive(true);
                 openInv = true;
-                tab.text = "";
+                tab.gameObject.SetActive(false);
             }
           
         }
@@ -68,7 +67,7 @@ public class UI_Herbier : MonoBehaviour
                 {
                     inventaire.gameObject.SetActive(false);
                     openInv = false;
-                    tab.text = "(TAB)";
+                    tab.gameObject.SetActive(true);
                 }
             }
         }
