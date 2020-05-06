@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int experience = 40;
+    public int experience = 0;
     public int fruit = 0;
     public GameObject succes;
     public Quest quest;
