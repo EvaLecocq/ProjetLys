@@ -30,7 +30,7 @@ public class MouseLookFree : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         target.Rotate(Vector3.up * MouseX);
 
-        transform.parent = target;
+        
 
        // transform.position = target.position;
     }

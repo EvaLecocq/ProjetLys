@@ -7,7 +7,7 @@ public class QuestGiver : MonoBehaviour
 {
     public Quest quest;
     public Player player;
-    public Dialogue_Trigger[] dialogueTR;
+    
 
     public GameObject questacceptation;
     public GameObject questproposition;
@@ -31,14 +31,14 @@ public class QuestGiver : MonoBehaviour
         questacceptation.SetActive(false);
         quest.isActive = true;
         player.quest = quest;
-        dialogueTR[0].quest1active = true;
+        
         Debug.Log( "Quest is accepted");
     }
 
     public void CloseQuest()
     {
         questacceptation.SetActive(false);
-        dialogueTR[0].quest1active = false;
+       
     }
 
 }
