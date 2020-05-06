@@ -29,11 +29,18 @@ public class UI_Herbier : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                herbier.gameObject.SetActive(true);
-               
-                openhebier = true;
-                Time.timeScale = 0f;
-               
+                if (openInv == true)
+                {
+                    herbier.gameObject.SetActive(false);
+                    openhebier = false
+;
+                }
+                else
+                {
+                    herbier.gameObject.SetActive(true);
+                    openhebier = true;
+                    Time.timeScale = 0f;
+                }
             }
         }
         else
@@ -53,9 +60,18 @@ public class UI_Herbier : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Tab))
             {
-                inventaire.gameObject.SetActive(true);
-                openInv = true;
-                tab.gameObject.SetActive(false);
+                if(openhebier == true)
+                {
+                    inventaire.gameObject.SetActive(false);
+                    openInv = false;
+                }
+                else
+                {
+                    inventaire.gameObject.SetActive(true);
+                    openInv = true;
+                    tab.gameObject.SetActive(false);
+                }
+               
             }
           
         }
