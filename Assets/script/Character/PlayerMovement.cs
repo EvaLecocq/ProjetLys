@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public GameObject model;
+    private Vector3 backVector = new Vector3(0, 180, 0);
     public MouseLook look;
     public CinemachineVirtualCamera cam;
     public CinemachineVirtualCamera camFPV;
@@ -34,14 +35,19 @@ public class PlayerMovement : MonoBehaviour
     public float timeItemDispawnHand = 1;
 
     public float speed = 6f;
+    private float defaultSpeed;
+    public float runSpeed = 3f;
     public float speedRotation = 10f;
     public float jumpSpeed = 8f;
     public float gravity = 20f;
+    public float sens = 1;
     private Vector3 moveDirection = Vector3.zero;
     CharacterController Cc;
 
     private void Start()
     {
+        defaultSpeed = speed;
+
         rb = GetComponent<Rigidbody>();
         source = GetComponent<AudioSource>();
 
@@ -67,9 +73,41 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection.y -= gravity * Time.deltaTime;
 
-        transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speed * speedRotation);
+        transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speed * speedRotation * sens);
 
         Cc.Move(moveDirection * Time.deltaTime);
+
+        if(Input.GetKey(runKey))
+        {
+            speed = runSpeed;
+        }
+        else
+        {
+            speed = defaultSpeed;
+        }
+
+        if(Input.GetKey(frontWalk))
+        {
+            model.transform.localEulerAngles = Vector3.zero;
+            sens = 1;
+
+            look.cameraLibre = false;
+
+            StopAllCoroutines();
+        }
+        if (Input.GetKey(backWalk))
+        {
+            model.transform.localEulerAngles = backVector;
+            sens = -1;
+
+            look.cameraLibre = false;
+
+            StopAllCoroutines();
+        }
+        if(Input.GetKeyUp(backWalk))
+        {
+            StartCoroutine(FlipCharacter());
+        }
 
 
         if (item != null && item.isPick)//place l item ds la main
@@ -78,6 +116,15 @@ public class PlayerMovement : MonoBehaviour
             item.transform.rotation = itemHand.rotation;
         }
 
+    }
+
+    public IEnumerator FlipCharacter()
+    {
+        yield return new WaitForSeconds(1);
+
+        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
+        model.transform.localEulerAngles = Vector3.zero;
+        sens = 1;
     }
 
     

@@ -14,10 +14,12 @@ public class MouseLook : MonoBehaviour
     public float heightDamping = 2.0f;
     public float rotationDamping = 3.0f;
 
-    float xRotation = 0f;
-
     public bool lockerCam = true;
     public bool playerFollowMouse = true;
+
+    public bool cameraLibre = false;
+    public MouseLookFree lookFree;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -31,31 +33,76 @@ public class MouseLook : MonoBehaviour
         if (!target)
             return;
 
-        // Calculate the current rotation angles
-        float wantedRotationAngle = target.eulerAngles.y;
-        float wantedHeight = target.position.y + height;
-        float currentRotationAngle = transform.eulerAngles.y;
-        float currentHeight = transform.position.y;
 
-        // Damp the rotation around the y-axis
-        currentRotationAngle = Mathf.LerpAngle(currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
+        if (cameraLibre == false)
+        {
+            // Calculate the current rotation angles
+            float wantedRotationAngle = target.eulerAngles.y;
+            float wantedHeight = target.position.y + height;
+            float currentRotationAngle = transform.eulerAngles.y;
+            float currentHeight = transform.position.y;
 
-        // Damp the height
-        currentHeight = Mathf.Lerp(currentHeight, wantedHeight, heightDamping * Time.deltaTime);
+            // Damp the rotation around the y-axis
+            currentRotationAngle = Mathf.LerpAngle(currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
 
-        // Convert the angle into a rotation
-        Quaternion currentRotation = Quaternion.Euler(0, currentRotationAngle, 0);
+            // Damp the height
+            currentHeight = Mathf.Lerp(currentHeight, wantedHeight, heightDamping * Time.deltaTime);
 
-        // Set the position of the camera on the x-z plane to:
-        // distance meters behind the target
-        transform.position = target.position;
-        transform.position -= currentRotation * Vector3.forward * distance;
+            // Convert the angle into a rotation
 
-        // Set the height of the camera
-        transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
+            Quaternion currentRotation = Quaternion.Euler(0, currentRotationAngle, 0);
 
-        // Always look at the target
-        transform.LookAt(target);
+            // Set the position of the camera on the x-z plane to:
+            // distance meters behind the target
+            transform.position = target.position;
+            transform.position -= currentRotation * Vector3.forward * distance;
+
+            // Set the height of the camera
+            transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
+
+        }
+
+        if (cameraLibre== false)
+        {
+            // Always look at the target
+            transform.LookAt(target);
+
+            lookFree.enabled = false;
+            transform.parent = null;
+        }
+
+        if(cameraLibre)
+        {
+            lookFree.enabled = true;
+            transform.parent = target;
+        }
+
+
+        if (Input.GetAxis("Mouse X") < 0)
+        {
+            cameraLibre = true;
+            StopAllCoroutines();
+            print("Mouse moved left");
+        }
+        if (Input.GetAxis("Mouse X") > 0)
+        {
+            cameraLibre = true;
+            StopAllCoroutines();
+            print("Mouse moved right");
+        }
+
+        if(Input.GetAxis("Mouse X") == 0)
+        {
+            StartCoroutine(CamOpen());
+        }
+    }
+
+    public IEnumerator CamOpen()
+    {
+        yield return new WaitForSeconds(2);
+
+        cameraLibre = false;
+
     }
 
     // Update is called once per frame

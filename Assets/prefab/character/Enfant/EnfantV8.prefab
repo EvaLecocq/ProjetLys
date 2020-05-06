@@ -134,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5791490177048913891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: -0.229, z: 0}
+  m_LocalPosition: {x: 0.64, y: -0.229, z: 0.107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5791490177923431990}
@@ -243,20 +243,22 @@ MonoBehaviour:
   camFPV: {fileID: 5791490177029008284}
   isBanc: 0
   runKey: 304
-  backWalk: 0
-  frontWalk: 0
-  leftWalk: 0
-  rightWalk: 0
+  backWalk: 115
+  frontWalk: 122
+  leftWalk: 113
+  rightWalk: 100
   interactionKey: 101
   jumpSFX: {fileID: 0}
   fallSFX: {fileID: 0}
   walkSFX: []
   itemHand: {fileID: 5791490177048913888}
   timeItemDispawnHand: 1
-  speed: 6
-  speedRotation: 20
+  speed: 5
+  runSpeed: 3
+  speedRotation: 30
   jumpSpeed: 3
   gravity: 9
+  sens: 1
 --- !u!54 &5791490177923431991
 Rigidbody:
   m_ObjectHideFlags: 0

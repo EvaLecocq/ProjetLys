@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1152780595369870596}
   - component: {fileID: 1152780595369870597}
   - component: {fileID: 1201484863457664436}
+  - component: {fileID: 984745377917318614}
   m_Layer: 0
   m_Name: DefinitiveWater
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152780595369870650}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.7764225, y: -0.04, z: -10.221914}
   m_LocalScale: {x: 500, y: 1, z: 500}
   m_Children: []
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dc18466a9ddf9eb4f913cf4cb7760c46, type: 2}
+  - {fileID: 2100000, guid: 9bd8880eab2424c40afb26a4c957ce3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,3 +97,20 @@ MonoBehaviour:
   UvBumpRotateSpeed: 0.4
   UvBumpRotateDistance: 4
   depthTextureModeOn: 1
+--- !u!114 &984745377917318614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152780595369870650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c845bf7dba87b9489aff383125e0b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materiaux:
+  - {fileID: 2100000, guid: dc18466a9ddf9eb4f913cf4cb7760c46, type: 2}
+  - {fileID: 2100000, guid: 9bd8880eab2424c40afb26a4c957ce3f, type: 2}
+  nightHour: 18
+  morningHour: 6
