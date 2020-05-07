@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class UI_menu : MonoBehaviour
@@ -12,6 +13,7 @@ public class UI_menu : MonoBehaviour
     public CinemachineVirtualCamera camCredits;
     public GameObject herbier;
     public GameObject credits;
+    public GameObject tab;
     public bool iscredits = false;
     
    
@@ -42,8 +44,8 @@ public class UI_menu : MonoBehaviour
             {
                 if(iscredits == true)
                 {
-                    menu.SetActive(true);
-                    camCredits.Priority = 0;
+                    CreditsClose();
+                    iscredits = false;
                 }
             }
         }
@@ -53,6 +55,10 @@ public class UI_menu : MonoBehaviour
         {
             Quitter();
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            BackToMenu();
+        }
     }
     public void StartGame()
     {
@@ -60,6 +66,7 @@ public class UI_menu : MonoBehaviour
         menu.gameObject.SetActive(false);
         camMenu.Priority = 0;
         herbier.gameObject.SetActive(true);
+        tab.gameObject.SetActive(true);
     }
     public void Quitter()
     {
@@ -75,5 +82,15 @@ public class UI_menu : MonoBehaviour
 
     }
   
+    public void CreditsClose()
+    {
+        credits.gameObject.SetActive(false);
+        camCredits.Priority = 10;
 
+        menu.SetActive(true);
+    }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
