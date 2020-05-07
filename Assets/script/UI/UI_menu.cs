@@ -11,7 +11,9 @@ public class UI_menu : MonoBehaviour
     public CinemachineVirtualCamera camMenu;
     public CinemachineVirtualCamera camCredits;
     public GameObject herbier;
-    public GameObject description;
+    public GameObject credits;
+    public bool iscredits = false;
+    
    
     // Start is called before the first frame update
     void Start()
@@ -26,10 +28,27 @@ public class UI_menu : MonoBehaviour
         {
             StartGame();
         }
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (iscredits == false)
         {
-            CreditsView();
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                CreditsView();
+                iscredits = true;
+            }
         }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                if(iscredits == true)
+                {
+                    menu.SetActive(true);
+                    camCredits.Priority = 0;
+                }
+            }
+        }
+
+
         if (Input.GetKeyDown(KeyCode.U))
         {
             Quitter();
@@ -49,10 +68,12 @@ public class UI_menu : MonoBehaviour
 
     public void CreditsView()
     {
-        camCredits.Priority = 0;
-        description.gameObject.SetActive(true);
+        credits.gameObject.SetActive(true);
+        camCredits.Priority = 11;
+        
         menu.SetActive(false);
 
     }
+  
 
 }
