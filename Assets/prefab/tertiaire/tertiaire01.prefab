@@ -132,7 +132,7 @@ MonoBehaviour:
     name: Agent P.
     sentences:
     - L'individu que tu cherche est pas loin je crois ...
-    - Il me semble qu'il est sur un des deux ponts
+    - Il me semble qu'il est sur un des trois ponts
   dialogueSanglier:
     name: Agent P.
     sentences:

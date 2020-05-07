@@ -415,7 +415,7 @@ Transform:
   m_Children:
   - {fileID: 113242457}
   m_Father: {fileID: 402009026}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &239568513 stripped
 Light:
@@ -521,7 +521,7 @@ Transform:
   - {fileID: 4066410284944287}
   - {fileID: 4353676741414264}
   m_Father: {fileID: 402009026}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &340492924
 GameObject:
@@ -702,9 +702,9 @@ Transform:
   - {fileID: 775189849}
   - {fileID: 689971517}
   - {fileID: 1581244390}
+  - {fileID: 318124980}
   - {fileID: 223439971}
   - {fileID: 1857004254}
-  - {fileID: 318124980}
   - {fileID: 1051601703}
   - {fileID: 422272970}
   m_Father: {fileID: 0}
@@ -5166,7 +5166,7 @@ Transform:
   - {fileID: 911585574}
   - {fileID: 993555927}
   m_Father: {fileID: 402009026}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1931098743
 GameObject:
