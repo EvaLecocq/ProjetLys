@@ -15,7 +15,8 @@ public class UI_menu : MonoBehaviour
     public GameObject credits;
     public GameObject tab;
     public bool iscredits = false;
-    
+    public GameObject cameraPrefab;
+
    
     // Start is called before the first frame update
     void Start()
@@ -62,7 +63,7 @@ public class UI_menu : MonoBehaviour
     }
     public void StartGame()
     {
-
+        Instantiate(cameraPrefab, new Vector3(0,0,0), Quaternion.identity);
         menu.gameObject.SetActive(false);
         camMenu.Priority = 0;
         herbier.gameObject.SetActive(true);
