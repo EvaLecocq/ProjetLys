@@ -324,7 +324,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 500
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -417,7 +417,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 500
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -515,7 +515,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 500
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c520485e796b2f140be7b775a0ec2c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 75
   target: {fileID: 7335283265648324220}
 --- !u!1001 &7335283266671489546
 PrefabInstance:
