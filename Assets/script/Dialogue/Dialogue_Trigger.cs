@@ -8,6 +8,9 @@ public class Dialogue_Trigger : MonoBehaviour
     public enum animal {  lapin, sanglier, serpent, ratonLaveur, renard, chienChat, cerf };
     public animal type;
 
+    public enum classe { principal, secondaire, tertiaire};
+    public classe statut;
+
     public Dialogue dialogueDebut;
     public Dialogue dialogueLapin;
     public Dialogue dialogueSanglier;
