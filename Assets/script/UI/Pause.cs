@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -36,8 +37,11 @@ public class Pause : MonoBehaviour
                 }
             }
         }
-        
-       
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            BackToMenu();
+        }
+
     }
     public void Quitter()
     {
@@ -46,5 +50,10 @@ public class Pause : MonoBehaviour
     public void Options()
     {
 
+    }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 }
