@@ -5,7 +5,7 @@ using Cinemachine;
 
 public class Dialogue_Trigger : MonoBehaviour
 {
-    public enum animal {  lapin, sanglier, serpent, ratonLaveur, renard, chienChat, cerf };
+    public enum animal {  lapin, sanglier, serpent, ratonLaveur, renard, chienChat, cerf, Course, Cahecache, Soleil, info };
     public animal type;
 
     public enum classe { principal, secondaire, tertiaire};
@@ -25,11 +25,17 @@ public class Dialogue_Trigger : MonoBehaviour
     public Dialogue dialogueQueteNonValide2;
     public Dialogue dialogueQueteNonValide3;
 
+    public Dialogue dialogueQueteCourse;
+    public Dialogue dialogueQueteCacheCache;
+    public Dialogue dialogueQueteSoleil;
+
     public CinemachineVirtualCamera camDialogue;
     public Transform playerPos;
 
     private PlayerMovement player;
     private Outline outliner;
+
+    public queteSecondaire queteSecondaire;
     
 
     public int RatonSpam;
@@ -90,6 +96,21 @@ public class Dialogue_Trigger : MonoBehaviour
             GameManager.s_Singleton.clesDuParc = true;
         }
 
+        ////secondaire
+
+        if (type == Dialogue_Trigger.animal.Course)
+        {
+            queteSecondaire.ActiveQuest();
+        }
+        if (type == Dialogue_Trigger.animal.Cahecache)
+        {
+            queteSecondaire.ActiveQuest();
+        }
+        if (type == Dialogue_Trigger.animal.Soleil)
+        {
+            queteSecondaire.ActiveQuest();
+        }
+
     }
 
 
@@ -121,43 +142,66 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public void StartDialogue()
     {
-        if (GameManager.s_Singleton.principale == GameManager.quete.debut)
+        if(statut == Dialogue_Trigger.classe.principal || statut == Dialogue_Trigger.classe.tertiaire)
         {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
+            if (GameManager.s_Singleton.principale == GameManager.quete.debut)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
+            }
+            if (GameManager.s_Singleton.principale == GameManager.quete.lapin)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSanglier);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.serpent)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.ratonLaveur)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRatonLaveur);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.renard)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueChianChat);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.renard2)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.cerf)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);
+            }
         }
-        if (GameManager.s_Singleton.principale == GameManager.quete.lapin)
+        
+        if(statut == Dialogue_Trigger.classe.secondaire)
         {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSanglier);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.serpent)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.ratonLaveur)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRatonLaveur);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.renard)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueChianChat);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.renard2)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
-        }
-        else if (GameManager.s_Singleton.principale == GameManager.quete.cerf)
-        {
-            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);
-        }
+            if (type == Dialogue_Trigger.animal.Course && queteSecondaire.endQuest == false)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteCourse);
+            }
+            if (type == Dialogue_Trigger.animal.Course && queteSecondaire.endQuest == true)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
+            }
 
+            if (type == Dialogue_Trigger.animal.Cahecache)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteCacheCache);
+            }
+            if (type == Dialogue_Trigger.animal.Soleil)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteSoleil);
+            }
+        }
 
         outliner.enabled = false;
     }

@@ -1,0 +1,289 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &875935850106630095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 875935850106630091}
+  - component: {fileID: 875935850106630094}
+  - component: {fileID: 875935850106630090}
+  - component: {fileID: 3205533222875277036}
+  m_Layer: 0
+  m_Name: course
+  m_TagString: dialogue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &875935850106630091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875935850106630095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.799999, y: -0.34999847, z: -22.389997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 929970710564128625}
+  - {fileID: 7595440183104334859}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &875935850106630094
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875935850106630095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &875935850106630090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875935850106630095}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 7
+  statut: 1
+  dialogueDebut:
+    name: Cerf
+    sentences: []
+  dialogueLapin:
+    name: Cerf
+    sentences: []
+  dialogueSanglier:
+    name: Cerf
+    sentences: []
+  dialogueSerpent:
+    name: Cerf
+    sentences: []
+  dialogueRatonLaveur:
+    name: Cerf
+    sentences: []
+  dialogueRenard:
+    name: Cerf
+    sentences: []
+  dialogueChianChat:
+    name: Cerf
+    sentences: []
+  dialogueRenard2:
+    name: Cerf
+    sentences: []
+  dialogueCerf:
+    name: Cerf
+    sentences:
+    - "Bonjour, toi,\r\nC'est inhabituel de voir un humain dans le parc apr\xE8s sa
+      fermeture,\r Pourquoi m'as-tu appel\xE9 ?"
+    - "Maintenant je comprends, \rtu ne savais pas que le portail \xE9tait ferm\xE9
+      et le lapin t'a dit de venir me trouver."
+    - "Ce qu'il a dit est vrai, je poss\xE8de la cl\xE9 du parc,\r et si je peux te
+      venir en aide, je le fais avec joie !"
+    - "Tiens, prends la cl\xE9 et retourne \xE0 ta maison."
+    - "J'imagine que tu as appris beaucoup de choses pendant que tu me cherchais,\r
+      puisse ces derni\xE8res t'\xEAtre utiles \xE0 l'avenir."
+    - "Allez, ne tardes pas, retourne aupr\xE8s de ta famille."
+  dialogueQueteNonValide:
+    name: Course
+    sentences:
+    - "On a d\xE9j\xE0 fait la course et tu as gagner, je ne veut plus courrir."
+  dialogueQueteNonValide2:
+    name: Renard
+    sentences:
+    - 'ZZzzzz, hein ? heu, quoi ? '
+    - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
+  dialogueQueteNonValide3:
+    name: Renard
+    sentences:
+    - MAIS ...
+    - LAISSES MOI DORMIR !
+  dialogueQueteCourse:
+    name: Course
+    sentences:
+    - Eh tu veut faire la course ?!
+    - Allez allez on fait la course !
+  dialogueQueteCacheCache:
+    name: 
+    sentences: []
+  dialogueQueteSoleil:
+    name: 
+    sentences: []
+  camDialogue: {fileID: 205547570245121467}
+  playerPos: {fileID: 7595440183104334859}
+  queteSecondaire: {fileID: 0}
+  RatonSpam: 0
+  quest1active: 0
+--- !u!114 &3205533222875277036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875935850106630095}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!1 &4616552282890152031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929970710564128625}
+  - component: {fileID: 205547570245121467}
+  m_Layer: 0
+  m_Name: camCerf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929970710564128625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616552282890152031}
+  m_LocalRotation: {x: -0, y: -0.415988, z: -0, w: 0.9093701}
+  m_LocalPosition: {x: 2.06, y: 0.58, z: -3.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8407786039537308954}
+  m_Father: {fileID: 875935850106630091}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -49.163002, z: 0}
+--- !u!114 &205547570245121467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616552282890152031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 0
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 8407786039537308954}
+--- !u!1 &4963860172332640543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7595440183104334859}
+  m_Layer: 0
+  m_Name: pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7595440183104334859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4963860172332640543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: -1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 875935850106630091}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8148755791652401449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8407786039537308954}
+  - component: {fileID: 6639918872698798430}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8407786039537308954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8148755791652401449}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.16041, y: 80.556526, z: 24.467375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 929970710564128625}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6639918872698798430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8148755791652401449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
