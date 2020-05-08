@@ -36,12 +36,13 @@ public class Dialogue_Trigger : MonoBehaviour
     private Outline outliner;
 
     public queteSecondaire queteSecondaire;
-    
+
+    public bool QueteAnimalValide = false;
 
     public int RatonSpam;
 
 
-    public bool quest1active;
+    //public bool quest1active;
 
     private void Start()
     {

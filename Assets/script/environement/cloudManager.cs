@@ -43,15 +43,7 @@ public class cloudManager : MonoBehaviour
     public GameObject[] thunder;
     public float speedSpawn;
 
-    [Header("animaux")]
-    public GameObject lapin;
-    public GameObject sanglier;
-    public GameObject serpent;
-    public GameObject ratonLaveur;
-    public GameObject renard;
-    public GameObject chienChat;
-    public GameObject cerf;
-
+ 
     // Start is called before the first frame update
     void Start()
     {

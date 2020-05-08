@@ -45,6 +45,15 @@ public class GameManager : MonoBehaviour
 
     public bool queteActuelValider = false;
 
+    [Header("animaux")]
+    public GameObject lapin;
+    public GameObject sanglier;
+    public GameObject serpent;
+    public GameObject ratonLaveur;
+    public GameObject renard;
+    public GameObject chienChat;
+    public GameObject cerf;
+
     [Header("fleur")]
     public int Tulipe;
     public int CirseCommun;
