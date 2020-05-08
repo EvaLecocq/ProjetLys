@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: ef9560345a3eb3048aa4574b846bd512
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Althea
+  fontNames:
+  - Althea
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 134d6d011fa243843b1e0b2f8d7fc0c8, type: 3}
+  - {fileID: 12800000, guid: c05e01a4bb1576b479b98aa65e71d169, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
