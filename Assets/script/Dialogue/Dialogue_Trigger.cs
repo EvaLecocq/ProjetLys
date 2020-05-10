@@ -71,7 +71,7 @@ public class Dialogue_Trigger : MonoBehaviour
         {
             GameManager.s_Singleton.QueteFini();
         }
-        if (GameManager.s_Singleton.progression == 2 && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
+        if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == true && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
         {
             GameManager.s_Singleton.QueteFini();
         }
@@ -87,7 +87,7 @@ public class Dialogue_Trigger : MonoBehaviour
         {
             GameManager.s_Singleton.QueteFini();
         }
-        if (GameManager.s_Singleton.progression == 6 && type == Dialogue_Trigger.animal.renard)// + finir quete chien chat
+        if (GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == true && type == Dialogue_Trigger.animal.renard)// + finir quete chien chat
         {
             GameManager.s_Singleton.QueteFini();
         }
@@ -149,34 +149,51 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
             }
-            if (GameManager.s_Singleton.principale == GameManager.quete.lapin)
+
+            if (GameManager.s_Singleton.principale == GameManager.quete.lapin )
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
-            }
-            else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier)
+            }  
+
+            else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier && GameManager.s_Singleton.queteSanglier == true)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSanglier);
             }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier && GameManager.s_Singleton.queteSanglier == false)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
+            }
+
             else if (GameManager.s_Singleton.principale == GameManager.quete.serpent)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
             }
+
             else if (GameManager.s_Singleton.principale == GameManager.quete.ratonLaveur)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRatonLaveur);
             }
+
             else if (GameManager.s_Singleton.principale == GameManager.quete.renard)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard);
             }
-            else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat)
+
+            else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat && GameManager.s_Singleton.queteChien == true)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueChianChat);
             }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat && GameManager.s_Singleton.queteChien == false)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
+            }
+
+
             else if (GameManager.s_Singleton.principale == GameManager.quete.renard2)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
             }
+
             else if (GameManager.s_Singleton.principale == GameManager.quete.cerf)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);

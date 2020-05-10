@@ -42,17 +42,15 @@ public class GameManager : MonoBehaviour
 
 
     public bool clesDuParc = false;
+    public bool queteSanglier = false;
+    public bool queteRaton = false;
+    public bool queteChien = false;
+
 
     public bool queteActuelValider = false;
 
-    [Header("animaux")]
-    public GameObject lapin;
-    public GameObject sanglier;
-    public GameObject serpent;
-    public GameObject ratonLaveur;
-    public GameObject renard;
-    public GameObject chienChat;
-    public GameObject cerf;
+
+    
 
     [Header("fleur")]
     public int Tulipe;
@@ -104,7 +102,9 @@ public class GameManager : MonoBehaviour
 
         UpdateDayWeek();
 
-        if(queteActuelValider)
+        UpdateQuest();
+
+        if (queteActuelValider)
         {
             queteActuelValider = false;
             ProgressionPlus();
@@ -120,6 +120,18 @@ public class GameManager : MonoBehaviour
     public void QueteFini()
     {
         queteActuelValider = true;
+    }
+
+    public void UpdateQuest()
+    {
+        if(graineGland >= 1)
+        {
+            queteSanglier = true;
+        }
+        if (HelleboreOrient >= 1)
+        {
+            queteChien = true;
+        }
     }
 
     public void EtatQueteEnum()
