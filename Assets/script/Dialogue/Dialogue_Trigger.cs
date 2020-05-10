@@ -39,7 +39,7 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public bool QueteAnimalValide = false;
 
-    public int RatonSpam;
+    
 
 
     //public bool quest1active;
@@ -70,15 +70,23 @@ public class Dialogue_Trigger : MonoBehaviour
         if (GameManager.s_Singleton.progression == 1 && type == Dialogue_Trigger.animal.sanglier)
         {
             GameManager.s_Singleton.QueteFini();
+            
         }
         if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == true && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
         {
             GameManager.s_Singleton.QueteFini();
+            GameManager.s_Singleton.AncolieDuCanada++;
         }
-        if (GameManager.s_Singleton.progression == 3 && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
+
+        if (GameManager.s_Singleton.progression == 3 && GameManager.s_Singleton.queteRaton == true && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
         {
             GameManager.s_Singleton.QueteFini();
         }
+        if (GameManager.s_Singleton.progression == 3 && GameManager.s_Singleton.queteRaton == false && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
+        {
+            GameManager.s_Singleton.RatonSpam++;
+        }
+
         if (GameManager.s_Singleton.progression == 4 && type == Dialogue_Trigger.animal.renard)
         {
             GameManager.s_Singleton.QueteFini();
@@ -164,9 +172,21 @@ public class Dialogue_Trigger : MonoBehaviour
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
             }
 
-            else if (GameManager.s_Singleton.principale == GameManager.quete.serpent)
+            else if (GameManager.s_Singleton.principale == GameManager.quete.serpent && GameManager.s_Singleton.queteRaton == true)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.serpent && GameManager.s_Singleton.queteRaton == false && GameManager.s_Singleton.RatonSpam == 0)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.serpent && GameManager.s_Singleton.queteRaton == false && GameManager.s_Singleton.RatonSpam == 1)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide2);
+            }
+            else if (GameManager.s_Singleton.principale == GameManager.quete.serpent && GameManager.s_Singleton.queteRaton == false && GameManager.s_Singleton.RatonSpam == 2)
+            {
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide3);
             }
 
             else if (GameManager.s_Singleton.principale == GameManager.quete.ratonLaveur)

@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public bool clesDuParc = false;
     public bool queteSanglier = false;
     public bool queteRaton = false;
+    public int RatonSpam;
     public bool queteChien = false;
 
 
@@ -131,6 +132,10 @@ public class GameManager : MonoBehaviour
         if (HelleboreOrient >= 1)
         {
             queteChien = true;
+        }
+        if (RatonSpam >= 2)
+        {
+            queteRaton = true;
         }
     }
 
