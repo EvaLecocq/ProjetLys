@@ -7,7 +7,6 @@ public class UI_Herbier : MonoBehaviour
 {
     
     public GameObject herbier;
-    public GameObject inventaire;
     public GameObject tab;
 
     public bool openhebier = false;
@@ -56,48 +55,18 @@ public class UI_Herbier : MonoBehaviour
                
             }
         }
-        if(openInv == false)
-        {
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                if(openhebier == true)
-                {
-                    inventaire.gameObject.SetActive(false);
-                    openInv = false;
-                }
-                else
-                {
-                    inventaire.gameObject.SetActive(true);
-                    openInv = true;
-                    tab.gameObject.SetActive(false);
-                }
-               
-            }
-          
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                if(openInv == true)
-                {
-                    inventaire.gameObject.SetActive(false);
-                    openInv = false;
-                    tab.gameObject.SetActive(true);
-                }
-            }
-        }
+        
      
     }
     public void OpenHerbier()
     {
         herbier.gameObject.SetActive(true);
-        inventaire.gameObject.SetActive(true);
+        
        
     }
     public void CloseHerbier()
     {
         herbier.gameObject.SetActive(false);
-        inventaire.gameObject.SetActive(false);
+       
     }
 }
