@@ -13,7 +13,6 @@ public class UI_menu : MonoBehaviour
     public CinemachineVirtualCamera camCredits;
     public GameObject herbier;
     public GameObject credits;
-    public GameObject tab;
     public bool iscredits = false;
    // public GameObject cameraPrefab;
 
@@ -64,7 +63,7 @@ public class UI_menu : MonoBehaviour
         menu.gameObject.SetActive(false);
         camMenu.Priority = 0;
         herbier.gameObject.SetActive(true);
-        tab.gameObject.SetActive(true);
+     
     }
     public void Quitter()
     {

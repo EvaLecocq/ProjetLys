@@ -5,14 +5,11 @@ using TMPro;
 
 public class UI_Herbier : MonoBehaviour
 {
-    
+
     public GameObject herbier;
-    public GameObject tab;
-
+    public TextMeshProUGUI tab;
     public bool openhebier = false;
-    public bool openInv = false;
     public Transform playerPos;
-
     private PlayerMovement player;
 
     // Start is called before the first frame update
@@ -28,18 +25,12 @@ public class UI_Herbier : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (openInv == true)
-                {
-                    herbier.gameObject.SetActive(false);
-                    openhebier = false
-;
-                }
-                else
-                {
-                    herbier.gameObject.SetActive(true);
-                    openhebier = true;
-                    Time.timeScale = 0f;
-                }
+                herbier.gameObject.SetActive(true);
+               
+                openhebier = true;
+                player.enabled = false;
+                //player.transform.position = playerPos.position;
+               // player.transform.rotation = playerPos.rotation;
             }
         }
         else
@@ -50,7 +41,7 @@ public class UI_Herbier : MonoBehaviour
                 {
                     herbier.gameObject.SetActive(false);
                     openhebier = false;
-                    Time.timeScale = 1f;
+                    player.enabled = true;
                 }
                
             }
