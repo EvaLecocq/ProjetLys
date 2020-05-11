@@ -27,6 +27,15 @@ public class AnimalManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.s_Singleton.progression >= 5)
+        {
+            lapin.SetActive(false);
+            chienChat.transform.position = chienChatSpot.position;
+        }
+        if (GameManager.s_Singleton.progression >= 6)
+        {
+            renard.transform.position = renardSpot.position;
+        }
         
     }
 }

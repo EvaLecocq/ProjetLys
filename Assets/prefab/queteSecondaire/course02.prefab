@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &242542458367319499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497060585409231352}
+  - component: {fileID: 3345653542322564540}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &497060585409231352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242542458367319499}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.16041, y: 80.556526, z: 24.467375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9127800615131900819}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3345653542322564540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242542458367319499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3628446595304490173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9127800615131900819}
+  - component: {fileID: 8111507732421515609}
+  m_Layer: 0
+  m_Name: camCerf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9127800615131900819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3628446595304490173}
+  m_LocalRotation: {x: -0, y: -0.415988, z: -0, w: 0.9093701}
+  m_LocalPosition: {x: 2.06, y: 0.58, z: -3.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 497060585409231352}
+  m_Father: {fileID: 9109777232206005033}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -49.163002, z: 0}
+--- !u!114 &8111507732421515609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3628446595304490173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 0
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 497060585409231352}
+--- !u!1 &3938593199277114877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955672443999699177}
+  m_Layer: 0
+  m_Name: pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1955672443999699177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938593199277114877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: -1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9109777232206005033}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9109777232206005037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9109777232206005033}
+  - component: {fileID: 9109777232206005036}
+  - component: {fileID: 9109777232206005032}
+  - component: {fileID: 6789117445979736590}
+  m_Layer: 0
+  m_Name: course02
+  m_TagString: dialogue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9109777232206005033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109777232206005037}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.0279636, y: -0.55999756, z: 2.710001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9127800615131900819}
+  - {fileID: 1955672443999699177}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &9109777232206005036
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109777232206005037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9109777232206005032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109777232206005037}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 7
+  statut: 1
+  dialogueDebut:
+    name: Cerf
+    sentences: []
+  dialogueLapin:
+    name: Cerf
+    sentences: []
+  dialogueSanglier:
+    name: Cerf
+    sentences: []
+  dialogueSerpent:
+    name: Cerf
+    sentences: []
+  dialogueRatonLaveur:
+    name: Cerf
+    sentences: []
+  dialogueRenard:
+    name: Cerf
+    sentences: []
+  dialogueChianChat:
+    name: Cerf
+    sentences: []
+  dialogueRenard2:
+    name: Cerf
+    sentences: []
+  dialogueCerf:
+    name: Cerf
+    sentences:
+    - "Bonjour, toi,\r\nC'est inhabituel de voir un humain dans le parc apr\xE8s sa
+      fermeture,\r Pourquoi m'as-tu appel\xE9 ?"
+    - "Maintenant je comprends, \rtu ne savais pas que le portail \xE9tait ferm\xE9
+      et le lapin t'a dit de venir me trouver."
+    - "Ce qu'il a dit est vrai, je poss\xE8de la cl\xE9 du parc,\r et si je peux te
+      venir en aide, je le fais avec joie !"
+    - "Tiens, prends la cl\xE9 et retourne \xE0 ta maison."
+    - "J'imagine que tu as appris beaucoup de choses pendant que tu me cherchais,\r
+      puisse ces derni\xE8res t'\xEAtre utiles \xE0 l'avenir."
+    - "Allez, ne tardes pas, retourne aupr\xE8s de ta famille."
+  dialogueQueteNonValide:
+    name: Course
+    sentences:
+    - "La course est fini champion, il y a s\xFBrement d'autres d\xE9fis ailleurs."
+  dialogueQueteNonValide2:
+    name: Renard
+    sentences:
+    - 'ZZzzzz, hein ? heu, quoi ? '
+    - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
+  dialogueQueteNonValide3:
+    name: Renard
+    sentences:
+    - MAIS ...
+    - LAISSES MOI DORMIR !
+  dialogueQueteCourse:
+    name: Course
+    sentences:
+    - Salut toi tu veut courrir ?
+    - Dans ce cas c'est parti, je te previent je suis imbattable.
+  dialogueQueteCacheCache:
+    name: 
+    sentences: []
+  dialogueQueteSoleil:
+    name: 
+    sentences: []
+  camDialogue: {fileID: 8111507732421515609}
+  playerPos: {fileID: 1955672443999699177}
+  queteSecondaire: {fileID: 0}
+  QueteAnimalValide: 0
+--- !u!114 &6789117445979736590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109777232206005037}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

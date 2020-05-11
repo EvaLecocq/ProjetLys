@@ -6,16 +6,30 @@ using UnityEngine.SceneManagement;
 public class SceneTP : MonoBehaviour
 {
     public int indexTP;
-   
 
-    private void OnTriggerEnter(Collider other)
+    private Transform cible;
+    public float distanceOpen;
+
+    private void Start()
     {
-        if (other.CompareTag("Player"))
+        cible = PlayerMovement.FindObjectOfType<PlayerMovement>().GetComponent<Transform>();
+    }
+    private void Update()
+    {
+        distance();
+
+        if (distance() < distanceOpen && GameManager.s_Singleton.clesDuParc)
         {
-            
             StartCoroutine(teleporteur());
-           
         }
+    }
+
+  
+    public float distance()
+    {
+        float dist = Vector3.Distance(cible.transform.position, transform.position);
+
+        return dist;
     }
 
     public IEnumerator teleporteur()
