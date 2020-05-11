@@ -7,13 +7,14 @@ public class portail : MonoBehaviour
 
     private Animator anim;
 
-    private GameObject cible;
+    private Transform cible;
     public float distanceOpen;
 
     // Start is called before the first frame update
     void Start()
     {
-        cible = PlayerMovement.FindObjectOfType<PlayerMovement>().GetComponent<GameObject>();
+        cible = PlayerMovement.FindObjectOfType<PlayerMovement>().GetComponent<Transform>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,9 +22,9 @@ public class portail : MonoBehaviour
     {
         distance();
 
-        if (distance() < distanceOpen)
+        if (distance() < distanceOpen && GameManager.s_Singleton.clesDuParc)
         {
-            //ouvrir le portail
+            anim.SetBool("active", true);
         }
     }
 
