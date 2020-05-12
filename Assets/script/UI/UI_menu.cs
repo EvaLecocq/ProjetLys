@@ -13,14 +13,17 @@ public class UI_menu : MonoBehaviour
     public CinemachineVirtualCamera camCredits;
     public GameObject herbier;
     public GameObject credits;
+    public GameObject tab;
     public bool iscredits = false;
-   // public GameObject cameraPrefab;
+    public Pause pause;
+    // public GameObject cameraPrefab;
+    
 
    
     // Start is called before the first frame update
     void Start()
     {
-        
+        pause = GameObject.Find("Canvas").GetComponent<Pause>();
     }
 
     // Update is called once per frame
@@ -28,7 +31,9 @@ public class UI_menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
+            
             StartGame();
+            pause.pauseAcep = true;
         }
         if (iscredits == false)
         {
@@ -63,7 +68,7 @@ public class UI_menu : MonoBehaviour
         menu.gameObject.SetActive(false);
         camMenu.Priority = 0;
         herbier.gameObject.SetActive(true);
-     
+        tab.gameObject.SetActive(true);
     }
     public void Quitter()
     {
@@ -86,5 +91,6 @@ public class UI_menu : MonoBehaviour
 
         menu.SetActive(true);
     }
+
    
 }

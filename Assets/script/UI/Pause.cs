@@ -7,6 +7,8 @@ public class Pause : MonoBehaviour
 {
     public GameObject pause;
     public bool ispause = false;
+    public bool pauseAcep = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,32 +17,36 @@ public class Pause : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if(ispause == false)
+    { 
+        if(pauseAcep == true)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (ispause == false)
             {
-                pause.gameObject.SetActive(true);
-                ispause = true;
-                Time.timeScale = 0f;
-            }
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if(ispause == true)
+                if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    pause.gameObject.SetActive(false);
-                    ispause = false;
-                    Time.timeScale = 1f;
+                    pause.gameObject.SetActive(true);
+                    ispause = true;
+                    Time.timeScale = 0f;
                 }
             }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    if (ispause == true)
+                    {
+                        pause.gameObject.SetActive(false);
+                        ispause = false;
+                        Time.timeScale = 1f;
+                    }
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                BackToMenu();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            BackToMenu();
-        }
+        
 
     }
     public void Quitter()
@@ -55,5 +61,9 @@ public class Pause : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
+    }
+    public void PauseActivate()
+    {
+        pauseAcep = true;
     }
 }
