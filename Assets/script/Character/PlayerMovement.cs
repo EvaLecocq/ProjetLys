@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public MouseLook look;
     public CinemachineVirtualCamera cam;
     public CinemachineVirtualCamera camFPV;
+    public Transform camRoot;
     public bool isBanc = false;
    
     public KeyCode runKey;
@@ -138,6 +139,34 @@ public class PlayerMovement : MonoBehaviour
                 moveDirection.y -= gravity * Time.deltaTime;
             
                 Cc.Move(moveDirection * Time.deltaTime);
+
+                
+                if (Input.GetKey(runKey))//course
+                {
+                    speed = runSpeed;
+                }
+                else
+                {
+                    speed = defaultSpeed;
+                }
+
+                if (Input.GetKey(frontWalk))//model front cam
+                {
+                    model.transform.rotation = camRoot.rotation;
+                    
+                }
+                if (Input.GetKey(backWalk))//model arriere
+                {
+                    model.transform.rotation = camRoot.rotation;
+                }
+                if (Input.GetKeyUp(leftWalk))//flip
+                {
+                    
+                }
+                if (Input.GetKeyUp(rightWalk))//flip
+                {
+
+                }
             }
 
             

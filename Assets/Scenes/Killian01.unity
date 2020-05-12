@@ -832,6 +832,7 @@ MonoBehaviour:
   look: {fileID: 1111944607}
   cam: {fileID: 1111944605}
   camFPV: {fileID: 1027744642}
+  camRoot: {fileID: 0}
   isBanc: 0
   runKey: 304
   backWalk: 115
