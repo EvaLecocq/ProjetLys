@@ -5,7 +5,8 @@ using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    public bool useBaseControl = true;
+    public bool useControl01 = true;
     public GameObject model;
     private Vector3 backVector = new Vector3(0, 180, 0);
     public MouseLook look;
@@ -47,69 +48,101 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        defaultSpeed = speed;
+        if(useBaseControl)
+        {
+            defaultSpeed = speed;
 
-        rb = GetComponent<Rigidbody>();
-        source = GetComponent<AudioSource>();
+            rb = GetComponent<Rigidbody>();
+            source = GetComponent<AudioSource>();
 
-        Cc = GetComponent<CharacterController>();
+            Cc = GetComponent<CharacterController>();
+        }
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
-        if (Cc.isGrounded)
+        if (useBaseControl)
         {
-            moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
-
-            if (Input.GetButtonDown("Jump"))
+            if(useControl01)
             {
-                moveDirection.y = jumpSpeed;
+                if (Cc.isGrounded)
+                {
+                    moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
+                    moveDirection = transform.TransformDirection(moveDirection);
+                    moveDirection *= speed;
+
+                    if (Input.GetButtonDown("Jump"))
+                    {
+                        moveDirection.y = jumpSpeed;
+                    }
+                }
+
+                moveDirection.y -= gravity * Time.deltaTime;
+
+                transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speed * speedRotation * sens);
+
+                Cc.Move(moveDirection * Time.deltaTime);
+
+                /////////////////////////////////////////////////
+
+                if (Input.GetKey(runKey))//course
+                {
+                    speed = runSpeed;
+                }
+                else
+                {
+                    speed = defaultSpeed;
+                }
+
+                if (Input.GetKey(frontWalk))//model front cam
+                {
+                    model.transform.localEulerAngles = Vector3.zero;
+                    sens = 1;
+
+                    look.cameraLibre = false;
+
+                    StopAllCoroutines();
+                }
+                if (Input.GetKey(backWalk))//model arriere
+                {
+                    model.transform.localEulerAngles = backVector;
+                    sens = -1;
+
+                    look.cameraLibre = false;
+
+                    StopAllCoroutines();
+                }
+                if (Input.GetKeyUp(backWalk))//flip
+                {
+                    StartCoroutine(FlipCharacter());
+                }
+
             }
+            else
+            {
+                if (Cc.isGrounded)
+                {
+                    moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                    moveDirection = Camera.main.transform.TransformDirection(moveDirection);
+                    moveDirection *= speed;
+
+                    if (Input.GetButtonDown("Jump"))
+                    {
+                        moveDirection.y = jumpSpeed;
+                    }
+                }
+                
+
+                moveDirection.y -= gravity * Time.deltaTime;
+            
+                Cc.Move(moveDirection * Time.deltaTime);
+            }
+
+            
+
         }
-
-        moveDirection.y -= gravity * Time.deltaTime;
-
-        transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speed * speedRotation * sens);
-
-        Cc.Move(moveDirection * Time.deltaTime);
-
-        if(Input.GetKey(runKey))
-        {
-            speed = runSpeed;
-        }
-        else
-        {
-            speed = defaultSpeed;
-        }
-
-        if(Input.GetKey(frontWalk))
-        {
-            model.transform.localEulerAngles = Vector3.zero;
-            sens = 1;
-
-            look.cameraLibre = false;
-
-            StopAllCoroutines();
-        }
-        if (Input.GetKey(backWalk))
-        {
-            model.transform.localEulerAngles = backVector;
-            sens = -1;
-
-            look.cameraLibre = false;
-
-            StopAllCoroutines();
-        }
-        if(Input.GetKeyUp(backWalk))
-        {
-            StartCoroutine(FlipCharacter());
-        }
-
 
         if (item != null && item.isPick)//place l item ds la main
         {
