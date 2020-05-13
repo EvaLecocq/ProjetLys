@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public CinemachineVirtualCamera camFPV;
     public Transform camRoot;
     public bool isBanc = false;
+    public bool isTalk = false;
    
     public KeyCode runKey;
     public KeyCode backWalk;
@@ -123,50 +124,63 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (Cc.isGrounded)
+                if(isTalk == false)
                 {
-                    moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-                    moveDirection = Camera.main.transform.TransformDirection(moveDirection);
-                    moveDirection *= speed;
-
-                    if (Input.GetButtonDown("Jump"))
+                    if (Cc.isGrounded)
                     {
-                        moveDirection.y = jumpSpeed;
+                        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                        moveDirection = Camera.main.transform.TransformDirection(moveDirection);
+                        moveDirection *= speed;
+
+                        if (Input.GetButtonDown("Jump"))
+                        {
+                            moveDirection.y = jumpSpeed;
+                        }
                     }
-                }
-                
 
-                moveDirection.y -= gravity * Time.deltaTime;
-            
-                Cc.Move(moveDirection * Time.deltaTime);
 
-                
-                if (Input.GetKey(runKey))//course
-                {
-                    speed = runSpeed;
+                    moveDirection.y -= gravity * Time.deltaTime;
+
+                    Cc.Move(moveDirection * Time.deltaTime);
+
+
+                    if (Input.GetKey(runKey))//course
+                    {
+                        speed = runSpeed;
+                    }
+                    else
+                    {
+                        speed = defaultSpeed;
+                    }
+
+                    if (Input.GetKey(frontWalk))//model front cam
+                    {
+                        model.transform.rotation = camRoot.rotation;
+
+                    }
+                    if (Input.GetKey(backWalk))//model arriere
+                    {
+                        model.transform.rotation = camRoot.rotation;
+                    }
+                    if (Input.GetKeyUp(leftWalk))//flip
+                    {
+
+                    }
+                    if (Input.GetKeyUp(rightWalk))//flip
+                    {
+
+                    }
+
+
+                    look.stop = false;
                 }
                 else
                 {
-                    speed = defaultSpeed;
-                }
+                    look.stop = true;
 
-                if (Input.GetKey(frontWalk))//model front cam
-                {
-                    model.transform.rotation = camRoot.rotation;
-                    
+                    model.transform.rotation = new Quaternion(0,0,0,0);
                 }
-                if (Input.GetKey(backWalk))//model arriere
-                {
-                    model.transform.rotation = camRoot.rotation;
-                }
-                if (Input.GetKeyUp(leftWalk))//flip
-                {
-                    
-                }
-                if (Input.GetKeyUp(rightWalk))//flip
-                {
-
-                }
+               
             }
 
             

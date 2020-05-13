@@ -207,11 +207,12 @@ MonoBehaviour:
   useBaseControl: 1
   useControl01: 0
   model: {fileID: 1652192495634574083}
-  look: {fileID: 7335283266662036297}
+  look: {fileID: 7725333039120189942}
   cam: {fileID: 7335283266662036298}
   camFPV: {fileID: 7335283266882485206}
   camRoot: {fileID: 761984767239561156}
   isBanc: 0
+  isTalk: 0
   runKey: 304
   backWalk: 115
   frontWalk: 122
@@ -425,6 +426,7 @@ MonoBehaviour:
   freeLockMouseSensitive: 0.5
   useControl01: 1
   mouseSensitivity: 100
+  stop: 0
   camTPV: {fileID: 7335283266662036298}
   camFreeLook: {fileID: 1753233514309619639}
   camFPV: {fileID: 7335283266882485206}
@@ -740,6 +742,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.98644906
       objectReference: {fileID: 0}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.44
+      objectReference: {fileID: 0}
     - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: lookFree
@@ -834,3 +841,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8487030806666640931}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7725333039120189942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+    type: 3}
+  m_PrefabInstance: {fileID: 8487030806666640931}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404169546146035495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a70aa85b52d7d949a85903a348991d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

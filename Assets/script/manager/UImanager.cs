@@ -17,6 +17,10 @@ public class UImanager : MonoBehaviour
     private MouseLook mouseC;
 
     [Header("herbier")]
+    public GameObject dialogue_UI;
+    public bool dialogueActive = false;
+
+    [Header("herbier")]
     public GameObject herbier;
     public TextMeshProUGUI tab;
     public bool openherbier = false;
@@ -78,33 +82,57 @@ public class UImanager : MonoBehaviour
 
             }
         }
+
+
+        //dialogue
+        if(dialogue_UI.activeInHierarchy)
+        {
+            dialogueActive = true;
+
+        }
+        else
+        {
+            dialogueActive = false;
+        }
       
 
 
         //herbier
-        if (openherbier == false && ispause == false && isMenu == false)
+        if(dialogueActive == false)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (openherbier == false && ispause == false && isMenu == false)
             {
-                herbier.gameObject.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    herbier.gameObject.SetActive(true);
 
-                openherbier = true;
-                player.enabled = false;
-                UIinfo.SetActive(false);
+                    openherbier = true;
+                    player.isTalk = true;
+                    UIinfo.SetActive(false);
+                    herbierIcon.SetActive(false);
+                }
             }
-        }
-        else if (openherbier == true)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
+            else if (openherbier == true)
             {
-               
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+
                     herbier.gameObject.SetActive(false);
                     openherbier = false;
-                    player.enabled = true;
+                    player.isTalk = false;
 
-                UIinfo.SetActive(true);
+                    UIinfo.SetActive(true);
+                    herbierIcon.SetActive(true);
+                }
             }
         }
+        else
+        {
+
+            herbier.gameObject.SetActive(false);
+            openherbier = false;
+        }
+        
 
         //menu
         if(menu.activeInHierarchy)

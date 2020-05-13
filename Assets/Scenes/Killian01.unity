@@ -834,6 +834,7 @@ MonoBehaviour:
   camFPV: {fileID: 1027744642}
   camRoot: {fileID: 0}
   isBanc: 0
+  isTalk: 0
   runKey: 304
   backWalk: 115
   frontWalk: 122

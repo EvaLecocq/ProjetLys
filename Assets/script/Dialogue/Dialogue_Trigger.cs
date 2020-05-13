@@ -127,7 +127,7 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         FindObjectOfType<Dialogue_Manager>().dialogueActive = true;
 
-        player.enabled = false;
+        player.isTalk = true;
 
         player.transform.position = playerPos.position;
         player.transform.rotation = playerPos.rotation;
@@ -249,7 +249,7 @@ public class Dialogue_Trigger : MonoBehaviour
         FindObjectOfType<Dialogue_Manager>().dialogueActive = false;
         FindObjectOfType<Dialogue_Manager>().EndDialogue();
         
-        player.enabled = true;
+        player.isTalk = false;
         camDialogue.Priority = 0;
 
         //Debug.Log(camDialogue.Priority);

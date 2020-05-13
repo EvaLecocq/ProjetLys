@@ -28,6 +28,7 @@ public class MouseLook : MonoBehaviour
     float xRotation = 0f;
     float yRotation = 0f;
 
+    public bool stop = false;
 
     public CinemachineVirtualCamera camTPV;
     public CinemachineVirtualCamera camFreeLook;
@@ -122,23 +123,27 @@ public class MouseLook : MonoBehaviour
         }
         else
         {
-            float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            if(stop == false)
+            {
+                float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+                float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
 
 
-            xRotation -= MouseY;
-            yRotation -= MouseX;
-            xRotation = Mathf.Clamp(xRotation, -22f, 20f);//rotation max
-            yRotation = Mathf.Clamp(yRotation, -90f, 90f);
+                xRotation -= MouseY;
+                yRotation -= MouseX;
+                xRotation = Mathf.Clamp(xRotation, -22f, 20f);//rotation max
+                yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
 
-            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-            target.Rotate(Vector3.up * MouseX);
-            //transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+                transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+                target.Rotate(Vector3.up * MouseX);
+                //transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+
+            }
 
 
-          
+
         }
     }
 
