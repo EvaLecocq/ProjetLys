@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 972182275053724875}
   - component: {fileID: 972182275053724874}
   - component: {fileID: 972182275053724873}
+  - component: {fileID: 2931294078174399415}
   m_Layer: 0
   m_Name: animal
   m_TagString: Untagged
@@ -382,6 +383,24 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2931294078174399415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972182275053724872}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &972182275576916234
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +496,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 972182274764548005}
     m_Modifications:
+    - target: {fileID: 9109777232206005032, guid: d7d2fced6f57e0b438a5860a7b67ab86,
+        type: 3}
+      propertyPath: outliner
+      value: 
+      objectReference: {fileID: 2931294078174399415}
     - target: {fileID: 9109777232206005032, guid: d7d2fced6f57e0b438a5860a7b67ab86,
         type: 3}
       propertyPath: queteSecondaire

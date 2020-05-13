@@ -33,7 +33,8 @@ public class Dialogue_Trigger : MonoBehaviour
     public Transform playerPos;
 
     private PlayerMovement player;
-    private Outline outliner;
+    public Outline outliner;
+    public bool autoSelect = true;
     public GameObject interactionIconDialogue;
 
     public queteSecondaire queteSecondaire;
@@ -47,7 +48,11 @@ public class Dialogue_Trigger : MonoBehaviour
 
     private void Start()
     {
-        outliner = GetComponent<Outline>();
+        if(autoSelect)
+        {
+            outliner = GetComponent<Outline>();
+        }
+        
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
     }
 
