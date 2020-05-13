@@ -6,6 +6,7 @@ public class mouseLook02 : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
     float xRotation = 0f;
+    float yRotation = 0f;
     public Transform target;
 
     public bool lockerCam = true;
@@ -25,7 +26,9 @@ public class mouseLook02 : MonoBehaviour
 
 
         xRotation -= MouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        yRotation -= MouseX;
+        xRotation = Mathf.Clamp(xRotation, -22f, 20f);//rotation max
+        yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);

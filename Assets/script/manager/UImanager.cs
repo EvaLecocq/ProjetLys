@@ -155,7 +155,7 @@ public class UImanager : MonoBehaviour
         
 
         //menu
-        if(menu.activeInHierarchy)
+        if(menu.activeInHierarchy || credits.activeInHierarchy)
         {
             mouseC.lockerCam = false;
             UIinfo.SetActive(false);

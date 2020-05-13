@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class banc : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class banc : MonoBehaviour
     private PlayerMovement player;
 
     public Transform pos;
+    public CinemachineVirtualCamera camBanc;
+    public mouseLook02 mouse;
     public bool isBanc = false;
     public KeyCode interactionKey;
 
@@ -43,25 +46,17 @@ public class banc : MonoBehaviour
 
     public void EnterBanc()
     {
-       
 
         isBanc = true;
 
-        player.camFPV.Priority = 10;
-        
-        player.transform.position = pos.position;
-        player.transform.rotation = pos.rotation;
-
-        player.enabled = false;
+       
     }
 
     public void ExitBanc()
     {
         isBanc = false;
 
-        player.enabled = true;
-
-        player.camFPV.Priority = 0;
+       
         
     }
 }
