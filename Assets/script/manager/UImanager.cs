@@ -22,6 +22,7 @@ public class UImanager : MonoBehaviour
 
     [Header("herbier")]
     public GameObject herbier;
+    public int mapIndex;
     public TextMeshProUGUI tab;
     public bool openherbier = false;
     public Transform playerPos;
@@ -94,12 +95,15 @@ public class UImanager : MonoBehaviour
         {
             dialogueActive = false;
         }
-      
+
 
 
         //herbier
-        if(dialogueActive == false)
+
+        if (dialogueActive == false)
         {
+           
+
             if (openherbier == false && ispause == false && isMenu == false)
             {
                 if (Input.GetKeyDown(KeyCode.F))
@@ -110,11 +114,26 @@ public class UImanager : MonoBehaviour
                     player.isTalk = true;
                     UIinfo.SetActive(false);
                     herbierIcon.SetActive(false);
+
+                    herbier.GetComponentInChildren<BookPro>().currentPaper = 0;
+                    herbier.GetComponentInChildren<BookPro>().UpdatePages();
+                }
+                if (Input.GetKeyDown(KeyCode.M))
+                {
+                    herbier.gameObject.SetActive(true);
+
+                    openherbier = true;
+                    player.isTalk = true;
+                    UIinfo.SetActive(false);
+                    herbierIcon.SetActive(false);
+
+                    herbier.GetComponentInChildren<BookPro>().currentPaper = mapIndex;
+                    herbier.GetComponentInChildren<BookPro>().UpdatePages();
                 }
             }
             else if (openherbier == true)
             {
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.M))
                 {
 
                     herbier.gameObject.SetActive(false);
@@ -124,6 +143,7 @@ public class UImanager : MonoBehaviour
                     UIinfo.SetActive(true);
                     herbierIcon.SetActive(true);
                 }
+                
             }
         }
         else
