@@ -7,6 +7,7 @@ public class banc : MonoBehaviour
 {
 
     private Outline outliner;
+    public GameObject interactionIconBanc;
     private PlayerMovement player;
 
     public Transform pos;
@@ -27,7 +28,7 @@ public class banc : MonoBehaviour
         
          if (Input.GetKeyDown(interactionKey) && isBanc)
         {
-           // ExitBanc();
+           ExitBanc();
         }
     }
 
@@ -36,11 +37,13 @@ public class banc : MonoBehaviour
     public void ActiveOutline()
     {
         outliner.enabled = true;
+        interactionIconBanc.SetActive(true);
     }
 
     public void DesactiveOutline()
     {
         outliner.enabled = false;
+        interactionIconBanc.SetActive(false);
     }
 
 
@@ -48,15 +51,22 @@ public class banc : MonoBehaviour
     {
 
         isBanc = true;
+        player.isTalk = true;
 
-       
+        player.gameObject.transform.position = pos.position;
+        player.gameObject.transform.rotation = pos.rotation;
+
+        DesactiveOutline();
+
+        camBanc.Priority = 20;
+
     }
 
     public void ExitBanc()
     {
         isBanc = false;
+        player.isTalk = false;
 
-       
-        
+        camBanc.Priority = 0;
     }
 }

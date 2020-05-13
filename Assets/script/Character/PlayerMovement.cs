@@ -238,6 +238,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 
                 other.GetComponent<Dialogue_Trigger>().EventDialogue();
+                Debug.Log(other);
             }
         }
         else if(other.CompareTag("dialogue"))
@@ -259,9 +260,12 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
-        else if(other.CompareTag("banc"))
+        else if(other.CompareTag("banc") )
         {
-            other.GetComponent<banc>().ActiveOutline();
+            if (other.GetComponent<banc>().isBanc == false)
+            {
+                other.GetComponent<banc>().ActiveOutline();
+            }
         }
         
     }
