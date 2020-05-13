@@ -228,19 +228,25 @@ MonoBehaviour:
     - "J'imagine que tu as appris beaucoup de choses pendant que tu me cherchais,\r
       puisse ces derni\xE8res t'\xEAtre utiles \xE0 l'avenir."
     - "Allez, ne tardes pas, retourne aupr\xE8s de ta famille."
+  dialogueQueteNonValideSanglier:
+    name: Cerf
+    sentences: []
   dialogueQueteNonValide:
     name: Cerf
     sentences: []
   dialogueQueteNonValide2:
-    name: Renard
+    name: Cerf
     sentences:
     - 'ZZzzzz, hein ? heu, quoi ? '
     - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
   dialogueQueteNonValide3:
-    name: Renard
+    name: Cerf
     sentences:
     - MAIS ...
     - LAISSES MOI DORMIR !
+  dialogueQueteNonValideChien:
+    name: Cerf
+    sentences: []
   dialogueQueteCourse:
     name: 
     sentences: []

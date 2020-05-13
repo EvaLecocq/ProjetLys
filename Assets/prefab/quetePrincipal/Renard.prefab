@@ -453,21 +453,27 @@ MonoBehaviour:
     - "Maintenant que tu as rencontr\xE9 le cerf, je te sugg\xE8re de partir petit
       \xEAtre ..."
     - Ta famille t'attend.
+  dialogueQueteNonValideSanglier:
+    name: Renard
+    sentences:
+    - "Je suis occup\xE9 va jouer ailleur."
   dialogueQueteNonValide:
+    name: Renard
+    sentences:
+    - "Je suis occup\xE9 va jouer ailleur."
+  dialogueQueteNonValide2:
+    name: Renard
+    sentences:
+    - "Je suis occup\xE9 va jouer ailleur."
+  dialogueQueteNonValide3:
+    name: Renard
+    sentences:
+    - "Je suis occup\xE9 va jouer ailleur."
+  dialogueQueteNonValideChien:
     name: Renard
     sentences:
     - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
     - Tu ne voudrais pas qu'il lui arrrive quelque chose ?
-  dialogueQueteNonValide2:
-    name: Renard
-    sentences:
-    - 'ZZzzzz, hein ? heu, quoi ? '
-    - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
-  dialogueQueteNonValide3:
-    name: Renard
-    sentences:
-    - MAIS ...
-    - LAISSES MOI DORMIR !
   dialogueQueteCourse:
     name: 
     sentences: []

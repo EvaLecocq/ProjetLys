@@ -300,15 +300,27 @@ MonoBehaviour:
     sentences:
     - Je suis mort.
     - Les morts ne parlent pas
+  dialogueQueteNonValideSanglier:
+    name: Lapin
+    sentences:
+    - "Le sanglier veut un troph\xE9e ?"
+    - Essaye de ramasser toutes les cochoneries par terre.
   dialogueQueteNonValide:
-    name: 
-    sentences: []
+    name: Lapin
+    sentences:
+    - Ah oui le raton laveur est dur au reveil.
   dialogueQueteNonValide2:
-    name: 
-    sentences: []
+    name: Lapin
+    sentences:
+    - "Si il ne se r\xE9veille pas, rappel le."
   dialogueQueteNonValide3:
-    name: 
-    sentences: []
+    name: Lapin
+    sentences:
+    - Appel le encore, il va bien finir par se lever.
+  dialogueQueteNonValideChien:
+    name: Lapin
+    sentences:
+    - 
   dialogueQueteCourse:
     name: 
     sentences: []

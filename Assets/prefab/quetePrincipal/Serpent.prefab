@@ -181,15 +181,30 @@ MonoBehaviour:
     - "Maintenant que j'y pense, je ne sais pas pourquoi vous teniez tant \xE0 le
       voir."
     - Mais j'imagine que vous avez eu ce que vous vouliez.
+  dialogueQueteNonValideSanglier:
+    name: Serpent
+    sentences:
+    - sssSSSSssSSSS
   dialogueQueteNonValide:
-    name: 
-    sentences: []
+    name: Serpent
+    sentences:
+    - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
+      vraie."
   dialogueQueteNonValide2:
-    name: 
-    sentences: []
+    name: Serpent
+    sentences:
+    - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
+      vraie."
   dialogueQueteNonValide3:
-    name: 
-    sentences: []
+    name: Serpent
+    sentences:
+    - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
+      vraie."
+  dialogueQueteNonValideChien:
+    name: Serpent
+    sentences:
+    - "Bonjour \xE0 vous, en quoi puis-je vous \xEAtre utile ?"
+    - "Une fleur ? Navr\xE9 je ne m'y connais pas trop."
   dialogueQueteCourse:
     name: 
     sentences: []

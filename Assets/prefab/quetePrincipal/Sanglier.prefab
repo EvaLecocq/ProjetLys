@@ -405,16 +405,26 @@ MonoBehaviour:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
-  dialogueQueteNonValide:
+  dialogueQueteNonValideSanglier:
     name: Sanglier
     sentences:
     - "H\xC9 ALORS LE PERDANT, J'ATTEND TOUJOURS MON TROPH\xC9E ! "
+  dialogueQueteNonValide:
+    name: Sanglier
+    sentences:
+    - "JE M'ENTRA\xCENE !!!"
   dialogueQueteNonValide2:
-    name: 
-    sentences: []
+    name: Sanglier
+    sentences:
+    - "UN VRAI GUERRIER \xC7A MANGE !"
   dialogueQueteNonValide3:
-    name: 
-    sentences: []
+    name: Sanglier
+    sentences:
+    - GGGRRRROAAAARRR
+  dialogueQueteNonValideChien:
+    name: Sanglier
+    sentences:
+    - "JE SUIS OCCUP\xC9 !"
   dialogueQueteCourse:
     name: 
     sentences: []

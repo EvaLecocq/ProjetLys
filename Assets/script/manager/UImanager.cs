@@ -66,6 +66,7 @@ public class UImanager : MonoBehaviour
                 ispause = true;
                 Time.timeScale = 0f;
 
+                mouseC.lockerCam = false;
                 UIinfo.SetActive(false);
             }
         }

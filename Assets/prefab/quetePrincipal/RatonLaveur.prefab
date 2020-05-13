@@ -288,6 +288,10 @@ MonoBehaviour:
     sentences:
     - zzzz ... zzzzz ... zzZZZZzz
     - zzzzzzzZZZZZzzz ... zzzz ...
+  dialogueQueteNonValideSanglier:
+    name: Raton Laveur
+    sentences:
+    - zzzZZZzzzzzzzzz
   dialogueQueteNonValide:
     name: Raton Laveur
     sentences:
@@ -303,6 +307,13 @@ MonoBehaviour:
     sentences:
     - MAIS ...
     - LAISSES MOI DORMIR !
+  dialogueQueteNonValideChien:
+    name: Raton Laveur
+    sentences:
+    - zzzzz ... zzzz
+    - ZZZzzzzZzzzz
+    - zzzZZZZZZ ... zzzzzzz
+    - zzzzzzz ... Hein ?? ... zzzzzZZZZzzz
   dialogueQueteCourse:
     name: 
     sentences: []

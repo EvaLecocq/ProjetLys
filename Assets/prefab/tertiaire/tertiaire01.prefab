@@ -170,15 +170,29 @@ MonoBehaviour:
     name: Agent P.
     sentences:
     - "Eh bien mission accomplie, tu as la cl\xE9s !"
+  dialogueQueteNonValideSanglier:
+    name: Agent P.
+    sentences:
+    - Au rapport !
+    - "Un troph\xE9e pour le sanglier ?! Pff  un d\xE9chet fera l'affaire !"
   dialogueQueteNonValide:
-    name: 
-    sentences: []
+    name: Agent P.
+    sentences:
+    - Le raton laveur ne repond pas ?
+    - "Peut \xEAtre qu'il veut rester tranquille"
   dialogueQueteNonValide2:
-    name: 
-    sentences: []
+    name: Agent P.
+    sentences:
+    - Si il ne repond pas c'est qu'il ne veut pas te parler.
   dialogueQueteNonValide3:
-    name: 
-    sentences: []
+    name: Agent P.
+    sentences:
+    - "Je ne peut pas t'aider plus d\xE9sol\xE9."
+  dialogueQueteNonValideChien:
+    name: Agent P.
+    sentences:
+    - Mmmmh une fleur tu dit ?
+    - "Je vais me renseigner \xE0 ce sujet."
   dialogueQueteCourse:
     name: 
     sentences: []

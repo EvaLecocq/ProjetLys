@@ -477,21 +477,29 @@ MonoBehaviour:
     - "Chat :\r\nTu as rencontr\xE9 le cerf ? bravo, j'imagine qu'il a pu r\xE9pondre
       \xE0 tes questions."
     - "Chien :\r\nLE CERF EST SUPER GRAND, J'AIME BIEN JOUER AVEC LUI."
+  dialogueQueteNonValideSanglier:
+    name: Chien - Chat
+    sentences: []
   dialogueQueteNonValide:
     name: Chien - Chat
     sentences:
-    - "Chat :\r\nNon tu n'as pas la bonne fleur."
-    - "Chien :\r\nNON ELLE EST PAS JOLIE."
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
   dialogueQueteNonValide2:
-    name: Renard
+    name: Chien - Chat
     sentences:
-    - 'ZZzzzz, hein ? heu, quoi ? '
-    - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
   dialogueQueteNonValide3:
-    name: Renard
+    name: Chien - Chat
     sentences:
-    - MAIS ...
-    - LAISSES MOI DORMIR !
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+  dialogueQueteNonValideChien:
+    name: Chien - Chat
+    sentences:
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
   dialogueQueteCourse:
     name: 
     sentences: []

@@ -21,9 +21,11 @@ public class Dialogue_Trigger : MonoBehaviour
     public Dialogue dialogueRenard2;
     public Dialogue dialogueCerf;
 
+    public Dialogue dialogueQueteNonValideSanglier;
     public Dialogue dialogueQueteNonValide;
     public Dialogue dialogueQueteNonValide2;
     public Dialogue dialogueQueteNonValide3;
+    public Dialogue dialogueQueteNonValideChien;
 
     public Dialogue dialogueQueteCourse;
     public Dialogue dialogueQueteCacheCache;
@@ -177,7 +179,7 @@ public class Dialogue_Trigger : MonoBehaviour
             }
             else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier && GameManager.s_Singleton.queteSanglier == false)
             {
-                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValideSanglier);
             }
 
             else if (GameManager.s_Singleton.principale == GameManager.quete.serpent && GameManager.s_Singleton.queteRaton == true)
@@ -213,7 +215,7 @@ public class Dialogue_Trigger : MonoBehaviour
             }
             else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat && GameManager.s_Singleton.queteChien == false)
             {
-                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
+                FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValideChien);
             }
 
 

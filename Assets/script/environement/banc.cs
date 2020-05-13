@@ -59,6 +59,7 @@ public class banc : MonoBehaviour
         DesactiveOutline();
 
         camBanc.Priority = 20;
+        mouse.enabled = true;
 
         StartCoroutine(validateIsBanc());
 
@@ -74,6 +75,7 @@ public class banc : MonoBehaviour
     {
         isBanc = false;
         player.isTalk = false;
+        mouse.enabled = false;
 
         camBanc.Priority = 0;
     }

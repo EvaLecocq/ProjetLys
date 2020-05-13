@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isBanc = false;
     public bool isTalk = false;
     private Dialogue_Manager managerDialogue;
+    public Dialogue_Trigger dialogueActuel;
+    public banc bancActuel;
    
     public KeyCode runKey;
     public KeyCode backWalk;
@@ -238,41 +240,39 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //dialogue
-        if (other.CompareTag("dialogue") && Input.GetKeyDown(interactionKey))
+        if (other.CompareTag("dialogue"))
         {
             if (managerDialogue.dialogueActive == false)
             {
-                
-                other.GetComponent<Dialogue_Trigger>().EventDialogue();
-                Debug.Log(other);
-            }
-        }
-        else if(other.CompareTag("dialogue"))
-        {
-            if (managerDialogue.dialogueActive == false)
-            {
+                if(Input.GetKeyDown(interactionKey))
+                {
+                    other.GetComponent<Dialogue_Trigger>().EventDialogue();
+                    Debug.Log(other);
+                }
+
                 other.GetComponent<Dialogue_Trigger>().enabled = true;
                 other.GetComponent<Dialogue_Trigger>().ActiveOutline();
+
             }
         }
+       
 
         //banc
         
-        if(other.CompareTag("banc") && Input.GetKeyDown(interactionKey))
+        if(other.CompareTag("banc") )
         {
             if(other.GetComponent<banc>().isBanc == false)
             {
-                other.GetComponent<banc>().EnterBanc();
+                if(Input.GetKeyDown(interactionKey))
+                {
+                    other.GetComponent<banc>().EnterBanc();
+                }
+
+                other.GetComponent<banc>().ActiveOutline();
             }
             
         }
-        else if(other.CompareTag("banc") )
-        {
-            if (other.GetComponent<banc>().isBanc == false)
-            {
-                other.GetComponent<banc>().ActiveOutline();
-            }
-        }
+        
         
     }
 
