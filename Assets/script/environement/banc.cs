@@ -50,7 +50,7 @@ public class banc : MonoBehaviour
     public void EnterBanc()
     {
 
-        isBanc = true;
+        
         player.isTalk = true;
 
         player.gameObject.transform.position = pos.position;
@@ -60,6 +60,14 @@ public class banc : MonoBehaviour
 
         camBanc.Priority = 20;
 
+        StartCoroutine(validateIsBanc());
+
+    }
+
+    public IEnumerator validateIsBanc()
+    {
+        yield return new WaitForSeconds(1f);
+        isBanc = true;
     }
 
     public void ExitBanc()

@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform camRoot;
     public bool isBanc = false;
     public bool isTalk = false;
+    private Dialogue_Manager managerDialogue;
    
     public KeyCode runKey;
     public KeyCode backWalk;
@@ -58,8 +59,13 @@ public class PlayerMovement : MonoBehaviour
             source = GetComponent<AudioSource>();
 
             Cc = GetComponent<CharacterController>();
+
+            managerDialogue = FindObjectOfType<Dialogue_Manager>();
         }
-       
+
+        
+
+
     }
 
     // Update is called once per frame
@@ -234,7 +240,7 @@ public class PlayerMovement : MonoBehaviour
         //dialogue
         if (other.CompareTag("dialogue") && Input.GetKeyDown(interactionKey))
         {
-            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+            if (managerDialogue.dialogueActive == false)
             {
                 
                 other.GetComponent<Dialogue_Trigger>().EventDialogue();
@@ -243,7 +249,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(other.CompareTag("dialogue"))
         {
-            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+            if (managerDialogue.dialogueActive == false)
             {
                 other.GetComponent<Dialogue_Trigger>().enabled = true;
                 other.GetComponent<Dialogue_Trigger>().ActiveOutline();
