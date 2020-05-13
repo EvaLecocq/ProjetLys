@@ -11,6 +11,7 @@ public class itemPick : MonoBehaviour
 
     public type itemType;
     public Outline outlinerItem;
+    public GameObject interactionIcon;
 
     public bool isPick = false;
 

@@ -34,6 +34,7 @@ public class Dialogue_Trigger : MonoBehaviour
 
     private PlayerMovement player;
     private Outline outliner;
+    public GameObject interactionIconDialogue;
 
     public queteSecondaire queteSecondaire;
 
@@ -142,11 +143,13 @@ public class Dialogue_Trigger : MonoBehaviour
     public void ActiveOutline()
     {
         outliner.enabled = true;
+        interactionIconDialogue.SetActive(true);
     }
 
     public void DesactiveOutline()
     {
         outliner.enabled = false;
+        interactionIconDialogue.SetActive(false);
     }
 
     public void StartDialogue()
@@ -242,6 +245,7 @@ public class Dialogue_Trigger : MonoBehaviour
         }
 
         outliner.enabled = false;
+        interactionIconDialogue.SetActive(false);
     }
 
     public IEnumerator StopDialogue()

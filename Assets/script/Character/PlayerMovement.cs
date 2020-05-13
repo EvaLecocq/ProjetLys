@@ -223,11 +223,12 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(CollectItem());
         }
 
-        if (other.CompareTag("item") && item == null)
+        if (other.CompareTag("item") && item == null)//outline
         {
             item = other.gameObject.GetComponent<itemPick>();
             item.outlinerItem.enabled = true;
- 
+            item.interactionIcon.SetActive(true);
+
         }
 
         //dialogue
@@ -271,6 +272,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             item.outlinerItem.enabled = false;
+            item.interactionIcon.SetActive(false);
             item = null;
 
         }
