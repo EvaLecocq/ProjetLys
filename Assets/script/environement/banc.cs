@@ -56,7 +56,7 @@ public class banc : MonoBehaviour
         player.gameObject.transform.position = pos.position;
         player.gameObject.transform.rotation = pos.rotation;
 
-        DesactiveOutline();
+        
 
         camBanc.Priority = 20;
         mouse.enabled = true;
@@ -67,8 +67,10 @@ public class banc : MonoBehaviour
 
     public IEnumerator validateIsBanc()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         isBanc = true;
+
+        DesactiveOutline();
     }
 
     public void ExitBanc()

@@ -223,22 +223,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("item") && item != null)
+       
+
+        if (other.CompareTag("item"))//outline
         {
-           if (Input.GetKeyDown(interactionKey))
+            item = other.gameObject.GetComponent<itemPick>();
+
+            if(item.isPick == false)
+            {
+                item.outlinerItem.enabled = true;
+                item.interactionIcon.SetActive(true);
+            }
+            else
+            {
+                item.outlinerItem.enabled = false;
+                item.interactionIcon.SetActive(false);
+            }
+     
+
+            if (Input.GetKeyDown(interactionKey))
             {
                 item.isPick = true;
 
                 StartCoroutine(CollectItem());
             }
-            
-        }
-
-        if (other.CompareTag("item") && item == null)//outline
-        {
-            item = other.gameObject.GetComponent<itemPick>();
-            item.outlinerItem.enabled = true;
-            item.interactionIcon.SetActive(true);
 
         }
 
