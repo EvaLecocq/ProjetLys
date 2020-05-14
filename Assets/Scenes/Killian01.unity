@@ -1812,11 +1812,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UImanager
       objectReference: {fileID: 0}
-    - target: {fileID: 556080851637466833, guid: f6397af9251fe2046b3b4e0ed8a0d5ae,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6397af9251fe2046b3b4e0ed8a0d5ae, type: 3}
 --- !u!4 &1446262961478359776 stripped
