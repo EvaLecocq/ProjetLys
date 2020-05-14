@@ -51,7 +51,14 @@ MonoBehaviour:
   day: 0
   progression: 0
   principale: 0
+  clesDuParc: 0
+  queteSanglier: 0
+  queteRaton: 0
+  RatonSpam: 0
+  queteChien: 0
   queteActuelValider: 0
+  queteSecondaireAccompli: 0
+  niveauHerbier: 0
   Tulipe: 0
   CirseCommun: 0
   Chrysantheme: 0
@@ -71,6 +78,7 @@ MonoBehaviour:
   Rose: 0
   Fritillaire: 0
   FleurDeLys: 0
-  pierre: 0
+  feuille: 0
   baton: 0
-  gland: 0
+  graineGland: 0
+  terre: 0

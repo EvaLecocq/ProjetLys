@@ -243,14 +243,13 @@ MonoBehaviour:
     name: Lapin
     sentences:
     - "HEY TOI L\xC0 ! "
-    - "Qu'est ce que tu fais ici ? le portail est ferm\xE9, \xE7a veut dire que le
-      parc est ferm\xE9. "
-    - "C'est pas normal que tu sois de ce c\xF4t\xE9 du portail... Tu t'es perdu ?"
-    - "C'est emb\xEAtant, je vais te donner un coup de patte ! "
-    - "J'ai un ami dans le parc qui peut t'aider, il a la grande cl\xE9 du portail,
-      il peut l'ouvrir."
-    - Faut que tu cherches le cerf, c'est lui le chef. Mais je l'ai pas vu depuis
-      un moment...
+    - "Que fais tu ici !? Le portail est ferm\xE9, non ? \xC7a veut dire que le parc
+      est ferm\xE9, n'est ce pas ? "
+    - "Hmm... C'est pas normal que tu sois l\xE0....... Es-tu perdu ?"
+    - "Emb\xEAtant, c'est emb\xEAtant, ne te fais pas de soucis je vais te donner
+      un coup de patte ! "
+    - "J'ai un ami dans le parc qui peut t'aider, c'est un grand cerf, c'est lui le
+      chef, il a la grande cl\xE9 du portail, il peut t'ouvrir."
     - "Je me souviens l'avoir vu pr\xE8s d'un pont, mais l'endroit pr\xE9cis m'\xE9chappe."
   dialogueLapin:
     name: Lapin

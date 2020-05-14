@@ -132,40 +132,42 @@ MonoBehaviour:
   dialogueLapin:
     name: Agent P.
     sentences:
-    - L'individu que tu cherche est pas loin je crois ...
-    - Il me semble qu'il est sur un des trois ponts
+    - Bonjour !
+    - "Tu cherches un animal pr\xE8s d'un pont ? \xE7a doit \xEAtre le sanglier, \r\n
+      il passe son temps \xE0 se battre avec tout ceux qu'il croise."
+    - "Il vit au nord du parc apr\xE8s avoir travers\xE9 l'\xEEle central du lac."
   dialogueSanglier:
     name: Agent P.
     sentences:
-    - Ah tu cherche un animal de ce genre ...
-    - "H\xE9las je ne fr\xE9quente pas ce genre d'individu."
-    - Bonne chance
+    - Le serpent, on dit qu'il est dangeureux, ne t'y en approche pas.
   dialogueSerpent:
     name: Agent P.
     sentences:
-    - "Oh ainsi tu as trouv\xE9 ce que tu cherche bien jou\xE9 !"
-    - Mmmmh le Raton Laveur, il faut lui sonner les cloches plusieurs fois si tu veut
-      le reveiller.
+    - Bonjour, que veux tu ?
+    - "Le raton laveur ? Oui il d\xE9teste \xEAtre r\xE9veill\xE9 mais si tu le secoues
+      assez de fois,\r il va forc\xE9ment te r\xE9pondre mais fait gaffe \xE0 sa col\xE8re. "
+    - Il fait peur...
   dialogueRatonLaveur:
     name: Agent P.
     sentences:
-    - "Un animal rus\xE9 ... laisse moi r\xE9fl\xE9chir ..."
-    - "Mais oui c'est le Serpent, je t'avais dit que c'\xE9tait de mauvaise fr\xE9quentation."
+    - Salut !
+    - "Tu cherches un animal rus\xE9 et malin ? "
+    - "Le raton laveur est clairement l'animal le plus rus\xE9 du parc."
+    - "Il dort toute la journ\xE9e mais la nuit il disparait !"
+    - "Comme il a un pelage fonc\xE9 on ne le voit plus, \rou du moins moi je ne le
+      vois plus."
   dialogueRenard:
     name: Agent P.
     sentences:
-    - "Quoi mon coll\xE8gue \xE0 disparu !!!"
-    - Va vite voir mon agent double le chat il t'aidera.
+    - "Coucou toi, le lapin ? non je ne l'ai pas vu, d\xE9sol\xE9."
   dialogueChianChat:
     name: Agent P.
     sentences:
-    - "Les fleurs je n'y connais pas grand chose navr\xE9."
+    - "Le cerf \xE0 moi aussi \xE7a fait longtemps que je l'ai pas vu."
   dialogueRenard2:
     name: Agent P.
     sentences:
-    - "Les pots oui \xE7a me parle."
-    - "Il faut que tu place les fleurs correspondantent \xE0 la description des pots,
-      regarde ton herbier."
+    - "Mais qu'attend-tu le cerf est l\xE0, va le saluer !"
   dialogueCerf:
     name: Agent P.
     sentences:
