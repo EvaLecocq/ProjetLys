@@ -740,7 +740,7 @@ MonoBehaviour:
   m_ZDamping: 0.2
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 1.5
+  m_CameraDistance: 1.8
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -816,13 +816,18 @@ PrefabInstance:
     - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.7770498
+      value: -3.3324583
       objectReference: {fileID: 0}
     - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: lookFree
       value: 
       objectReference: {fileID: 8683934677752235248}
+    - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: mouseSensitivity
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: camTPV
