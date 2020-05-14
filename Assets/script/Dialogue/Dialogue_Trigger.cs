@@ -35,6 +35,7 @@ public class Dialogue_Trigger : MonoBehaviour
     public Transform playerPos;
 
     private PlayerMovement player;
+    private Dialogue_Manager manager;
     public Outline outliner;
     public bool autoSelect = true;
     public GameObject interactionIconDialogue;
@@ -54,15 +55,15 @@ public class Dialogue_Trigger : MonoBehaviour
         {
             outliner = GetComponent<Outline>();
         }
-        
+        manager = Dialogue_Manager.FindObjectOfType<Dialogue_Manager>();
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
     }
 
     private void Update()
     {
-        if(FindObjectOfType<Dialogue_Manager>().triggerEnd == true)
+        if(manager.triggerEnd == true)
         {
-            StartCoroutine(StopDialogue());
+            StopDialogue();
             
         }
 
@@ -133,7 +134,7 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public void EventDialogue()
     {
-        FindObjectOfType<Dialogue_Manager>().dialogueActive = true;
+        manager.dialogueActive = true;
 
         player.isTalk = true;
 
@@ -255,10 +256,10 @@ public class Dialogue_Trigger : MonoBehaviour
         interactionIconDialogue.SetActive(false);
     }
 
-    public IEnumerator StopDialogue()
+    public void StopDialogue()
     {
-        FindObjectOfType<Dialogue_Manager>().dialogueActive = false;
-        FindObjectOfType<Dialogue_Manager>().EndDialogue();
+        manager.dialogueActive = false;
+        manager.EndDialogue();
         
         player.isTalk = false;
         camDialogue.Priority = 0;
@@ -267,9 +268,8 @@ public class Dialogue_Trigger : MonoBehaviour
 
         UpgradeQuest();
 
-        FindObjectOfType<Dialogue_Manager>().triggerEnd = false;
+        manager.triggerEnd = false;
      
-        yield return new WaitForSeconds(0.0f);
 
     }
   

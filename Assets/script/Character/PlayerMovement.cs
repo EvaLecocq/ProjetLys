@@ -223,12 +223,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("item") && Input.GetKeyDown(interactionKey) && item != null)
+        if(other.CompareTag("item") && item != null)
         {
-           
-            item.isPick = true; 
+           if (Input.GetKeyDown(interactionKey))
+            {
+                item.isPick = true;
 
-            StartCoroutine(CollectItem());
+                StartCoroutine(CollectItem());
+            }
+            
         }
 
         if (other.CompareTag("item") && item == null)//outline
@@ -244,15 +247,17 @@ public class PlayerMovement : MonoBehaviour
         {
             if (managerDialogue.dialogueActive == false)
             {
-                if(Input.GetKeyDown(interactionKey))
+                dialogueActuel = other.GetComponent<Dialogue_Trigger>();
+
+                dialogueActuel.enabled = true;
+                dialogueActuel.ActiveOutline();
+
+                if (Input.GetKeyDown(interactionKey))
                 {
-                    other.GetComponent<Dialogue_Trigger>().EventDialogue();
-                    Debug.Log(other);
+                    //Debug.Log(other);
+                    dialogueActuel.EventDialogue();
+                    
                 }
-
-                other.GetComponent<Dialogue_Trigger>().enabled = true;
-                other.GetComponent<Dialogue_Trigger>().ActiveOutline();
-
             }
         }
        
@@ -261,14 +266,18 @@ public class PlayerMovement : MonoBehaviour
         
         if(other.CompareTag("banc") )
         {
-            if(other.GetComponent<banc>().isBanc == false)
-            {
-                if(Input.GetKeyDown(interactionKey))
-                {
-                    other.GetComponent<banc>().EnterBanc();
-                }
+            bancActuel = other.GetComponent<banc>();
 
-                other.GetComponent<banc>().ActiveOutline();
+            if (bancActuel.isBanc == false)
+            {
+                
+                bancActuel.ActiveOutline();
+
+                if (Input.GetKeyDown(interactionKey))
+                {
+                    bancActuel.EnterBanc();
+                }
+               
             }
             
         }
@@ -290,18 +299,23 @@ public class PlayerMovement : MonoBehaviour
         //dialogue
         if (other.CompareTag("dialogue"))
         {
-            if (FindObjectOfType<Dialogue_Manager>().dialogueActive == false)
+            if (managerDialogue.dialogueActive == false)
             {
-                other.GetComponent<Dialogue_Trigger>().enabled = false;
-                other.GetComponent<Dialogue_Trigger>().DesactiveOutline();
+                dialogueActuel.DesactiveOutline();
+                dialogueActuel.enabled = false;
+                
+
+                dialogueActuel = null;
             }
         }
 
         //banc
         
-        else if (other.CompareTag("banc"))
+         if (other.CompareTag("banc"))
         {
-            other.GetComponent<banc>().DesactiveOutline();
+            bancActuel.DesactiveOutline();
+
+            bancActuel = null;
         }
     }
 

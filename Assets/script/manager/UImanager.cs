@@ -12,6 +12,8 @@ public class UImanager : MonoBehaviour
     //public Image clock;
 
     public TextMeshProUGUI textDay;
+    public Image dayImage;
+    public Sprite[] weekDayImage;
     public GameObject textInteraction;
 
     private MouseLook mouseC;
@@ -52,8 +54,8 @@ public class UImanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textDay.text = GameManager.s_Singleton.actualDay.ToString();
-
+        //textDay.text = GameManager.s_Singleton.actualDay.ToString();
+        DayWeek();
         time = GameManager.s_Singleton.time;
         //clock.transform.rotation =  Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, (time * -30));
 
@@ -68,6 +70,7 @@ public class UImanager : MonoBehaviour
 
                 mouseC.lockerCam = false;
                 UIinfo.SetActive(false);
+                herbierIcon.SetActive(false);
             }
         }
         else if (ispause == true)
@@ -81,8 +84,15 @@ public class UImanager : MonoBehaviour
 
                 mouseC.lockerCam = true;
                 UIinfo.SetActive(true);
+                herbierIcon.SetActive(true);
 
             }
+        }
+
+        if(ispause == false && isMenu == false && openherbier == false && dialogueActive == false)
+        {
+            UIinfo.SetActive(true);
+            herbierIcon.SetActive(true);
         }
 
 
@@ -90,14 +100,15 @@ public class UImanager : MonoBehaviour
         if(dialogue_UI.activeInHierarchy)
         {
             dialogueActive = true;
+            UIinfo.SetActive(false);
+            herbierIcon.SetActive(false);
 
         }
         else
         {
             dialogueActive = false;
+            
         }
-
-
 
         //herbier
 
@@ -161,6 +172,8 @@ public class UImanager : MonoBehaviour
         {
             mouseC.lockerCam = false;
             UIinfo.SetActive(false);
+            herbierIcon.SetActive(false);
+
             isMenu = true;
         }
         else
@@ -176,6 +189,15 @@ public class UImanager : MonoBehaviour
 
     }
 
+
+    //day
+    public void DayWeek()
+    {
+        dayImage.sprite = weekDayImage[GameManager.s_Singleton.day - 1];
+        
+    }
+
+
     //pause echap
     public void Quitter()
     {
@@ -189,6 +211,17 @@ public class UImanager : MonoBehaviour
         Time.timeScale = 1f;
 
         mouseC.lockerCam = false;
+    }
+
+    public void Continue()
+    {
+        pause.gameObject.SetActive(false);
+        ispause = false;
+        Time.timeScale = 1f;
+
+        mouseC.lockerCam = true;
+        UIinfo.SetActive(true);
+        herbierIcon.SetActive(true);
     }
 
    
