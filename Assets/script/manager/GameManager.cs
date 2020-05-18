@@ -56,6 +56,14 @@ public class GameManager : MonoBehaviour
     public int queteSecondaireAccompli;
     public int niveauHerbier = 0;
 
+    [Header("animaux")]
+    public int lapin;
+    public int sanglier;
+    public int serpent;
+    public int ratonLaveur;
+    public int renard;
+    public int chienChat;
+    public int cerf;
 
     [Header("fleur")]
     public int Tulipe;
@@ -79,10 +87,9 @@ public class GameManager : MonoBehaviour
     public int FleurDeLys;
 
     [Header("objet")]
-    public int feuille;
     public int baton;
     public int graineGland;
-    public int terre;
+
 
     // Start is called before the first frame update
     void Start()

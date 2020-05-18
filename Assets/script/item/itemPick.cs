@@ -98,10 +98,7 @@ public class itemPick : MonoBehaviour
         {
             GameManager.s_Singleton.PaeoniaOfficinalis++;
         }
-        else if (itemType == itemPick.type.feuille)
-        {
-            GameManager.s_Singleton.feuille++;
-        }
+       
         else if (itemType == itemPick.type.Rose)
         {
             GameManager.s_Singleton.Rose++;
@@ -110,10 +107,7 @@ public class itemPick : MonoBehaviour
         {
             GameManager.s_Singleton.Tulipe++;
         }
-        else if (itemType == itemPick.type.terre)
-        {
-            GameManager.s_Singleton.terre++;
-        }
+       
 
         Destroy(gameObject);
     }
