@@ -276,6 +276,8 @@ public class PlayerMovement : MonoBehaviour
         {
             bancActuel = other.GetComponent<banc>();
 
+            bancActuel.enabled = true;
+
             if (bancActuel.isBanc == false)
             {
                 
@@ -322,6 +324,7 @@ public class PlayerMovement : MonoBehaviour
          if (other.CompareTag("banc"))
         {
             bancActuel.DesactiveOutline();
+            bancActuel.enabled = false;
 
             bancActuel = null;
         }

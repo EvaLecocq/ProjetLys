@@ -352,7 +352,7 @@ MonoBehaviour:
     FieldOfView: 45
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 600
+    FarClipPlane: 500
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -735,9 +735,9 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0.2
+  m_XDamping: 0.1
   m_YDamping: 0.2
-  m_ZDamping: 0.2
+  m_ZDamping: 0.1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 1.8
@@ -791,7 +791,7 @@ PrefabInstance:
     - target: {fileID: 625829952454137869, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: m_Lens.FarClipPlane
-      value: 600
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
