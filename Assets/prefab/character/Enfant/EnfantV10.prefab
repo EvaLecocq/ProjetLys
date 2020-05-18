@@ -791,7 +791,7 @@ PrefabInstance:
     - target: {fileID: 625829952454137869, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: m_Lens.FarClipPlane
-      value: 500
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
