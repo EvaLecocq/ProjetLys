@@ -14,20 +14,29 @@ public class herbierPageSpawn : MonoBehaviour
 
     public pageType page;
 
-    public Image pageRempli;
+    public Sprite pageRempli;
+    private Image pageActuel;
     public bool conditionRempli = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pageActuel = GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void conditionRempliValide()
+    {
+        if(conditionRempli == true)
+        {
+            pageActuel.sprite = pageRempli;
+        }
     }
 
 
@@ -91,35 +100,64 @@ public class herbierPageSpawn : MonoBehaviour
         }
         else if (page == herbierPageSpawn.pageType.HelleboreOrient && GameManager.s_Singleton.HelleboreOrient > 0)
         {
-            
+            conditionRempli = true;
         }
-        else if (page == herbierPageSpawn.pageType.Hibiscus)
+        else if (page == herbierPageSpawn.pageType.Hibiscus && GameManager.s_Singleton.Hibiscus > 0)
         {
-            GameManager.s_Singleton.Hibiscus++;
+            conditionRempli = true;
         }
-        else if (page == herbierPageSpawn.pageType.Kalanchoe)
+        else if (page == herbierPageSpawn.pageType.Kalanchoe && GameManager.s_Singleton.Kalanchoe >0)
         {
-            GameManager.s_Singleton.Kalanchoe++;
+            conditionRempli = true;
         }
-        else if (page == herbierPageSpawn.pageType.Orchidee)
+        else if (page == herbierPageSpawn.pageType.Orchidee && GameManager.s_Singleton.Orchidee > 0)
         {
-            GameManager.s_Singleton.Orchidee++;
+            conditionRempli = true;
         }
-        else if (page == herbierPageSpawn.pageType.PaeoniaOfficinalis)
+        else if (page == herbierPageSpawn.pageType.PaeoniaOfficinalis && GameManager.s_Singleton.PaeoniaOfficinalis > 0)
         {
-            GameManager.s_Singleton.PaeoniaOfficinalis++;
+            conditionRempli = true;
         }
 
-        else if (page == herbierPageSpawn.pageType.Rose)
+        else if (page == herbierPageSpawn.pageType.Rose && GameManager.s_Singleton.Rose > 0)
         {
-            GameManager.s_Singleton.Rose++;
+            conditionRempli = true;
         }
-        else if (page == herbierPageSpawn.pageType.Tulipe)
+        else if (page == herbierPageSpawn.pageType.Tulipe && GameManager.s_Singleton.Tulipe > 0)
         {
-            GameManager.s_Singleton.Tulipe++;
+            conditionRempli = true;
+        }
+
+        else if (page == herbierPageSpawn.pageType.Lapin && GameManager.s_Singleton.lapin > 0)
+        {
+            conditionRempli = true;
+        }
+        else if (page == herbierPageSpawn.pageType.Sanglier && GameManager.s_Singleton.sanglier > 0)
+        {
+            conditionRempli = true;
+        }
+        else if (page == herbierPageSpawn.pageType.Serpent && GameManager.s_Singleton.serpent > 0)
+        {
+            conditionRempli = true;
+        }
+        else if (page == herbierPageSpawn.pageType.RatonLaveur && GameManager.s_Singleton.ratonLaveur > 0)
+        {
+            conditionRempli = true;
+        }
+        else if (page == herbierPageSpawn.pageType.Renard && GameManager.s_Singleton.renard > 0)
+        {
+            conditionRempli = true;
+        }
+        else if (page == herbierPageSpawn.pageType.ChienChat && GameManager.s_Singleton.chienChat > 0)
+        {
+            conditionRempli = true;
+        }
+        else if (page == herbierPageSpawn.pageType.Cerf && GameManager.s_Singleton.cerf > 0)
+        {
+            conditionRempli = true;
         }
 
 
-       
+        conditionRempliValide();
     }
 }
