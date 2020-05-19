@@ -28,6 +28,8 @@ public class herbierPageSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+            AddItemToManager();
         
     }
 

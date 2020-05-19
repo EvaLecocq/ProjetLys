@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3370247886758779205}
   - component: {fileID: 3360575759751820347}
   - component: {fileID: 3352680925108431199}
+  - component: {fileID: 6257336647953998317}
+  - component: {fileID: 1047496270156211706}
   m_Layer: 0
   m_Name: SM_Tree_Round_02
   m_TagString: Untagged
@@ -78,3 +80,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!205 &6257336647953998317
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3373545258650039875}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.401223
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.15481718
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.049034625
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
+--- !u!136 &1047496270156211706
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3373545258650039875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.21808815
+  m_Height: 4.7312794
+  m_Direction: 1
+  m_Center: {x: 0.2501614, y: 2.2020235, z: 0.007396698}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8477339151764046520}
   - component: {fileID: 8485751585250905098}
   - component: {fileID: 8495503374988196138}
+  - component: {fileID: 3311700754893012827}
   m_Layer: 0
   m_Name: SM_Tree_Stump_03
   m_TagString: Untagged
@@ -78,3 +79,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &3311700754893012827
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8480911620039664894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2898674
+  m_Height: 1.3647066
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.43110913, z: 0.011442184}

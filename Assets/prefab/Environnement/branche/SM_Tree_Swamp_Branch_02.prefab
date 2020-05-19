@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1964890643441114526}
   - component: {fileID: 1959685885714563688}
   - component: {fileID: 1952839471392206138}
+  - component: {fileID: 5948998845980671839}
   m_Layer: 0
   m_Name: SM_Tree_Swamp_Branch_02
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5948998845980671839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967032154286378612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.691658, y: 0.6248245, z: 4.313714}
+  m_Center: {x: -0.044143677, y: -0.20932388, z: -1.6558051}
