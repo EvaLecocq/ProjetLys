@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4756509609541227951}
   - component: {fileID: 4765058954569209461}
   - component: {fileID: 4839083704348524453}
+  - component: {fileID: 5021873176132632528}
   m_Layer: 0
   m_Name: SM_Rock_Rounded_01
   m_TagString: Untagged
@@ -98,3 +99,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &5021873176132632528
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787851950910171369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.59248257
+  m_Height: 1.1849651
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.00804925, z: -0.04897976}

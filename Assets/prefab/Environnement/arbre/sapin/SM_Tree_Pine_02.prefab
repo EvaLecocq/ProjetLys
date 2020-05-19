@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4477426871737866098}
   - component: {fileID: 4469801394634632836}
   - component: {fileID: 4363853248908113534}
+  - component: {fileID: 5867934204520013786}
   m_Layer: 0
   m_Name: SM_Tree_Pine_02
   m_TagString: Untagged
@@ -105,6 +106,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4469450346375323684}
   m_Enabled: 1
+--- !u!136 &5867934204520013786
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490512864215292604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.18875635
+  m_Height: 4.450556
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.225278, z: 0}
 --- !u!1 &4491793228207690094
 GameObject:
   m_ObjectHideFlags: 0

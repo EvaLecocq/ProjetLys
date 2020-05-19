@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 2075006218091297544}
   - component: {fileID: 2084116602895031350}
   - component: {fileID: 2190728492021932608}
+  - component: {fileID: 5982229938869211773}
   m_Layer: 0
   m_Name: SM_Tree_Willow_Small_01
   m_TagString: Untagged
@@ -183,6 +184,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2084946196852174204}
   m_Enabled: 1
+--- !u!136 &5982229938869211773
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071158495032725754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.25914383
+  m_Height: 4.0470753
+  m_Direction: 1
+  m_Center: {x: -0.00000044703484, y: 1.7987025, z: -0.02135086}
 --- !u!1 &2071219956075972498
 GameObject:
   m_ObjectHideFlags: 0

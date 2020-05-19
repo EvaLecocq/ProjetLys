@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 193785503924197823}
   - component: {fileID: 185869357753413147}
   - component: {fileID: 258677411399190243}
+  - component: {fileID: 3688564836368348409}
   m_Layer: 0
   m_Name: SM_Rock_Small_01
   m_TagString: Untagged
@@ -98,3 +99,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &3688564836368348409
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199026712021942201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6025133
+  m_Height: 1.2050266
+  m_Direction: 1
+  m_Center: {x: -0.060331047, y: -0.17267418, z: -0.010924339}
