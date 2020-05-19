@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8263459322336145770}
   - component: {fileID: 8253279019185467026}
   - component: {fileID: 5057443439179748251}
+  - component: {fileID: -9075711427123465643}
   m_Layer: 0
   m_Name: Tree_12
   m_TagString: Untagged
@@ -93,3 +94,27 @@ CapsuleCollider:
   m_Height: 4.8532853
   m_Direction: 1
   m_Center: {x: 0.019166052, y: 2.33054, z: -0.022803307}
+--- !u!205 &-9075711427123465643
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277021157417073070}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.401223
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.15481718
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.049034625
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

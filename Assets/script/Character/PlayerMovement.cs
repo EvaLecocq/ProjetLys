@@ -18,7 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private Dialogue_Manager managerDialogue;
     public Dialogue_Trigger dialogueActuel;
     public banc bancActuel;
-   
+    private UImanager ui;
+
     public KeyCode runKey;
     public KeyCode backWalk;
     public KeyCode frontWalk;
@@ -65,9 +66,9 @@ public class PlayerMovement : MonoBehaviour
             managerDialogue = FindObjectOfType<Dialogue_Manager>();
         }
 
-        
+        ui = UImanager.FindObjectOfType<UImanager>();
 
-
+        backVector = new Vector3(0, camRoot.position.y + 180, 0);
     }
 
     // Update is called once per frame
@@ -164,7 +165,6 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(frontWalk))//model front cam
                     {
                         model.transform.rotation = camRoot.rotation;
-
                     }
                     if (Input.GetKey(backWalk))//model arriere
                     {
@@ -199,6 +199,11 @@ public class PlayerMovement : MonoBehaviour
         {
             item.transform.position = itemHand.position;
             item.transform.rotation = itemHand.rotation;
+
+            if(item.itemType == itemPick.type.graineGland)
+            {
+                ui.sanglierTextSpawn();
+            }
         }
 
     }
@@ -227,9 +232,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.CompareTag("item"))//outline
         {
-            item = other.gameObject.GetComponent<itemPick>();
+            if(item == null)
+            {
+                item = other.gameObject.GetComponent<itemPick>();
 
-            if(item.isPick == false)
+            }
+
+            if (item.isPick == false)
             {
                 item.outlinerItem.enabled = true;
                 item.interactionIcon.SetActive(true);
@@ -255,7 +264,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (managerDialogue.dialogueActive == false)
             {
-                dialogueActuel = other.GetComponent<Dialogue_Trigger>();
+                if(dialogueActuel == null)
+                {
+                    dialogueActuel = other.GetComponent<Dialogue_Trigger>();
+  
+                }
 
                 dialogueActuel.enabled = true;
                 dialogueActuel.ActiveOutline();
@@ -297,7 +310,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("item") && item != null)
+        if (other.CompareTag("item") && item != null && item.isPick == false)
         {
 
             item.outlinerItem.enabled = false;
@@ -338,7 +351,10 @@ public class PlayerMovement : MonoBehaviour
 
         item.AddItemToManager();
 
+        ui.sanglierTextDespawn();
+
         item = null;
     }
-        
+
+    
 }

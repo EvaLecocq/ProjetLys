@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 8324046022445420701}
   - component: {fileID: 8334321311574978615}
   - component: {fileID: 8153062587439265965}
+  - component: {fileID: 1482214056964811042}
   m_Layer: 0
   m_Name: SM_Tree_Dead_01
   m_TagString: Untagged
@@ -167,22 +168,36 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8356995483654225589}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.054283142, y: 1.7515308, z: -0.098624706}
-  m_Size: 3.5030615
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.303704
+  - screenRelativeHeight: 0.401223
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8334321311574978615}
-    - renderer: {fileID: 8334299481430344871}
-  - screenRelativeHeight: 0.027223999
+    renderers: []
+  - screenRelativeHeight: 0.15481718
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8333963117693654073}
+    renderers: []
+  - screenRelativeHeight: 0.049034625
+    fadeTransitionWidth: 0
+    renderers: []
   m_Enabled: 1
+--- !u!136 &1482214056964811042
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356995483654225589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0797987
+  m_Height: 3.2502162
+  m_Direction: 1
+  m_Center: {x: 0.05728531, y: 1.6251081, z: -0.042140007}
 --- !u!1 &8357054913485870199
 GameObject:
   m_ObjectHideFlags: 0

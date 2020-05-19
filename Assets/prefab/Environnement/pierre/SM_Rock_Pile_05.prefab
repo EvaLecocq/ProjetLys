@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9202540252387694718}
   - component: {fileID: 9194496691432867284}
   - component: {fileID: 9122498371763473624}
+  - component: {fileID: 6196783064286578751}
   m_Layer: 0
   m_Name: SM_Rock_Pile_05
   m_TagString: Untagged
@@ -98,3 +99,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &6196783064286578751
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9208566880475362442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.4595091
+  m_Height: 6.9190183
+  m_Direction: 1
+  m_Center: {x: 0.14999996, y: 0.41892543, z: 0}

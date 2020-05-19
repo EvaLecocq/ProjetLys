@@ -13,11 +13,14 @@ public class itemPick : MonoBehaviour
     public Outline outlinerItem;
     public GameObject interactionIcon;
 
+    
+
     public bool isPick = false;
 
     private void Start()
     {
         outlinerItem = GetComponentInChildren<Outline>();
+        
     }
 
     public void AddItemToManager()
@@ -77,6 +80,7 @@ public class itemPick : MonoBehaviour
         else if (itemType == itemPick.type.graineGland)
         {
             GameManager.s_Singleton.graineGland++;
+            
         }
         else if (itemType == itemPick.type.HelleboreOrient)
         {
@@ -107,8 +111,12 @@ public class itemPick : MonoBehaviour
         {
             GameManager.s_Singleton.Tulipe++;
         }
+
        
 
-        Destroy(gameObject);
+       Destroy(gameObject);
     }
+
+
+   
 }

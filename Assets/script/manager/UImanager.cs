@@ -15,6 +15,7 @@ public class UImanager : MonoBehaviour
     public Image dayImage;
     public Sprite[] weekDayImage;
     public GameObject textInteraction;
+    public GameObject textQueteSanglier;
 
     private MouseLook mouseC;
 
@@ -187,6 +188,18 @@ public class UImanager : MonoBehaviour
         }
 
 
+    }
+
+    public void sanglierTextSpawn()
+    {
+
+        textQueteSanglier.SetActive(true);
+
+    }
+
+    public void sanglierTextDespawn()
+    {
+        textQueteSanglier.SetActive(false);
     }
 
 

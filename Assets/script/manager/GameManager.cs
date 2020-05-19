@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     private DayNightCycle cycle;
 
     
+    
 
     [Header("principale")]
     public int progression = 0;
