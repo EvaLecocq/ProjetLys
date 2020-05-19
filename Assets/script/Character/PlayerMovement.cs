@@ -172,11 +172,11 @@ public class PlayerMovement : MonoBehaviour
                     }
                     if (Input.GetKeyUp(leftWalk))//flip
                     {
-
+                        model.transform.rotation = camRoot.rotation;
                     }
                     if (Input.GetKeyUp(rightWalk))//flip
                     {
-
+                        model.transform.rotation = camRoot.rotation;
                     }
 
 
@@ -200,7 +200,7 @@ public class PlayerMovement : MonoBehaviour
             item.transform.position = itemHand.position;
             item.transform.rotation = itemHand.rotation;
 
-            if(item.itemType == itemPick.type.graineGland)
+            if(item.itemType == itemPick.type.graineGland && GameManager.s_Singleton.progression == 2)
             {
                 ui.sanglierTextSpawn();
             }
