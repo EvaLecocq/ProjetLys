@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20f;
     public float sens = 1;
     private Vector3 moveDirection = Vector3.zero;
+    private Vector3 CameraMoveCustom = Vector3.zero;
     CharacterController Cc;
 
     private void Start()
@@ -77,12 +78,17 @@ public class PlayerMovement : MonoBehaviour
                     if (Cc.isGrounded)
                     {
                         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-                        moveDirection = Camera.main.transform.TransformDirection(moveDirection);
+                        //CameraMoveCustom = new Vector3()
+                        moveDirection = Camera.main.transform.TransformDirection(moveDirection);//doit ignorer le Y de la cam sinon fait des bond en arriere
                         moveDirection *= speed;
 
                         if (Input.GetButtonDown("Jump"))
                         {
                             moveDirection.y = jumpSpeed;
+                        }
+                        else
+                        {
+                            moveDirection.y = 0.0f;
                         }
                     }
 

@@ -305,7 +305,7 @@ public class Dialogue_Trigger : MonoBehaviour
         player.isTalk = false;
         camDialogue.Priority = 0;
 
-        player.camRoot.transform.position = Vector3.zero;
+        //player.camRoot.transform.position = Vector3.zero;
         player.camRoot.transform.rotation = new Quaternion(0, 0, 0, 0);
 
         //Debug.Log(camDialogue.Priority);

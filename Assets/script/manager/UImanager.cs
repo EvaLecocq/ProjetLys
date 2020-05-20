@@ -242,6 +242,7 @@ public class UImanager : MonoBehaviour
         pause.gameObject.SetActive(false);
         ispause = false;
         Time.timeScale = 1f;
+        camMenu.Priority = 0;
 
         mouseC.lockerCam = true;
         UIinfo.SetActive(true);
