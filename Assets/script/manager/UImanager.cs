@@ -220,7 +220,18 @@ public class UImanager : MonoBehaviour
     public void BackToMenu()
     {
         UIinfo.SetActive(false);
-        SceneManager.LoadScene(0);
+
+        if(SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        camMenu.Priority = 15;
+        pause.SetActive(false);
+        menu.SetActive(true);
+        mouseC.lockerCam = false;
+        UIinfo.SetActive(false);
+        herbierIcon.SetActive(false);
         Time.timeScale = 1f;
 
         mouseC.lockerCam = false;

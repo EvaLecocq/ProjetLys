@@ -193,12 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &266170572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2445050549674814952, guid: f6397af9251fe2046b3b4e0ed8a0d5ae,
-    type: 3}
-  m_PrefabInstance: {fileID: 556080852507116926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &318124979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,11 +1117,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UImanager
       objectReference: {fileID: 0}
-    - target: {fileID: 3410799708235284340, guid: f6397af9251fe2046b3b4e0ed8a0d5ae,
-        type: 3}
-      propertyPath: textQueteSanglier
-      value: 
-      objectReference: {fileID: 266170572}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6397af9251fe2046b3b4e0ed8a0d5ae, type: 3}
 --- !u!4 &1446262961478359776 stripped
