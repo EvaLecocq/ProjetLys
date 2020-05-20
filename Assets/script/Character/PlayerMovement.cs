@@ -6,7 +6,6 @@ using Cinemachine;
 public class PlayerMovement : MonoBehaviour
 {
     public bool useBaseControl = true;
-    public bool useControl01 = true;
     public GameObject model;
     private Vector3 backVector = new Vector3(0, 180, 0);
     public MouseLook look;
@@ -29,10 +28,6 @@ public class PlayerMovement : MonoBehaviour
 
   
     private Rigidbody rb;
-    private AudioSource source;
-    public AudioClip jumpSFX;
-    public AudioClip fallSFX;
-    public AudioClip[] walkSFX;
 
     private float nextActionTime = 0.0f;
     private float period = 1.5f;
@@ -59,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             defaultSpeed = speed;
 
             rb = GetComponent<Rigidbody>();
-            source = GetComponent<AudioSource>();
+           
 
             Cc = GetComponent<CharacterController>();
 
@@ -76,63 +71,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (useBaseControl)
         {
-            if(useControl01)
-            {
-                if (Cc.isGrounded)
-                {
-                    moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
-                    moveDirection = transform.TransformDirection(moveDirection);
-                    moveDirection *= speed;
-
-                    if (Input.GetButtonDown("Jump"))
-                    {
-                        moveDirection.y = jumpSpeed;
-                    }
-                }
-
-                moveDirection.y -= gravity * Time.deltaTime;
-
-                transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speed * speedRotation * sens);
-
-                Cc.Move(moveDirection * Time.deltaTime);
-
-                /////////////////////////////////////////////////
-
-                if (Input.GetKey(runKey))//course
-                {
-                    speed = runSpeed;
-                }
-                else
-                {
-                    speed = defaultSpeed;
-                }
-
-                if (Input.GetKey(frontWalk))//model front cam
-                {
-                    model.transform.localEulerAngles = Vector3.zero;
-                    sens = 1;
-
-                    look.cameraLibre = false;
-
-                    StopAllCoroutines();
-                }
-                if (Input.GetKey(backWalk))//model arriere
-                {
-                    model.transform.localEulerAngles = backVector;
-                    sens = -1;
-
-                    look.cameraLibre = false;
-
-                    StopAllCoroutines();
-                }
-                if (Input.GetKeyUp(backWalk))//flip
-                {
-                    StartCoroutine(FlipCharacter());
-                }
-
-            }
-            else
-            {
+            
                 if(isTalk == false)
                 {
                     if (Cc.isGrounded)
@@ -187,11 +126,7 @@ public class PlayerMovement : MonoBehaviour
                     look.stop = true;
 
                     model.transform.rotation = new Quaternion(0,0,0,0);
-                }
-               
-            }
-
-            
+                }    
 
         }
 
@@ -219,12 +154,7 @@ public class PlayerMovement : MonoBehaviour
 
     
 
-    public void walk()
-    {     
-
-        source.clip = walkSFX[Random.Range(0, walkSFX.Length)];
-        source.Play();
-    }
+    
 
     private void OnTriggerStay(Collider other)
     {
@@ -304,8 +234,7 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
-        
-        
+              
     }
 
     private void OnTriggerExit(Collider other)

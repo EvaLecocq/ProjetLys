@@ -72,47 +72,51 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public void UpgradeQuest()
     {
-        if(GameManager.s_Singleton.progression == 0 && type == Dialogue_Trigger.animal.lapin)
+        if(statut == Dialogue_Trigger.classe.principal)
         {
-            GameManager.s_Singleton.QueteFini();
-        }
-        if (GameManager.s_Singleton.progression == 1 && type == Dialogue_Trigger.animal.sanglier)
-        {
-            GameManager.s_Singleton.QueteFini();
-            
-        }
-        if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == true && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
-        {
-            GameManager.s_Singleton.QueteFini();
-            GameManager.s_Singleton.AncolieDuCanada++;
-        }
+            if (GameManager.s_Singleton.progression == 0 && type == Dialogue_Trigger.animal.lapin)
+            {
+                GameManager.s_Singleton.QueteFini();
+            }
+            if (GameManager.s_Singleton.progression == 1 && type == Dialogue_Trigger.animal.sanglier)
+            {
+                GameManager.s_Singleton.QueteFini();
 
-        if (GameManager.s_Singleton.progression == 3 && GameManager.s_Singleton.queteRaton == true && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
-        {
-            GameManager.s_Singleton.QueteFini();
-        }
-        if (GameManager.s_Singleton.progression == 3 && GameManager.s_Singleton.queteRaton == false && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
-        {
-            GameManager.s_Singleton.RatonSpam++;
-        }
+            }
+            if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == true && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
+            {
+                GameManager.s_Singleton.QueteFini();
+                GameManager.s_Singleton.AncolieDuCanada++;
+            }
 
-        if (GameManager.s_Singleton.progression == 4 && type == Dialogue_Trigger.animal.renard)
-        {
-            GameManager.s_Singleton.QueteFini();
+            if (GameManager.s_Singleton.progression == 3 && GameManager.s_Singleton.queteRaton == true && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
+            {
+                GameManager.s_Singleton.QueteFini();
+            }
+            if (GameManager.s_Singleton.progression == 3 && GameManager.s_Singleton.queteRaton == false && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
+            {
+                GameManager.s_Singleton.RatonSpam++;
+            }
+
+            if (GameManager.s_Singleton.progression == 4 && type == Dialogue_Trigger.animal.renard)
+            {
+                GameManager.s_Singleton.QueteFini();
+            }
+            if (GameManager.s_Singleton.progression == 5 && type == Dialogue_Trigger.animal.chienChat)
+            {
+                GameManager.s_Singleton.QueteFini();
+            }
+            if (GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == true && type == Dialogue_Trigger.animal.renard)// + finir quete chien chat
+            {
+                GameManager.s_Singleton.QueteFini();
+            }
+            if (GameManager.s_Singleton.progression == 7 && type == Dialogue_Trigger.animal.cerf)// apres avoir fait les pots
+            {
+                GameManager.s_Singleton.QueteFini();
+                GameManager.s_Singleton.clesDuParc = true;
+            }
         }
-        if (GameManager.s_Singleton.progression == 5 && type == Dialogue_Trigger.animal.chienChat)
-        {
-            GameManager.s_Singleton.QueteFini();
-        }
-        if (GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == true && type == Dialogue_Trigger.animal.renard)// + finir quete chien chat
-        {
-            GameManager.s_Singleton.QueteFini();
-        }
-        if (GameManager.s_Singleton.progression == 7 && type == Dialogue_Trigger.animal.cerf)// apres avoir fait les pots
-        {
-            GameManager.s_Singleton.QueteFini();
-            GameManager.s_Singleton.clesDuParc = true;
-        }
+        
 
         ////secondaire
 
@@ -131,6 +135,43 @@ public class Dialogue_Trigger : MonoBehaviour
 
     }
 
+    public void UpgradeAnimalTalk()
+    {
+        if (type == Dialogue_Trigger.animal.lapin)
+        {
+            GameManager.s_Singleton.lapin++;
+        }
+        if (type == Dialogue_Trigger.animal.sanglier)
+        {
+
+            GameManager.s_Singleton.sanglier++;
+        }
+        if ( type == Dialogue_Trigger.animal.serpent)
+        {
+            GameManager.s_Singleton.serpent++;
+        }
+
+        if (type == Dialogue_Trigger.animal.ratonLaveur)
+        {
+            GameManager.s_Singleton.ratonLaveur++;
+        }
+       
+
+        if (type == Dialogue_Trigger.animal.renard)
+        {
+            GameManager.s_Singleton.renard++;
+        }
+        if (type == Dialogue_Trigger.animal.chienChat)
+        {
+            GameManager.s_Singleton.chienChat++;
+        }
+       
+        if (type == Dialogue_Trigger.animal.cerf)
+        {
+            GameManager.s_Singleton.cerf++;
+        }
+
+    }
 
     public void EventDialogue()
     {
@@ -264,12 +305,13 @@ public class Dialogue_Trigger : MonoBehaviour
         player.isTalk = false;
         camDialogue.Priority = 0;
 
-        player.look.transform.position = Vector3.zero;
-        player.look.transform.rotation = new Quaternion(0, 0, 0, 0);
+        player.camRoot.transform.position = Vector3.zero;
+        player.camRoot.transform.rotation = new Quaternion(0, 0, 0, 0);
 
         //Debug.Log(camDialogue.Priority);
 
         UpgradeQuest();
+        UpgradeAnimalTalk();
 
         manager.triggerEnd = false;
      

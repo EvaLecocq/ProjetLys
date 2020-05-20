@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 10
+  type: 0
   statut: 2
   dialogueDebut:
     name: Lapin

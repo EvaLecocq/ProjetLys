@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 2426882631625822624}
   - component: {fileID: 2438403314161176466}
   - component: {fileID: 2446997846015340770}
-  - component: {fileID: 2556232004577967056}
   - component: {fileID: 7199764833846648145}
   m_Layer: 0
   m_Name: SM_Tree_Dead_02
@@ -238,30 +237,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!205 &2556232004577967056
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2424896374010431254}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.401223
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.15481718
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.049034625
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!136 &7199764833846648145
 CapsuleCollider:
   m_ObjectHideFlags: 0
