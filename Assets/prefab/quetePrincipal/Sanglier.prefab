@@ -345,10 +345,10 @@ MonoBehaviour:
   type: 1
   statut: 0
   dialogueDebut:
-    name: Sanglier
+    name: Le Sanglier
     sentences: []
   dialogueLapin:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - "J'ALLAIS GAGNER ! J'AI UNIQUEMENT PERDU \xC0 CAUSE DE SES BOIX, JE SUIS LE
       PLUS FORT. "
@@ -360,7 +360,7 @@ MonoBehaviour:
       MOI UN TROPH\xC9E. "
     - ALLEZ ! PLUS VITE PETIT PERDANT.
   dialogueSanglier:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - "INT\xC9RESSANT !!! CE SONT DE BEAUX GLANDS QUE TU M'AS APPORT\xC9 L\xC0, PETIT
       PERDANT."
@@ -371,59 +371,59 @@ MonoBehaviour:
     - 'OU ALORS JE RESTE ICI JE MANGE ENCORE PLUS DE GLANDS '
     - "ET JE DEVIENDRAIS SI FORT QUE J'EN FERAI QU'UNE BOUCH\xC9E."
   dialogueSerpent:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
   dialogueRatonLaveur:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
   dialogueRenard:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
   dialogueChianChat:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
   dialogueRenard2:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
   dialogueCerf:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
     - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
       GAGNANTS.
   dialogueQueteNonValideSanglier:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - "H\xC9 ALORS LE PERDANT, J'ATTEND TOUJOURS MON TROPH\xC9E ! "
   dialogueQueteNonValide:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - "JE M'ENTRA\xCENE !!!"
   dialogueQueteNonValide2:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - "UN VRAI GUERRIER \xC7A MANGE !"
   dialogueQueteNonValide3:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - GGGRRRROAAAARRR
   dialogueQueteNonValideChien:
-    name: Sanglier
+    name: Le Sanglier
     sentences:
     - "JE SUIS OCCUP\xC9 !"
   dialogueQueteCourse:

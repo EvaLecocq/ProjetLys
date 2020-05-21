@@ -177,6 +177,7 @@ public class minijeuCourse : MonoBehaviour
         player.enabled = false;
         player.gameObject.transform.position = playerStart.position;
         player.gameObject.transform.rotation = playerStart.rotation;
+        player.camRoot.transform.rotation = new Quaternion(0, 0, 0, 0);
 
         animal.gameObject.transform.position = animalStart.position;
         animal.gameObject.transform.rotation = animalStart.rotation;

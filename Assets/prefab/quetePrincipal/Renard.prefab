@@ -379,10 +379,10 @@ MonoBehaviour:
   type: 4
   statut: 0
   dialogueDebut:
-    name: Renard
+    name: Le Renard
     sentences: []
   dialogueLapin:
-    name: Renard
+    name: Le Renard
     sentences:
     - Bonjour petit humain, tu es bien loin de ta maison.
     - Tout seul qui plus est.
@@ -390,7 +390,7 @@ MonoBehaviour:
     - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
     - "Surtout pour un petit \xEAtre comme toi."
   dialogueSanglier:
-    name: Renard
+    name: Le Renard
     sentences:
     - Bonjour petit humain, tu es bien loin de ta maison.
     - Tout seul qui plus est.
@@ -398,7 +398,7 @@ MonoBehaviour:
     - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
     - "Surtout pour un petit \xEAtre comme toi."
   dialogueSerpent:
-    name: Renard
+    name: Le Renard
     sentences:
     - Bonjour petit humain, tu es bien loin de ta maison.
     - Tout seul qui plus est.
@@ -406,7 +406,7 @@ MonoBehaviour:
     - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
     - "Surtout pour un petit \xEAtre comme toi."
   dialogueRatonLaveur:
-    name: Renard
+    name: Le Renard
     sentences:
     - "H\xE9 bien, qu'avons nous l\xE0 ? Belle journ\xE9e petit \xEAtre, que viens
       tu faire dans mon domaine ?"
@@ -427,12 +427,12 @@ MonoBehaviour:
       et retarder l'\xE9ch\xE9ance..."
     - "L'heure tourne petit \xEAtre, et mon estomac r\xE9clame un tribu."
   dialogueRenard:
-    name: Renard
+    name: Le Renard
     sentences:
     - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
     - Tu ne voudrais pas qu'il lui arrrive quelque chose ?
   dialogueChianChat:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Trop tard petit \xEAtre, la vie t'a rattrap\xE9, et la sienne l'a quitt\xE9,
       mais ne t'en fais pas, tu n'y est pour rien, ainsi va la nature et la vie..."
@@ -443,34 +443,34 @@ MonoBehaviour:
     - "Devant chaque pots se trouve une devinette \xE0 r\xE9soudre."
     - "Et maintenant va, petit \xEAtre et fais attention \xE0 toi."
   dialogueRenard2:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Va sur la petite colline petit \xEAtre, et r\xE9sout les \xE9nigmes."
     - "Va sur la petite colline petit \xEAtre, et r\xE9sout les \xE9nigmes."
   dialogueCerf:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Maintenant que tu as rencontr\xE9 le cerf, je te sugg\xE8re de partir petit
       \xEAtre ..."
     - Ta famille t'attend.
   dialogueQueteNonValideSanglier:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Je suis occup\xE9 va jouer ailleur."
   dialogueQueteNonValide:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Je suis occup\xE9 va jouer ailleur."
   dialogueQueteNonValide2:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Je suis occup\xE9 va jouer ailleur."
   dialogueQueteNonValide3:
-    name: Renard
+    name: Le Renard
     sentences:
     - "Je suis occup\xE9 va jouer ailleur."
   dialogueQueteNonValideChien:
-    name: Renard
+    name: Le Renard
     sentences:
     - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
     - Tu ne voudrais pas qu'il lui arrrive quelque chose ?

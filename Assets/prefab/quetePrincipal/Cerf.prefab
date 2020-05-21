@@ -192,31 +192,31 @@ MonoBehaviour:
   type: 6
   statut: 0
   dialogueDebut:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueLapin:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueSanglier:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueSerpent:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueRatonLaveur:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueRenard:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueChianChat:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueRenard2:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueCerf:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences:
     - "Bonjour, toi,\r\nC'est inhabituel de voir un humain dans le parc apr\xE8s sa
       fermeture,\r Pourquoi m'as-tu appel\xE9 ?"
@@ -229,23 +229,23 @@ MonoBehaviour:
       puisse ces derni\xE8res t'\xEAtre utiles \xE0 l'avenir."
     - "Allez, ne tardes pas, retourne aupr\xE8s de ta famille."
   dialogueQueteNonValideSanglier:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueQueteNonValide:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueQueteNonValide2:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences:
     - 'ZZzzzz, hein ? heu, quoi ? '
     - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
   dialogueQueteNonValide3:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences:
     - MAIS ...
     - LAISSES MOI DORMIR !
   dialogueQueteNonValideChien:
-    name: Cerf
+    name: "Ma\xEEtre Cerf"
     sentences: []
   dialogueQueteCourse:
     name: 

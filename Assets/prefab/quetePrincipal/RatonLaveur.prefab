@@ -239,22 +239,22 @@ MonoBehaviour:
   type: 3
   statut: 0
   dialogueDebut:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzzZzzZZZzz...
     - ZzzzZZzzzzz...
   dialogueLapin:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzzzzzzZZZZzz
     - ZZZZzzzZzzzzzz
   dialogueSanglier:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzZZZZZZzz
     - ZZzzzZzzzzZZ
   dialogueSerpent:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - "Tu es la personne la plus p\xE9nible que j'ai rencontr\xE9."
     - "Si je te dis o\xF9 est le cerf, tu me laisses tranquille ?"
@@ -264,51 +264,51 @@ MonoBehaviour:
     - "Le seul animal capable de \xE7a doit \xEAtre malin et rus\xE9..."
     - Donc trouves le et LAISSE MOI DORMIR.
   dialogueRatonLaveur:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - MAIS LAI-SSE MOI DOR-MIR !
     - "Trouve ton animal rus\xE9 et arr\xEAte de venir m'emb\xEAter !"
   dialogueRenard:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzzzzzzzzzzzzzzzz
     - zzzzzzzzzzzzzzZZZZZ
   dialogueChianChat:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzZZZZZZZZZZZZZzz
     - zzzzzzzzzZZZZZZZZZZZ
   dialogueRenard2:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - ZZZZzzzz ... zzzzZ
     - zzzzzzZZZZZZzzz
   dialogueCerf:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzz ... zzzzz ... zzZZZZzz
     - zzzzzzzZZZZZzzz ... zzzz ...
   dialogueQueteNonValideSanglier:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzZZZzzzzzzzzz
   dialogueQueteNonValide:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
     - ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
   dialogueQueteNonValide2:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - 'ZZzzzz, hein ? heu, quoi ? '
     - Tu cherches le cerf ? mais je m'en fiche, laisses moi tranquille.
   dialogueQueteNonValide3:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - MAIS ...
     - LAISSES MOI DORMIR !
   dialogueQueteNonValideChien:
-    name: Raton Laveur
+    name: Le Raton Laveur
     sentences:
     - zzzzz ... zzzz
     - ZZZzzzzZzzzz

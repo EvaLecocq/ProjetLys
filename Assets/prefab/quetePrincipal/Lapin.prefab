@@ -240,7 +240,7 @@ MonoBehaviour:
   type: 0
   statut: 0
   dialogueDebut:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "HEY TOI L\xC0 ! "
     - "Que fais tu ici !? Le portail est ferm\xE9, non ? \xC7a veut dire que le parc
@@ -252,19 +252,19 @@ MonoBehaviour:
       chef, il a la grande cl\xE9 du portail, il peut t'ouvrir."
     - "Je me souviens l'avoir vu pr\xE8s d'un pont, mais l'endroit pr\xE9cis m'\xE9chappe."
   dialogueLapin:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
     - "Tu as trouv\xE9 le cerf ?"
     - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
   dialogueSanglier:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
     - "Tu as trouv\xE9 le cerf ?"
     - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
   dialogueSerpent:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
     - "Tu as trouv\xE9 le cerf ? Le sanglier s'est battu avec lui ?"
@@ -272,7 +272,7 @@ MonoBehaviour:
     - "Et apr\xE8s il est partie dans les hautes herbes ?"
     - Je me demande quel animal pourrait s'y trouver...
   dialogueRatonLaveur:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
     - "H\xE9 bien, tu as rencontr\xE9 plein d'animaux du parc !"
@@ -280,44 +280,44 @@ MonoBehaviour:
     - Hmm, plusieurs animaux pourraient correspondre, les deux principaux seraient
       le furet et le renard, ou le raton laveur.
   dialogueRenard:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - Je suis mort.
     - Les morts ne parlent pas
   dialogueChianChat:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - Je suis mort.
     - Les morts ne parlent pas
   dialogueRenard2:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - Je suis mort.
     - Les morts ne parlent pas
   dialogueCerf:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - Je suis mort.
     - Les morts ne parlent pas
   dialogueQueteNonValideSanglier:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "Le sanglier veut un troph\xE9e ?"
     - Essaye de ramasser toutes les cochoneries par terre.
   dialogueQueteNonValide:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - Ah oui le raton laveur est dur au reveil.
   dialogueQueteNonValide2:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - "Si il ne se r\xE9veille pas, rappel le."
   dialogueQueteNonValide3:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - Appel le encore, il va bien finir par se lever.
   dialogueQueteNonValideChien:
-    name: Lapin
+    name: Le Lapin
     sentences:
     - 
   dialogueQueteCourse:

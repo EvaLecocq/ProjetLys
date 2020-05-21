@@ -112,15 +112,15 @@ MonoBehaviour:
   type: 2
   statut: 0
   dialogueDebut:
-    name: Serpent
+    name: Le Serpent
     sentences: []
   dialogueLapin:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "**Bruit \xE9trange**"
     - "**Bruit \xE9trange**"
   dialogueSanglier:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Heu....heu....bonjour ? vous vous \xEAtes perdue ? le sentier est derri\xE8re
       vous, vos amis doivent vous attendre..."
@@ -136,13 +136,13 @@ MonoBehaviour:
       \rvoyez \xE7a comme un cadeau pour m'avoir remont\xE9 le moral. "
     - Bonne chance pour trouver le cerf !
   dialogueSerpent:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Avez vous parl\xE9 au raton laveur ? Il faut beaucoup insistez pour qu'il vous
       parle."
   dialogueRatonLaveur:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Avez vous parl\xE9 au raton laveur ? "
@@ -152,21 +152,21 @@ MonoBehaviour:
       correspondre,\r ou m\xEAme le chat. J'esp\xE8re vous avoir donn\xE9 des pistes."
     - "Bonne chance dans votre enqu\xEAte !"
   dialogueRenard:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - 'Le lapin a disparu ? '
     - "Je ne l'ai pas vu pass\xE9 depuis un bon moment,\r je ne vous serais pas d'une
       grande aide."
   dialogueChianChat:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Une fleur blache comme le lys et violette comme l'orchid\xE9e ?"
     - "Hormis ma fleur je ne connais pas beaucoup de fleurs, \r\nla fumeterre et le
       circe commun sont les deux plantes qui me viennent \xE0 l'esprit."
   dialogueRenard2:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Le renard a mang\xE9 le lapin ?!"
@@ -174,7 +174,7 @@ MonoBehaviour:
     - "Ne t'en fais pas tu n'y est pour rien,\r repense aux bons moments que tu as
       pass\xE9 avec le lapin et \xE7a ira mieux"
   dialogueCerf:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Vous avez rencontr\xE9 le cerf ? Magnifique ! "
@@ -182,26 +182,26 @@ MonoBehaviour:
       voir."
     - Mais j'imagine que vous avez eu ce que vous vouliez.
   dialogueQueteNonValideSanglier:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - sssSSSSssSSSS
   dialogueQueteNonValide:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
       vraie."
   dialogueQueteNonValide2:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
       vraie."
   dialogueQueteNonValide3:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
       vraie."
   dialogueQueteNonValideChien:
-    name: Serpent
+    name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, en quoi puis-je vous \xEAtre utile ?"
     - "Une fleur ? Navr\xE9 je ne m'y connais pas trop."
