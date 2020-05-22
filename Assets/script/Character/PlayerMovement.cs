@@ -115,15 +115,20 @@ public class PlayerMovement : MonoBehaviour
                         model.transform.rotation = camRoot.rotation;
                         
                     }
-                    if (Input.GetKey(backWalk))//model arriere
+                    if (Input.GetKey(backWalk))//model arriere marche, quand la touche est relever un flip camera se fait sur le perso
                     {
                         model.transform.rotation = camRoot.rotation;
                     }
-                    if (Input.GetKeyUp(leftWalk))//flip
+                    if (Input.GetKeyUp(backWalk))
+                    {
+                         
+                    }
+
+                    if (Input.GetKey(leftWalk))//flip
                     {
                         model.transform.rotation = camRoot.rotation;
                     }
-                    if (Input.GetKeyUp(rightWalk))//flip
+                    if (Input.GetKey(rightWalk))//flip
                     {
                         model.transform.rotation = camRoot.rotation;
                     }
@@ -158,6 +163,19 @@ public class PlayerMovement : MonoBehaviour
             if(item.itemType == itemPick.type.graineGland && GameManager.s_Singleton.progression == 2)
             {
                 ui.sanglierTextSpawn();
+            }
+            else if (item.itemType == itemPick.type.graineGland && GameManager.s_Singleton.progression == 2)
+            {
+                ui.sanglierTextSpawnFaux();
+            }
+
+            if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6)
+            {
+                ui.sanglierTextSpawn();
+            }
+            else if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6)
+            {
+                ui.sanglierTextSpawnFaux();
             }
         }
 
@@ -299,10 +317,12 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(timeItemDispawnHand);
 
         item.AddItemToManager();
+        item = null;
 
+        yield return new WaitForSeconds(2f);
         ui.sanglierTextDespawn();
 
-        item = null;
+       
     }
 
     

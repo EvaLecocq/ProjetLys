@@ -15,7 +15,8 @@ public class UImanager : MonoBehaviour
     public Image dayImage;
     public Sprite[] weekDayImage;
     public GameObject textInteraction;
-    public GameObject textQueteSanglier;
+    public GameObject textQueteSpecial;
+    
 
     private MouseLook mouseC;
 
@@ -193,13 +194,34 @@ public class UImanager : MonoBehaviour
     public void sanglierTextSpawn()
     {
 
-        textQueteSanglier.SetActive(true);
+        textQueteSpecial.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourra être un trophée pour le sanglier";
 
+    }
+    public void sanglierTextSpawnFaux()
+    {
+
+        textQueteSpecial.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela risque de ne pas convenir au sanglier";
+    }
+
+    public void chienChatTextSpawn()
+    {
+
+        textQueteSpecial.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourra être une fleur pour le chien et le chat";
+
+    }
+    public void chienChatTextSpawnFaux()
+    {
+
+        textQueteSpecial.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela risque de ne pas convenir au chien et au chat";
     }
 
     public void sanglierTextDespawn()
     {
-        textQueteSanglier.SetActive(false);
+        textQueteSpecial.SetActive(false);
     }
 
 
