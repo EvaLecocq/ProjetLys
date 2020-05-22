@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public Dialogue_Trigger dialogueActuel;
     public banc bancActuel;
     private UImanager ui;
+    public Animator anim;
 
     public KeyCode runKey;
     public KeyCode backWalk;
@@ -101,15 +102,18 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(runKey))//course
                     {
                         speed = runSpeed;
+                        anim.SetBool("cour", true);
                     }
                     else
                     {
                         speed = defaultSpeed;
+                        anim.SetBool("cour", false);
                     }
 
                     if (Input.GetKey(frontWalk))//model front cam
                     {
                         model.transform.rotation = camRoot.rotation;
+                        
                     }
                     if (Input.GetKey(backWalk))//model arriere
                     {
@@ -124,8 +128,17 @@ public class PlayerMovement : MonoBehaviour
                         model.transform.rotation = camRoot.rotation;
                     }
 
+                if (Input.GetKeyUp(rightWalk) || Input.GetKeyUp(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
+                {
+                    anim.SetBool("marche", true);
+                }
+                else
+                {
+                    anim.SetBool("marche", false);
+                }
 
-                    look.stop = false;
+
+                look.stop = false;
                 }
                 else
                 {
