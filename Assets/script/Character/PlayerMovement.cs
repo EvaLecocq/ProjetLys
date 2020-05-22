@@ -102,12 +102,12 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(runKey))//course
                     {
                         speed = runSpeed;
-                        anim.SetBool("cour", true);
+                        //anim.SetBool("cour", true);
                     }
                     else
                     {
                         speed = defaultSpeed;
-                        anim.SetBool("cour", false);
+                       // anim.SetBool("cour", false);
                     }
 
                     if (Input.GetKey(frontWalk))//model front cam
@@ -128,13 +128,14 @@ public class PlayerMovement : MonoBehaviour
                         model.transform.rotation = camRoot.rotation;
                     }
 
-                if (Input.GetKeyUp(rightWalk) || Input.GetKeyUp(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
+                if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
                 {
-                    anim.SetBool("marche", true);
+                    
+                    anim.SetFloat("isWalking", 0.2f);
                 }
                 else
                 {
-                    anim.SetBool("marche", false);
+                    anim.SetFloat("isWalking", 0.0f);
                 }
 
 
