@@ -188,7 +188,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(timeToFlip);
 
         transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
-        model.transform.localEulerAngles = Vector3.zero;
+        //model.transform.localEulerAngles = Vector3.zero;
+        model.transform.rotation = camRoot.rotation;
         sens = 1;
     }
 
