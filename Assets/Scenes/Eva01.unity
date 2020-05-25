@@ -7268,8 +7268,8 @@ Transform:
   - {fileID: 881718292}
   - {fileID: 874299284}
   - {fileID: 1167644777}
-  - {fileID: 275420480}
   - {fileID: 862370845}
+  - {fileID: 275420480}
   - {fileID: 84770319}
   m_Father: {fileID: 270305167}
   m_RootOrder: 12
@@ -10713,7 +10713,7 @@ PrefabInstance:
     - target: {fileID: 2822193155523660555, guid: 7db664631e386df4595458ed5336cb67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.48
+      value: 23.76
       objectReference: {fileID: 0}
     - target: {fileID: 2822193155523660555, guid: 7db664631e386df4595458ed5336cb67,
         type: 3}
@@ -10723,7 +10723,7 @@ PrefabInstance:
     - target: {fileID: 2822193155523660555, guid: 7db664631e386df4595458ed5336cb67,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.47
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 2822193155523660555, guid: 7db664631e386df4595458ed5336cb67,
         type: 3}
