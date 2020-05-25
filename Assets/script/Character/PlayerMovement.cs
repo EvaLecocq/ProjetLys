@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public CinemachineVirtualCamera cam;
     public CinemachineVirtualCamera camFPV;
     public Transform camRoot;
+    public Transform camRootReverse;
     public bool isBanc = false;
     public bool isTalk = false;
     private Dialogue_Manager managerDialogue;
@@ -65,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         ui = UImanager.FindObjectOfType<UImanager>();
 
-        backVector = new Vector3(0, camRoot.position.y + 180, 0);
+       // backVector = new Vector3(0, camRoot.position.y + 180, 0);
     }
 
     // Update is called once per frame
@@ -113,15 +114,16 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(frontWalk))//model front cam
                     {
                         model.transform.rotation = camRoot.rotation;
-                        
+                        StopCoroutine(FlipCharacter());
                     }
                     if (Input.GetKey(backWalk))//model arriere marche, quand la touche est relever un flip camera se fait sur le perso
                     {
-                        model.transform.rotation = camRoot.rotation;
+                        model.transform.rotation = camRootReverse.rotation;
+                        //model.transform.localEulerAngles = backVector;
                     }
                     if (Input.GetKeyUp(backWalk))
                     {
-                         
+                        StartCoroutine(FlipCharacter());
                     }
 
                     if (Input.GetKey(leftWalk))//flip
