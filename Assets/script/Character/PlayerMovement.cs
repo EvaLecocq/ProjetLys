@@ -112,6 +112,8 @@ public class PlayerMovement : MonoBehaviour
                        // anim.SetBool("cour", false);
                     }
 
+
+
                     if (Input.GetKey(frontWalk))//model front cam
                     {
                         model.transform.rotation = camRoot.rotation;
