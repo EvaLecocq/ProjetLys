@@ -405,6 +405,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
+  fogColorSun: {r: 1, g: 0.7960849, b: 0.5235849, a: 1}
+  fogDistanceBase: 300
   skyColorPluie:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
@@ -463,6 +465,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
+  fogColorPluie: {r: 0.3726415, g: 0.5205402, b: 1, a: 1}
   skyColorTempete:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
@@ -521,6 +524,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
+  fogColorTempete: {r: 0.29357815, g: 0, b: 1, a: 1}
   skyColorBrouillard:
     serializedVersion: 2
     key0: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
@@ -579,6 +583,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
+  fogColorBrouillard: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+  fogDistanceBrouillard: 100
 --- !u!1 &5605713186866599902
 GameObject:
   m_ObjectHideFlags: 0

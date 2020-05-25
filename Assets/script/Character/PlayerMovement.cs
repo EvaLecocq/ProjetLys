@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public MouseLook look;
     public CinemachineVirtualCamera cam;
     public CinemachineVirtualCamera camFPV;
+    public CinemachineBrain mainCamera;
     public Transform camRoot;
     public Transform camRootReverse;
     public bool isBanc = false;
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
             managerDialogue = FindObjectOfType<Dialogue_Manager>();
         }
-
+        mainCamera = CinemachineBrain.FindObjectOfType<CinemachineBrain>();
         ui = UImanager.FindObjectOfType<UImanager>();
 
        // backVector = new Vector3(0, camRoot.position.y + 180, 0);
@@ -185,11 +186,17 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator FlipCharacter()
     {
+        //mainCamera.enabled = false;
+
         yield return new WaitForSeconds(timeToFlip);
 
         transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
         //model.transform.localEulerAngles = Vector3.zero;
         model.transform.rotation = camRoot.rotation;
+
+        //yield return new WaitForSeconds(0.5f);
+
+        //mainCamera.enabled = true;
         sens = 1;
     }
 
