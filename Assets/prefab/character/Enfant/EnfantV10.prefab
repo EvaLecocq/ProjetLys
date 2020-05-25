@@ -721,7 +721,7 @@ MonoBehaviour:
   speed: 6
   runSpeed: 3
   speedRotation: 30
-  timeToFlip: 0.5
+  timeToFlip: 2
   jumpSpeed: 3
   gravity: 9
   sens: 1
@@ -913,6 +913,11 @@ PrefabInstance:
       propertyPath: camFPV
       value: 
       objectReference: {fileID: 6837322048848104035}
+    - target: {fileID: 6096377441024067844, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_Name
+      value: camTPV
+      objectReference: {fileID: 0}
     - target: {fileID: 9175205278440481253, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: m_Name

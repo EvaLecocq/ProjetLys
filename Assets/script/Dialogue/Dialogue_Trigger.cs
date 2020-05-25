@@ -39,6 +39,7 @@ public class Dialogue_Trigger : MonoBehaviour
     public Outline outliner;
     public bool autoSelect = true;
     public GameObject interactionIconDialogue;
+    public Animator fonduNoir;
 
     public queteSecondaire queteSecondaire;
 
@@ -63,8 +64,8 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         if(manager.triggerEnd == true)
         {
-            StopDialogue();
-            
+
+            StartCoroutine(FonduNoirStopDialogue());
         }
 
         
@@ -177,17 +178,10 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         manager.dialogueActive = true;
 
-        player.isTalk = true;
-
-        player.transform.position = playerPos.position;
-        player.transform.rotation = playerPos.rotation;
-
-        camDialogue.enabled = true;
-        camDialogue.Priority = 10;
+        StartCoroutine(FonduNoirStartDialogue());
 
         
 
-        StartDialogue();
     }
 
     public void ActiveOutline()
@@ -202,9 +196,33 @@ public class Dialogue_Trigger : MonoBehaviour
         interactionIconDialogue.SetActive(false);
     }
 
-    public void StartDialogue()
+    public IEnumerator FonduNoirStartDialogue()
     {
-        if(statut == Dialogue_Trigger.classe.principal || statut == Dialogue_Trigger.classe.tertiaire)
+        fonduNoir.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+
+        player.isTalk = true;
+
+        player.transform.position = playerPos.position;
+        player.transform.rotation = playerPos.rotation;
+
+        camDialogue.enabled = true;
+        camDialogue.Priority = 10;
+        
+
+        StartCoroutine(StartDialogue());
+        
+
+        yield return new WaitForSeconds(1);
+        fonduNoir.gameObject.SetActive(false);
+
+    }
+
+    public IEnumerator StartDialogue()
+    {
+        yield return new WaitForSeconds(1);
+
+        if (statut == Dialogue_Trigger.classe.principal || statut == Dialogue_Trigger.classe.tertiaire)
         {
             if (GameManager.s_Singleton.principale == GameManager.quete.debut)
             {
@@ -296,10 +314,27 @@ public class Dialogue_Trigger : MonoBehaviour
 
         outliner.enabled = false;
         interactionIconDialogue.SetActive(false);
+
+        
+        
+    }
+
+    public IEnumerator FonduNoirStopDialogue()
+    {
+        fonduNoir.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+
+        StopDialogue();
+
+        yield return new WaitForSeconds(1);
+        fonduNoir.gameObject.SetActive(false);
+
     }
 
     public void StopDialogue()
     {
+        
+
         manager.dialogueActive = false;
         manager.EndDialogue();
         
@@ -316,7 +351,9 @@ public class Dialogue_Trigger : MonoBehaviour
         UpgradeAnimalTalk();
 
         manager.triggerEnd = false;
-     
+
+       
+
 
     }
   

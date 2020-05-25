@@ -328,6 +328,7 @@ MonoBehaviour:
   outliner: {fileID: 0}
   autoSelect: 1
   interactionIconDialogue: {fileID: 1971471341213929667}
+  fonduNoir: {fileID: 0}
   queteSecondaire: {fileID: 0}
   QueteAnimalValide: 0
 --- !u!114 &1889741255906623718

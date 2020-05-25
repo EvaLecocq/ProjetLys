@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 1105832514357157200}
   - component: {fileID: 1348460508455710371}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: camBanc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
