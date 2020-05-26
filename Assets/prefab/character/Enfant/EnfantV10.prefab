@@ -850,8 +850,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 6837322050822594505}
     m_Modifications:
     - target: {fileID: 919491461, guid: 2c4dd9bd09f785047956af8b9d9d0914, type: 3}
-      propertyPath: m_LookaheadSmoothing
-      value: 20
+      propertyPath: m_HorizontalDamping
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919491461, guid: 2c4dd9bd09f785047956af8b9d9d0914, type: 3}
+      propertyPath: m_VerticalDamping
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 625829952454137869, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
@@ -900,6 +904,11 @@ PrefabInstance:
       objectReference: {fileID: 8683934677752235248}
     - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
+      propertyPath: mouseSensitivity
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
       propertyPath: camTPV
       value: 
       objectReference: {fileID: 6837322049739670271}
@@ -913,6 +922,11 @@ PrefabInstance:
       propertyPath: camFPV
       value: 
       objectReference: {fileID: 6837322048848104035}
+    - target: {fileID: 4264668507744636131, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6096377441024067844, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: m_Name
