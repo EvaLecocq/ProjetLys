@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     public float sens = 1;
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 CameraMoveCustom = Vector3.zero;
+    private Quaternion qTo;
     CharacterController Cc;
 
     private void Start()
@@ -65,8 +66,9 @@ public class PlayerMovement : MonoBehaviour
 
             Cc = GetComponent<CharacterController>();
 
-            managerDialogue = FindObjectOfType<Dialogue_Manager>();
+            
         }
+        managerDialogue = FindObjectOfType<Dialogue_Manager>();
         mainCamera = CinemachineBrain.FindObjectOfType<CinemachineBrain>();
         ui = UImanager.FindObjectOfType<UImanager>();
 
@@ -103,8 +105,20 @@ public class PlayerMovement : MonoBehaviour
 
                     Cc.Move(moveDirection * Time.deltaTime);
 
+               
+                //rotation du perso
+                    Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+                     movement = Camera.main.transform.TransformDirection(movement);
+                    movement.y = 0f;
 
-                    if (Input.GetKey(runKey))//course
+                model.transform.rotation = Quaternion.LookRotation(movement);
+                model.transform.rotation = Quaternion.Slerp(model.transform.rotation, Quaternion.LookRotation(movement), 0.15f);
+
+
+                // model.transform.rotation = Quaternion.Slerp(model.transform.rotation, movement.rotation, Time.time * speed);
+
+
+                if (Input.GetKey(runKey))//course
                     {
                         speed = runSpeed;
                         
@@ -115,42 +129,19 @@ public class PlayerMovement : MonoBehaviour
                        
                     }
 
+                
 
-
-                    if (Input.GetKey(frontWalk))//model front cam
-                    {
-                        model.transform.rotation = camRoot.rotation;
-                        //StopCoroutine(FlipCharacter());
-                        sens = 0;
-                    }
-                    if (Input.GetKey(backWalk))//model arriere marche, quand la touche est relever un flip camera se fait sur le perso
-                    {
-                        model.transform.rotation = camRootReverse.rotation;
-                        sens = 1;
-                    
-                    }
-                    if (Input.GetKeyUp(backWalk))
-                    {
-                       // StartCoroutine(FlipCharacter());
-                    }
-
-                    if (Input.GetKey(leftWalk))//flip
-                    {
-                        model.transform.rotation = camRoot.rotation;
-                    }
-                    if (Input.GetKey(rightWalk))//flip
-                    {
-                        model.transform.rotation = camRoot.rotation;
-                    }
 
                     if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
                     {
-                    
-                    anim.SetFloat("isWalking", 0.2f);
+                        
+                    qTo = model.transform.rotation;
+                        anim.SetFloat("isWalking", 0.2f);
                     }
                      else
                     {
-                    anim.SetFloat("isWalking", 0.0f);
+                    model.transform.rotation = qTo;
+                        anim.SetFloat("isWalking", 0.0f);
                     }
 
 
