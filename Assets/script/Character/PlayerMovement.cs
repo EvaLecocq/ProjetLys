@@ -29,7 +29,10 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode rightWalk;
     public KeyCode interactionKey;
 
-  
+    public enum interactionType { item, dialogue, banc};
+    public interactionType type;
+
+
     private Rigidbody rb;
 
     private float nextActionTime = 0.0f;
@@ -104,12 +107,12 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(runKey))//course
                     {
                         speed = runSpeed;
-                        //anim.SetBool("cour", true);
+                        
                     }
                     else
                     {
                         speed = defaultSpeed;
-                       // anim.SetBool("cour", false);
+                       
                     }
 
 
@@ -124,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
                     {
                         model.transform.rotation = camRootReverse.rotation;
                         sens = 1;
-                    //model.transform.localEulerAngles = backVector;
+                    
                     }
                     if (Input.GetKeyUp(backWalk))
                     {
@@ -186,6 +189,26 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        //interaction
+
+        if (Input.GetKeyDown(interactionKey) && item != null && type == PlayerMovement.interactionType.item)
+        {
+            item.isPick = true;
+
+            StartCoroutine(CollectItem());
+        }
+
+        if (Input.GetKeyDown(interactionKey) && bancActuel != null && type == PlayerMovement.interactionType.banc)
+        {
+            bancActuel.EnterBanc();
+        }
+
+        if (Input.GetKeyDown(interactionKey) && dialogueActuel != null && managerDialogue.dialogueActive == false && type == PlayerMovement.interactionType.dialogue)
+        {
+            //Debug.Log(other);
+            dialogueActuel.EventDialogue();
+
+        }
     }
     /*
     public IEnumerator FlipCharacter()
@@ -218,6 +241,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.CompareTag("item"))//outline
         {
+            type = PlayerMovement.interactionType.item;
+
             if(item == null)
             {
                 item = other.gameObject.GetComponent<itemPick>();
@@ -234,20 +259,15 @@ public class PlayerMovement : MonoBehaviour
                 item.outlinerItem.enabled = false;
                 item.interactionIcon.SetActive(false);
             }
-     
-
-            if (Input.GetKeyDown(interactionKey))
-            {
-                item.isPick = true;
-
-                StartCoroutine(CollectItem());
-            }
+       
 
         }
 
         //dialogue
         if (other.CompareTag("dialogue"))
         {
+            type = PlayerMovement.interactionType.dialogue;
+
             if (managerDialogue.dialogueActive == false)
             {
                 if(dialogueActuel == null)
@@ -259,12 +279,7 @@ public class PlayerMovement : MonoBehaviour
                 dialogueActuel.enabled = true;
                 dialogueActuel.ActiveOutline();
 
-                if (Input.GetKeyDown(interactionKey))
-                {
-                    //Debug.Log(other);
-                    dialogueActuel.EventDialogue();
-                    
-                }
+                
             }
         }
        
@@ -273,6 +288,8 @@ public class PlayerMovement : MonoBehaviour
         
         if(other.CompareTag("banc") )
         {
+            type = PlayerMovement.interactionType.banc;
+
             bancActuel = other.GetComponent<banc>();
 
             bancActuel.enabled = true;
@@ -280,12 +297,7 @@ public class PlayerMovement : MonoBehaviour
             if (bancActuel.isBanc == false)
             {
                 
-                bancActuel.ActiveOutline();
-
-                if (Input.GetKeyDown(interactionKey))
-                {
-                    bancActuel.EnterBanc();
-                }
+                bancActuel.ActiveOutline();       
                
             }
             
@@ -297,6 +309,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("item") && item != null && item.isPick == false)
         {
+            
 
             item.outlinerItem.enabled = false;
             item.interactionIcon.SetActive(false);

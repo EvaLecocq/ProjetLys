@@ -215,6 +215,7 @@ public class Dialogue_Trigger : MonoBehaviour
         
 
         yield return new WaitForSeconds(1);
+        fonduNoir.Rebind();
         fonduNoir.gameObject.SetActive(false);
 
     }
@@ -328,6 +329,7 @@ public class Dialogue_Trigger : MonoBehaviour
         StopDialogue();
 
         yield return new WaitForSeconds(1);
+        fonduNoir.Rebind();
         fonduNoir.gameObject.SetActive(false);
 
     }
@@ -353,8 +355,17 @@ public class Dialogue_Trigger : MonoBehaviour
 
         manager.triggerEnd = false;
 
-       
+        StartCoroutine(waitToTalk());
 
+
+    }
+
+    public IEnumerator waitToTalk()
+    {
+        gameObject.GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(0.2f);
+
+        gameObject.GetComponent<Collider>().enabled = true;
 
     }
   
