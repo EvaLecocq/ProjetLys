@@ -357,13 +357,13 @@ public class Dialogue_Trigger : MonoBehaviour
 
         StartCoroutine(waitToTalk());
 
-
+        manager.dialogueActive = false;
     }
 
     public IEnumerator waitToTalk()
     {
         gameObject.GetComponent<Collider>().enabled = false;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(2f);
 
         gameObject.GetComponent<Collider>().enabled = true;
 

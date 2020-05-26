@@ -86,7 +86,7 @@ public class Dialogue_Manager : MonoBehaviour
     {
         dialogueapparition.gameObject.SetActive(false);
 
-        dialogueActive = false;
+        //dialogueActive = false;
         triggerEnd = true;
         //quete.gameObject.SetActive(true);
         startDialogueFinish = false;
