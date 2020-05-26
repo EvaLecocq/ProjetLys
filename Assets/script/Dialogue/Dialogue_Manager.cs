@@ -16,6 +16,7 @@ public class Dialogue_Manager : MonoBehaviour
 
     private bool startDialogueFinish = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,11 @@ public class Dialogue_Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && dialogueActive && startDialogueFinish)
         {
             DisplayNextSentence();
+        }
+
+        if(dialogueActive == false)
+        {
+            dialogueapparition.gameObject.SetActive(false);
         }
     }
 
@@ -80,7 +86,7 @@ public class Dialogue_Manager : MonoBehaviour
     {
         dialogueapparition.gameObject.SetActive(false);
 
-        dialogueActive = false;
+        //dialogueActive = false;
         triggerEnd = true;
         //quete.gameObject.SetActive(true);
         startDialogueFinish = false;

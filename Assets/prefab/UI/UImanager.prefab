@@ -9765,7 +9765,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 93f24100721efbe4495941d760473b0f, type: 3}
   - {fileID: 21300000, guid: e0990307ea8c9584794c922396df0167, type: 3}
   textInteraction: {fileID: 698970131986839922}
-  textQueteSanglier: {fileID: 2445050549674814952}
+  textQueteSpecial: {fileID: 2445050549674814952}
   dialogue_UI: {fileID: 556080852504172201}
   dialogueActive: 0
   herbier: {fileID: 3410799708334787399}

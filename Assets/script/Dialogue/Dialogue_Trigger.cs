@@ -178,6 +178,7 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         manager.dialogueActive = true;
 
+        player.isTalk = true;
         StartCoroutine(FonduNoirStartDialogue());
 
         
@@ -201,7 +202,7 @@ public class Dialogue_Trigger : MonoBehaviour
         fonduNoir.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
 
-        player.isTalk = true;
+        
 
         player.transform.position = playerPos.position;
         player.transform.rotation = playerPos.rotation;
@@ -214,6 +215,7 @@ public class Dialogue_Trigger : MonoBehaviour
         
 
         yield return new WaitForSeconds(1);
+        fonduNoir.Rebind();
         fonduNoir.gameObject.SetActive(false);
 
     }
@@ -327,6 +329,7 @@ public class Dialogue_Trigger : MonoBehaviour
         StopDialogue();
 
         yield return new WaitForSeconds(1);
+        fonduNoir.Rebind();
         fonduNoir.gameObject.SetActive(false);
 
     }
@@ -352,8 +355,17 @@ public class Dialogue_Trigger : MonoBehaviour
 
         manager.triggerEnd = false;
 
-       
+        StartCoroutine(waitToTalk());
 
+        manager.dialogueActive = false;
+    }
+
+    public IEnumerator waitToTalk()
+    {
+        gameObject.GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(2f);
+
+        gameObject.GetComponent<Collider>().enabled = true;
 
     }
   
