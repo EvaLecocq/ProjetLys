@@ -117,16 +117,18 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(frontWalk))//model front cam
                     {
                         model.transform.rotation = camRoot.rotation;
-                        StopCoroutine(FlipCharacter());
+                        //StopCoroutine(FlipCharacter());
+                        sens = 0;
                     }
                     if (Input.GetKey(backWalk))//model arriere marche, quand la touche est relever un flip camera se fait sur le perso
                     {
                         model.transform.rotation = camRootReverse.rotation;
-                        //model.transform.localEulerAngles = backVector;
+                        sens = 1;
+                    //model.transform.localEulerAngles = backVector;
                     }
                     if (Input.GetKeyUp(backWalk))
                     {
-                        StartCoroutine(FlipCharacter());
+                       // StartCoroutine(FlipCharacter());
                     }
 
                     if (Input.GetKey(leftWalk))//flip
@@ -185,22 +187,26 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-
+    /*
     public IEnumerator FlipCharacter()
     {
         //mainCamera.enabled = false;
 
         yield return new WaitForSeconds(timeToFlip);
 
-        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
-        //model.transform.localEulerAngles = Vector3.zero;
-        model.transform.rotation = camRoot.rotation;
+        if(sens == 1)
+        {
+            transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
+            //model.transform.localEulerAngles = Vector3.zero;
+            model.transform.rotation = camRoot.rotation;
+        }
+        
 
         //yield return new WaitForSeconds(0.5f);
 
         //mainCamera.enabled = true;
-        sens = 1;
-    }
+        
+    }*/
 
     
 
