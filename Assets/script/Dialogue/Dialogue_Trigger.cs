@@ -178,6 +178,7 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         manager.dialogueActive = true;
 
+        player.isTalk = true;
         StartCoroutine(FonduNoirStartDialogue());
 
         
@@ -201,7 +202,7 @@ public class Dialogue_Trigger : MonoBehaviour
         fonduNoir.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
 
-        player.isTalk = true;
+        
 
         player.transform.position = playerPos.position;
         player.transform.rotation = playerPos.rotation;

@@ -140,18 +140,18 @@ public class PlayerMovement : MonoBehaviour
                         model.transform.rotation = camRoot.rotation;
                     }
 
-                if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
-                {
+                    if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
+                    {
                     
                     anim.SetFloat("isWalking", 0.2f);
-                }
-                else
-                {
+                    }
+                     else
+                    {
                     anim.SetFloat("isWalking", 0.0f);
-                }
+                    }
 
 
-                look.stop = false;
+                    look.stop = false;
                 }
                 else
                 {

@@ -61,8 +61,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 25
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.4
-  m_VerticalDamping: 0.4
+  m_HorizontalDamping: 0.2
+  m_VerticalDamping: 0.2
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LookaheadTime: 0
-  m_LookaheadSmoothing: 15
+  m_LookaheadSmoothing: 25
   m_LookaheadIgnoreY: 0
   m_XDamping: 0.2
   m_YDamping: 0.2
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 2229872230164101077}
   - component: {fileID: 7631417290652744067}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: camTPV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,8 +169,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6096377441024067844}
-  m_LocalRotation: {x: -0.033560585, y: -0.70603555, z: -0.033534452, w: 0.70658547}
-  m_LocalPosition: {x: 4.056637, y: -0.36476168, z: -0.0029909275}
+  m_LocalRotation: {x: 0.007992334, y: 0.020461975, z: -0.0001635784, w: 0.99975866}
+  m_LocalPosition: {x: -0.21744737, y: 0.08497658, z: -7.106418}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 770044959494425319}
@@ -236,7 +236,7 @@ MonoBehaviour:
   timeToLock: 4
   freeLockMouseSensitive: 0.5
   useControl01: 0
-  mouseSensitivity: 50
+  mouseSensitivity: 100
   stop: 0
   camTPV: {fileID: 0}
   camFreeLook: {fileID: 0}
@@ -296,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 9175205278440481253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -28.428577, y: -80.52718, z: -30.508455}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5728361, y: 0.5728361, z: 0.5728361}
   m_Children:
   - {fileID: 801785855614816406}
   - {fileID: 1618077305129879172}

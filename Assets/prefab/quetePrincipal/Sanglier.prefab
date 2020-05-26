@@ -437,7 +437,7 @@ MonoBehaviour:
     sentences: []
   camDialogue: {fileID: 7929562384153755940}
   playerPos: {fileID: 412459859028875412}
-  outliner: {fileID: 0}
+  outliner: {fileID: 4660488869968269939}
   autoSelect: 1
   interactionIconDialogue: {fileID: 1273761629895304299}
   fonduNoir: {fileID: 0}

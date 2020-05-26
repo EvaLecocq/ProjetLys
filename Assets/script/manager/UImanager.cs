@@ -124,6 +124,7 @@ public class UImanager : MonoBehaviour
                 {
                     herbier.gameObject.SetActive(true);
 
+
                     openherbier = true;
                     player.isTalk = true;
                     UIinfo.SetActive(false);

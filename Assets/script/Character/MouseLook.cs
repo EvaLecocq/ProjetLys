@@ -29,6 +29,7 @@ public class MouseLook : MonoBehaviour
     float yRotation = 0f;
 
     public bool stop = false;
+    private Quaternion rot;
 
     public CinemachineVirtualCamera camTPV;
     public CinemachineVirtualCamera camFreeLook;
@@ -138,8 +139,14 @@ public class MouseLook : MonoBehaviour
 
                 transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
                 target.Rotate(Vector3.up * MouseX);
+
+                rot = transform.localRotation;
                 //transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
 
+            }
+            else
+            {
+                transform.localRotation = rot;
             }
 
 
