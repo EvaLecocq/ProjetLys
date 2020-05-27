@@ -203,8 +203,6 @@ public class PlayerMovement : MonoBehaviour
             audioS.clip = ramassageItem;
             audioS.Play();
 
-            
-
             potActuel.PlaceFlower();
             
         }
