@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8585b093c91414d878bbb285eee4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetDayLength: 30
+  _targetDayLength: 60
   elapseTime: 0
   elapsedTime: 900
   use24Clock: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   fogColorSun: {r: 1, g: 0.7960849, b: 0.5235849, a: 1}
-  fogDistanceBase: 300
+  fogDistanceBase: 250
   skyColorPluie:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
@@ -637,7 +637,7 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.5
-    m_Bias: 1.93
+    m_Bias: 0.103
     m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
