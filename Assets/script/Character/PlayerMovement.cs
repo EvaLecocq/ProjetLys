@@ -16,9 +16,12 @@ public class PlayerMovement : MonoBehaviour
     public Transform camRootReverse;
     public bool isBanc = false;
     public bool isTalk = false;
+
     private Dialogue_Manager managerDialogue;
     public Dialogue_Trigger dialogueActuel;
     public banc bancActuel;
+    public pot potActuel;
+
     private UImanager ui;
     public Animator anim;
 
@@ -29,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode rightWalk;
     public KeyCode interactionKey;
 
-    public enum interactionType { item, dialogue, banc};
+    public enum interactionType { item, dialogue, banc, pot};
     public interactionType type;
 
 
@@ -194,6 +197,17 @@ public class PlayerMovement : MonoBehaviour
 
             StartCoroutine(CollectItem());
         }
+        if (Input.GetKeyDown(interactionKey) && potActuel != null && type == PlayerMovement.interactionType.pot)
+        {
+            
+            audioS.clip = ramassageItem;
+            audioS.Play();
+
+            
+
+            potActuel.PlaceFlower();
+            
+        }
 
         if (Input.GetKeyDown(interactionKey) && bancActuel != null && type == PlayerMovement.interactionType.banc)
         {
@@ -260,6 +274,28 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        //pot
+        if (other.CompareTag("pot"))//outline
+        {
+            type = PlayerMovement.interactionType.pot;
+
+            if (potActuel == null)
+            {
+                potActuel = other.gameObject.GetComponent<pot>();
+
+            }
+
+            if(potActuel.fleurDePot.activeInHierarchy == false)
+            {
+                potActuel.outlinerItem.enabled = true;
+                potActuel.interactionIcon.SetActive(true);
+            }
+                
+            
+
+
+        }
+
         //dialogue
         if (other.CompareTag("dialogue"))
         {
@@ -311,6 +347,17 @@ public class PlayerMovement : MonoBehaviour
             item.outlinerItem.enabled = false;
             item.interactionIcon.SetActive(false);
             item = null;
+
+        }
+
+        //pot
+        if (other.CompareTag("pot") && potActuel != null)
+        {
+
+
+            potActuel.outlinerItem.enabled = false;
+            potActuel.interactionIcon.SetActive(false);
+            potActuel = null;
 
         }
 
