@@ -17,84 +17,84 @@ public class pot : MonoBehaviour
 
     public void PlaceFlower()
     {
-        if (fleurType == pot.fleur.Agapanthe)
+        if (fleurType == pot.fleur.Agapanthe && GameManager.s_Singleton.Agapanthe > 0)
         {
-            GameManager.s_Singleton.Agapanthe++;
+            
         }
-        else if (fleurType == pot.fleur.AncolieDuCanada)
+        else if (fleurType == pot.fleur.AncolieDuCanada && GameManager.s_Singleton.AncolieDuCanada > 0)
         {
-            GameManager.s_Singleton.AncolieDuCanada++;
+           
         }
-        else if (fleurType == pot.fleur.AngeliqueDesEstuaires)
+        else if (fleurType == pot.fleur.AngeliqueDesEstuaires && GameManager.s_Singleton.AngeliqueDesEstuaires > 0)
         {
-            GameManager.s_Singleton.AngeliqueDesEstuaires++;
-        }
-       
-        else if (fleurType == pot.fleur.BleuMarie)
-        {
-            GameManager.s_Singleton.BleuMarie++;
-        }
-        else if (fleurType == pot.fleur.Chrysantheme)
-        {
-            GameManager.s_Singleton.Chrysantheme++;
-        }
-        else if (fleurType == pot.fleur.CirseCommun)
-        {
-            GameManager.s_Singleton.CirseCommun++;
-        }
-        else if (fleurType == pot.fleur.EuphorbeReveilleMatin)
-        {
-            GameManager.s_Singleton.EuphorbeReveilleMatin++;
-        }
-        else if (fleurType == pot.fleur.FleurDeLys)
-        {
-            GameManager.s_Singleton.FleurDeLys++;
-        }
-        else if (fleurType == pot.fleur.Fritillaire)
-        {
-            GameManager.s_Singleton.Fritillaire++;
-        }
-        else if (fleurType == pot.fleur.FumariaOfficinalis)
-        {
-            GameManager.s_Singleton.FumariaOfficinalis++;
-        }
-        else if (fleurType == pot.fleur.GazaniaRigens)
-        {
-            GameManager.s_Singleton.GazaniaRigens++;
-        }
-        else if (fleurType == pot.fleur.Gerbera)
-        {
-            GameManager.s_Singleton.Gerbera++;
+            
         }
        
-        else if (fleurType == pot.fleur.HelleboreOrient)
+        else if (fleurType == pot.fleur.BleuMarie && GameManager.s_Singleton.BleuMarie > 0)
         {
-            GameManager.s_Singleton.HelleboreOrient++;
+            
         }
-        else if (fleurType == pot.fleur.Hibiscus)
+        else if (fleurType == pot.fleur.Chrysantheme && GameManager.s_Singleton.Chrysantheme > 0)
         {
-            GameManager.s_Singleton.Hibiscus++;
+            
         }
-        else if (fleurType == pot.fleur.Kalanchoe)
+        else if (fleurType == pot.fleur.CirseCommun && GameManager.s_Singleton.CirseCommun > 0)
         {
-            GameManager.s_Singleton.Kalanchoe++;
+            
         }
-        else if (fleurType == pot.fleur.Orchidee)
+        else if (fleurType == pot.fleur.EuphorbeReveilleMatin && GameManager.s_Singleton.EuphorbeReveilleMatin > 0)
         {
-            GameManager.s_Singleton.Orchidee++;
+           
         }
-        else if (fleurType == pot.fleur.PaeoniaOfficinalis)
+        else if (fleurType == pot.fleur.FleurDeLys && GameManager.s_Singleton.FleurDeLys > 0)
         {
-            GameManager.s_Singleton.PaeoniaOfficinalis++;
+           
+        }
+        else if (fleurType == pot.fleur.Fritillaire && GameManager.s_Singleton.Fritillaire > 0)
+        {
+           
+        }
+        else if (fleurType == pot.fleur.FumariaOfficinalis && GameManager.s_Singleton.FumariaOfficinalis > 0)
+        {
+            
+        }
+        else if (fleurType == pot.fleur.GazaniaRigens && GameManager.s_Singleton.GazaniaRigens > 0)
+        {
+            
+        }
+        else if (fleurType == pot.fleur.Gerbera && GameManager.s_Singleton.Gerbera > 0)
+        {
+           
+        }
+       
+        else if (fleurType == pot.fleur.HelleboreOrient && GameManager.s_Singleton.HelleboreOrient > 0)
+        {
+           
+        }
+        else if (fleurType == pot.fleur.Hibiscus && GameManager.s_Singleton.Hibiscus > 0)
+        {
+           
+        }
+        else if (fleurType == pot.fleur.Kalanchoe && GameManager.s_Singleton.Kalanchoe > 0)
+        {
+           
+        }
+        else if (fleurType == pot.fleur.Orchidee && GameManager.s_Singleton.Orchidee > 0)
+        {
+           
+        }
+        else if (fleurType == pot.fleur.PaeoniaOfficinalis && GameManager.s_Singleton.PaeoniaOfficinalis > 0)
+        {
+           
         }
 
-        else if (fleurType == pot.fleur.Rose)
+        else if (fleurType == pot.fleur.Rose && GameManager.s_Singleton.Rose > 0)
         {
-            GameManager.s_Singleton.Rose++;
+           
         }
-        else if (fleurType == pot.fleur.Tulipe)
+        else if (fleurType == pot.fleur.Tulipe && GameManager.s_Singleton.Tulipe > 0)
         {
-            GameManager.s_Singleton.Tulipe++;
+           
         }
 
 
