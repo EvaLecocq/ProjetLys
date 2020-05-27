@@ -15,6 +15,7 @@ public class AutoFlip : MonoBehaviour
     bool isPageFlipping = false;
     float elapsedTime = 0;
     float nextPageCountDown = 0;
+    public UImanager UImanagerRef;
     // Use this for initialization
     void Start () {
         if (!ControledBook)
@@ -73,10 +74,14 @@ public class AutoFlip : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
+            UImanagerRef.audioS.clip = UImanagerRef.herbierPagePlus;
+            UImanagerRef.audioS.Play();
             FlipRightPage();
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
+            UImanagerRef.audioS.clip = UImanagerRef.herbierPageMoins;
+            UImanagerRef.audioS.Play();
             FlipLeftPage();
         }
     }

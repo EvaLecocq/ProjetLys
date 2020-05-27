@@ -46,11 +46,20 @@ public class UImanager : MonoBehaviour
     public bool iscredits = false;
     private bool isMenu = false;
 
+    public AudioSource audioS;
+    public AudioClip pauseApp;
+    public AudioClip pauseDisp;
+    public AudioClip clique;
+    public AudioClip herbierPagePlus;
+    public AudioClip herbierPageMoins;
+
     // Start is called before the first frame update
     void Start()
     {
         mouseC = MouseLook.FindObjectOfType<MouseLook>();
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
+
+        audioS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -66,6 +75,9 @@ public class UImanager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                audioS.clip = pauseApp;
+                audioS.Play();
+
                 pause.gameObject.SetActive(true);
                 ispause = true;
                 Time.timeScale = 0f;
@@ -79,8 +91,10 @@ public class UImanager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                
-                    pause.gameObject.SetActive(false);
+                audioS.clip = pauseDisp;
+                audioS.Play();
+
+                pause.gameObject.SetActive(false);
                     ispause = false;
                     Time.timeScale = 1f;
 
@@ -237,11 +251,17 @@ public class UImanager : MonoBehaviour
     //pause echap
     public void Quitter()
     {
+        audioS.clip = clique;
+        audioS.Play();
+
         Application.Quit();
     }
   
     public void BackToMenu()
     {
+        audioS.clip = clique;
+        audioS.Play();
+
         UIinfo.SetActive(false);
 
         if(SceneManager.GetActiveScene().buildIndex != 0)
@@ -262,6 +282,9 @@ public class UImanager : MonoBehaviour
 
     public void Continue()
     {
+        audioS.clip = clique;
+        audioS.Play();
+
         pause.gameObject.SetActive(false);
         ispause = false;
         Time.timeScale = 1f;
@@ -276,6 +299,9 @@ public class UImanager : MonoBehaviour
     //menu
     public void StartGame()
     {
+        audioS.clip = clique;
+        audioS.Play();
+
         UIinfo.SetActive(true);
         
         menu.gameObject.SetActive(false);
@@ -288,6 +314,9 @@ public class UImanager : MonoBehaviour
 
     public void CreditsOpen()
     {
+        audioS.clip = clique;
+        audioS.Play();
+
         credits.gameObject.SetActive(true);
         camCredits.Priority = 20;
 
@@ -297,6 +326,9 @@ public class UImanager : MonoBehaviour
 
     public void CreditsClose()
     {
+        audioS.clip = clique;
+        audioS.Play();
+
         credits.gameObject.SetActive(false);
         camCredits.Priority = 0;
 

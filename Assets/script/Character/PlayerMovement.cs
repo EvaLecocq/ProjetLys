@@ -45,15 +45,16 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 6f;
     private float defaultSpeed;
     public float runSpeed = 3f;
-    public float speedRotation = 10f;
-    public float timeToFlip = 0.5f;
     public float jumpSpeed = 8f;
     public float gravity = 20f;
-    public float sens = 1;
     private Vector3 moveDirection = Vector3.zero;
     private Vector3 CameraMoveCustom = Vector3.zero;
     private Quaternion qTo;
     CharacterController Cc;
+
+    private AudioSource audioS;
+    public AudioClip collisionPerso;
+    public AudioClip ramassageItem;
 
     private void Start()
     {
@@ -68,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
             
         }
+        audioS = GetComponent<AudioSource>();
         managerDialogue = FindObjectOfType<Dialogue_Manager>();
         mainCamera = CinemachineBrain.FindObjectOfType<CinemachineBrain>();
         ui = UImanager.FindObjectOfType<UImanager>();
@@ -118,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
                 // model.transform.rotation = Quaternion.Slerp(model.transform.rotation, movement.rotation, Time.time * speed);
 
 
-                if (Input.GetKey(runKey))//course
+                    if (Input.GetKey(runKey))//course
                     {
                         speed = runSpeed;
                         
@@ -186,6 +188,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(interactionKey) && item != null && type == PlayerMovement.interactionType.item)
         {
             item.isPick = true;
+
+            audioS.clip = ramassageItem;
+            audioS.Play();
 
             StartCoroutine(CollectItem());
         }
@@ -341,6 +346,8 @@ public class PlayerMovement : MonoBehaviour
 
         item.AddItemToManager();
         item = null;
+
+        
 
         yield return new WaitForSeconds(2f);
         ui.sanglierTextDespawn();
