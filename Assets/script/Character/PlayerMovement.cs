@@ -134,12 +134,13 @@ public class PlayerMovement : MonoBehaviour
 
                     if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
                     {
-                        
+                    
                     qTo = model.transform.rotation;
                         anim.SetFloat("isWalking", 0.2f);
                     }
                      else
                     {
+                   
                     model.transform.rotation = qTo;
                         anim.SetFloat("isWalking", 0.0f);
                     }
