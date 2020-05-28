@@ -56,8 +56,8 @@ public class PlayerMovement : MonoBehaviour
     CharacterController Cc;
 
     private AudioSource audioS;
-    public AudioClip collisionPerso;
-    public AudioClip ramassageItem;
+    public AudioClip collisionPersoSound;
+    public AudioClip ramassageItemSound;
 
     private void Start()
     {
@@ -192,7 +192,8 @@ public class PlayerMovement : MonoBehaviour
         {
             item.isPick = true;
 
-            audioS.clip = ramassageItem;
+            audioS.clip = ramassageItemSound;
+            audioS.pitch = Random.Range(1, 1.4f);
             audioS.Play();
 
             StartCoroutine(CollectItem());
@@ -200,7 +201,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(interactionKey) && potActuel != null && type == PlayerMovement.interactionType.pot)
         {
             
-            audioS.clip = ramassageItem;
+            audioS.clip = ramassageItemSound;
+            audioS.pitch = Random.Range(1, 1.4f);
             audioS.Play();
 
             potActuel.PlaceFlower();

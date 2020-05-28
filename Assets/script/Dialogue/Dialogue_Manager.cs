@@ -32,6 +32,7 @@ public class Dialogue_Manager : MonoBehaviour
             DisplayNextSentence();
 
             audioS.clip = dialogueSound;
+            audioS.pitch = Random.Range(1, 1.2f);
             audioS.Play();
         }
 
