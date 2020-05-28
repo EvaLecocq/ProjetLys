@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 backVector = new Vector3(0, 180, 0);
     public MouseLook look;
     public CinemachineVirtualCamera cam;
-    public CinemachineVirtualCamera camFPV;
     public CinemachineBrain mainCamera;
     public Transform camRoot;
     public Transform camRootReverse;
@@ -39,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
 
     private float nextActionTime = 0.0f;
-    private float period = 1.5f;
+    private float period = 0.5f;
 
     private itemPick item;
     public Transform itemHand;
@@ -54,6 +53,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 CameraMoveCustom = Vector3.zero;
     private Quaternion qTo;
     CharacterController Cc;
+
+    public Transform pasPivot;
+    public GameObject particulePas;
+    public GameObject particuleReward;
 
     private AudioSource audioS;
     public AudioClip collisionPersoSound;
@@ -139,13 +142,21 @@ public class PlayerMovement : MonoBehaviour
 
                     if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
                     {
+
+                        if (Time.time > nextActionTime)
+                        {
+                        nextActionTime += period;
+                        Instantiate(particulePas, pasPivot.transform.position, pasPivot.transform.rotation);
+
+                        }
                     
+
                     qTo = model.transform.rotation;
                         anim.SetFloat("isWalking", 0.2f);
                     }
                      else
                     {
-                   
+                    
                     model.transform.rotation = qTo;
                         anim.SetFloat("isWalking", 0.0f);
                     }
