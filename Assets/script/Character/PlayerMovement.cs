@@ -167,20 +167,20 @@ public class PlayerMovement : MonoBehaviour
             item.transform.position = itemHand.position;
             item.transform.rotation = itemHand.rotation;
 
-            if(item.itemType == itemPick.type.graineGland && GameManager.s_Singleton.progression == 2)
+            if(item.itemType == itemPick.type.graineGland && GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == false)
             {
                 ui.sanglierTextSpawn();
             }
-            else if (item.itemType == itemPick.type.graineGland && GameManager.s_Singleton.progression == 2)
+            else if (item.itemType != itemPick.type.graineGland && GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == false)
             {
                 ui.sanglierTextSpawnFaux();
             }
 
-            if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6)
+            if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)
             {
                 ui.sanglierTextSpawn();
             }
-            else if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6)
+            else if (item.itemType != itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)
             {
                 ui.sanglierTextSpawnFaux();
             }

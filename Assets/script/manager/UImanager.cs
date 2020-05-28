@@ -210,7 +210,7 @@ public class UImanager : MonoBehaviour
     {
 
         textQueteSpecial.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourra être un trophée pour le sanglier";
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourrait être un trophée pour le sanglier";
 
     }
     public void sanglierTextSpawnFaux()
@@ -224,7 +224,7 @@ public class UImanager : MonoBehaviour
     {
 
         textQueteSpecial.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourra être une fleur pour le chien et le chat";
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourrait être une fleur pour le chien et le chat";
 
     }
     public void chienChatTextSpawnFaux()
