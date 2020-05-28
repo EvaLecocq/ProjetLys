@@ -16,6 +16,9 @@ public class Dialogue_Manager : MonoBehaviour
 
     private bool startDialogueFinish = false;
 
+    public AudioSource audioS;
+    public AudioClip dialogueSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,9 @@ public class Dialogue_Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && dialogueActive && startDialogueFinish)
         {
             DisplayNextSentence();
+
+            audioS.clip = dialogueSound;
+            audioS.Play();
         }
 
         if(dialogueActive == false)
