@@ -13,7 +13,7 @@ public class itemPick : MonoBehaviour
     public Outline outlinerItem;
     public GameObject interactionIcon;
 
-    
+    public GameObject particuleReward;
 
     public bool isPick = false;
 
@@ -112,7 +112,7 @@ public class itemPick : MonoBehaviour
             GameManager.s_Singleton.Tulipe++;
         }
 
-       
+        Instantiate(particuleReward, transform.position, transform.rotation);
 
        Destroy(gameObject);
     }

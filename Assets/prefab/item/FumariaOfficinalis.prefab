@@ -159,6 +159,8 @@ MonoBehaviour:
   itemType: 9
   outlinerItem: {fileID: 3667268287988752489}
   interactionIcon: {fileID: 8175323157392274738}
+  particuleReward: {fileID: 5919975128348889520, guid: 8b7beb3abcdb5fc4e93076d601180050,
+    type: 3}
   isPick: 0
 --- !u!1 &8175323157392274738
 GameObject:

@@ -207,6 +207,8 @@ MonoBehaviour:
   itemType: 0
   outlinerItem: {fileID: 4247166538856306950}
   interactionIcon: {fileID: 8271610028340617870}
+  particuleReward: {fileID: 5919975128348889520, guid: 8b7beb3abcdb5fc4e93076d601180050,
+    type: 3}
   isPick: 0
 --- !u!1001 &2021267411737337291
 PrefabInstance:

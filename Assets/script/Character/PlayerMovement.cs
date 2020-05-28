@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform pasPivot;
     public GameObject particulePas;
-    public GameObject particuleReward;
+
 
     private AudioSource audioS;
     public AudioClip collisionPersoSound;

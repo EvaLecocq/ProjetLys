@@ -286,4 +286,6 @@ MonoBehaviour:
   itemType: 10
   outlinerItem: {fileID: 599329205661512165}
   interactionIcon: {fileID: 5458761560094893246}
+  particuleReward: {fileID: 5919975128348889520, guid: 8b7beb3abcdb5fc4e93076d601180050,
+    type: 3}
   isPick: 0
