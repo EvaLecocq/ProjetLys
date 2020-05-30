@@ -129,12 +129,16 @@ public class PlayerMovement : MonoBehaviour
                     if (Input.GetKey(runKey))//course
                     {
                         speed = runSpeed;
+                    anim.SetBool("isRunning", false);
+                    anim.SetBool("isWalking", true);
                         
                     }
                     else
                     {
                         speed = defaultSpeed;
-                       
+                    //anim.SetBool("isRunning", true);
+                    anim.SetBool("isWalking", false);
+
                     }
 
                 
@@ -152,13 +156,13 @@ public class PlayerMovement : MonoBehaviour
                     
 
                     qTo = model.transform.rotation;
-                        anim.SetFloat("isWalking", 0.2f);
+                        anim.SetBool("isRunning", true);
                     }
                      else
                     {
                     
                     model.transform.rotation = qTo;
-                        anim.SetFloat("isWalking", 0.0f);
+                        anim.SetBool("isRunning", false);
                     }
 
 
@@ -314,6 +318,8 @@ public class PlayerMovement : MonoBehaviour
 
             if (managerDialogue.dialogueActive == false)
             {
+                dialogueActuel = null;
+
                 if(dialogueActuel == null)
                 {
                     dialogueActuel = other.GetComponent<Dialogue_Trigger>();
@@ -373,7 +379,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //dialogue
-        if (other.CompareTag("dialogue"))
+        if (other.CompareTag("dialogue") && dialogueActuel != null)
         {
             if (managerDialogue.dialogueActive == false)
             {
@@ -387,7 +393,7 @@ public class PlayerMovement : MonoBehaviour
 
         //banc
         
-         if (other.CompareTag("banc"))
+         if (other.CompareTag("banc") && bancActuel != null)
         {
             bancActuel.DesactiveOutline();
             bancActuel.enabled = false;

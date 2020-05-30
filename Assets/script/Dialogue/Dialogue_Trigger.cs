@@ -142,32 +142,32 @@ public class Dialogue_Trigger : MonoBehaviour
         {
             GameManager.s_Singleton.lapin++;
         }
-        if (type == Dialogue_Trigger.animal.sanglier)
+        else if (type == Dialogue_Trigger.animal.sanglier)
         {
 
             GameManager.s_Singleton.sanglier++;
         }
-        if ( type == Dialogue_Trigger.animal.serpent)
+        else if( type == Dialogue_Trigger.animal.serpent)
         {
             GameManager.s_Singleton.serpent++;
         }
 
-        if (type == Dialogue_Trigger.animal.ratonLaveur)
+        else if(type == Dialogue_Trigger.animal.ratonLaveur)
         {
             GameManager.s_Singleton.ratonLaveur++;
         }
-       
 
-        if (type == Dialogue_Trigger.animal.renard)
+
+        else if(type == Dialogue_Trigger.animal.renard)
         {
             GameManager.s_Singleton.renard++;
         }
-        if (type == Dialogue_Trigger.animal.chienChat)
+        else if(type == Dialogue_Trigger.animal.chienChat)
         {
             GameManager.s_Singleton.chienChat++;
         }
-       
-        if (type == Dialogue_Trigger.animal.cerf)
+
+        else if(type == Dialogue_Trigger.animal.cerf)
         {
             GameManager.s_Singleton.cerf++;
         }
@@ -323,6 +323,8 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public IEnumerator FonduNoirStopDialogue()
     {
+        manager.triggerEnd = false;
+
         fonduNoir.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
 
@@ -339,7 +341,7 @@ public class Dialogue_Trigger : MonoBehaviour
         
 
         manager.dialogueActive = false;
-        manager.EndDialogue();
+        //manager.EndDialogue();
         
         player.isTalk = false;
         camDialogue.Priority = 0;
@@ -353,7 +355,7 @@ public class Dialogue_Trigger : MonoBehaviour
         UpgradeQuest();
         UpgradeAnimalTalk();
 
-        manager.triggerEnd = false;
+       
 
         StartCoroutine(waitToTalk());
 
@@ -363,7 +365,7 @@ public class Dialogue_Trigger : MonoBehaviour
     public IEnumerator waitToTalk()
     {
         gameObject.GetComponent<Collider>().enabled = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         gameObject.GetComponent<Collider>().enabled = true;
 
