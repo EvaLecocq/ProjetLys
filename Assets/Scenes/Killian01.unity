@@ -2684,16 +2684,6 @@ PrefabInstance:
       propertyPath: cerf
       value: 
       objectReference: {fileID: 1815940160}
-    - target: {fileID: 2338140602154467334, guid: d335e8f6d77fe6a4499efbc5f59ed486,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338140602154467334, guid: d335e8f6d77fe6a4499efbc5f59ed486,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -21.19
-      objectReference: {fileID: 0}
     - target: {fileID: 3285456117469446071, guid: d335e8f6d77fe6a4499efbc5f59ed486,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2748,16 +2738,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936942834044221269, guid: d335e8f6d77fe6a4499efbc5f59ed486,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936942834044221269, guid: d335e8f6d77fe6a4499efbc5f59ed486,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 19.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d335e8f6d77fe6a4499efbc5f59ed486, type: 3}
@@ -4835,11 +4815,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lapin
-      objectReference: {fileID: 0}
-    - target: {fileID: 1508123271544184489, guid: 02f39a59d48190f49a77cd054620211c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1508123271544184492, guid: 02f39a59d48190f49a77cd054620211c,
         type: 3}
