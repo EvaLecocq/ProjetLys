@@ -113,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7971662567010784807
 Transform:
   m_ObjectHideFlags: 0
@@ -380,7 +380,8 @@ MonoBehaviour:
   statut: 0
   dialogueDebut:
     name: Chien - Chat
-    sentences: []
+    sentences:
+    - "Chien :\r\nOh SALUT !"
   dialogueLapin:
     name: Chien - Chat
     sentences:

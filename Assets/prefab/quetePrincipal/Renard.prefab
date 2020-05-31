@@ -380,7 +380,8 @@ MonoBehaviour:
   statut: 0
   dialogueDebut:
     name: Le Renard
-    sentences: []
+    sentences:
+    - Passe ton chemin humain.
   dialogueLapin:
     name: Le Renard
     sentences:

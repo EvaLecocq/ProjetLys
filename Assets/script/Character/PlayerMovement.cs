@@ -168,6 +168,7 @@ public class PlayerMovement : MonoBehaviour
 
 
                     look.stop = false;
+                     maskBody = false;
                 }
                 else
                 {
@@ -235,7 +236,7 @@ public class PlayerMovement : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(interactionKey) && bancActuel != null && type == PlayerMovement.interactionType.banc)
+        if (Input.GetKeyDown(interactionKey) && bancActuel != null && bancActuel.isBanc == false && type == PlayerMovement.interactionType.banc)
         {
             bancActuel.EnterBanc();
         }
@@ -395,6 +396,10 @@ public class PlayerMovement : MonoBehaviour
             if (managerDialogue.dialogueActive == false)
             {
                 dialogueActuel.DesactiveOutline();
+
+                dialogueActuel.camDialogue.Priority = 0;
+                dialogueActuel.camDialogue.enabled = false;
+
                 dialogueActuel.enabled = false;
                 
 

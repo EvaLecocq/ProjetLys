@@ -71,7 +71,7 @@ public class UImanager : MonoBehaviour
         //clock.transform.rotation =  Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, (time * -30));
 
         //pause
-        if (ispause == false && isMenu == false && openherbier == false)
+        if (ispause == false && isMenu == false && openherbier == false && player.isTalk == false)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -128,7 +128,7 @@ public class UImanager : MonoBehaviour
 
         //herbier
 
-        if (dialogueActive == false)
+        if (dialogueActive == false && player.isTalk == false)
         {
            
 

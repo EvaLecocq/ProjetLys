@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionIconBanc: {fileID: 8464116276288578015}
   pos: {fileID: 8211240000584166216}
+  coll: {fileID: 1930051766990769487}
   camBanc: {fileID: 1348460508455710371}
   mouse: {fileID: 1105832514357157200}
   isBanc: 0

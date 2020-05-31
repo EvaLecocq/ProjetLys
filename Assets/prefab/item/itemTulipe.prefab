@@ -33,7 +33,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 0
 --- !u!4 &9156534375857918844
 Transform:
@@ -161,7 +161,7 @@ GameObject:
   m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &8360814253967195388
 Transform:
@@ -221,6 +221,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tulipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 16079549873439768, guid: 0f5eeca1f4f4cb440bba84250892b8bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637379663146208109, guid: 0f5eeca1f4f4cb440bba84250892b8bd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 3918828332892567051, guid: 0f5eeca1f4f4cb440bba84250892b8bd,
         type: 3}

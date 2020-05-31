@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 0
 --- !u!4 &8444849109545613009
 Transform:
@@ -143,7 +143,7 @@ GameObject:
   m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &6495717843949071218
 Transform:
@@ -291,6 +291,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TasGland_Marron
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257263611243340812, guid: 32f52f5d6f9af0844a3047e4f5fedf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747197488678562827, guid: 32f52f5d6f9af0844a3047e4f5fedf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111313313743251671, guid: 32f52f5d6f9af0844a3047e4f5fedf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996074757809889959, guid: 32f52f5d6f9af0844a3047e4f5fedf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422522591982891905, guid: 32f52f5d6f9af0844a3047e4f5fedf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537655818164460748, guid: 32f52f5d6f9af0844a3047e4f5fedf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32f52f5d6f9af0844a3047e4f5fedf31, type: 3}

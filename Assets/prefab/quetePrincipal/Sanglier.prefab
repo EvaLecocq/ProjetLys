@@ -346,7 +346,8 @@ MonoBehaviour:
   statut: 0
   dialogueDebut:
     name: Le Sanglier
-    sentences: []
+    sentences:
+    - Grrrr ...
   dialogueLapin:
     name: Le Sanglier
     sentences:

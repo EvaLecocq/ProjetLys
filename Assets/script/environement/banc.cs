@@ -11,6 +11,7 @@ public class banc : MonoBehaviour
     private PlayerMovement player;
 
     public Transform pos;
+    public Collider coll;
     public CinemachineVirtualCamera camBanc;
     public mouseLook02 mouse;
     public bool isBanc = false;
@@ -86,5 +87,17 @@ public class banc : MonoBehaviour
         mouse.enabled = false;
 
         camBanc.Priority = 0;
+        player.bancActuel = null;
+
+        StartCoroutine(waitToTalk());
+    }
+
+    public IEnumerator waitToTalk()
+    {
+        coll.enabled = false;
+        yield return new WaitForSeconds(1f);
+
+        coll.enabled = true;
+
     }
 }

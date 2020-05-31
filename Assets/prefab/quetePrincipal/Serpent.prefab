@@ -113,7 +113,8 @@ MonoBehaviour:
   statut: 0
   dialogueDebut:
     name: Le Serpent
-    sentences: []
+    sentences:
+    - SSsssSsss ...
   dialogueLapin:
     name: Le Serpent
     sentences:
