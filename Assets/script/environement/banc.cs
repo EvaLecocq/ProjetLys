@@ -52,6 +52,7 @@ public class banc : MonoBehaviour
 
         
         player.isTalk = true;
+       
 
         player.gameObject.transform.position = pos.position;
         player.gameObject.transform.rotation = pos.rotation;
@@ -70,13 +71,18 @@ public class banc : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isBanc = true;
 
+       
         DesactiveOutline();
+
+        yield return new WaitForSeconds(0.5f);
+        player.maskBody = true;
     }
 
     public void ExitBanc()
     {
         isBanc = false;
         player.isTalk = false;
+        player.maskBody = false;
         mouse.enabled = false;
 
         camBanc.Priority = 0;

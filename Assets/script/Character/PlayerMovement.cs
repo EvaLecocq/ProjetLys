@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public CinemachineBrain mainCamera;
     public Transform camRoot;
     public Transform camRootReverse;
+    public bool maskBody = false;
     public bool isBanc = false;
     public bool isTalk = false;
 
@@ -175,6 +176,16 @@ public class PlayerMovement : MonoBehaviour
                     model.transform.rotation = new Quaternion(0,0,0,0);
                 }    
 
+
+            if(maskBody)
+            {
+                model.SetActive(false);
+            }
+            else
+            {
+                model.SetActive(true);
+            }
+
         }
 
         if (item != null && item.isPick)//place l item ds la main
@@ -193,11 +204,11 @@ public class PlayerMovement : MonoBehaviour
 
             if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)
             {
-                ui.sanglierTextSpawn();
+                ui.chienChatTextSpawn();
             }
             else if (item.itemType != itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)
             {
-                ui.sanglierTextSpawnFaux();
+                ui.chienChatTextSpawnFaux();
             }
         }
 
