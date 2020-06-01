@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3798459084487038749}
   - component: {fileID: 4771034003562034756}
   - component: {fileID: 4059208904545725051}
+  - component: {fileID: 8842974208350238290}
   m_Layer: 0
   m_Name: gros truc
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8842974208350238290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460570499861966646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.7567816, y: 3.3604481, z: 2.618351}
+  m_Center: {x: -0.00000023841858, y: -0.00000011920932, z: 1.2985096}
