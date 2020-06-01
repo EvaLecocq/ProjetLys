@@ -128,7 +128,7 @@ public class UImanager : MonoBehaviour
 
         //herbier
 
-        if (dialogueActive == false && player.isTalk == false)
+        if (dialogueActive == false/* && player.isTalk == false*/)
         {
            
 
