@@ -59,6 +59,13 @@ MonoBehaviour:
   queteActuelValider: 0
   queteSecondaireAccompli: 0
   niveauHerbier: 0
+  lapin: 0
+  sanglier: 0
+  serpent: 0
+  ratonLaveur: 0
+  renard: 0
+  chienChat: 0
+  cerf: 0
   Tulipe: 0
   CirseCommun: 0
   Chrysantheme: 0
@@ -78,7 +85,5 @@ MonoBehaviour:
   Rose: 0
   Fritillaire: 0
   FleurDeLys: 0
-  feuille: 0
   baton: 0
   graineGland: 0
-  terre: 0
