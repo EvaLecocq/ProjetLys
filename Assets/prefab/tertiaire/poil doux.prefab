@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   statut: 2
-  parleLaNuit: 0
+  parleLaNuit: 1
   dialogueDebut:
     name: Poil Doux
     sentences:
@@ -260,30 +260,29 @@ MonoBehaviour:
   dialogueSerpent:
     name: Poil Doux
     sentences:
-    - me suis arreter la
+    - "Le Raton Laveur ? Il se trouve sur l'\xEEle au milieu du lac,\r\npour lui parler
+      il faut \xEAtre insitant, maintenant va."
   dialogueRatonLaveur:
     name: Poil Doux
     sentences:
-    - Salut jeune homme !
-    - "Tu cherches un animal rus\xE9 ?"
-    - "Cela doit \xEAtre le Chat, si beau et \xE9l\xE9gant !"
+    - "Un animal rus\xE9, avec moi bien entendu il y a le Renard."
+    - "Il est quand m\xEAme moins rus\xE9 que moi, \xE7a c'est s\xFBr !"
   dialogueRenard:
     name: Poil Doux
     sentences:
-    - Oh, salut !
-    - Le resplendissant lapin ? cela fait longtemps que je ne l'ai pas vu.
-    - "Je ne peux pas t'aider, navr\xE9."
+    - Tu cherches le Lapin ? Tu as toujours besoin d'aider toi.
+    - "G\xE9n\xE9reux que je suis, je t'annonce que je ne sais pas o\xF9 est le lapin
+      mais tr\xE8s certainement le chien et chat en savent quelque chose !"
   dialogueChianChat:
     name: Poil Doux
     sentences:
-    - "Toujours \xE0 la recherche du cerf ?"
-    - "Tu es s\xFBr que tu as bien parl\xE9 au Chat ?"
-    - "Il est tr\xE8s intelligent il pourrait t'aider."
+    - "Mais si tu ne sais pas quoi faire va parler \xE0 ton animal rus\xE9 et laisse
+      moi !"
   dialogueRenard2:
     name: Poil Doux
     sentences:
-    - Oh je suis si impatient !
-    - Ce magnifique Cerf va nous rendre visite !!!
+    - Le cerf est enfin de retour, je ne comprend pas toute cette effervescence !
+    - "Quand je suis l\xE0 il y a pas autant de bruit !"
   dialogueCerf:
     name: Poil Doux
     sentences:
@@ -295,25 +294,30 @@ MonoBehaviour:
   dialogueQueteNonValide:
     name: Poil Doux
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
+    - 'Le Raton Laveur ? '
+    - "Il se trouve sur l'\xEEle au milieu du lac,\r il doit certainement \xEAtre
+      en train de dormir, c'est pas le moment de le d\xE9ranger. "
+    - Cela vaux aussi pour moi, tu peux partir maintenant.
   dialogueQueteNonValide2:
     name: Poil Doux
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
+    - 'Le Raton Laveur ? '
+    - "Il se trouve sur l'\xEEle au milieu du lac,\r il doit certainement \xEAtre
+      en train de dormir, c'est pas le moment de le d\xE9ranger. "
+    - Cela vaux aussi pour moi, tu peux partir maintenant.
   dialogueQueteNonValide3:
     name: Poil Doux
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
+    - 'Le Raton Laveur ? '
+    - "Il se trouve sur l'\xEEle au milieu du lac,\r il doit certainement \xEAtre
+      en train de dormir, c'est pas le moment de le d\xE9ranger. "
+    - Cela vaux aussi pour moi, tu peux partir maintenant.
   dialogueQueteNonValideChien:
     name: Poil Doux
     sentences:
-    - Salutation.
-    - "Une fleur de cette qualit\xE9 ?"
-    - mmmh...
-    - Je dirais que c'est une Hellebore que cherche le Chien et le Chat.
+    - Oh oh naturellement !
+    - "C'est mon domaine d'expertise \xE7a, ce que tu cherches c'est une Hellebore,
+      facile !"
   dialogueQueteCourse:
     name: 
     sentences: []
