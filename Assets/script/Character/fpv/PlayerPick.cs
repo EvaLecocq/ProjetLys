@@ -26,20 +26,21 @@ public class PlayerPick : MonoBehaviour
             if(interactionHit.collider.gameObject.CompareTag("pickable") && reference == null)
             {
                 reference = interactionHit.collider.gameObject;
-                asObject = true;
+               
+                if(Input.GetKeyDown(pickKey))
+                {
+                    reference.GetComponent<EndGameMnager>().functionEnd();
+                }
                
             }
-            else 
+            else
             {
-                
-                asObject = false;
+                reference = null;
             }
+            
            
         }
-        else
-        {
-            asObject = false;
-        }
+      
 
        
 

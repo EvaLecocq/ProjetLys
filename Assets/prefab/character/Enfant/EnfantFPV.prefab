@@ -1792,6 +1792,8 @@ MonoBehaviour:
   runKey: 304
   gravity: -9.81
   jumpHeight: 0.5
+  isBanc: 0
+  isTalk: 0
   groundCheck: {fileID: 6684116483133620859}
   groundDistance: 0.4
   groundMask:
@@ -1926,7 +1928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48e75161b3c9bd45a73d2487bebbfa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickKey: 282
+  pickKey: 101
   interactionDistance: 2
   interactionLayer:
     serializedVersion: 2

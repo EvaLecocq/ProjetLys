@@ -112,6 +112,9 @@ public class UImanager : MonoBehaviour
                     ispause = false;
                     Time.timeScale = 1f;
 
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+
                 mouseC.lockerCam = true;
                 UIinfo.SetActive(true);
                 herbierIcon.SetActive(true);

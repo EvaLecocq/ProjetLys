@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Eva02.unity
     guid: ceba49419b247d14c8c0139c0f27cadf
+  - enabled: 1
+    path: Assets/Scenes/sceneCredits.unity
+    guid: ddf64053488d6be4da2d23bfbd93c7fc
   m_configObjects: {}
