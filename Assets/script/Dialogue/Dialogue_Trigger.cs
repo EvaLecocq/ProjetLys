@@ -41,6 +41,7 @@ public class Dialogue_Trigger : MonoBehaviour
     public Outline outliner;
     public bool autoSelect = true;
     public GameObject interactionIconDialogue;
+    public GameObject dialogueIcon;
     public Animator fonduNoir;
 
     public queteSecondaire queteSecondaire;
@@ -191,12 +192,14 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         outliner.enabled = true;
         interactionIconDialogue.SetActive(true);
+        dialogueIcon.SetActive(false);
     }
 
     public void DesactiveOutline()
     {
         outliner.enabled = false;
         interactionIconDialogue.SetActive(false);
+        dialogueIcon.SetActive(true);
     }
 
     public IEnumerator FonduNoirStartDialogue()
