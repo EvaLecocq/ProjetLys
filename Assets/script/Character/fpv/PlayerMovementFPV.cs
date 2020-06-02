@@ -16,6 +16,9 @@ public class PlayerMovementFPV : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
+    public bool isBanc = false;
+    public bool isTalk = false;
+
 
     [Header("sol")]
     public Transform groundCheck;

@@ -8,6 +8,9 @@ public class SceneTP : MonoBehaviour
     public int indexTP;
 
     private Transform cible;
+
+    public GameObject fonduBlanc;
+
     public float distanceOpen;
 
     private void Start()
@@ -34,8 +37,9 @@ public class SceneTP : MonoBehaviour
 
     public IEnumerator teleporteur()
     {
+        fonduBlanc.SetActive(true);
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.8f);
 
       
         SceneManager.LoadScene(indexTP);

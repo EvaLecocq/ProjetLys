@@ -45,6 +45,7 @@ public class UImanager : MonoBehaviour
     public GameObject credits;
     public bool iscredits = false;
     private bool isMenu = false;
+    public bool activeMenuOnStart = true;
 
     public AudioSource audioS;
     public AudioClip pauseApp;
@@ -60,6 +61,17 @@ public class UImanager : MonoBehaviour
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
 
         audioS = GetComponent<AudioSource>();
+
+        if (activeMenuOnStart == false)
+        {
+            UIinfo.SetActive(true);
+
+            menu.gameObject.SetActive(false);
+            camMenu.Priority = 0;
+            herbierIcon.gameObject.SetActive(true);
+
+            mouseC.lockerCam = true;
+        }
     }
 
     // Update is called once per frame
@@ -69,6 +81,8 @@ public class UImanager : MonoBehaviour
         DayWeek();
         time = GameManager.s_Singleton.time;
         //clock.transform.rotation =  Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, (time * -30));
+
+        
 
         //pause
         if (ispause == false && isMenu == false && openherbier == false && player.isTalk == false)
