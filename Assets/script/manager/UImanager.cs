@@ -36,6 +36,9 @@ public class UImanager : MonoBehaviour
     public GameObject pause;
     public bool ispause = false;
 
+    public GameObject option;
+    public bool isoption = false;
+
     [Header("menu")]
     public GameObject menu;
     public GameObject UIinfo;
@@ -312,7 +315,31 @@ public class UImanager : MonoBehaviour
         herbierIcon.SetActive(true);
     }
 
-   
+    public void OptionOuvert()
+    {
+        audioS.clip = clique;
+        audioS.Play();
+
+        pause.gameObject.SetActive(false);
+
+        option.SetActive(true);
+        mouseC.lockerCam = false;
+       
+    }
+
+    public void OptionFermer()
+    {
+        audioS.clip = clique;
+        audioS.Play();
+
+        pause.gameObject.SetActive(true);
+
+        option.SetActive(false);
+        mouseC.lockerCam = false;
+
+    }
+
+
     //menu
     public void StartGame()
     {

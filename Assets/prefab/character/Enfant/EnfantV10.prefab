@@ -387,7 +387,7 @@ MonoBehaviour:
   timeItemDispawnHand: 1
   speed: 6
   runSpeed: 3
-  jumpSpeed: 3
+  jumpSpeed: 1
   gravity: 9
   pasPivot: {fileID: 8611368891520390207}
   particulePas: {fileID: 5919975128348889520, guid: f32fa0b9be531454d9a3da6512af33cf,
@@ -625,6 +625,36 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 6012743000140811642}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.070246235
+      objectReference: {fileID: 0}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.87846917
+      objectReference: {fileID: 0}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.13637257
+      objectReference: {fileID: 0}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4525041
+      objectReference: {fileID: 0}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.516585
+      objectReference: {fileID: 0}
+    - target: {fileID: 801785855614816406, guid: 2c4dd9bd09f785047956af8b9d9d0914,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.933976
+      objectReference: {fileID: 0}
     - target: {fileID: 2229872230164101077, guid: 2c4dd9bd09f785047956af8b9d9d0914,
         type: 3}
       propertyPath: camTPV
