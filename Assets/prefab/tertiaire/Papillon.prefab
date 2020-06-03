@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3937415897264594056}
   - component: {fileID: 1657085647942161838}
   m_Layer: 0
-  m_Name: Grandes oreilles
+  m_Name: Papillon
   m_TagString: dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,80 +111,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 5
   statut: 2
   parleLaNuit: 0
   dialogueDebut:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Hey, salut toi !
-    - Tu devrais allez voir le Lapin devant le portail.
+    - "Salut ! Salut ! Je suis occup\xE9 l\xE0..."
+    - "J'attends un ami oiseau, on a une course \xE0 faire !"
   dialogueLapin:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Yo !
-    - "Pr\xE8s du pont ? Je connais oui."
-    - "C'est l\xE0 o\xF9 se balade le Sanglier et le Raton Laveur."
+    - Salut ! Salut !
+    - 'Un cerf ? Un pont ? '
+    - "Y'a plein de ponts ici ! Y'a m\xEAme des oiseaux qui nagent dessous."
+    - "Ce sont mes amis ! Je leurs court apr\xE8s et ils battent des ailes ! J'adore
+      les ponts !"
+    - Le cerf ? Non, pas vu !
+    - Mais les ponts j'adore !
   dialogueSanglier:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Salut !
-    - "Le Cerf ? \xC7a fait un moment que je ne l'ai pas vu !"
-    - Tu devrais demander au Serpent, il guette tout ce qui se passe.
+    - Salut ! Salut !
+    - Le jardin botanique... Mmh... Oui ! Je me souviens !
+    - "Il y a des nids d'oiseaux l\xE0-bas ! Je cours apr\xE8s les oiseaux et on s'amuse
+      bien tous ensemble car ce sont mes amis !"
+    - En fait il y a des nids d'oiseaux partout dans ce parc ! J'adore cet endroit
+      !
+    - Le serpent aussi il adore les oiseaux ! D'ailleurs il adore surtout les nids
+      ! J'adore le serpent !
   dialogueSerpent:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Le Raton Laveur ?
-    - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
+    - Salut ! Salut !
+    - 'Du voisinage ? C''est quoi ? '
+    - "Un mauvais caract\xE8re ? Je sais pas ! Mes amis \xE0 moi sont tout le temps
+      joyeux ! "
+    - "Ils passent leurs journ\xE9es \xE0 siffloter, ou \xE0 voler \xE0 toute vitesse
+      quand je leurs cours apr\xE8s !"
   dialogueRatonLaveur:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Salut !
-    - "Un animal rus\xE9 ?"
-    - Je pense qu'il s'agit du Serpent aucun doute !
+    - Salut ! Salut !
+    - "Tu cherches un animal rus\xE9 ? Mais c'est moi ! "
+    - "Je suis tellement rus\xE9, que j'arrive \xE0 trouver o\xF9 se cachent les oiseaux
+      pour leur courir apr\xE8s !"
+    - "Oh ! Derri\xE8re toi ! Des oiseaux ! "
+    - "D\xE9sol\xE9, je dois leur courir apr\xE8s, car ce sont mes amis !"
   dialogueRenard:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Salut.
-    - "Le Lapin, il ne bouge jamais, il est toujours \xE0 l'entr\xE9e du parc."
+    - Salut ! Salut !
+    - "Un lapin ? Je passe mes journ\xE9es \xE0 courir la t\xEAte en l'air, je ne
+      vois pas les terriers !"
+    - Les maisons que je vois moi, c'est les nids de mes amis oiseaux !
+    - "Je m'allonge au pied des arbres o\xF9 vivent mes amis pour me reposer ! "
+    - Et quand ils sortent, je fais la course avec eux !
   dialogueChianChat:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Yo !
-    - Tu cherches toujours le Cerf ?
-    - "Tu devrais demander \xE0 quelqu'un de tr\xE8s intelligent."
-    - Genre le Serpent ou le Renard.
+    - Salut ! Salut !
+    - Le jardin botanique... Mmh... Oui ! Je me souviens !
+    - "Je passe mon temps \xE0 courir l\xE0-bas, parce que plein de mes amis oiseaux
+      y vivent !"
+    - D'ailleurs je cours un peu partout, parce qu'il y a des nids partout !
+    - "Le Cerf ? Il court pas apr\xE8s les oiseaux lui !"
   dialogueRenard2:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Salut !
-    - Apparamment le Cerf vient aujourd'hui.
+    - Salut ! Salut !
+    - "Des petits pots avec des \xE9nigmes ? Oula ! Y'en a partout des petits pots
+      !"
+    - "Certains de mes amis font leurs nids \xE0 l'int\xE9rieur ! C'est pratique,
+      parce que je peux les surprendre pour ensuite leurs courir apr\xE8s !"
+    - "C'est pratique, parce que je peux les surprendre pour ensuite leurs courir
+      apr\xE8s !"
   dialogueCerf:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
     - "Va au portail tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Salut l'ami !
-    - "Ah non d\xE9sol\xE9 je ne connais pas les d\xE9sirs de chacun !"
+    - Salut ! Salut !
+    - "Un troph\xE9e ? Oh je sais !"
+    - Des os !!! Des os !!!
+    - "Mes amis les oiseaux m'aident \xE0 en trouver !"
+    - Je suis un bon chien !
   dialogueQueteNonValide:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
+    - "Un mauvais caract\xE8re ? Je sais pas ! Mes amis \xE0 moi sont tout le temps
+      joyeux ! "
   dialogueQueteNonValide2:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
+    - "Un mauvais caract\xE8re ? Je sais pas ! Mes amis \xE0 moi sont tout le temps
+      joyeux ! "
   dialogueQueteNonValide3:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
+    - "Un mauvais caract\xE8re ? Je sais pas ! Mes amis \xE0 moi sont tout le temps
+      joyeux ! "
   dialogueQueteNonValideChien:
-    name: Grandes Oreilles
+    name: M. Papillon
     sentences:
-    - Yo !
-    - "Les fleurs ?! Pourquoi devrais-je m'y int\xE9resser ?"
+    - Salut ! Salut !
+    - Les fleurs, j'aime bien les sentir !!!
+    - Elles sentent si bon, comme les oiseaux !
+    - Les oiseaux me guident toujours vers elles !
   dialogueQueteCourse:
     name: 
     sentences: []
