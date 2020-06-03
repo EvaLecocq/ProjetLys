@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!224 &5342676870236304207
 RectTransform:
@@ -111,12 +111,13 @@ GameObject:
   - component: {fileID: 3960722628300075194}
   - component: {fileID: 7372836001037171444}
   - component: {fileID: 4726590687063386987}
+  - component: {fileID: 1641198727}
   m_Layer: 0
   m_Name: poto2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &3960722628300075194
 Transform:
@@ -178,6 +179,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1641198727
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128554686065986931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2423, y: 0.4772, z: 0.0843}
+  m_Center: {x: -0.0021499991, y: 0.23580001, z: 0.0041500013}
 --- !u!1 &2436239166302427631
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +208,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!224 &6786436883505869244
 RectTransform:
@@ -348,7 +362,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &2217472089547642495
 Transform:
@@ -359,7 +373,7 @@ Transform:
   m_GameObject: {fileID: 2926586339111625836}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -30.895977, y: -81.0506, z: -27.498522}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8588535, y: 1.8588535, z: 1.8588535}
   m_Children:
   - {fileID: 3960722628300075194}
   - {fileID: 5342676870236304207}
@@ -382,7 +396,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &6350188016718109109
 Transform:
