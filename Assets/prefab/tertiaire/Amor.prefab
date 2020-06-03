@@ -118,6 +118,7 @@ MonoBehaviour:
     name: Amor
     sentences:
     - "Oh, enchant\xE9 petit bonhomme."
+    - Tu devrais allez voir le Lapin devant le portail.
   dialogueLapin:
     name: Amor
     sentences:

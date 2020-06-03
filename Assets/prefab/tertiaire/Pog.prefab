@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3270837389025915027
+--- !u!1 &3937415897264594061
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,232 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5711665486430538101}
-  - component: {fileID: 408946905375803141}
+  - component: {fileID: 3937415897264594057}
+  - component: {fileID: 3937415897264594062}
+  - component: {fileID: 3937415897264594063}
+  - component: {fileID: 3937415897264594060}
+  - component: {fileID: 3937415897264594056}
+  - component: {fileID: 1657085647942161838}
+  m_Layer: 0
+  m_Name: Pog
+  m_TagString: dialogue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3937415897264594057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937415897264594061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.36, y: -0.34999847, z: 19.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3919427490673423411}
+  - {fileID: 6046959346785804105}
+  - {fileID: 7597869563333023394}
+  - {fileID: 9148220335156300257}
+  - {fileID: 5708328744142300199}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3937415897264594062
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937415897264594061}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3937415897264594063
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937415897264594061}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &3937415897264594060
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937415897264594061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3937415897264594056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937415897264594061}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  statut: 2
+  parleLaNuit: 0
+  dialogueDebut:
+    name: Pog
+    sentences:
+    - ScROunCh... Chalut !
+    - Tu devrais allez voir le Lapin devant le portail.
+  dialogueLapin:
+    name: Pog
+    sentences:
+    - Bonchour, comment cha va ?
+    - Tu cherche le Changlier ?
+    - Il est juste devant toi.
+    - Le Cherf ? Non je me chuis pas battu avec lui tu fais erreur.
+  dialogueSanglier:
+    name: Pog
+    sentences:
+    - Bonchour...
+    - Tu veut allez dans les hautes cherbes ?
+    - "On dit que ch'est la tani\xE8re du Cherpent."
+  dialogueSerpent:
+    name: Pog
+    sentences:
+    - ScrOunCH !
+    - Mmmh ? le Raton Laveur je le connais pas trop.
+    - "Il est ch\xFBrement couch\xE9 dans l'herbe au Nord Ouest du parc."
+  dialogueRatonLaveur:
+    name: Pog
+    sentences:
+    - Chalut !
+    - "Tu cherches un animal ruch\xE9 ... mmmh ..."
+    - "Je penche que ch'est le Renard mais je chuis pas trop ch\xFBr."
+  dialogueRenard:
+    name: Pog
+    sentences:
+    - ScROunCh... Chalut !
+    - "Tu cherches le Lapin ? Oui je chais o\xF9 il est."
+    - "Va au Nord du parc ch'est l\xE0-bas qu'il che trouve."
+  dialogueChianChat:
+    name: Pog
+    sentences:
+    - Bonchour, je peux t'aider ?
+    - Oh le Cherf oui cha je le chais !
+    - "Faut que tu demandes au Renard il tra\xEEne chouvent avec lui."
+  dialogueRenard2:
+    name: Pog
+    sentences:
+    - 'ScrOUnch SCrouncH '
+    - "D\xE9chol\xE9 je chuis trop occup\xE9."
+  dialogueCerf:
+    name: Pog
+    sentences:
+    - "Va au portail tu as la cl\xE9 !"
+  dialogueQueteNonValideSanglier:
+    name: Pog
+    sentences:
+    - "Arrrhh mon chopain cherche un troph\xE9e !"
+    - "Offre lui \xE0 mancher ch'est ce qu'on aime le pluch nous les changliers."
+  dialogueQueteNonValide:
+    name: Pog
+    sentences:
+    - "Il est ch\xFBrement couch\xE9 dans l'herbe au Nord Ouest du parc."
+  dialogueQueteNonValide2:
+    name: Pog
+    sentences:
+    - "Il est ch\xFBrement couch\xE9 dans l'herbe au Nord Ouest du parc."
+  dialogueQueteNonValide3:
+    name: Pog
+    sentences:
+    - "Il est ch\xFBrement couch\xE9 dans l'herbe au Nord Ouest du parc."
+  dialogueQueteNonValideChien:
+    name: Pog
+    sentences:
+    - Chouchou !
+    - Des fleurs ScrOunchhhh
+    - Moi je les manche !!!
+  dialogueQueteCourse:
+    name: 
+    sentences: []
+  dialogueQueteCacheCache:
+    name: 
+    sentences: []
+  dialogueQueteSoleil:
+    name: 
+    sentences: []
+  camDialogue: {fileID: 4060331013768447737}
+  playerPos: {fileID: 6046959346785804105}
+  outliner: {fileID: 1657085647942161838}
+  autoSelect: 1
+  interactionIconDialogue: {fileID: 5611694031880208493}
+  dialogueIcon: {fileID: 4798364771630659230}
+  fonduNoir: {fileID: 0}
+  queteSecondaire: {fileID: 0}
+  QueteAnimalValide: 0
+--- !u!114 &1657085647942161838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937415897264594061}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!1 &4798364771630659230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5708328744142300199}
+  - component: {fileID: 6095159264852310212}
   m_Layer: 0
   m_Name: Line (1)
   m_TagString: Untagged
@@ -17,27 +241,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5711665486430538101
+--- !u!4 &5708328744142300199
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270837389025915027}
+  m_GameObject: {fileID: 4798364771630659230}
   m_LocalRotation: {x: -0.70710665, y: -0.000000029802322, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 0, y: 0.372, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.17362}
+  m_LocalPosition: {x: 0, y: 0.827, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 0.17361833}
   m_Children: []
   m_Father: {fileID: 3937415897264594057}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
---- !u!120 &408946905375803141
+--- !u!120 &6095159264852310212
 LineRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270837389025915027}
+  m_GameObject: {fileID: 4798364771630659230}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -127,244 +351,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
---- !u!1 &3937415897264594061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3937415897264594057}
-  - component: {fileID: 3937415897264594062}
-  - component: {fileID: 3937415897264594063}
-  - component: {fileID: 3937415897264594060}
-  - component: {fileID: 3937415897264594056}
-  - component: {fileID: 1657085647942161838}
-  m_Layer: 0
-  m_Name: Felix
-  m_TagString: dialogue
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3937415897264594057
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937415897264594061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.36, y: -0.34999847, z: 19.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3919427490673423411}
-  - {fileID: 6046959346785804105}
-  - {fileID: 5385925245520385191}
-  - {fileID: 9148220335156300257}
-  - {fileID: 5711665486430538101}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3937415897264594062
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937415897264594061}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3937415897264594063
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937415897264594061}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!135 &3937415897264594060
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937415897264594061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3937415897264594056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937415897264594061}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c2930f34cdfd04cadb10f98ff70b44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  statut: 2
-  parleLaNuit: 0
-  dialogueDebut:
-    name: Felix
-    sentences:
-    - Tu devrais allez voir le Lapin devant le portail.
-    - "Au revoir mon ch\xE8re humain !"
-  dialogueLapin:
-    name: Felix
-    sentences:
-    - "L'animal pr\xE8s du pont n'est certainement pas le Cerf mais une toute petite
-      cr\xE9ature, cela va de soi !"
-  dialogueSanglier:
-    name: Felix
-    sentences:
-    - L'individu que tu cherches est un Serpent.
-    - "Mais o\xF9 peut-il bien \xEAtre ..."
-    - "Je dirais au Nord du parc apr\xE8s le pont dans les hautes herbes."
-    - "Oui c'est \xE7a."
-  dialogueSerpent:
-    name: Felix
-    sentences:
-    - "Tiens, voil\xE0 l'humain."
-    - Que veux-tu ?
-    - "Le Raton Laveur ? Eh bien tu le trouveras au Nord du lac apr\xE8s l'\xEEle
-      centrale."
-    - "Je te d\xE9conseille de le r\xE9veiller sinon il t'en voudra et refusera de
-      te dire quoi que ce soit."
-  dialogueRatonLaveur:
-    name: Felix
-    sentences:
-    - "Salut humain, pourquoi me d\xE9ranges-tu ?"
-    - "Tu cherches un animal rus\xE9 ? il est juste devant toi !"
-    - "H\xE9 h\xE9 c'est dr\xF4le nan ?"
-    - "Enfin bref, ton animal rus\xE9 est sans doute \xE0 l'Est du parc, ou peut \xEAtre
-      pas j'en sais rien, apr\xE8s tout je ne suis qu'un chat !"
-  dialogueRenard:
-    name: Felix
-    sentences:
-    - "Mmmhh voil\xE0 l'humain."
-    - En quoi ma personne peut t'aider ?
-    - Ton ami le Lapin ?
-    - "Je lui aurais bien couru apr\xE8s mais on dirait que le Renard joue avec lui."
-    - "Tu devrais regarder \xE0 la sortie du parc."
-  dialogueChianChat:
-    name: Felix
-    sentences:
-    - "Roooaaaaarrr que je suis fatigu\xE9 !"
-    - Que diable me veux-tu ?
-    - "Le cerf ? je ne sais pas mais va demander \xE0 quelqu'un de plus rus\xE9..."
-    - Hmmm vers le Sud cette fois, j'aime bien le sud, il fait chaud au sud.
-  dialogueRenard2:
-    name: Felix
-    sentences:
-    - "Salut \xE0 toi humain."
-    - Cette fois je vais vraiment t'aider, te tourmenter m'ennuie.
-    - "Le Cerf est pr\xE9sent dans son sanctuaire tu as juste \xE0 aller le voir."
-    - "Si le sanctuaire est ferm\xE9e, c'est que tu n'as pas r\xE9solue l'\xE9nigmes
-      des pots."
-  dialogueCerf:
-    name: Felix
-    sentences:
-    - "Va au portail tu as la cl\xE9 !"
-  dialogueQueteNonValideSanglier:
-    name: Felix
-    sentences:
-    - "Ton ami le Sanglier cherche une r\xE9compense ?"
-    - "Je ne pense pas qu'il en m\xE9rite, tu n'as qu'\xE0 lui donner ces cochonneries
-      par terre !"
-  dialogueQueteNonValide:
-    name: Felix
-    sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
-  dialogueQueteNonValide2:
-    name: Felix
-    sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
-  dialogueQueteNonValide3:
-    name: Felix
-    sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
-  dialogueQueteNonValideChien:
-    name: Felix
-    sentences:
-    - "Tiens tiens, voil\xE0 l'humain."
-    - 'Tu cherches une fleur ? '
-    - Non, je n'ai pas envie de t'aider.
-  dialogueQueteCourse:
-    name: 
-    sentences: []
-  dialogueQueteCacheCache:
-    name: 
-    sentences: []
-  dialogueQueteSoleil:
-    name: 
-    sentences: []
-  camDialogue: {fileID: 4060331013768447737}
-  playerPos: {fileID: 6046959346785804105}
-  outliner: {fileID: 1657085647942161838}
-  autoSelect: 1
-  interactionIconDialogue: {fileID: 5611694031880208493}
-  dialogueIcon: {fileID: 3270837389025915027}
-  fonduNoir: {fileID: 0}
-  queteSecondaire: {fileID: 0}
-  QueteAnimalValide: 0
---- !u!114 &1657085647942161838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937415897264594061}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &5446333891517678187
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5611694031880208493}
   m_LocalRotation: {x: -0.70710665, y: -0.000000029802322, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 0, y: 0.372, z: 0}
+  m_LocalPosition: {x: 0, y: 0.827, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 0.12532}
   m_Children: []
   m_Father: {fileID: 3937415897264594057}
@@ -602,19 +588,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 5633164469481776728}
---- !u!135 &5848419598321293612
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8999880499364882100}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.39716923
-  m_Center: {x: -0, y: 0.4015966, z: 0}
 --- !u!1 &9106381115997067869
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,84 +618,78 @@ Transform:
   m_Father: {fileID: 3937415897264594057}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5337001773325185744
+--- !u!1001 &3730487434585389861
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 3937415897264594057}
     m_Modifications:
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.009
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52
+      value: -0.489
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.3540001
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.99999106
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.004242062
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.486
+      value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3960117040185250916, guid: e69ea2be7d39b324abade40c73c3d686,
+    - target: {fileID: 7849507289997533076, guid: 3153a1abcbff8f04b8030a86228d282a,
         type: 3}
       propertyPath: m_Name
-      value: Lapin
+      value: Sanglier
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e69ea2be7d39b324abade40c73c3d686, type: 3}
---- !u!1 &8999880499364882100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3960117040185250916, guid: e69ea2be7d39b324abade40c73c3d686,
-    type: 3}
-  m_PrefabInstance: {fileID: 5337001773325185744}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5385925245520385191 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 3153a1abcbff8f04b8030a86228d282a, type: 3}
+--- !u!4 &7597869563333023394 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+  m_CorrespondingSourceObject: {fileID: 6535941946835381639, guid: 3153a1abcbff8f04b8030a86228d282a,
     type: 3}
-  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabInstance: {fileID: 3730487434585389861}
   m_PrefabAsset: {fileID: 0}
