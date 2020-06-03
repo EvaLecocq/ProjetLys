@@ -8,12 +8,26 @@ public class EndGameMnager : MonoBehaviour
     public GameObject fonduBlanc;
     private Animator fonduAnimator;
 
+
+    public AudioSource audioS;
+    public AudioClip porteOuvre;
+    public AudioClip porteTocToc;
+
+
     // Start is called before the first frame update
     void Start()
     {
         fonduAnimator = fonduBlanc.GetComponent<Animator>();
 
         StartCoroutine(startScene());
+
+        InvokeRepeating("TocTocPorte", 5f, 8f);
+    }
+
+    public void TocTocPorte()
+    {
+        audioS.clip = porteTocToc;
+        audioS.Play();
     }
 
     public IEnumerator startScene()
@@ -36,6 +50,8 @@ public class EndGameMnager : MonoBehaviour
     public IEnumerator endScene()
     {
         fonduBlanc.SetActive(true);
+        audioS.clip = porteOuvre;
+        audioS.Play();
         
 
         yield return new WaitForSeconds(2f);
