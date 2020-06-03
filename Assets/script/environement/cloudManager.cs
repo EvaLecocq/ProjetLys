@@ -43,7 +43,19 @@ public class cloudManager : MonoBehaviour
     public GameObject[] thunder;
     public float speedSpawn;
 
- 
+    private bool invokeNightChange = true;
+
+    public AudioSource audioS;
+    public AudioSource audioStransition;
+    public AudioSource audioSnight;
+    public AudioSource audioSeffect;
+    public AudioClip AmbiancePluie;
+    public AudioClip AmbianceSoleil;
+    public AudioClip AmbianceTempete;
+    public AudioClip AmbianceBrouillard;
+    public AudioClip AmbianceNuit;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,7 +80,9 @@ public class cloudManager : MonoBehaviour
             }
         }
 
-        InvokeRepeating("ThunderStruck", 0f, speedSpawn);
+        
+
+        meteoChange();
 
     }
 
@@ -85,16 +99,48 @@ public class cloudManager : MonoBehaviour
             cloudRound[i].Rotate(Vector3.up * cloudRoundSpeed[i]);
         }
 
-        meteoChange();
+        //meteoChange();
 
             CloudSpawn();
-        
-       
+
+        if (GameManager.s_Singleton.time >= nightCloudDispawn || GameManager.s_Singleton.time < morningCloudAppear)
+        {
+            if(invokeNightChange)
+            {
+                hourChange();
+            }
+            
+        }
+        else
+        {
+            invokeNightChange = true;
+            audioSnight.Stop();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            //meteoChange();
+        }
+    }
+
+    public void hourChange()
+    {
+        audioSnight.clip = AmbianceNuit;
+        audioSnight.volume = 0.5f;
+        audioSnight.Play();
+
+        if (GameManager.s_Singleton.meteoActive == GameManager.mode.soleil)
+        {
+            audioS.Stop();
+        }
+
+            invokeNightChange = false;
     }
 
     public void meteoChange()
     {
         
+
         if (GameManager.s_Singleton.meteoActive == GameManager.mode.soleil)
         {
             pluie.SetActive(false);
@@ -116,6 +162,12 @@ public class cloudManager : MonoBehaviour
 
             sunColor.sunBaseIntensity = sunIntensityBase;
             sunColor.sunVariation = sunIntensityVariationBase;
+
+            CancelInvoke("ThunderStruck");
+
+            audioS.clip = AmbianceSoleil;
+            audioS.volume = 1f;
+            audioS.Play();
         }
 
         if (GameManager.s_Singleton.meteoActive == GameManager.mode.pluie)
@@ -139,6 +191,12 @@ public class cloudManager : MonoBehaviour
 
             sunColor.sunBaseIntensity = sunIntensityPluie;
             sunColor.sunVariation = sunIntensityVariationPluie;
+
+            CancelInvoke("ThunderStruck");
+
+            audioS.clip = AmbiancePluie;
+            audioS.volume = 1f;
+            audioS.Play();
         }
 
         if (GameManager.s_Singleton.meteoActive == GameManager.mode.tempete)
@@ -163,7 +221,12 @@ public class cloudManager : MonoBehaviour
             sunColor.sunBaseIntensity = sunIntensityTempete;
             sunColor.sunVariation = sunIntensityVariationTempete;
 
-            
+            InvokeRepeating("ThunderStruck", 0f, speedSpawn);
+
+            audioS.clip = AmbiancePluie;
+            audioS.volume = 1f;
+            audioS.Play();
+
         }
 
         if (GameManager.s_Singleton.meteoActive == GameManager.mode.brouillard)
@@ -187,11 +250,18 @@ public class cloudManager : MonoBehaviour
 
             sunColor.sunBaseIntensity = sunIntensityPluie;
             sunColor.sunVariation = sunIntensityVariationPluie;
+
+            CancelInvoke("ThunderStruck");
+
+            audioS.clip = AmbianceBrouillard;
+            audioS.volume = 0.5f;
+            audioS.Play();
         }
     }
 
     public void ThunderStruck()
     {
+        
         foreach (GameObject go in thunder)
         {
             go.SetActive(false);
@@ -200,6 +270,10 @@ public class cloudManager : MonoBehaviour
         int range = Random.Range(0, thunder.Length);
 
         thunder[range].SetActive(true);
+
+       audioSeffect.clip = AmbianceTempete;
+        audioSeffect.pitch = Random.Range(0.8f, 1.2f);
+        audioSeffect.Play();
 
         
     }

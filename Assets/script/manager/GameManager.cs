@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public enum mode { soleil, pluie, tempete, brouillard }
     public mode meteoActive;
 
+    public cloudManager meteoManager;
+
     public enum dayWeek { lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche}
     public dayWeek actualDay;
 
@@ -96,6 +98,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+
+        meteoManager = cloudManager.FindObjectOfType<cloudManager>();
 
         cycle = DayNightCycle.FindObjectOfType<DayNightCycle>();
     }
@@ -208,6 +212,8 @@ public class GameManager : MonoBehaviour
             {
                 meteoActive = GameManager.mode.soleil;
 
+                meteoManager.meteoChange();
+
                 activeMeteo = false;
             }
 
@@ -225,16 +231,22 @@ public class GameManager : MonoBehaviour
                 if(meteo == 0)
                 {
                     meteoActive = GameManager.mode.pluie;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 else if (meteo == 1)
                 {
                     meteoActive = GameManager.mode.brouillard;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 else if (meteo == 2)
                 {
                     meteoActive = GameManager.mode.tempete;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
   
@@ -253,11 +265,15 @@ public class GameManager : MonoBehaviour
                 if (meteo == 0)
                 {
                     meteoActive = GameManager.mode.pluie;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 else if (meteo == 1)
                 {
                     meteoActive = GameManager.mode.soleil;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 
@@ -277,11 +293,15 @@ public class GameManager : MonoBehaviour
                 if (meteo == 0)
                 {
                     meteoActive = GameManager.mode.brouillard;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 else if (meteo == 1)
                 {
                     meteoActive = GameManager.mode.soleil;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
 
@@ -303,11 +323,15 @@ public class GameManager : MonoBehaviour
                 if (meteo == 0)
                 {
                     meteoActive = GameManager.mode.tempete;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 else if (meteo == 1)
                 {
                     meteoActive = GameManager.mode.pluie;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
 
@@ -325,6 +349,8 @@ public class GameManager : MonoBehaviour
             {
                 meteoActive = GameManager.mode.soleil;
 
+                meteoManager.meteoChange();
+
                 activeMeteo = false;
             }
         }
@@ -341,11 +367,15 @@ public class GameManager : MonoBehaviour
                 if (meteo == 0)
                 {
                     meteoActive = GameManager.mode.brouillard;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
                 else if (meteo == 1)
                 {
                     meteoActive = GameManager.mode.soleil;
+
+                    meteoManager.meteoChange();
                     activeMeteo = false;
                 }
 
