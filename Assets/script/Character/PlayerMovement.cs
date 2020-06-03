@@ -58,10 +58,14 @@ public class PlayerMovement : MonoBehaviour
     public Transform pasPivot;
     public GameObject particulePas;
 
-
+    [Header("son")]    
     private AudioSource audioS;
     public AudioClip collisionPersoSound;
     public AudioClip ramassageItemSound;
+    public AudioClip jumpSFX;
+    public AudioClip fallSFX;
+    public AudioClip[] walkSFX;
+
 
     private void Start()
     {
@@ -73,7 +77,6 @@ public class PlayerMovement : MonoBehaviour
            
 
             Cc = GetComponent<CharacterController>();
-
             
         }
         audioS = GetComponent<AudioSource>();
@@ -132,6 +135,8 @@ public class PlayerMovement : MonoBehaviour
                         speed = runSpeed;
                     anim.SetBool("isRunning", false);
                     anim.SetBool("isWalking", true);
+
+                    
                         
                     }
                     else
@@ -152,7 +157,8 @@ public class PlayerMovement : MonoBehaviour
                         {
                         nextActionTime += period;
                         Instantiate(particulePas, pasPivot.transform.position, pasPivot.transform.rotation);
-
+                        audioS.clip = walkSFX[Random.Range(0, walkSFX.Length)];
+                        audioS.Play();
                         }
                     
 

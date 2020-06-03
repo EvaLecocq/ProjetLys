@@ -1802,7 +1802,13 @@ MonoBehaviour:
   isGrounded: 0
   jumpSFX: {fileID: 0}
   fallSFX: {fileID: 0}
-  walkSFX: []
+  walkSFX:
+  - {fileID: 8300000, guid: a9729d4132c04a0449114b2e0661a6c4, type: 3}
+  - {fileID: 8300000, guid: 5a0e02f769fd7ee4aa48155b1a9452f4, type: 3}
+  - {fileID: 8300000, guid: 84fc985ce80327e48a3c0c19d13daf00, type: 3}
+  - {fileID: 8300000, guid: eb54f64b00984894c98bcf026483a997, type: 3}
+  - {fileID: 8300000, guid: 86a56b067ee46cb45a82e38b26c21c05, type: 3}
+  - {fileID: 8300000, guid: 5d7303e94b3d178458cb640dee86acaa, type: 3}
 --- !u!54 &5151511252505336632
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1832,7 +1838,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
