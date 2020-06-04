@@ -243,7 +243,8 @@ MonoBehaviour:
   parleLaNuit: 0
   dialogueDebut:
     name: Lapin
-    sentences: []
+    sentences:
+    - Salut !
   dialogueLapin:
     name: Agent P.
     sentences:
