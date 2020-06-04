@@ -236,7 +236,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &7565588922377939780
 Transform:
@@ -267,8 +267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightLamp:
   - {fileID: 2321432951834796731}
-  nightHour: 18
-  morningHour: 6
+  nightHour: -18
+  morningHour: -6
 --- !u!1 &9108582534087011851
 GameObject:
   m_ObjectHideFlags: 0
