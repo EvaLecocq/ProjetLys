@@ -58,6 +58,10 @@ public class PlayerMovement : MonoBehaviour
     public Transform pasPivot;
     public GameObject particulePas;
 
+  
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
+
     [Header("son")]    
     private AudioSource audioS;
     public AudioClip collisionPersoSound;
@@ -117,15 +121,24 @@ public class PlayerMovement : MonoBehaviour
 
                     Cc.Move(moveDirection * Time.deltaTime);
 
-               
-                //rotation du perso
+
+                
+                    //rotation du perso
                     Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
                      movement = Camera.main.transform.TransformDirection(movement);
                     movement.y = 0f;
 
                 model.transform.rotation = Quaternion.LookRotation(movement);
                 model.transform.rotation = Quaternion.Slerp(model.transform.rotation, Quaternion.LookRotation(movement), 0.15f);
+                /*
+                if (movement.magnitude >= 0.1f)
+                {
+                    float targetAngle = Mathf.Atan2(movement.x, movement.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
 
+                    model.transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                }*/
 
                 // model.transform.rotation = Quaternion.Slerp(model.transform.rotation, movement.rotation, Time.time * speed);
 
