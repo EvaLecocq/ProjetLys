@@ -1730,6 +1730,7 @@ GameObject:
   - component: {fileID: 5151511252505336632}
   - component: {fileID: 7619026757310595196}
   - component: {fileID: 4802026199592808917}
+  - component: {fileID: 5340842101984663164}
   m_Layer: 0
   m_Name: EnfantFPV
   m_TagString: Player
@@ -1940,6 +1941,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   asObject: 0
+--- !u!65 &5340842101984663164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6944537973514653095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.94283074, y: 0.22082697, z: 0.90125084}
+  m_Center: {x: 0.0025989641, y: -0.7687989, z: 0.090954915}
 --- !u!1 &7052849348090518532
 GameObject:
   m_ObjectHideFlags: 0

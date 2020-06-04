@@ -14,6 +14,9 @@ public class eventManager : MonoBehaviour
     void Update()
     {
         EventChange();
+
+
+        
     }
 
     public void EventChange()
