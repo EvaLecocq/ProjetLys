@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteoActive: 0
+  meteoManager: {fileID: 0}
   actualDay: 0
   actualEvent: 0
   activeMeteo: 0
