@@ -524,7 +524,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  fogColorTempete: {r: 0.29357815, g: 0, b: 1, a: 1}
+  fogColorTempete: {r: 0.3021945, g: 0.29592383, b: 0.6603774, a: 1}
   skyColorBrouillard:
     serializedVersion: 2
     key0: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
