@@ -267,26 +267,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
-    /*
-    public IEnumerator FlipCharacter()
-    {
-        //mainCamera.enabled = false;
-
-        yield return new WaitForSeconds(timeToFlip);
-
-        if(sens == 1)
-        {
-            transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + 180, 0);
-            //model.transform.localEulerAngles = Vector3.zero;
-            model.transform.rotation = camRoot.rotation;
-        }
-        
-
-        //yield return new WaitForSeconds(0.5f);
-
-        //mainCamera.enabled = true;
-        
-    }*/
+   
 
     
 

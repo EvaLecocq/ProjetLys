@@ -52,7 +52,7 @@ MonoBehaviour:
   day: 0
   progression: 0
   principale: 0
-  clesDuParc: 1
+  clesDuParc: 0
   queteSanglier: 0
   queteRaton: 0
   RatonSpam: 0
