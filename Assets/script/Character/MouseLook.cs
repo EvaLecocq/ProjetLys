@@ -5,6 +5,12 @@ using Cinemachine;
 
 public class MouseLook : MonoBehaviour
 {
+    public float Xspeed;
+    public float Yspeed;
+
+
+
+
     // The target we are following
     public Transform target;
     // The distance in the x-z plane to the target
@@ -35,6 +41,8 @@ public class MouseLook : MonoBehaviour
     public CinemachineVirtualCamera camFreeLook;
     public CinemachineVirtualCamera camFPV;
 
+    public CinemachineFreeLook camFreeTPV;
+    public bool useFreeCam = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +51,10 @@ public class MouseLook : MonoBehaviour
         {
             transform.parent = null;
         }
-                    
+
+        Xspeed = camFreeTPV.m_XAxis.m_MaxSpeed;
+        Yspeed = camFreeTPV.m_YAxis.m_MaxSpeed;
+
     }
 
     void LateUpdate()
@@ -126,27 +137,47 @@ public class MouseLook : MonoBehaviour
         {
             if(stop == false)
             {
-                float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-                float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+
+                if(useFreeCam == false)
+                {
+                    float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+                    float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
 
 
-                xRotation -= MouseY;
-                yRotation -= MouseX;
-                xRotation = Mathf.Clamp(xRotation, -22f, 20f);//rotation max
-                yRotation = Mathf.Clamp(yRotation, -90f, 90f);
+                    xRotation -= MouseY;
+                    yRotation -= MouseX;
+                    xRotation = Mathf.Clamp(xRotation, -22f, 20f);//rotation max
+                    yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
 
-                transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-                target.Rotate(Vector3.up * MouseX);
+                    transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+                    target.Rotate(Vector3.up * MouseX);
 
-                rot = transform.localRotation;
-                //transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+                    rot = transform.localRotation;
+                    //transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
 
+                }
+                else
+                {
+                    camFreeTPV.m_XAxis.m_MaxSpeed = Xspeed;
+                    camFreeTPV.m_YAxis.m_MaxSpeed = Yspeed;
+                }
+                
             }
             else
             {
-                transform.localRotation = rot;
+                if(useFreeCam == false)
+                {
+                    transform.localRotation = rot;
+                }
+                else
+                {
+                    camFreeTPV.m_XAxis.m_MaxSpeed = 0;
+                    camFreeTPV.m_YAxis.m_MaxSpeed = 0;
+                }
+
+                
             }
 
 
