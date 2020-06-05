@@ -343,7 +343,8 @@ MonoBehaviour:
     sentences: []
   dialogueRenard2:
     name: "Ma\xEEtre Cerf"
-    sentences: []
+    sentences:
+    - Salut.
   dialogueCerf:
     name: "Ma\xEEtre Cerf"
     sentences:

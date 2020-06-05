@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   statut: 2
-  parleLaNuit: 1
+  parleLaNuit: 0
   dialogueDebut:
     name: Wedoo
     sentences:

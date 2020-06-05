@@ -283,7 +283,7 @@ public class Dialogue_Trigger : MonoBehaviour
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide3);
                     }
                 }
-                else if (parleLaNuit && (GameManager.s_Singleton.time >= 18 || GameManager.s_Singleton.time < 6))
+                else if (parleLaNuit && (GameManager.s_Singleton.time >= 17 || GameManager.s_Singleton.time < 8))
                 {
                     if (GameManager.s_Singleton.queteRaton == true)
                     {
@@ -302,7 +302,7 @@ public class Dialogue_Trigger : MonoBehaviour
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide3);
                     }
                 }
-                else if (parleLaNuit && (GameManager.s_Singleton.time < 18 || GameManager.s_Singleton.time > 6))
+                else if (parleLaNuit && (GameManager.s_Singleton.time < 17 || GameManager.s_Singleton.time > 8))
                 {
                     
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);

@@ -17,11 +17,15 @@ public class pot : MonoBehaviour
     public GameObject interactionIcon;
     public GameObject particuleReward;
     public Transform rewardSpot;
+    public AudioSource audioS;
+    public AudioClip sonReward;
 
     public void reward()
     {
         fleurDePot.SetActive(true);
 
+        audioS.clip = sonReward;
+        audioS.Play();
         Instantiate(particuleReward, rewardSpot.position, rewardSpot.rotation);
     }
 

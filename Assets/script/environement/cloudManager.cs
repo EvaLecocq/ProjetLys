@@ -126,7 +126,7 @@ public class cloudManager : MonoBehaviour
     public void hourChange()
     {
         audioSnight.clip = AmbianceNuit;
-        audioSnight.volume = 0.5f;
+     
         audioSnight.Play();
 
         if (GameManager.s_Singleton.meteoActive == GameManager.mode.soleil)
@@ -166,7 +166,7 @@ public class cloudManager : MonoBehaviour
             CancelInvoke("ThunderStruck");
 
             audioS.clip = AmbianceSoleil;
-            audioS.volume = 1f;
+         
             audioS.Play();
         }
 
@@ -195,7 +195,7 @@ public class cloudManager : MonoBehaviour
             CancelInvoke("ThunderStruck");
 
             audioS.clip = AmbiancePluie;
-            audioS.volume = 1f;
+   
             audioS.Play();
         }
 
@@ -224,7 +224,7 @@ public class cloudManager : MonoBehaviour
             InvokeRepeating("ThunderStruck", 0f, speedSpawn);
 
             audioS.clip = AmbiancePluie;
-            audioS.volume = 1f;
+     
             audioS.Play();
 
         }
@@ -254,7 +254,7 @@ public class cloudManager : MonoBehaviour
             CancelInvoke("ThunderStruck");
 
             audioS.clip = AmbianceBrouillard;
-            audioS.volume = 0.5f;
+     
             audioS.Play();
         }
     }

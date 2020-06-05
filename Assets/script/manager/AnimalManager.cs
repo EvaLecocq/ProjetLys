@@ -21,7 +21,7 @@ public class AnimalManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        cerf.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,6 +36,9 @@ public class AnimalManager : MonoBehaviour
         {
             renard.transform.position = renardSpot.position;
         }
-        
+        if (GameManager.s_Singleton.progression >= 7)
+        {
+            cerf.SetActive(true);
+        }
     }
 }
