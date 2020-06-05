@@ -101,7 +101,6 @@ public class Dialogue_Manager : MonoBehaviour
 
         //dialogueActive = false;
         triggerEnd = true;
-        //quete.gameObject.SetActive(true);
         startDialogueFinish = false;
     }
    

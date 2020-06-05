@@ -241,12 +241,12 @@ public class Dialogue_Trigger : MonoBehaviour
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
             }
 
-            else if (GameManager.s_Singleton.progression == 1) //principale == GameManager.quete.lapin
+             if (GameManager.s_Singleton.progression == 1) //principale == GameManager.quete.lapin
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
             }
 
-            else if (GameManager.s_Singleton.progression == 2)
+             if (GameManager.s_Singleton.progression == 2)
             {
                 
 
@@ -262,7 +262,7 @@ public class Dialogue_Trigger : MonoBehaviour
             
 
             //parle nuit
-            else if(GameManager.s_Singleton.progression == 3)
+             if(GameManager.s_Singleton.progression == 3)
             {
                 if (parleLaNuit == false)
                 {
@@ -316,17 +316,17 @@ public class Dialogue_Trigger : MonoBehaviour
 
 
 
-        else if (GameManager.s_Singleton.progression == 4)
+         if (GameManager.s_Singleton.progression == 4)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRatonLaveur);
         }
 
-        else if (GameManager.s_Singleton.progression == 5)
+         if (GameManager.s_Singleton.progression == 5)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard);
         }
 
-        else if (GameManager.s_Singleton.progression == 6)
+         if (GameManager.s_Singleton.progression == 6)
         {
                 if(GameManager.s_Singleton.queteChien == true)
                 {
@@ -341,12 +341,12 @@ public class Dialogue_Trigger : MonoBehaviour
         
 
 
-        else if (GameManager.s_Singleton.progression == 7)
+         if (GameManager.s_Singleton.progression == 7)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
         }
 
-        else if (GameManager.s_Singleton.progression == 8)
+         if (GameManager.s_Singleton.progression == 8)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);
         }
