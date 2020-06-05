@@ -192,6 +192,8 @@ public class PlayerMovement : MonoBehaviour
                 else
                 {
                     look.stop = true;
+                     anim.SetBool("isRunning", false);
+                    anim.SetBool("isWalking", false);
 
                     model.transform.rotation = new Quaternion(0,0,0,0);
                 }    
