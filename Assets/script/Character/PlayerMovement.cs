@@ -392,8 +392,8 @@ public class PlayerMovement : MonoBehaviour
                 dialogueActuel.camDialogue.Priority = 0;
                 dialogueActuel.camDialogue.enabled = false;
 
-                dialogueActuel.UpgradeQuest();
-                dialogueActuel.UpgradeAnimalTalk();
+                //dialogueActuel.UpgradeQuest();
+                //dialogueActuel.UpgradeAnimalTalk();
 
                 //dialogueActuel.StopDialogue();
                 dialogueActuel.enabled = false;
