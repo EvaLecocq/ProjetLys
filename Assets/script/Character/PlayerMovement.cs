@@ -389,12 +389,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 dialogueActuel.DesactiveOutline();
 
-                dialogueActuel.camDialogue.Priority = 0;
-                dialogueActuel.camDialogue.enabled = false;
-
+              
+                dialogueActuel.StopDialogue();
                 dialogueActuel.enabled = false;
                 
-
                 dialogueActuel = null;
             }
         }

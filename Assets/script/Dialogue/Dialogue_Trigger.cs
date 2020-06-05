@@ -250,11 +250,11 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 
 
-                if(GameManager.s_Singleton.queteSanglier == true)
+                if(GameManager.s_Singleton.queteSanglier)
                 {
                     FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSanglier);
                 }
-                else if(GameManager.s_Singleton.queteSanglier == false)
+                else
                 {
                     FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValideSanglier);
                 }
@@ -266,7 +266,7 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 if (parleLaNuit == false)
                 {
-                    if (GameManager.s_Singleton.queteRaton == true)
+                    if (GameManager.s_Singleton.queteRaton)
                     {
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
                     }
@@ -285,7 +285,7 @@ public class Dialogue_Trigger : MonoBehaviour
                 }
                 else if (parleLaNuit && (GameManager.s_Singleton.time >= 17 || GameManager.s_Singleton.time < 8))
                 {
-                    if (GameManager.s_Singleton.queteRaton == true)
+                    if (GameManager.s_Singleton.queteRaton)
                     {
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueSerpent);
                     }
@@ -302,7 +302,7 @@ public class Dialogue_Trigger : MonoBehaviour
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide3);
                     }
                 }
-                else if (parleLaNuit && (GameManager.s_Singleton.time < 17 || GameManager.s_Singleton.time > 8))
+                else
                 {
                     
                         FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValide);
@@ -328,11 +328,11 @@ public class Dialogue_Trigger : MonoBehaviour
 
          if (GameManager.s_Singleton.progression == 6)
         {
-                if(GameManager.s_Singleton.queteChien == true)
+                if(GameManager.s_Singleton.queteChien)
                 {
                     FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueChianChat);
                 }
-                else if(GameManager.s_Singleton.queteChien == false)
+                else 
                 {
                     FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteNonValideChien);
                 }
@@ -402,17 +402,17 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         
 
-        manager.dialogueActive = false;
+        //manager.dialogueActive = false;//peut etre la cause du probleme
         //manager.EndDialogue();
         
         player.isTalk = false;
         camDialogue.Priority = 0;
         camDialogue.enabled = false;
 
-        //player.camRoot.transform.position = Vector3.zero;
+        
         player.camRoot.transform.rotation = new Quaternion(0, 0, 0, 0);
 
-        //Debug.Log(camDialogue.Priority);
+       
 
         UpgradeQuest();
         UpgradeAnimalTalk();

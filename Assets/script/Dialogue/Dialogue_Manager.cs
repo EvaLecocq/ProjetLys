@@ -99,7 +99,7 @@ public class Dialogue_Manager : MonoBehaviour
     {
         dialogueapparition.gameObject.SetActive(false);
 
-        //dialogueActive = false;
+        dialogueActive = false;//ct desactiver jsp
         triggerEnd = true;
         startDialogueFinish = false;
     }
