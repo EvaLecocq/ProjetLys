@@ -385,7 +385,8 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         manager.triggerEnd = false;
 
-        
+        UpgradeQuest();
+        UpgradeAnimalTalk();
 
         fonduNoir.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
@@ -412,12 +413,8 @@ public class Dialogue_Trigger : MonoBehaviour
         
         player.camRoot.transform.rotation = new Quaternion(0, 0, 0, 0);
 
-       
-
-        UpgradeQuest();
-        UpgradeAnimalTalk();
-
-       
+        //UpgradeQuest();
+        //UpgradeAnimalTalk();
 
         StartCoroutine(waitToTalk());
 
