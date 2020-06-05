@@ -405,7 +405,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  fogColorSun: {r: 1, g: 0.7960849, b: 0.5235849, a: 1}
+  fogColorSun: {r: 0.990566, g: 0.7917732, b: 0.52799034, a: 1}
   fogDistanceBase: 250
   skyColorPluie:
     serializedVersion: 2
@@ -468,9 +468,9 @@ MonoBehaviour:
   fogColorPluie: {r: 0.3726415, g: 0.5205402, b: 1, a: 1}
   skyColorTempete:
     serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
-    key2: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 0}
+    key0: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 1}
+    key1: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+    key2: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -497,9 +497,9 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   horizonColorTempete:
     serializedVersion: 2
-    key0: {r: 0, g: 0.026046466, b: 0.6037736, a: 1}
-    key1: {r: 0.2264151, g: 0.22107512, b: 0.22107512, a: 1}
-    key2: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0}
+    key0: {r: 0.3230242, g: 0.3344991, b: 0.5754717, a: 1}
+    key1: {r: 0.41509432, g: 0.3661445, b: 0.3661445, a: 1}
+    key2: {r: 0.3584906, g: 0.33312568, b: 0.33312568, a: 0}
     key3: {r: 0.5660378, g: 0.5259879, b: 0.5259879, a: 0}
     key4: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -524,7 +524,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  fogColorTempete: {r: 0.3021945, g: 0.29592383, b: 0.6603774, a: 1}
+  fogColorTempete: {r: 0.54159063, g: 0.5377359, b: 0.7169812, a: 1}
   skyColorBrouillard:
     serializedVersion: 2
     key0: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
