@@ -236,17 +236,17 @@ public class Dialogue_Trigger : MonoBehaviour
 
         if (statut == Dialogue_Trigger.classe.principal || statut == Dialogue_Trigger.classe.tertiaire)
         {
-            if (GameManager.s_Singleton.principale == GameManager.quete.debut)
+            if (GameManager.s_Singleton.progression == 0)
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
             }
 
-            else if (GameManager.s_Singleton.principale == GameManager.quete.lapin)
+            else if (GameManager.s_Singleton.progression == 1) //principale == GameManager.quete.lapin
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueLapin);
             }
 
-            else if (GameManager.s_Singleton.principale == GameManager.quete.sanglier)
+            else if (GameManager.s_Singleton.progression == 2)
             {
                 
 
@@ -262,7 +262,7 @@ public class Dialogue_Trigger : MonoBehaviour
             
 
             //parle nuit
-            else if(GameManager.s_Singleton.principale == GameManager.quete.serpent)
+            else if(GameManager.s_Singleton.progression == 3)
             {
                 if (parleLaNuit == false)
                 {
@@ -316,17 +316,17 @@ public class Dialogue_Trigger : MonoBehaviour
 
 
 
-        else if (GameManager.s_Singleton.principale == GameManager.quete.ratonLaveur)
+        else if (GameManager.s_Singleton.progression == 4)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRatonLaveur);
         }
 
-        else if (GameManager.s_Singleton.principale == GameManager.quete.renard)
+        else if (GameManager.s_Singleton.progression == 5)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard);
         }
 
-        else if (GameManager.s_Singleton.principale == GameManager.quete.chienChat)
+        else if (GameManager.s_Singleton.progression == 6)
         {
                 if(GameManager.s_Singleton.queteChien == true)
                 {
@@ -341,12 +341,12 @@ public class Dialogue_Trigger : MonoBehaviour
         
 
 
-        else if (GameManager.s_Singleton.principale == GameManager.quete.renard2)
+        else if (GameManager.s_Singleton.progression == 7)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
         }
 
-        else if (GameManager.s_Singleton.principale == GameManager.quete.cerf)
+        else if (GameManager.s_Singleton.progression == 8)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);
         }
