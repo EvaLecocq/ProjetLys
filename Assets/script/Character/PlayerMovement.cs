@@ -97,10 +97,10 @@ public class PlayerMovement : MonoBehaviour
         if (useBaseControl)
         {
             
-                if(isTalk == false)
+            if(isTalk == false)
+            {
+                if (Cc.isGrounded)
                 {
-                    if (Cc.isGrounded)
-                    {
                         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
                         //CameraMoveCustom = new Vector3()
                         moveDirection = Camera.main.transform.TransformDirection(moveDirection);//doit ignorer le Y de la cam sinon fait des bond en arriere
@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
                         {
                             moveDirection.y = 0.0f;
                         }
-                    }
+                }
 
 
                     moveDirection.y -= gravity * Time.deltaTime;
@@ -130,73 +130,63 @@ public class PlayerMovement : MonoBehaviour
 
                 model.transform.rotation = Quaternion.LookRotation(movement);
                 model.transform.rotation = Quaternion.Slerp(model.transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-                /*
-                if (movement.magnitude >= 0.1f)
+               
+
+
+                if (Input.GetKey(runKey))//course
                 {
-                    float targetAngle = Mathf.Atan2(movement.x, movement.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
-                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-
-                    model.transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-                }*/
-
-                // model.transform.rotation = Quaternion.Slerp(model.transform.rotation, movement.rotation, Time.time * speed);
-
-
-                    if (Input.GetKey(runKey))//course
-                    {
                         speed = runSpeed;
                     anim.SetBool("isRunning", false);
                     anim.SetBool("isWalking", true);
 
                     
                         
-                    }
-                    else
-                    {
+                }
+                else
+                {
                         speed = defaultSpeed;
                     //anim.SetBool("isRunning", true);
                     anim.SetBool("isWalking", false);
 
-                    }
+                }
 
                 
 
 
-                    if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
-                    {
+                if (Input.GetKey(rightWalk) || Input.GetKey(leftWalk) || Input.GetKey(backWalk) || Input.GetKey(frontWalk))
+                {
 
-                        if (Time.time > nextActionTime)
-                        {
+                    if (Time.time > nextActionTime)
+                    {
                         nextActionTime += period;
                         Instantiate(particulePas, pasPivot.transform.position, pasPivot.transform.rotation);
                         audioS.clip = walkSFX[Random.Range(0, walkSFX.Length)];
                         audioS.Play();
-                        }
+                    }
                     
 
                     qTo = model.transform.rotation;
-                        anim.SetBool("isRunning", true);
-                    }
-                     else
-                    {
-                    
-                    model.transform.rotation = qTo;
-                        anim.SetBool("isRunning", false);
-                    }
-
-
-                    look.stop = false;
-                     maskBody = false;
+                    anim.SetBool("isRunning", true);
                 }
                 else
                 {
+                    
+                    model.transform.rotation = qTo;
+                    anim.SetBool("isRunning", false);
+                }
+
+
+                look.stop = false;
+                maskBody = false;
+            }
+            else
+            {
                     look.stop = true;
                      anim.SetBool("isRunning", false);
                     anim.SetBool("isWalking", false);
 
                     model.transform.rotation = new Quaternion(0,0,0,0);
-                }    
+            }    
 
 
             if(maskBody)
