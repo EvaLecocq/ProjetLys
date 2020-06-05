@@ -263,8 +263,6 @@ public class PlayerMovement : MonoBehaviour
 
     
 
-    
-
     private void OnTriggerStay(Collider other)
     {
        
@@ -389,8 +387,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 dialogueActuel.DesactiveOutline();
 
-              
-                dialogueActuel.StopDialogue();
+                isTalk = false;
+
+                dialogueActuel.camDialogue.Priority = 0;
+                dialogueActuel.camDialogue.enabled = false;
+
+                dialogueActuel.UpgradeQuest();
+                dialogueActuel.UpgradeAnimalTalk();
+
+                //dialogueActuel.StopDialogue();
                 dialogueActuel.enabled = false;
                 
                 dialogueActuel = null;
