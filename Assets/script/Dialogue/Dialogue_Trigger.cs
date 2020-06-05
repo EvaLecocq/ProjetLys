@@ -385,12 +385,12 @@ public class Dialogue_Trigger : MonoBehaviour
     {
         manager.triggerEnd = false;
 
-        StopDialogue();
+        
 
         fonduNoir.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
 
-        
+        StopDialogue();
 
         yield return new WaitForSeconds(1);
         fonduNoir.Rebind();
