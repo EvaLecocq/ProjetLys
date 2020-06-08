@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
     public int queteSecondaireAccompli;
     public int niveauHerbier = 0;
     public int dialogueFait;
+    public int gaspard;
 
     [Header("animaux")]
     public int lapin;

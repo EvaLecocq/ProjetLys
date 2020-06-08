@@ -5,7 +5,7 @@ using UnityEngine;
 public class herbierCarnet : MonoBehaviour
 {
 
-    public bool pageDroite = true;
+   
 
     public GameObject[] etape;
     public GameObject[] note;
@@ -15,7 +15,24 @@ public class herbierCarnet : MonoBehaviour
     public GameObject noteSpecial03;
     public GameObject noteSpecial04;
 
-   
+    private void Start()
+    {
+        etape[0].SetActive(false);
+        etape[1].SetActive(false);
+        etape[2].SetActive(false);
+        etape[3].SetActive(false);
+        etape[4].SetActive(false);
+        etape[5].SetActive(false);
+        etape[6].SetActive(false);
+        etape[7].SetActive(false);
+
+        note[0].SetActive(false);
+        note[1].SetActive(false);
+        note[2].SetActive(false);
+        note[3].SetActive(false);
+        note[4].SetActive(false);
+        note[5].SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,30 +44,58 @@ public class herbierCarnet : MonoBehaviour
         }
         if ( GameManager.s_Singleton.progression == 1)
         {
+            etape[0].SetActive(true);
             etape[1].SetActive(true);
         }
         if ( GameManager.s_Singleton.progression == 2)
         {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
             etape[2].SetActive(true);
         }
         if (GameManager.s_Singleton.progression == 3)
         {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
             etape[3].SetActive(true);
         }
         if (GameManager.s_Singleton.progression == 4)
         {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
+            etape[3].SetActive(true);
             etape[4].SetActive(true);
         }
         if (GameManager.s_Singleton.progression == 5)
         {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
+            etape[3].SetActive(true);
+            etape[4].SetActive(true);
             etape[5].SetActive(true);
         }
         if ( GameManager.s_Singleton.progression == 6)
         {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
+            etape[3].SetActive(true);
+            etape[4].SetActive(true);
+            etape[5].SetActive(true);
             etape[6].SetActive(true);
         }
         if ( GameManager.s_Singleton.progression == 7)
         {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
+            etape[3].SetActive(true);
+            etape[4].SetActive(true);
+            etape[5].SetActive(true);
+            etape[6].SetActive(true);
             etape[7].SetActive(true);
         }
 
@@ -63,22 +108,37 @@ public class herbierCarnet : MonoBehaviour
         }
         if (GameManager.s_Singleton.niveauHerbier == 2)
         {
+            note[0].SetActive(true);
             note[1].SetActive(true);
         }
         if (GameManager.s_Singleton.niveauHerbier == 3)
         {
+            note[0].SetActive(true);
+            note[1].SetActive(true);
             note[2].SetActive(true);
         }
         if (GameManager.s_Singleton.niveauHerbier == 4)
         {
+            note[0].SetActive(true);
+            note[1].SetActive(true);
+            note[2].SetActive(true);
             note[3].SetActive(true);
         }
         if (GameManager.s_Singleton.niveauHerbier == 5)
         {
+            note[0].SetActive(true);
+            note[1].SetActive(true);
+            note[2].SetActive(true);
+            note[3].SetActive(true);
             note[4].SetActive(true);
         }
         if (GameManager.s_Singleton.niveauHerbier == 6)
         {
+            note[0].SetActive(true);
+            note[1].SetActive(true);
+            note[2].SetActive(true);
+            note[3].SetActive(true);
+            note[4].SetActive(true);
             note[5].SetActive(true);
         }
 
