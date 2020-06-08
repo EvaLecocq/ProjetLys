@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
     [Header("secondaire")]
     public int queteSecondaireAccompli;
     public int niveauHerbier = 0;
+    public int dialogueFait;
 
     [Header("animaux")]
     public int lapin;
@@ -121,11 +122,28 @@ public class GameManager : MonoBehaviour
 
         UpdateQuest();
 
+        upgradeHerbier();
+
         if (queteActuelValider)
         {
             queteActuelValider = false;
             ProgressionPlus();
         }
+    }
+
+    public void upgradeHerbier()
+    {
+        dialogueFait = lapin + sanglier + serpent + ratonLaveur + renard + chienChat + cerf;
+
+        if(dialogueFait >= 15)
+        {
+            niveauHerbier = 1;
+        }
+        else if (dialogueFait >= 30)
+        {
+            niveauHerbier = 2;
+        }
+        
     }
 
     public void ProgressionPlus()
