@@ -19,11 +19,11 @@ public class herbierMapUpgrade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.s_Singleton.niveauHerbier == 1)
+        if(GameManager.s_Singleton.niveauHerbier >= 2 && GameManager.s_Singleton.niveauHerbier < 5)
         {
             pageActuel.sprite = pageNiv2;
         }
-        else if (GameManager.s_Singleton.niveauHerbier == 2)
+        else if (GameManager.s_Singleton.niveauHerbier >= 5)
         {
             pageActuel.sprite = pageNiv3;
         }
