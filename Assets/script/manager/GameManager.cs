@@ -105,6 +105,13 @@ public class GameManager : MonoBehaviour
         cycle = DayNightCycle.FindObjectOfType<DayNightCycle>();
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        meteoManager = cloudManager.FindObjectOfType<cloudManager>();
+
+        cycle = DayNightCycle.FindObjectOfType<DayNightCycle>();
+    }
+
     // Update is called once per frame
     void Update()
     {
