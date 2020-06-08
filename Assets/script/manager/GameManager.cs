@@ -142,15 +142,31 @@ public class GameManager : MonoBehaviour
     {
         dialogueFait = lapin + sanglier + serpent + ratonLaveur + renard + chienChat + cerf;
 
-        if(dialogueFait >= 15)
+        if(dialogueFait >= 5 && dialogueFait < 10)
         {
             niveauHerbier = 1;
         }
-        else if (dialogueFait >= 30)
+        else if (dialogueFait >= 10 && dialogueFait < 15)
         {
             niveauHerbier = 2;
         }
-        
+        if (dialogueFait >= 15 && dialogueFait < 20)
+        {
+            niveauHerbier = 3;
+        }
+        else if (dialogueFait >= 20 && dialogueFait < 25)
+        {
+            niveauHerbier = 4;
+        }
+        if (dialogueFait >= 25 && dialogueFait < 30)
+        {
+            niveauHerbier = 5;
+        }
+        else if (dialogueFait >= 30 && dialogueFait < 35)
+        {
+            niveauHerbier = 6;
+        }
+
     }
 
     public void ProgressionPlus()
