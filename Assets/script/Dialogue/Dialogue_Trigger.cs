@@ -61,6 +61,8 @@ public class Dialogue_Trigger : MonoBehaviour
         }
         manager = Dialogue_Manager.FindObjectOfType<Dialogue_Manager>();
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
+
+        gameObject.GetComponent<Dialogue_Trigger>().enabled = false;
     }
 
     private void Update()
