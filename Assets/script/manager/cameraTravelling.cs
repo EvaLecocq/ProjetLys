@@ -52,6 +52,14 @@ public class cameraTravelling : MonoBehaviour
                 {
                     cam[4].Priority = 25;
                 }
+                if (parcourer == 1)
+                {
+                    cam[5].Priority = 25;
+                }
+                if (parcourer == 0)
+                {
+                    cam[6].Priority = 25;
+                }
 
 
             }
