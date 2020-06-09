@@ -10,7 +10,7 @@ public class DayNightCycle : MonoBehaviour
     [Header("Time")]
     [Tooltip("Day Length in Minutes")]
     [SerializeField]
-    private float _targetDayLength = 0.5f; //length of day in minutes
+    public float _targetDayLength = 0.5f; //length of day in minutes
     public float targetDayLength
     {
         get
