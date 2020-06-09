@@ -7,7 +7,7 @@ public class Dialogue_Manager : MonoBehaviour
 {
     public Text Textname;
     public Text dialogue;
-    private Queue<string> sentences;
+    public Queue<string> sentences;
     public GameObject dialogueapparition;
     public GameObject quete;
 
