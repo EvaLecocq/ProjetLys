@@ -147,13 +147,11 @@ MonoBehaviour:
   dialogueRatonLaveur:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - "Avez vous parl\xE9 au raton laveur ? "
-    - "Ha ha il a tendance \xE0 s'\xE9nerver facilement mais il a r\xE9pondu \xE0
-      votre question."
-    - "un animal malin et rus\xE9, c'est tr\xE8s vague, le canard et le furet pourraient
-      correspondre,\r ou m\xEAme le chat. J'esp\xE8re vous avoir donn\xE9 des pistes."
-    - "Bonne chance dans votre enqu\xEAte !"
+    - "Ha ha ! Le raton laveur s'est agac\xE9 ? Il s'\xE9nerver facilement, c'est
+      un sanguin !"
+    - "Mais s'il a r\xE9pondu \xE0 votre question, tout se passe bien !"
+    - "Tu es sur la piste d'un animal rus\xE9 et malin ?"
+    - "C'est tr\xE8s vague, je ne saurais pas \xEAtre en mesure de t'assister, d\xE9sol\xE9."
   dialogueRenard:
     name: Le Serpent
     sentences:

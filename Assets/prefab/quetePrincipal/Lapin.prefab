@@ -446,16 +446,31 @@ MonoBehaviour:
     - "HEY TOI L\xC0 ! "
     - "Que fais tu ici !? Le portail est ferm\xE9, non ? \xC7a veut dire que le parc
       est ferm\xE9, n'est ce pas ? "
-    - "Hmm... C'est pas normal que tu sois l\xE0....... Es-tu perdu ?"
-    - "Emb\xEAtant, c'est emb\xEAtant, ne te fais pas de soucis je vais te donner
-      un coup de patte ! "
-    - "J'ai un ami dans le parc qui peut t'aider, c'est un grand cerf, c'est lui le
-      chef, il a la grande cl\xE9 du portail, il peut t'ouvrir."
-    - "Je me souviens l'avoir vu pr\xE8s d'un pont, mais l'endroit pr\xE9cis m'\xE9chappe."
+    - "Comment \xE7a \"quel parc ?\" !? Tu es au Jardin Public de Bordeaux mon petit
+      !"
+    - "C'est un lieu de balade o\xF9 tu pourras croiser pleins d'animaux diff\xE9rents
+      et une grande vari\xE9t\xE9 de fleurs, que tu pourras ramasser pour les ajouter
+      \xE0 ton herbier que je vois l\xE0."
+    - "Tu peux aussi d\xE9couvrir des attractions pour enfants, comme des aires de
+      jeux, le th\xE9\xE2tre de marionnettes ou m\xEAme le cirque !"
+    - "Plein d'autres \xE9v\xE9nements apparaitront tout au long de la semaine."
+    - "... Oh pardon ! Quand je commence \xE0 parler, je ne m'arr\xEAte plus."
+    - Mais tu m'intrigue... Que vient faire un jeune enfant de 6 ans dans le parc
+      tout seul ?
+    - "C'est pas normal que tu sois l\xE0....... Es-tu perdu ?"
+    - "Emb\xEAtant, c'est emb\xEAtant ! Tu ne peux pas rester ici sans tes parents
+      ! Mais ne te fais pas de soucis, je vais te donner un coup de patte ! "
+    - "Tiens, je te donne une carte que tu pourras consulter et compl\xE9ter en parlant
+      aux autres animaux."
+    - "Aussi, voil\xE0 des pages de notes o\xF9 tu pourras \xE9crire toutes tes aventures,
+      je mets tout \xE7a dans ton herbier."
+    - "Et enfin j'ai un ami dans le parc qui pourra t'aider. C'est un grand cerf,
+      c'est lui le chef ! Il a la grande cl\xE9 du portail, il peut t'ouvrir."
+    - "Je me souviens l'avoir vu pr\xE8s d'un pont, mais l'endroit pr\xE9cis m'\xE9chappe.
+      Tu devrais aller v\xE9rifier."
   dialogueLapin:
     name: Le Lapin
     sentences:
-    - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
     - "Tu as trouv\xE9 le cerf ?"
     - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
   dialogueSanglier:
@@ -463,7 +478,7 @@ MonoBehaviour:
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
     - "Tu as trouv\xE9 le cerf ?"
-    - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
+    - "Zut il est vrai qu'il se d\xE9place tr\xE8s souvent."
   dialogueSerpent:
     name: Le Lapin
     sentences:
@@ -475,11 +490,10 @@ MonoBehaviour:
   dialogueRatonLaveur:
     name: Le Lapin
     sentences:
-    - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
-    - "H\xE9 bien, tu as rencontr\xE9 plein d'animaux du parc !"
+    - "H\xE9 bien, j'ai cru comprendre que tu avais rencontr\xE9 plein d'animaux du
+      parc !"
     - "Un animal malin et rus\xE9 ?"
-    - Hmm, plusieurs animaux pourraient correspondre, les deux principaux seraient
-      le furet et le renard, ou le raton laveur.
+    - Hmm, plusieurs animaux pourraient correspondre, je ne saurais pas te dire lequel.
   dialogueRenard:
     name: Le Lapin
     sentences:

@@ -492,12 +492,13 @@ MonoBehaviour:
   dialogueSanglier:
     name: Le Sanglier
     sentences:
-    - "INT\xC9RESSANT !!! CE SONT DE BEAUX GLANDS QUE TU M'AS APPORT\xC9 L\xC0, PETIT
-      PERDANT."
-    - "C'EST UN BON TROPH\xC9E."
-    - "IL EST TEMPS DE METTRE UNE RACL\xC9E \xC0 CE SATAN\xC9 CERF. TOI AUSSI TU LE
-      CHERCHE, NE T'Y CROIS PAS TROP TU POURRAS JAMAIS LE BATTRE."
-    - JE L'AI VU CHERCHER DANS LES HAUTES HERBES PAS LOIN DU JARDIN...
+    - "INT\xC9RESSANT !!! Ce sont de beaux glands que tu m'as apport\xE9 l\xE0, petit
+      perdant. "
+    - "C'est un bon troph\xE9e."
+    - "Il est temps de mettre une racl\xE9e \xE0 ce satan\xE9 cerf. Toi aussi tu le
+      cherche ? Ne t'y crois pas trop, tu pourras jamais le battre."
+    - "Je l'ai vu trainer pr\xE8s des grands saules, pas loin du batiment principal.
+      Je peux t'accompagner... "
     - 'OU ALORS JE RESTE ICI JE MANGE ENCORE PLUS DE GLANDS '
     - "ET JE DEVIENDRAIS SI FORT QUE J'EN FERAI QU'UNE BOUCH\xC9E."
   dialogueSerpent:

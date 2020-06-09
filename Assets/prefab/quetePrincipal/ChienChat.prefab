@@ -516,49 +516,29 @@ MonoBehaviour:
     sentences:
     - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
     - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
     - "Chat :\r\nAu roi du silence alors tais toi !"
-    - "Chien :\r\nOh d'accord...\n"
-    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
-    - "Chien :\r\nOH OUI LES CANARDS."
-    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
-    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
   dialogueSanglier:
     name: Chien - Chat
     sentences:
     - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
     - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
     - "Chat :\r\nAu roi du silence alors tais toi !"
-    - "Chien :\r\nOh d'accord...\n"
-    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
-    - "Chien :\r\nOH OUI LES CANARDS."
-    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
-    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
   dialogueSerpent:
     name: Chien - Chat
     sentences:
     - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
     - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
     - "Chat :\r\nAu roi du silence alors tais toi !"
-    - "Chien :\r\nOh d'accord...\n"
-    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
-    - "Chien :\r\nOH OUI LES CANARDS."
-    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
-    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
   dialogueRatonLaveur:
     name: Chien - Chat
     sentences:
     - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
     - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH OUI C'EST VRAI.\r AH BON ? ON JOUE \xC0 QUOI ? "
+    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
     - "Chat :\r\nAu roi du silence alors tais toi !"
-    - "Chien :\r\nOh d'accord...\n"
-    - "Chat :\r\nSi tu es sage on ira jouer avec les canards."
-    - "Chien :\r\nOH OUI LES CANARDS."
-    - "Chat :\r\nOn joue toujours au roi du silence n'oublie pas."
-    - "Chien :\r\nOH c'est vrai, chuuuuuuuut."
   dialogueRenard:
     name: Chien - Chat
     sentences:
