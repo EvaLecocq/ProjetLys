@@ -17,21 +17,14 @@ public class herbierCarnet : MonoBehaviour
 
     private void Start()
     {
-        etape[0].SetActive(false);
-        etape[1].SetActive(false);
-        etape[2].SetActive(false);
-        etape[3].SetActive(false);
-        etape[4].SetActive(false);
-        etape[5].SetActive(false);
-        etape[6].SetActive(false);
-        etape[7].SetActive(false);
-
-        note[0].SetActive(false);
-        note[1].SetActive(false);
-        note[2].SetActive(false);
-        note[3].SetActive(false);
-        note[4].SetActive(false);
-        note[5].SetActive(false);
+        foreach (GameObject go in etape)
+        {
+            go.SetActive(false);
+        }
+        foreach (GameObject go in note)
+        {
+            go.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -47,18 +40,32 @@ public class herbierCarnet : MonoBehaviour
             etape[0].SetActive(true);
             etape[1].SetActive(true);
         }
+
+       
+
         if ( GameManager.s_Singleton.progression == 2)
         {
             etape[0].SetActive(true);
             etape[1].SetActive(true);
             etape[2].SetActive(true);
+         
         }
+        if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier)
+        {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
+            etape[3].SetActive(true);
+        }
+
+
         if (GameManager.s_Singleton.progression == 3)
         {
             etape[0].SetActive(true);
             etape[1].SetActive(true);
             etape[2].SetActive(true);
             etape[3].SetActive(true);
+            etape[4].SetActive(true);
         }
         if (GameManager.s_Singleton.progression == 4)
         {
@@ -67,6 +74,7 @@ public class herbierCarnet : MonoBehaviour
             etape[2].SetActive(true);
             etape[3].SetActive(true);
             etape[4].SetActive(true);
+            etape[5].SetActive(true);
         }
         if (GameManager.s_Singleton.progression == 5)
         {
@@ -76,7 +84,21 @@ public class herbierCarnet : MonoBehaviour
             etape[3].SetActive(true);
             etape[4].SetActive(true);
             etape[5].SetActive(true);
+            etape[6].SetActive(true);
         }
+
+        if (GameManager.s_Singleton.progression == 5 && GameManager.s_Singleton.queteChien)
+        {
+            etape[0].SetActive(true);
+            etape[1].SetActive(true);
+            etape[2].SetActive(true);
+            etape[3].SetActive(true);
+            etape[4].SetActive(true);
+            etape[5].SetActive(true);
+            etape[6].SetActive(true);
+            etape[7].SetActive(true);
+        }
+
         if ( GameManager.s_Singleton.progression == 6)
         {
             etape[0].SetActive(true);
@@ -86,6 +108,8 @@ public class herbierCarnet : MonoBehaviour
             etape[4].SetActive(true);
             etape[5].SetActive(true);
             etape[6].SetActive(true);
+            etape[7].SetActive(true);
+            etape[8].SetActive(true);
         }
         if ( GameManager.s_Singleton.progression == 7)
         {
@@ -97,6 +121,8 @@ public class herbierCarnet : MonoBehaviour
             etape[5].SetActive(true);
             etape[6].SetActive(true);
             etape[7].SetActive(true);
+            etape[8].SetActive(true);
+            etape[9].SetActive(true);
         }
 
 
