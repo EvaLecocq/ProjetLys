@@ -383,8 +383,8 @@ public class PlayerMovement : MonoBehaviour
         //dialogue
         if (other.CompareTag("dialogue") && dialogueActuel != null)
         {
-            if (managerDialogue.dialogueActive == false)
-            {
+            //if (managerDialogue.dialogueActive == false)
+            //{
                 dialogueActuel.DesactiveOutline();
 
                 isTalk = false;
@@ -399,7 +399,9 @@ public class PlayerMovement : MonoBehaviour
                 dialogueActuel.enabled = false;
                 
                 dialogueActuel = null;
-            }
+
+                managerDialogue.dialogueActive = false;
+            //}
         }
 
         //banc
