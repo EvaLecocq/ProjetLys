@@ -123,15 +123,14 @@ MonoBehaviour:
     name: Pog
     sentences:
     - Bonchour, comment cha va ?
-    - Tu cherche le Changlier ?
-    - Il est juste devant toi.
-    - Le Cherf ? Non je me chuis pas battu avec lui tu fais erreur.
+    - "Tu cherche le Cherf ? Pr\xE8s d'un pont ?"
+    - Ch'sais pas, en tout cas il y a pas de pont part ichi !
   dialogueSanglier:
     name: Pog
     sentences:
     - Bonchour...
-    - Tu veut allez dans les hautes cherbes ?
-    - "On dit que ch'est la tani\xE8re du Cherpent."
+    - "Tu veux allez pr\xE8s des grands chaules ?"
+    - "On dit que ch'est la tani\xE8re du Cherpent, c'est l\xE0 qu'il che cache."
   dialogueSerpent:
     name: Pog
     sentences:

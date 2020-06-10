@@ -123,19 +123,21 @@ MonoBehaviour:
     name: Grandes Oreilles
     sentences:
     - Yo !
-    - "Pr\xE8s du pont ? Je connais oui."
-    - "C'est l\xE0 o\xF9 se balade le Sanglier et le Raton Laveur."
+    - "Pr\xE8s du pont ?"
+    - "C'est l\xE0 que se baladent le Sanglier et le Raton Laveur, tu devrais leur
+      demander."
   dialogueSanglier:
     name: Grandes Oreilles
     sentences:
     - Salut !
     - "Le Cerf ? \xC7a fait un moment que je ne l'ai pas vu !"
-    - Tu devrais demander au Serpent, il guette tout ce qui se passe.
+    - "Mais si il est pass\xE9 pr\xE8s des grands saules, tu devrais demander au Serpent.
+      Il guette tout ce qui se passe par l\xE0-bas."
   dialogueSerpent:
     name: Grandes Oreilles
     sentences:
     - Le Raton Laveur ?
-    - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
+    - "Traverse le pont et \xE0 droite tu le trouveras."
   dialogueRatonLaveur:
     name: Grandes Oreilles
     sentences:
@@ -167,7 +169,8 @@ MonoBehaviour:
     name: Grandes Oreilles
     sentences:
     - Salut l'ami !
-    - "Ah non d\xE9sol\xE9 je ne connais pas les d\xE9sirs de chacun !"
+    - "Ce qu'attends le sanglier ? Certainement des glands, il y en a partout l\xE0
+      o\xF9 il y a plein d'arbres."
   dialogueQueteNonValide:
     name: Grandes Oreilles
     sentences:

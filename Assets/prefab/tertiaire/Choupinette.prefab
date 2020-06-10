@@ -131,7 +131,7 @@ MonoBehaviour:
     name: Choupinette
     sentences:
     - 'Comment ? tu cherches le Cerf ? '
-    - "Il doit \xEAtre avec le Serpent, il habite dans les hautes herbes."
+    - "Si c'est pr\xE8s des saules, il doit \xEAtre avec le Serpent."
     - "On dit qu'il est dangeureux, je ne m'en approcherais pas \xE0 ta place."
   dialogueSerpent:
     name: Choupinette
@@ -183,8 +183,7 @@ MonoBehaviour:
     name: Choupinette
     sentences:
     - Oui ?
-    - Je pense que tu devrais allez cueillir dans le jardin botanique.
-    - "Les fleurs l\xE0-bas sont tr\xE8s jolies."
+    - "Une Hellebore ? Elles ne poussent pas par ici, va voir apr\xE8s les ponts !"
   dialogueQueteCourse:
     name: 
     sentences: []

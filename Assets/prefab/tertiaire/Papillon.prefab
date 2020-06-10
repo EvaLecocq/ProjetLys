@@ -138,8 +138,8 @@ MonoBehaviour:
       bien tous ensemble car ce sont mes amis !"
     - En fait il y a des nids d'oiseaux partout dans ce parc ! J'adore cet endroit
       !
-    - Le serpent aussi il adore les oiseaux ! D'ailleurs il adore surtout les nids
-      ! J'adore le serpent !
+    - Le serpent aussi il adore les oiseaux ! Surtout leurs nids... J'adore le serpent
+      !
   dialogueSerpent:
     name: M. Papillon
     sentences:

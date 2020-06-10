@@ -249,7 +249,9 @@ MonoBehaviour:
   dialogueLapin:
     name: Wedoo
     sentences:
-    - Un animal sur un pont !!! Il y a des ponts dans ce parc !!!
+    - 'Ah ah, tu cherches le Cerf ? '
+    - "Il est pr\xEAt d'un pont \xE9videmment ! Lequel ? Oh... Un pont, c'est d\xE9j\xE0
+      un \xE9norme coup de patte !"
   dialogueSanglier:
     name: Wedoo
     sentences:
