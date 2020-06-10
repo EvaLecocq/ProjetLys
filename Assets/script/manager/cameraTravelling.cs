@@ -50,10 +50,10 @@ public class cameraTravelling : MonoBehaviour
                 {
                     cam[2].Priority = 25;
                 }
-                if (parcourer <= 7 && parcourer >= 3)
+                if (parcourer <= 7 /*&& parcourer >= 3*/)
                 {
                     cam[0].Priority = 25;
-                }
+                }/*
                 if (parcourer == 2)
                 {
                     cam[3].Priority = 25;
@@ -65,7 +65,7 @@ public class cameraTravelling : MonoBehaviour
                 if (parcourer == 0)
                 {
                     cam[5].Priority = 25;
-                }
+                }*/
 
 
             }
