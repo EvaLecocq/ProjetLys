@@ -15,6 +15,7 @@ public class cameraTravelling : MonoBehaviour
     void Start()
     {
         manager = Dialogue_Manager.FindObjectOfType<Dialogue_Manager>();
+       
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class cameraTravelling : MonoBehaviour
        // Debug.Log(manager.sentences.Count);
        if(GameManager.s_Singleton.progression == 0)
         {
-
+            //Debug.Log(manager.sentences.Count);  13
             parcourer = manager.sentences.Count;
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -36,29 +37,34 @@ public class cameraTravelling : MonoBehaviour
                         cm.Priority = 0;
                     }
 
-                if(parcourer == 5)
+
+                if (parcourer <= 13 && parcourer >= 11)
+                {
+                    cam[0].Priority = 25;
+                }
+                if (parcourer == 10)
                 {
                     cam[1].Priority = 25;
                 }
-                if (parcourer == 4)
+                if (parcourer == 9 || parcourer == 8)
                 {
                     cam[2].Priority = 25;
                 }
-                if (parcourer == 3)
+                if (parcourer <= 7 && parcourer >= 3)
                 {
-                    cam[3].Priority = 25;
+                    cam[0].Priority = 25;
                 }
                 if (parcourer == 2)
                 {
-                    cam[4].Priority = 25;
+                    cam[3].Priority = 25;
                 }
                 if (parcourer == 1)
                 {
-                    cam[5].Priority = 25;
+                    cam[4].Priority = 25;
                 }
                 if (parcourer == 0)
                 {
-                    cam[6].Priority = 25;
+                    cam[5].Priority = 25;
                 }
 
 
