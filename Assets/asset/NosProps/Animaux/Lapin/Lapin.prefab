@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 49100545127900791}
+  - component: {fileID: 647449915822411174}
   m_Layer: 0
   m_Name: Lapin
   m_TagString: Untagged
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3960117040185250916}
-  m_LocalRotation: {x: -0, y: -0.999991, z: -0, w: -0.0042422516}
+  m_LocalRotation: {x: -0, y: -0.99999106, z: 0, w: -0.004240905}
   m_LocalPosition: {x: 3.514728, y: -28.46275, z: 23.787064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180.486, z: 0}
+--- !u!135 &647449915822411174
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960117040185250916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.40628806
+  m_Center: {x: 0, y: 0.38964337, z: 0}
 --- !u!1 &5752628396250358678
 GameObject:
   m_ObjectHideFlags: 0
