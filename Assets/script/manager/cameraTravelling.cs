@@ -72,6 +72,13 @@ public class cameraTravelling : MonoBehaviour
            
             
         }
+       else
+        {
+            foreach (CinemachineVirtualCamera cm in cam)
+            {
+                cm.Priority = 0;
+            }
+        }
        
     }
 }

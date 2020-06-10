@@ -122,22 +122,25 @@ MonoBehaviour:
   dialogueLapin:
     name: Amor
     sentences:
-    - Mmmmh tu recherches ce beau Sanglier ?
-    - Je pense que cet Apollon se terre vers le lac.
+    - Mmmmh tu recherches le beau et grand Cerf ?
+    - "Va voir vers le lac, je pense que cet Apollon de Sanglier sait o\xF9 il se
+      terre."
   dialogueSanglier:
     name: Amor
     sentences:
     - Que puis-je faire pour toi ?
-    - "Quoi ? Le cerf dans les hautes herbes ? Cela m'\xE9tonnerait beaucoup de sa
-      part."
+    - "Comment ? Le Cerf seraient proches des grands saules ? Cela m'\xE9tonnerait
+      beaucoup de sa part."
     - "Cherche plut\xF4t derri\xE8re le grand batiment du parc, c'est l\xE0 qu'il
       se trouve en g\xE9n\xE9ral."
   dialogueSerpent:
     name: Amor
     sentences:
-    - Oh oui le Raton Laveur, quel adorable boule de poil !
+    - Oh oui le Raton Laveur, cette adorable boule de poils !
     - "Il doit s\xFBrement dormir sur un pont."
-    - Tu ne peux lui parler que la nuit cependant.
+    - 'C''est un animal nocturne, cela veut dire qu''il faut attendre la nuit, tu
+      peux t''asseoir sur les bancs pour patienter ! '
+    - Le temps passe vite quand on contemple de belles choses.
   dialogueRatonLaveur:
     name: Amor
     sentences:
@@ -191,7 +194,8 @@ MonoBehaviour:
     - Salutation.
     - "Une fleur de cette qualit\xE9 ?"
     - mmmh...
-    - Je dirais que c'est une Hellebore que cherche le Chien et le Chat.
+    - "Je dirais que c'est une Hellebore que cherche le Chien et le Chat. D'ailleurs
+      tu peux en trouver une derri\xE8re moi."
   dialogueQueteCourse:
     name: 
     sentences: []

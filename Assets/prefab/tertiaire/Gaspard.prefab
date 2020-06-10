@@ -118,26 +118,26 @@ MonoBehaviour:
     name: Gaspard
     sentences:
     - "Salut, mon ami, tu as l'air gentil mais aussi un peu na\xEFf. "
-    - "Dans ce parc la plus part des animaux sont amicaux mais attention, le chat
-      noir a le malin plaisir d'indiquer le contraire de la v\xE9rit\xE9. "
+    - "Dans ce parc, la plupart des animaux sont amicaux mais attention, le chat noir
+      prend un malin plaisir \xE0 dire le contraire de la v\xE9rit\xE9. "
     - "Prends garde de ne pas tomber dans ses pi\xE8ges..."
   dialogueLapin:
     name: Gaspard
     sentences:
-    - "Pr\xE8s du pont se trouve le sanglier mais bon.... "
-    - "j'essaie de pas trop m'approcher des bestioles pas tr\xE8s affectueuse envers
+    - "Pr\xE8s du pont se trouve le sanglier, tu pourrais lui demander, mais bon..."
+    - "J'essaie de pas trop m'approcher des bestioles pas tr\xE8s affectueuses envers
       les plus petites b\xEAtes."
   dialogueSanglier:
     name: Gaspard
     sentences:
-    - "Proche du jardin botanique, en es-tu s\xFBr ? "
-    - La-bas, dans l'herbe avoisinante il y a l'antre du serpent !
+    - "Proche des grands saules, en es-tu s\xFBr ? "
+    - La-bas, il y a l'antre du serpent !
     - 'On dit qu''il ne faut pas s''en approcher. '
     - "Si tu y vas fais attention \xE0 toi !"
   dialogueSerpent:
     name: Gaspard
     sentences:
-    - "Le serpent t'a aid\xE9 ?! Ce n'est peut \xEAtre pas un mauvais animal finalement."
+    - "Le serpent t'a aid\xE9 ?! Ce n'est peut \xEAtre pas un mauvais bougre finalement."
     - Et sinon tu cherches le raton laveur ?
     - "Il est toujours allong\xE9 pas loin du premier pont. "
     - Il ne parle jamais, seulement quelque fois la nuit, je te conseille d'insister
@@ -171,22 +171,23 @@ MonoBehaviour:
     name: Gaspard
     sentences:
     - "Un troph\xE9e pour le sanglier ? "
-    - "Facile, ils adorent manger des glands ces grosses b\xEAtes !"
+    - "Facile, ils adorent manger des glands ces grosses b\xEAtes ! Il y en a beaucoup
+      tout au nord du parc !"
   dialogueQueteNonValide:
     name: Gaspard
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
+    - Il ne parle jamais, seulement quelque fois la nuit, je te conseille d'insister
+      un peu.
   dialogueQueteNonValide2:
     name: Gaspard
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
+    - Il ne parle jamais, seulement quelque fois la nuit, je te conseille d'insister
+      un peu.
   dialogueQueteNonValide3:
     name: Gaspard
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
-      une bonne piste."
+    - Il ne parle jamais, seulement quelque fois la nuit, je te conseille d'insister
+      un peu.
   dialogueQueteNonValideChien:
     name: Gaspard
     sentences:

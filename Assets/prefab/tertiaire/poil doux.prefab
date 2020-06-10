@@ -257,7 +257,8 @@ MonoBehaviour:
   dialogueSanglier:
     name: Poil Doux
     sentences:
-    - "Dans les hautes herbes !? Mais vas-y si tu le veux, je suis occup\xE9 !!!"
+    - "Pr\xE8s des saules ? Je n'ai pas le temps l\xE0, je suis tr\xE8s occup\xE9
+      !"
   dialogueSerpent:
     name: Poil Doux
     sentences:
@@ -317,8 +318,8 @@ MonoBehaviour:
     name: Poil Doux
     sentences:
     - Oh oh naturellement !
-    - "C'est mon domaine d'expertise \xE7a, ce que tu cherches c'est une Hellebore,
-      facile !"
+    - "C'est mon domaine d'expertise \xE7a. Ce que tu cherches est une Hellebore,
+      facile ! Par contre elle ne pousse pas par ici !"
   dialogueQueteCourse:
     name: 
     sentences: []
