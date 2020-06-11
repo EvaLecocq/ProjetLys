@@ -29,7 +29,7 @@ public class DayNightCycle : MonoBehaviour
     public bool useTextClock;
     [SerializeField]
     [Range(0f, 1f)]
-    private float _timeOfDay;
+    public float _timeOfDay;
     public float timeOfDay
     {
         get

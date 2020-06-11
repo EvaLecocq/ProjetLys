@@ -202,7 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetDayLength: 60
   elapseTime: 0
-  elapsedTime: 900
+  elapsedTime: 1650
   use24Clock: 1
   clockText: {fileID: 0}
   useTextClock: 0

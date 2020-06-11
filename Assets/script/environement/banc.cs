@@ -12,6 +12,7 @@ public class banc : MonoBehaviour
     private DayNightCycle cycle;
     private float dayLenghtStandart;
     private float dayLenghtBanc = 5f;
+    private bool speedTime = false;
 
     public Transform pos;
     public Collider coll;
@@ -32,10 +33,16 @@ public class banc : MonoBehaviour
 
     private void Update()
     {
-        
-         if (Input.GetKeyDown(interactionKey) && isBanc)
+        if(speedTime)
+        {
+            cycle._timeOfDay += 0.001f;
+        }
+      
+
+        if (Input.GetKeyDown(interactionKey) && isBanc)
         {
             cycle._targetDayLength = dayLenghtStandart;
+            speedTime = false;
            ExitBanc();
         }
     }
@@ -57,9 +64,10 @@ public class banc : MonoBehaviour
 
     public void EnterBanc()
     {
-
+        speedTime = true;
         cycle._targetDayLength = dayLenghtBanc;
-        cycle.elapsedTime = 0f;
+       
+       // cycle.elapsedTime = 0f;
 
         player.isTalk = true;
        
