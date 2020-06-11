@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        ChargementJeu();
+
         if (s_Singleton != null)
         {
             Destroy(gameObject);
@@ -137,6 +139,75 @@ public class GameManager : MonoBehaviour
             queteActuelValider = false;
             ProgressionPlus();
         }
+    }
+
+    public void SauvegadeJeu()
+    {
+        //bete
+        PlayerPrefs.SetInt("lapin", lapin);
+        PlayerPrefs.SetInt("sanglier", sanglier);
+        PlayerPrefs.SetInt("serpent", serpent);
+        PlayerPrefs.SetInt("ratonLaveur", ratonLaveur);
+        PlayerPrefs.SetInt("renard", renard);
+        PlayerPrefs.SetInt("chienChat", chienChat);
+        PlayerPrefs.SetInt("cerf", cerf);
+
+        //fleur
+        PlayerPrefs.SetInt("Tulipe", Tulipe);
+        PlayerPrefs.SetInt("CirseCommun", CirseCommun);
+        PlayerPrefs.SetInt("Chrysantheme", Chrysantheme);
+        PlayerPrefs.SetInt("Orchidee", Orchidee);
+        PlayerPrefs.SetInt("Hibiscus", Hibiscus);
+        PlayerPrefs.SetInt("PaeoniaOfficinalis", PaeoniaOfficinalis);
+        PlayerPrefs.SetInt("EuphorbeReveilleMatin", EuphorbeReveilleMatin);
+        PlayerPrefs.SetInt("GazaniaRigens", GazaniaRigens);
+        PlayerPrefs.SetInt("HelleboreOrient", HelleboreOrient);
+        PlayerPrefs.SetInt("FumariaOfficinalis", FumariaOfficinalis);
+        PlayerPrefs.SetInt("BleuMarie", BleuMarie);
+        PlayerPrefs.SetInt("AncolieDuCanada", AncolieDuCanada);
+        PlayerPrefs.SetInt("Kalanchoe", Kalanchoe);
+        PlayerPrefs.SetInt("Gerbera", Gerbera);
+        PlayerPrefs.SetInt("AngeliqueDesEstuaires", AngeliqueDesEstuaires);
+        PlayerPrefs.SetInt("Agapanthe", Agapanthe);
+        PlayerPrefs.SetInt("Rose", Rose);
+        PlayerPrefs.SetInt("Fritillaire", Fritillaire);
+        PlayerPrefs.SetInt("FleurDeLys", FleurDeLys);
+   
+    }
+
+    public void ChargementJeu()
+    {
+        //bete
+        lapin = PlayerPrefs.GetInt("lapin");
+        sanglier = PlayerPrefs.GetInt("sanglier");
+        serpent = PlayerPrefs.GetInt("serpent");
+        ratonLaveur = PlayerPrefs.GetInt("ratonLaveur");
+        renard = PlayerPrefs.GetInt("renard");
+        chienChat = PlayerPrefs.GetInt("chienChat");
+        cerf = PlayerPrefs.GetInt("cerf");
+
+        //fleur
+        Tulipe = PlayerPrefs.GetInt("Tulipe");
+        CirseCommun = PlayerPrefs.GetInt("CirseCommun");
+        Chrysantheme = PlayerPrefs.GetInt("Chrysantheme");
+        Orchidee = PlayerPrefs.GetInt("Orchidee");
+        Hibiscus = PlayerPrefs.GetInt("Hibiscus");
+        PaeoniaOfficinalis = PlayerPrefs.GetInt("PaeoniaOfficinalis");
+        EuphorbeReveilleMatin = PlayerPrefs.GetInt("EuphorbeReveilleMatin");
+        GazaniaRigens = PlayerPrefs.GetInt("GazaniaRigens");
+        HelleboreOrient = PlayerPrefs.GetInt("HelleboreOrient");
+        FumariaOfficinalis = PlayerPrefs.GetInt("FumariaOfficinalis");
+        BleuMarie = PlayerPrefs.GetInt("BleuMarie");
+        AncolieDuCanada = PlayerPrefs.GetInt("AncolieDuCanada");
+        Kalanchoe = PlayerPrefs.GetInt("Kalanchoe");
+        Gerbera = PlayerPrefs.GetInt("Gerbera");
+        AngeliqueDesEstuaires = PlayerPrefs.GetInt("AngeliqueDesEstuaires");
+        Agapanthe = PlayerPrefs.GetInt("Agapanthe");
+        Fritillaire = PlayerPrefs.GetInt("Fritillaire");
+        FleurDeLys = PlayerPrefs.GetInt("FleurDeLys");
+        Rose = PlayerPrefs.GetInt("Rose");
+
+
     }
 
     public void upgradeHerbier()
