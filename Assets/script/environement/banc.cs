@@ -10,9 +10,8 @@ public class banc : MonoBehaviour
     public GameObject interactionIconBanc;
     private PlayerMovement player;
     private DayNightCycle cycle;
-    private float dayLenghtStandart;
-    private float dayLenghtBanc = 5f;
     private bool speedTime = false;
+    private float indiceRapport = 3;
 
     public Transform pos;
     public Collider coll;
@@ -28,20 +27,21 @@ public class banc : MonoBehaviour
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
 
         cycle = DayNightCycle.FindObjectOfType<DayNightCycle>();
-        dayLenghtStandart = cycle._targetDayLength;
+
     }
 
     private void Update()
     {
         if(speedTime)
         {
-            cycle._timeOfDay += 0.001f;
+            cycle._timeOfDay += 0.001f / indiceRapport;
+            cycle.elapsedTime += 6f / indiceRapport;
         }
       
 
         if (Input.GetKeyDown(interactionKey) && isBanc)
         {
-            cycle._targetDayLength = dayLenghtStandart;
+          
             speedTime = false;
            ExitBanc();
         }
@@ -65,10 +65,7 @@ public class banc : MonoBehaviour
     public void EnterBanc()
     {
         speedTime = true;
-        cycle._targetDayLength = dayLenghtBanc;
-       
-       // cycle.elapsedTime = 0f;
-
+      
         player.isTalk = true;
        
 
