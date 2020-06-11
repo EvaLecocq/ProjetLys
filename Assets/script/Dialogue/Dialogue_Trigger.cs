@@ -70,7 +70,14 @@ public class Dialogue_Trigger : MonoBehaviour
         if(manager.triggerEnd == true)
         {
 
+            
+
+            UpgradeQuest();
+            UpgradeAnimalTalk();
+
             StartCoroutine(FonduNoirStopDialogue());
+
+            manager.triggerEnd = false;
         }
 
         
@@ -385,10 +392,6 @@ public class Dialogue_Trigger : MonoBehaviour
 
     public IEnumerator FonduNoirStopDialogue()
     {
-        manager.triggerEnd = false;
-
-        UpgradeQuest();
-        UpgradeAnimalTalk();
 
         fonduNoir.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
@@ -418,7 +421,7 @@ public class Dialogue_Trigger : MonoBehaviour
         //UpgradeQuest();
         //UpgradeAnimalTalk();
 
-        StartCoroutine(waitToTalk());
+        //StartCoroutine(waitToTalk());
 
         manager.dialogueActive = false;
     }
