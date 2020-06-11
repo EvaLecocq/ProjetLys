@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        ChargementJeu();
+        //ChargementJeu();
 
         if (s_Singleton != null)
         {
@@ -47,8 +47,11 @@ public class GameManager : MonoBehaviour
     public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf, fin };
     public quete principale;
 
+    private bool canSave;
 
     public bool clesDuParc = false;
+    private int clesDuParcInt = 0;
+
     public bool queteSanglier = false;
     public bool queteRaton = false;
     public int RatonSpam;
@@ -128,6 +131,15 @@ public class GameManager : MonoBehaviour
             //Debug.Log("fonctionne");
         }
 
+        if(canSave)
+        {
+            
+            SauvegadeJeu();
+            InvokeRepeating("SauvegadeJeu", 0f, 30f);
+
+            canSave = false;
+        }
+
         UpdateDayWeek();
 
         UpdateQuest();
@@ -139,6 +151,10 @@ public class GameManager : MonoBehaviour
             queteActuelValider = false;
             ProgressionPlus();
         }
+    }
+    public void nouvellePartie()
+    {
+        canSave = true;
     }
 
     public void SauvegadeJeu()
@@ -172,7 +188,23 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Rose", Rose);
         PlayerPrefs.SetInt("Fritillaire", Fritillaire);
         PlayerPrefs.SetInt("FleurDeLys", FleurDeLys);
-   
+
+        //obj
+        PlayerPrefs.SetInt("graineGland", graineGland);
+
+        //stat
+        PlayerPrefs.SetInt("progression", progression);
+
+        if (clesDuParc)
+        {
+            clesDuParcInt = 1;
+        }
+        else
+        {
+            clesDuParcInt = 0;
+        }
+
+        PlayerPrefs.SetInt("clesDuParcInt", clesDuParcInt);
     }
 
     public void ChargementJeu()
@@ -207,7 +239,26 @@ public class GameManager : MonoBehaviour
         FleurDeLys = PlayerPrefs.GetInt("FleurDeLys");
         Rose = PlayerPrefs.GetInt("Rose");
 
+        //obj
+        graineGland = PlayerPrefs.GetInt("graineGland");
 
+        //stat
+        progression = PlayerPrefs.GetInt("progression");
+
+
+        clesDuParcInt = PlayerPrefs.GetInt("clesDuParcInt");
+        if (clesDuParcInt == 1)
+        {
+            clesDuParc = true;
+        }
+        else
+        {
+            clesDuParc = false;
+        }
+
+
+
+        canSave = true;
     }
 
     public void upgradeHerbier()
@@ -266,6 +317,9 @@ public class GameManager : MonoBehaviour
         {
             queteRaton = true;
         }
+
+
+        
     }
 
     public void EtatQueteEnum()
