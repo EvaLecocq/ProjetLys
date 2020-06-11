@@ -6723,7 +6723,7 @@ PrefabInstance:
     - target: {fileID: 8418643062445034688, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
       propertyPath: far clip plane
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034688, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
@@ -6733,7 +6733,7 @@ PrefabInstance:
     - target: {fileID: 8418643062445034688, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
       propertyPath: near clip plane
-      value: 0.2
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
@@ -15886,8 +15886,8 @@ RectTransform:
   m_Father: {fileID: 6624276228265651212}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39583504, y: 0.34089655}
-  m_AnchorMax: {x: 0.60348916, y: 0.42862147}
+  m_AnchorMin: {x: 0.39583504, y: 0.3246576}
+  m_AnchorMax: {x: 0.60348916, y: 0.4123825}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15945,7 +15945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &6624276226813642980
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16000,7 +16000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6624276226813642986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16391,7 +16391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &6624276227608237997
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17857,8 +17857,8 @@ RectTransform:
   m_Father: {fileID: 6624276228265651212}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39512318, y: 0.6537939}
-  m_AnchorMax: {x: 0.6027773, y: 0.74151886}
+  m_AnchorMin: {x: 0.40426672, y: 0.41948876}
+  m_AnchorMax: {x: 0.61192083, y: 0.5072137}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
