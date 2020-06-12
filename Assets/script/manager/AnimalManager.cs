@@ -18,6 +18,9 @@ public class AnimalManager : MonoBehaviour
     public Transform chienChatSpot;
     public Transform renardSpot;
 
+    [Header("pot")]
+    public GameObject[] pot;
+
     // Start is called before the first frame update
     void Start()
     {

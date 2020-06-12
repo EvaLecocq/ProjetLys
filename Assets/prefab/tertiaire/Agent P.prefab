@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 3937415897264594056}
   - component: {fileID: 1657085647942161838}
   m_Layer: 0
-  m_Name: tertiaire01
+  m_Name: Agent P
   m_TagString: dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,8 +249,8 @@ MonoBehaviour:
     name: Agent P.
     sentences:
     - Bonjour !
-    - "Tu cherches un animal pr\xE8s d'un pont ? \xE7a doit \xEAtre le sanglier, \r\n
-      il passe son temps \xE0 se battre avec tout ceux qu'il croise."
+    - "Tu cherches un animal pr\xE8s d'un pont ? \xE7a doit \xEAtre le sanglier, il
+      passe son temps \xE0 se battre avec tout ceux qu'il croise."
     - "Il vit au nord du parc apr\xE8s avoir travers\xE9 l'\xEEle central du lac."
   dialogueSanglier:
     name: Agent P.

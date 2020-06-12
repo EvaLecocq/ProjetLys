@@ -255,7 +255,8 @@ MonoBehaviour:
   dialogueSanglier:
     name: Wedoo
     sentences:
-    - Le Serpent ? on dit qu'il est dangeureux, ne t'en approche pas
+    - "Pr\xE8s des saules ? C'est la o\xF9 vit Le Serpent ? on dit qu'il est dangeureux,
+      ne t'en approche pas"
   dialogueSerpent:
     name: Wedoo
     sentences:
