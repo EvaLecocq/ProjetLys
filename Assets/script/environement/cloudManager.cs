@@ -7,8 +7,8 @@ public class cloudManager : MonoBehaviour
    
 
     [Header("eclairage")]
-    private SkyboxModule skyColor;
-    private DayNightCycle sunColor;
+    public SkyboxModule skyColor;
+    public DayNightCycle sunColor;
 
     private float sunIntensityBase;
     private float sunIntensityVariationBase;
@@ -59,6 +59,10 @@ public class cloudManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
+     
+
         skyColor = SkyboxModule.FindObjectOfType<SkyboxModule>();
         sunColor = DayNightCycle.FindObjectOfType<DayNightCycle>();
 
@@ -79,10 +83,10 @@ public class cloudManager : MonoBehaviour
                 tableauNuage.Add(go.transform);
             }
         }
-
-        
-
         meteoChange();
+
+
+
 
     }
 
@@ -102,7 +106,7 @@ public class cloudManager : MonoBehaviour
         //meteoChange();
 
             CloudSpawn();
-
+        
         if (GameManager.s_Singleton.time >= nightCloudDispawn || GameManager.s_Singleton.time < morningCloudAppear)
         {
             if(invokeNightChange)
@@ -117,9 +121,11 @@ public class cloudManager : MonoBehaviour
             audioSnight.Stop();
         }
 
+        
+
         if (Input.GetKeyDown(KeyCode.A))
         {
-            //meteoChange();
+           // meteoChange();
         }
     }
 
@@ -131,7 +137,7 @@ public class cloudManager : MonoBehaviour
 
         if (GameManager.s_Singleton.meteoActive == GameManager.mode.soleil)
         {
-            audioS.Stop();
+            //audioS.Stop();
         }
 
             invokeNightChange = false;

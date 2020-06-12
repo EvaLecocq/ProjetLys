@@ -27002,8 +27002,8 @@ MonoBehaviour:
   - {fileID: 6794556267510772370}
   speedSpawn: 5
   audioS: {fileID: 805677854661951025}
-  audioStransition: {fileID: 7893416660937227578}
-  audioSnight: {fileID: 8530588947115092681}
+  audioStransition: {fileID: 8530588947115092681}
+  audioSnight: {fileID: 7893416660937227578}
   audioSeffect: {fileID: 7159193774516509614}
   AmbiancePluie: {fileID: 8300000, guid: 4a43da868f7b6814788b6cf254af189b, type: 3}
   AmbianceSoleil: {fileID: 8300000, guid: 9c054b810396d6144a46b215bd147941, type: 3}
