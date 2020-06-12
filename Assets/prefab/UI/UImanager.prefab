@@ -5010,9 +5010,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jouer
-
-'
+  m_text: Charger partie
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8caf5eebf3b0b9e45ba4435760a52a94, type: 2}
   m_sharedMaterial: {fileID: -1728050701367964908, guid: 8caf5eebf3b0b9e45ba4435760a52a94,
@@ -5082,10 +5080,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 556080852454478313}
-    characterCount: 6
+    characterCount: 14
     spriteCount: 0
     spaceCount: 1
-    wordCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
