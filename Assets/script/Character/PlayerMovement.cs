@@ -281,6 +281,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 item.outlinerItem.enabled = true;
                 item.interactionIcon.SetActive(true);
+
             }
             else
             {
@@ -306,6 +307,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 potActuel.outlinerItem.enabled = true;
                 potActuel.interactionIcon.SetActive(true);
+                potActuel.interactionIcon2.SetActive(true);
             }
                 
             
@@ -376,6 +378,7 @@ public class PlayerMovement : MonoBehaviour
 
             potActuel.outlinerItem.enabled = false;
             potActuel.interactionIcon.SetActive(false);
+            potActuel.interactionIcon2.SetActive(false);
             potActuel = null;
 
         }

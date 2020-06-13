@@ -15,6 +15,7 @@ public class pot : MonoBehaviour
     public Outline outlinerItem;
     public GameObject fleurDePot;
     public GameObject interactionIcon;
+    public GameObject interactionIcon2;
     public GameObject particuleReward;
     public Transform rewardSpot;
     public AudioSource audioS;
@@ -114,6 +115,7 @@ public class pot : MonoBehaviour
 
         outlinerItem.enabled = false;
         interactionIcon.SetActive(false);
+        interactionIcon2.SetActive(false);
 
     }
 
