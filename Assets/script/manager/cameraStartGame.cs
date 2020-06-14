@@ -12,7 +12,7 @@ public class cameraStartGame : MonoBehaviour
     void Start()
     {
         cart.SetActive(true);
-        Invoke("stop", 3f);
+        Invoke("stop", 5f);
     }
 
     public void stop()

@@ -21,9 +21,9 @@ public class GameManager : MonoBehaviour
     }
 
     private PlayerMovement persoT;
-    private float x;
-    private float y;
-    private float z;
+    private float x = 12f;
+    private float y = 3.4f;
+    private float z = 2.5f;
 
 
     public enum mode { soleil, pluie, tempete, brouillard }

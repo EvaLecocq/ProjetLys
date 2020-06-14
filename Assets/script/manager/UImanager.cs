@@ -49,7 +49,6 @@ public class UImanager : MonoBehaviour
     public bool iscredits = false;
     private bool isMenu = false;
     public bool activeMenuOnStart = true;
-    private bool InGame = false;
 
     public cameraStartGame camStart;
 
@@ -68,6 +67,9 @@ public class UImanager : MonoBehaviour
        
 
         audioS = GetComponent<AudioSource>();
+
+
+        playerPos.GetComponent<PlayerMovement>().isTalk = true;
 
         if (activeMenuOnStart == false)
         {
@@ -89,14 +91,7 @@ public class UImanager : MonoBehaviour
         time = GameManager.s_Singleton.time;
         //clock.transform.rotation =  Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, (time * -30));
 
-        if(InGame == false)
-        {
-            playerPos.GetComponent<PlayerMovement>().isTalk = true;
-        }
-        else
-        {
-            playerPos.GetComponent<PlayerMovement>().isTalk = false;
-        }
+     
         
 
         //pause
@@ -358,7 +353,7 @@ public class UImanager : MonoBehaviour
         audioS.clip = clique;
         audioS.Play();
 
-        InGame = true;
+        playerPos.GetComponent<PlayerMovement>().isTalk = false;
 
         UIinfo.SetActive(true);
         
@@ -374,7 +369,7 @@ public class UImanager : MonoBehaviour
         audioS.clip = clique;
         audioS.Play();
 
-        InGame = true;
+        playerPos.GetComponent<PlayerMovement>().isTalk = false;
 
         UIinfo.SetActive(true);
 
