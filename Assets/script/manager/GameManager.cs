@@ -20,7 +20,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-  
+    private PlayerMovement persoT;
+    private float x;
+    private float y;
+    private float z;
+
+
     public enum mode { soleil, pluie, tempete, brouillard }
     public mode meteoActive;
 
@@ -108,12 +113,16 @@ public class GameManager : MonoBehaviour
 
         meteoManager = cloudManager.FindObjectOfType<cloudManager>();
 
+        persoT = PlayerMovement.FindObjectOfType<PlayerMovement>();
+
         cycle = DayNightCycle.FindObjectOfType<DayNightCycle>();
     }
 
     private void OnLevelWasLoaded(int level)
     {
         meteoManager = cloudManager.FindObjectOfType<cloudManager>();
+
+        persoT = PlayerMovement.FindObjectOfType<PlayerMovement>();
 
         cycle = DayNightCycle.FindObjectOfType<DayNightCycle>();
     }
@@ -205,6 +214,14 @@ public class GameManager : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("clesDuParcInt", clesDuParcInt);
+
+        x = persoT.transform.position.x;
+        y = persoT.transform.position.y;
+        z = persoT.transform.position.z;
+
+        PlayerPrefs.SetFloat("x", x);
+        PlayerPrefs.SetFloat("y", y);
+        PlayerPrefs.SetFloat("z", z);
     }
 
     public void ChargementJeu()
@@ -256,7 +273,11 @@ public class GameManager : MonoBehaviour
             clesDuParc = false;
         }
 
+        x = PlayerPrefs.GetFloat("x");
+        y = PlayerPrefs.GetFloat("y");
+        z = PlayerPrefs.GetFloat("z");
 
+        persoT.transform.position = new Vector3(x, y, z);
 
         canSave = true;
     }

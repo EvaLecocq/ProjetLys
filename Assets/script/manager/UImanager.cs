@@ -29,7 +29,7 @@ public class UImanager : MonoBehaviour
     public int mapIndex;
     public TextMeshProUGUI tab;
     public bool openherbier = false;
-    public Transform playerPos;
+    public GameObject playerPos;
     private PlayerMovement player;
 
     [Header("pause")]
@@ -49,6 +49,9 @@ public class UImanager : MonoBehaviour
     public bool iscredits = false;
     private bool isMenu = false;
     public bool activeMenuOnStart = true;
+    private bool InGame = false;
+
+    public cameraStartGame camStart;
 
     public AudioSource audioS;
     public AudioClip pauseApp;
@@ -62,6 +65,7 @@ public class UImanager : MonoBehaviour
     {
         mouseC = MouseLook.FindObjectOfType<MouseLook>();
         player = PlayerMovement.FindObjectOfType<PlayerMovement>();
+       
 
         audioS = GetComponent<AudioSource>();
 
@@ -85,6 +89,14 @@ public class UImanager : MonoBehaviour
         time = GameManager.s_Singleton.time;
         //clock.transform.rotation =  Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, (time * -30));
 
+        if(InGame == false)
+        {
+            playerPos.GetComponent<PlayerMovement>().isTalk = true;
+        }
+        else
+        {
+            playerPos.GetComponent<PlayerMovement>().isTalk = false;
+        }
         
 
         //pause
@@ -346,6 +358,8 @@ public class UImanager : MonoBehaviour
         audioS.clip = clique;
         audioS.Play();
 
+        InGame = true;
+
         UIinfo.SetActive(true);
         
         menu.gameObject.SetActive(false);
@@ -354,7 +368,25 @@ public class UImanager : MonoBehaviour
 
         mouseC.lockerCam = true;
     }
-   
+
+    public void StartNewGame()
+    {
+        audioS.clip = clique;
+        audioS.Play();
+
+        InGame = true;
+
+        UIinfo.SetActive(true);
+
+        menu.gameObject.SetActive(false);
+        camMenu.Priority = 0;
+        herbierIcon.gameObject.SetActive(true);
+
+        mouseC.lockerCam = true;
+
+        camStart.enabled = true;
+    }
+
 
     public void CreditsOpen()
     {
