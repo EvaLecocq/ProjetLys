@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4481427624666190834}
   - component: {fileID: 8911221708623601112}
   - component: {fileID: 5010323360352596163}
+  - component: {fileID: 6749902292807749991}
   m_Layer: 0
   m_Name: Box001
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &6749902292807749991
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263823318779943042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2588144
+  m_Center: {x: -0.0027999878, y: 0.23984998, z: -0.028814308}
 --- !u!1 &4759316125706268528
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8383209999355370851}
   m_Layer: 0
-  m_Name: Chat
+  m_Name: Chat C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -17,6 +17,8 @@ public class herbierPageSpawn : MonoBehaviour
     public Sprite pageRempli;
     private Image pageActuel;
     public bool conditionRempli = false;
+    public int indexPage;
+    private bool trigger = true;
 
 
     // Start is called before the first frame update
@@ -38,6 +40,15 @@ public class herbierPageSpawn : MonoBehaviour
         if(conditionRempli == true)
         {
             pageActuel.sprite = pageRempli;
+
+            if(trigger)
+            {
+                GetComponentInParent<UImanager>().pageOpenHerbier(indexPage);
+
+                trigger = false;
+            }
+            
+
         }
     }
 

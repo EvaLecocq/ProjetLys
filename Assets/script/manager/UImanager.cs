@@ -267,6 +267,33 @@ public class UImanager : MonoBehaviour
     }
 
 
+    public void pageOpenHerbier(int i)
+    {
+        herbier.gameObject.SetActive(true);
+
+
+        openherbier = true;
+        player.isTalk = true;
+        UIinfo.SetActive(false);
+        herbierIcon.SetActive(false);
+
+        herbier.GetComponentInChildren<BookPro>().currentPaper = i;
+        herbier.GetComponentInChildren<BookPro>().UpdatePages();
+
+
+    }
+    public void itemOpenHerbier()
+    {
+        herbier.gameObject.SetActive(true);
+
+
+        openherbier = true;
+        player.isTalk = true;
+        UIinfo.SetActive(false);
+        herbierIcon.SetActive(false);
+
+    }
+
     //day
     public void DayWeek()
     {

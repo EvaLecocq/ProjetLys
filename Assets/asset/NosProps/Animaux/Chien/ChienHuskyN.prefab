@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1488080277698138250}
   - component: {fileID: 5853702464794910368}
   - component: {fileID: 8007326480588075963}
+  - component: {fileID: 6396702891616512079}
   m_Layer: 0
   m_Name: Box001
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &6396702891616512079
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277798783472131066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.32661858
+  m_Center: {x: -0.0014500029, y: 0.31914997, z: -0.11138168}
 --- !u!1 &7537899062099258376
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6827640217642196507}
   m_Layer: 0
-  m_Name: Chien
+  m_Name: ChienHuskyN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
