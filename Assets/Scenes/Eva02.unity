@@ -6793,12 +6793,12 @@ PrefabInstance:
     - target: {fileID: 8418643062445034688, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
       propertyPath: near clip plane
-      value: 0.12
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7925087
+      value: 0.8376474
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
@@ -6808,7 +6808,7 @@ PrefabInstance:
     - target: {fileID: 8418643062445034691, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1472385
+      value: -0.16528402
       objectReference: {fileID: 0}
     - target: {fileID: 8418643062445034691, guid: 55e5e34ddf3edc5449a9cd3a53bc505e,
         type: 3}
@@ -20480,6 +20480,7 @@ MonoBehaviour:
   audioS: {fileID: 8387255246702661860}
   porteOuvre: {fileID: 8300000, guid: 9f223f00c533fde46bec966dbe49718d, type: 3}
   porteTocToc: {fileID: 8300000, guid: ae52664d093907941a252136256d6e64, type: 3}
+  voixOff: {fileID: 8300000, guid: 3c3abb02d20666641bdace6b2107560b, type: 3}
 --- !u!65 &8387255246702661859
 BoxCollider:
   m_ObjectHideFlags: 0

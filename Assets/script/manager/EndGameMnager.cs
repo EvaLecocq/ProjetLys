@@ -12,6 +12,7 @@ public class EndGameMnager : MonoBehaviour
     public AudioSource audioS;
     public AudioClip porteOuvre;
     public AudioClip porteTocToc;
+    public AudioClip voixOff;
 
 
     // Start is called before the first frame update
@@ -22,11 +23,18 @@ public class EndGameMnager : MonoBehaviour
         StartCoroutine(startScene());
 
         InvokeRepeating("TocTocPorte", 5f, 8f);
+        Invoke("VoixOff", 14f);
     }
 
     public void TocTocPorte()
     {
         audioS.clip = porteTocToc;
+        audioS.Play();
+    }
+
+    public void VoixOff()
+    {
+        audioS.clip = voixOff;
         audioS.Play();
     }
 

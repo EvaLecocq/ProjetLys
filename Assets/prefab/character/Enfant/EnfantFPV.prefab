@@ -1767,7 +1767,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.9
-  m_Radius: 0.45
+  m_Radius: 0.5
   m_SlopeLimit: 40
   m_StepOffset: 0.15
   m_SkinWidth: 0.06
@@ -1952,8 +1952,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.94283074, y: 0.22082697, z: 0.90125084}
-  m_Center: {x: 0.0025989641, y: -0.7687989, z: 0.090954915}
+  m_Size: {x: 0.94283074, y: 0.24615297, z: 0.98356664}
+  m_Center: {x: 0.0025989641, y: -0.7814619, z: 0.13211283}
 --- !u!1 &7052849348090518532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,7 +2257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7831428496361086320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6899968, z: 0.3179988}
+  m_LocalPosition: {x: -0, y: 0.6899968, z: 0.228}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3574276436795849228}
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 45
     OrthographicSize: 10
-    NearClipPlane: 0.12
+    NearClipPlane: 0.2
     FarClipPlane: 100
     Dutch: 0
     LensShift: {x: 0, y: 0}
