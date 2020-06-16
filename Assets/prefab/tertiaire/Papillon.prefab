@@ -122,8 +122,8 @@ MonoBehaviour:
   dialogueLapin:
     name: M. Papillon
     sentences:
-    - Salut ! Salut !
-    - 'Un cerf ? Un pont ? '
+    - Salut ! Salut ! On m'appelle Papillon.
+    - 'Comment !? Un cerf ? Un pont ? '
     - "Y'a plein de ponts ici ! Y'a m\xEAme des oiseaux qui nagent dessous."
     - "Ce sont mes amis ! Je leurs court apr\xE8s et ils battent des ailes ! J'adore
       les ponts !"

@@ -141,6 +141,8 @@ MonoBehaviour:
   dialogueLapin:
     name: Amor
     sentences:
+    - "Oh, enchant\xE9 petit bonhomme."
+    - Je me nomme Amor.
     - Mmmmh tu recherches le beau et grand Cerf ?
     - "Va voir vers le lac, je pense que cet Apollon de Sanglier sait o\xF9 il se
       terre."

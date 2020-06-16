@@ -268,9 +268,11 @@ MonoBehaviour:
   dialogueLapin:
     name: Poil Doux
     sentences:
-    - "Tu cherches le Cerf pr\xE8s d'un pont ?"
-    - "Non c'est mon cousin le Raton Laveur qui habite l\xE0. "
-    - "Il vit \xE0 c\xF4t\xE9 des jeux d'enfants, il y a fait son habitat."
+    - "Hey !!! Tu es un dr\xF4le d'animal toi. "
+    - "Je suis un super raton laveur du nom de Poil-Doux ! \r\n"
+    - "Tu cherches le Cerf pr\xE8s d'un pont ? Il y a mon cousin le Raton Laveur qui
+      habite l\xE0. \r"
+    - "Il vit \xE0 c\xF4t\xE9 des jeux d'enfants, il y a fait son habitat.\r"
     - "Il passe ses journ\xE9es \xE0 dormir, faut attendre la nuit pour lui parler,
       et encore..."
   dialogueSanglier:

@@ -122,7 +122,7 @@ MonoBehaviour:
   dialogueLapin:
     name: Choupinette
     sentences:
-    - Bonjour !
+    - "Bonjour ! Choupinette, enchant\xE9e !"
     - "Tu cherches le Cerf pr\xE8s d'un pont ? Non c'est le Raton Laveur qui habite
       l\xE0. "
     - "Il vit \xE0 c\xF4t\xE9 du petit pont sur l'\xEEle,\r il passe ses journ\xE9es

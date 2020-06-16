@@ -268,9 +268,10 @@ MonoBehaviour:
   dialogueLapin:
     name: Wedoo
     sentences:
+    - "Salut toi ! Wedoo est pr\xE9sent pour vous aider !\r"
     - 'Ah ah, tu cherches le Cerf ? '
-    - "Il est pr\xEAt d'un pont \xE9videmment ! Lequel ? Oh... Un pont, c'est d\xE9j\xE0
-      un \xE9norme coup de patte !"
+    - "Il est pr\xEAt d'un pont \xE9videmment ! Lequel ? "
+    - "Oh... Un pont, c'est d\xE9j\xE0 un \xE9norme coup de patte !"
   dialogueSanglier:
     name: Wedoo
     sentences:

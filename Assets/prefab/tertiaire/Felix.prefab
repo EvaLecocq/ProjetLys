@@ -249,8 +249,8 @@ MonoBehaviour:
   dialogueLapin:
     name: Felix
     sentences:
-    - "Le Cerf n'est pas pr\xE8s d'un pont ! Si tu veux de l'aide, je suis certain
-      q'une toute petite cr\xE9ature pourra t'aider, cela va de soi !"
+    - 'Mon nom est Felix, et c''est tout ce que tu dois savoir pour le moment. '
+    - "Au revoir mon ch\xE8re humain !"
   dialogueSanglier:
     name: Felix
     sentences:

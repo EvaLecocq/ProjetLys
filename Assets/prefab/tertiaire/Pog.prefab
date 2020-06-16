@@ -122,7 +122,7 @@ MonoBehaviour:
   dialogueLapin:
     name: Pog
     sentences:
-    - Bonchour, comment cha va ?
+    - ScROunCh... Chalut ! Mon nom ch'est Pog !
     - "Tu cherche le Cherf ? Pr\xE8s d'un pont ?"
     - Ch'sais pas, en tout cas il y a pas de pont part ichi !
   dialogueSanglier:

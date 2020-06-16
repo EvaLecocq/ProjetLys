@@ -122,7 +122,7 @@ MonoBehaviour:
   dialogueLapin:
     name: Grandes Oreilles
     sentences:
-    - Yo !
+    - "Hey, salut toi ! Je me pr\xE9sente : Grandes-oreilles."
     - "Pr\xE8s du pont ?"
     - "C'est l\xE0 que se baladent le Sanglier et le Raton Laveur, tu devrais leur
       demander."

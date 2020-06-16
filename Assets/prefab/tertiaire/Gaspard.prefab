@@ -116,15 +116,16 @@ MonoBehaviour:
   parleLaNuit: 0
   dialogueDebut:
     name: Gaspard
+    sentences: []
+  dialogueLapin:
+    name: Gaspard
     sentences:
     - "Salut, mon ami, tu as l'air gentil mais aussi un peu na\xEFf. "
     - "Dans ce parc, la plupart des animaux sont amicaux mais attention, le chat noir
       prend un malin plaisir \xE0 dire le contraire de la v\xE9rit\xE9. "
     - "Prends garde de ne pas tomber dans ses pi\xE8ges..."
-  dialogueLapin:
-    name: Gaspard
-    sentences:
-    - "Pr\xE8s du pont se trouve le sanglier, tu pourrais lui demander, mais bon..."
+    - "Sinon pour ton histoire, pr\xE8s du pont se trouve le sanglier, tu pourrais
+      lui demander, mais bon..."
     - "J'essaie de pas trop m'approcher des bestioles pas tr\xE8s affectueuses envers
       les plus petites b\xEAtes."
   dialogueSanglier:
