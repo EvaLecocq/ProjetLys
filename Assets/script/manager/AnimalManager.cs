@@ -42,13 +42,12 @@ public class AnimalManager : MonoBehaviour
         
         if(GameManager.s_Singleton.progression == 7)
         {
-            foreach(GameObject go in pot)
-            {
-                if(go.GetComponent<pot>().full == true)
+            
+                if(pot[0].GetComponent<pot>().full == true && pot[1].GetComponent<pot>().full == true && pot[2].GetComponent<pot>().full == true && pot[3].GetComponent<pot>().full == true)
                 {
                     GameManager.s_Singleton.progression++;
                 }
-            }
+            
         }
         if (GameManager.s_Singleton.progression >= 8)
         {
