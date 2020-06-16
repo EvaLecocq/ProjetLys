@@ -547,8 +547,7 @@ MonoBehaviour:
   dialogueRenard2:
     name: Le Renard
     sentences:
-    - "Va sur la petite colline petit \xEAtre, et r\xE9sout les \xE9nigmes."
-    - "Va sur la petite colline petit \xEAtre, et r\xE9sout les \xE9nigmes."
+    - "Va vers le batiment petit \xEAtre, et r\xE9sout les \xE9nigmes."
   dialogueCerf:
     name: Le Renard
     sentences:

@@ -39,7 +39,18 @@ public class AnimalManager : MonoBehaviour
         {
             renard.transform.position = renardSpot.position;
         }
-        if (GameManager.s_Singleton.progression >= 7)
+        
+        if(GameManager.s_Singleton.progression == 7)
+        {
+            foreach(GameObject go in pot)
+            {
+                if(go.GetComponent<pot>().full == true)
+                {
+                    GameManager.s_Singleton.progression++;
+                }
+            }
+        }
+        if (GameManager.s_Singleton.progression >= 8)
         {
             cerf.SetActive(true);
         }

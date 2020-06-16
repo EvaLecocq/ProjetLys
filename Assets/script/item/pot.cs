@@ -20,10 +20,13 @@ public class pot : MonoBehaviour
     public Transform rewardSpot;
     public AudioSource audioS;
     public AudioClip sonReward;
+    public bool full = false;
 
     public void reward()
     {
         fleurDePot.SetActive(true);
+
+        full = true;
 
         audioS.clip = sonReward;
         audioS.Play();

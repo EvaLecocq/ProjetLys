@@ -8,7 +8,7 @@ public class Dialogue_Trigger : MonoBehaviour
     public enum animal {  lapin, sanglier, serpent, ratonLaveur, renard, chienChat, cerf, Course, Cahecache, Soleil, info };
     public animal type;
 
-    public enum classe { principal, secondaire, tertiaire};
+    public enum classe { principal, secondaire, tertiaire, info};
     public classe statut;
 
     public bool parleLaNuit = false;
@@ -381,6 +381,11 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueQueteSoleil);
             }
+        }
+
+        if(statut == Dialogue_Trigger.classe.info)
+        {
+            FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueDebut);
         }
 
         outliner.enabled = false;
