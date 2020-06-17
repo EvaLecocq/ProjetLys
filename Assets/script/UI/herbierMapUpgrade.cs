@@ -36,57 +36,60 @@ public class herbierMapUpgrade : MonoBehaviour
             pageActuel.sprite = pageNiv3;
         }
 
+        if(useAnimal)
+        {
+            if (GameManager.s_Singleton.progression == 1)
+            {
+                animalIcon[0].SetActive(true);
+            }
+            if (GameManager.s_Singleton.progression == 2)
+            {
+                animalIcon[0].SetActive(true);
+                animalIcon[1].SetActive(true);
+            }
+            if (GameManager.s_Singleton.progression == 3)
+            {
+                animalIcon[0].SetActive(true);
+                animalIcon[1].SetActive(true);
+                animalIcon[2].SetActive(true);
+            }
+            if (GameManager.s_Singleton.progression == 4)
+            {
+                animalIcon[0].SetActive(true);
+                animalIcon[1].SetActive(true);
+                animalIcon[2].SetActive(true);
+                animalIcon[3].SetActive(true);
+            }
+            if (GameManager.s_Singleton.progression == 5)
+            {
+                animalIcon[0].SetActive(true);
+                animalIcon[1].SetActive(true);
+                animalIcon[2].SetActive(true);
+                animalIcon[3].SetActive(true);
+                animalIcon[4].SetActive(true);
+            }
+            if (GameManager.s_Singleton.progression >= 6)
+            {
+                animalIcon[0].SetActive(true);
+                animalIcon[1].SetActive(true);
+                animalIcon[2].SetActive(true);
+                animalIcon[3].SetActive(true);
+                animalIcon[4].SetActive(true);
+                animalIcon[5].SetActive(true);
+            }
+            if (GameManager.s_Singleton.progression >= 8)
+            {
+                animalIcon[0].SetActive(true);
+                animalIcon[1].SetActive(true);
+                animalIcon[2].SetActive(true);
+                animalIcon[3].SetActive(true);
+                animalIcon[4].SetActive(true);
+                animalIcon[5].SetActive(true);
+                animalIcon[6].SetActive(true);
+            }
+        }
 
-
-        if(GameManager.s_Singleton.progression == 1)
-        {
-            animalIcon[0].SetActive(true);
-        }
-        if (GameManager.s_Singleton.progression == 2)
-        {
-            animalIcon[0].SetActive(true);
-            animalIcon[1].SetActive(true);
-        }
-        if (GameManager.s_Singleton.progression == 3)
-        {
-            animalIcon[0].SetActive(true);
-            animalIcon[1].SetActive(true);
-            animalIcon[2].SetActive(true);
-        }
-        if (GameManager.s_Singleton.progression == 4)
-        {
-            animalIcon[0].SetActive(true);
-            animalIcon[1].SetActive(true);
-            animalIcon[2].SetActive(true);
-            animalIcon[3].SetActive(true);
-        }
-        if (GameManager.s_Singleton.progression == 5)
-        {
-            animalIcon[0].SetActive(true);
-            animalIcon[1].SetActive(true);
-            animalIcon[2].SetActive(true);
-            animalIcon[3].SetActive(true);
-            animalIcon[4].SetActive(true);
-        }
-        if (GameManager.s_Singleton.progression >= 6)
-        {
-            animalIcon[0].SetActive(true);
-            animalIcon[1].SetActive(true);
-            animalIcon[2].SetActive(true);
-            animalIcon[3].SetActive(true);
-            animalIcon[4].SetActive(true);
-            animalIcon[5].SetActive(true);
-        }
-        if (GameManager.s_Singleton.progression >= 8)
-        {
-            animalIcon[0].SetActive(true);
-            animalIcon[1].SetActive(true);
-            animalIcon[2].SetActive(true);
-            animalIcon[3].SetActive(true);
-            animalIcon[4].SetActive(true);
-            animalIcon[5].SetActive(true);
-            animalIcon[6].SetActive(true);
-        }
+        
 
     }
 }
