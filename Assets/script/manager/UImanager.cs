@@ -102,6 +102,8 @@ public class UImanager : MonoBehaviour
                 audioS.clip = pauseApp;
                 audioS.Play();
 
+                OptionFermer();
+
                 pause.gameObject.SetActive(true);
                 ispause = true;
                 Time.timeScale = 0f;
@@ -117,6 +119,8 @@ public class UImanager : MonoBehaviour
             {
                 audioS.clip = pauseDisp;
                 audioS.Play();
+
+                OptionFermer();
 
                 pause.gameObject.SetActive(false);
                     ispause = false;
