@@ -128,7 +128,7 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 GameManager.s_Singleton.QueteFini();
             }
-            else if(GameManager.s_Singleton.progression == 7 && type == Dialogue_Trigger.animal.cerf)// apres avoir fait les pots
+            else if(GameManager.s_Singleton.progression >= 8 && type == Dialogue_Trigger.animal.cerf)// apres avoir fait les pots
             {
                 GameManager.s_Singleton.QueteFini();
                 GameManager.s_Singleton.clesDuParc = true;
