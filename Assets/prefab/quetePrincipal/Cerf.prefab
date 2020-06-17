@@ -254,6 +254,20 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
+--- !u!64 &3725809854899861900
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504085528533396023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 5060444177187149915, guid: 64f786cef68393c4eb29cbf6b45470bd, type: 3}
 --- !u!1 &1749661668727693844
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,20 +567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!64 &3323806739346978055
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7926280003022265797}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!95 &1874643426915395447
 Animator:
   serializedVersion: 3
@@ -664,6 +664,12 @@ GameObject:
 --- !u!4 &6603566171213688790 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5897201210367167735, guid: f81853d48fca1794995392fdd08c7f69,
+    type: 3}
+  m_PrefabInstance: {fileID: 753092019425518369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1504085528533396023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2210160080601729302, guid: f81853d48fca1794995392fdd08c7f69,
     type: 3}
   m_PrefabInstance: {fileID: 753092019425518369}
   m_PrefabAsset: {fileID: 0}

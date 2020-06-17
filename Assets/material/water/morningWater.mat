@@ -115,7 +115,7 @@ Material:
     - _Brightness: 1
     - _BumpScale: 1
     - _Contrast: 1
-    - _ContrastMt: 1.4
+    - _ContrastMt: 1.2
     - _Cutoff: 0.52
     - _Cycle: 3
     - _Depth: 2.2
@@ -135,7 +135,7 @@ Material:
     - _GlossyReflections: 1
     - _Intensity: 2
     - _IntensityMicrowave: 0.2
-    - _IntensityMt: 2.4
+    - _IntensityMt: 2.2
     - _IntensityNm: 0.51
     - _IntensityRef: 1.7
     - _InvFade: 0
