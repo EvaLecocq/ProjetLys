@@ -467,19 +467,19 @@ MonoBehaviour:
   dialogueLapin:
     name: Le Sanglier
     sentences:
-    - "J'ALLAIS GAGNER ! J'AI UNIQUEMENT PERDU \xC0 CAUSE DE SES BOIS, JE SUIS LE
-      PLUS FORT. "
-    - QUOI ?
-    - TU VEUX TE BATTRE GAMIN ?
-    - "QUOI QUE, TU ES UN SIMPLE ENFANT, J'AI PEUR DE PERSONNE ET LE GRAND SANGLIER
-      QUE JE SUIS NE VA PAS T'IMPOSER UNE D\xC9FAITE \xC9CRASANTE."
-    - "\xC7A VEUT DIRE QUE J'AI GAGNER, ET UN GAGNANT \xC7A M\xC9RITE UN PRIX. APPORTE
-      MOI UN TROPH\xC9E. "
-    - ALLEZ ! PLUS VITE PETIT PERDANT.
+    - "J\u2019allais gagner ! j'ai uniquement perdu \xE0 cause de ses bois, je suis
+      le plus fort."
+    - Quoi ?
+    - 'Tu veux te battre gamin ? '
+    - "Quoi que, tu es un simple enfant, j'ai peur de personne et le grand sanglier
+      que je suis ne va pas t'imposer une d\xE9faite \xE9crasante."
+    - "Disons plut\xF4t que tu as abandonn\xE9. Ce qui veut dire que je suis le gagnant
+      et un gagnant m\xE9rite un prix."
+    - "Apporte-moi un troph\xE9e. Allez ! Plus vite petit perdant."
   dialogueSanglier:
     name: Le Sanglier
     sentences:
-    - "INT\xC9RESSANT !!! Ce sont de beaux glands que tu m'as apport\xE9 l\xE0, petit
+    - "Int\xE9ressant !!! Ce sont de beaux glands que tu m'as apport\xE9 l\xE0, petit
       perdant. "
     - "C'est un bon troph\xE9e."
     - "Il est temps de mettre une racl\xE9e \xE0 ce satan\xE9 cerf. Toi aussi tu le
@@ -489,59 +489,59 @@ MonoBehaviour:
   dialogueSerpent:
     name: Le Sanglier
     sentences:
-    - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
-    - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
-      GAGNANTS.
+    - "Quoi ? Tu as d\xE9j\xE0 perdu !\r"
+    - "Laisse-moi ! Je suis en train de m'entrainer et les perdants ne s'entrainent
+      pas avec les gagnants\r."
   dialogueRatonLaveur:
     name: Le Sanglier
     sentences:
-    - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
-    - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
-      GAGNANTS.
+    - "Quoi ? Tu as d\xE9j\xE0 perdu !\r"
+    - "Laisse-moi ! Je suis en train de m'entrainer et les perdants ne s'entrainent
+      pas avec les gagnants\r."
   dialogueRenard:
     name: Le Sanglier
     sentences:
-    - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
-    - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
-      GAGNANTS.
+    - "Quoi ? Tu as d\xE9j\xE0 perdu !\r"
+    - "Laisse-moi ! Je suis en train de m'entrainer et les perdants ne s'entrainent
+      pas avec les gagnants\r."
   dialogueChianChat:
     name: Le Sanglier
     sentences:
-    - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
-    - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
-      GAGNANTS.
+    - "Quoi ? Tu as d\xE9j\xE0 perdu !\r"
+    - "Laisse-moi ! Je suis en train de m'entrainer et les perdants ne s'entrainent
+      pas avec les gagnants\r."
   dialogueRenard2:
     name: Le Sanglier
     sentences:
-    - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
-    - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
-      GAGNANTS.
+    - "Quoi ? Tu as d\xE9j\xE0 perdu !\r"
+    - "Laisse-moi ! Je suis en train de m'entrainer et les perdants ne s'entrainent
+      pas avec les gagnants\r."
   dialogueCerf:
     name: Le Sanglier
     sentences:
-    - 'QUOI ? TU VEUX TE BATTRE PETIT PERDANT ? '
-    - JE SUIS EN TRAIN DE M'ENTRAINER, ET LES PERDANTS NE S'ENTRAINENT PAS AVEC LES
-      GAGNANTS.
+    - "Quoi ? Tu as d\xE9j\xE0 perdu !\r"
+    - "Laisse-moi ! Je suis en train de m'entrainer et les perdants ne s'entrainent
+      pas avec les gagnants\r."
   dialogueQueteNonValideSanglier:
     name: Le Sanglier
     sentences:
-    - "H\xC9 ALORS LE PERDANT, J'ATTEND TOUJOURS MON TROPH\xC9E ! "
+    - "H\xE9 alors le perdant, j'attends toujours mon troph\xE9e !"
   dialogueQueteNonValide:
     name: Le Sanglier
     sentences:
-    - "JE M'ENTRA\xCENE !!!"
+    - Je m'entraine !!!
   dialogueQueteNonValide2:
     name: Le Sanglier
     sentences:
-    - "UN VRAI GUERRIER \xC7A MANGE !"
+    - "Un vrai guerrier, \xE7a mange !"
   dialogueQueteNonValide3:
     name: Le Sanglier
     sentences:
-    - GGGRRRROAAAARRR
+    - Grrrroooarr !
   dialogueQueteNonValideChien:
     name: Le Sanglier
     sentences:
-    - "JE SUIS OCCUP\xC9 !"
+    - "Je suis occup\xE9 !"
   dialogueQueteCourse:
     name: 
     sentences: []

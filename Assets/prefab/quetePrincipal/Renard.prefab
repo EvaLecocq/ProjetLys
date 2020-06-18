@@ -547,7 +547,9 @@ MonoBehaviour:
   dialogueRenard2:
     name: Le Renard
     sentences:
-    - "Va vers le batiment petit \xEAtre, et r\xE9sout les \xE9nigmes."
+    - "Va vers le batiment petit \xEAtre et rempli les pots, \xE7a manque de fleur
+      dans le coin."
+    - "Le Cerf ne viendra pas si on laisse le parc dans cet \xE9tat !"
   dialogueCerf:
     name: Le Renard
     sentences:

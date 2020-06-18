@@ -138,7 +138,7 @@ MonoBehaviour:
     sentences:
     - "Salut !\r"
     - "Si toi aussi tu es fatigu\xE9 d'attendre tu peux te reposer sur un banc, on
-      a vraiment l'impression que le temps passe beaucoup plus vite !\r\n"
+      a vraiment l'impression que le temps passe beaucoup plus vite !\r"
     - "Mais pas celui-l\xE0 ! C'est mon banc !"
   dialogueLapin:
     name: Dormeur
