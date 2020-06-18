@@ -74,7 +74,6 @@ MonoBehaviour:
     name: Le Serpent
     sentences:
     - "**Bruit \xE9trange**"
-    - "**Bruit \xE9trange**"
   dialogueSanglier:
     name: Le Serpent
     sentences:
@@ -85,22 +84,22 @@ MonoBehaviour:
     - 'Peu d''animaux viennent me parler, je leur fait trop peur. *snif* Merci encore
       *snif*...... le cerf ? '
     - Je l'ai vu passer par ici mais je ne vois pas grand chose dans mon nid.
-    - "Le raton laveur sait peut \xEAtre quelque chose."
+    - "Le Raton Laveur sait peut \xEAtre quelque chose."
     - "Il n'aime pas parler alors il faut insistez tr\xE8s fort avec lui et il vous
       dira tout ce qu'il sait."
     - "Oh et avant de partir, prenez \xE7a, c'est ma jolie fleur, elle ne pousse qu'ici,
       \rvoyez \xE7a comme un cadeau pour m'avoir remont\xE9 le moral. "
-    - Bonne chance pour trouver le cerf !
+    - Bonne chance pour trouver le Cerf !
   dialogueSerpent:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - "Avez vous parl\xE9 au raton laveur ? Il faut beaucoup insistez pour qu'il vous
+    - "Avez vous parl\xE9 au Raton Laveur ? Il faut beaucoup insistez pour qu'il vous
       parle."
   dialogueRatonLaveur:
     name: Le Serpent
     sentences:
-    - "Ha ha ! Le raton laveur s'est agac\xE9 ? Il s'\xE9nerver facilement, c'est
+    - "Ha ha ! Le Raton Laveur s'est agac\xE9 ? Il s'\xE9nerver facilement, c'est
       un sanguin !"
     - "Mais s'il a r\xE9pondu \xE0 votre question, tout se passe bien !"
     - "Tu es sur la piste d'un animal rus\xE9 et malin ?"
@@ -109,29 +108,29 @@ MonoBehaviour:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - 'Le lapin a disparu ? '
+    - 'Le Lapin a disparu ? '
     - "Je ne l'ai pas vu pass\xE9 depuis un bon moment,\r je ne vous serais pas d'une
       grande aide."
   dialogueChianChat:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - "Une fleur blache comme le lys et violette comme l'orchid\xE9e ?"
+    - "Une fleur blanche comme le lys et violette comme l'orchid\xE9e ?"
     - "Hormis ma fleur je ne connais pas beaucoup de fleurs, \r\nla fumeterre et le
       circe commun sont les deux plantes qui me viennent \xE0 l'esprit."
   dialogueRenard2:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - "Le renard a mang\xE9 le lapin ?!"
+    - "Le Renard a mang\xE9 le Lapin ?!"
     - "H\xE9 bien oui se sont des choses qui arrivent, m\xEAme si \xE7a me rend triste."
     - "Ne t'en fais pas tu n'y est pour rien,\r repense aux bons moments que tu as
-      pass\xE9 avec le lapin et \xE7a ira mieux"
+      pass\xE9 avec le Lapin et \xE7a ira mieux"
   dialogueCerf:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - "Vous avez rencontr\xE9 le cerf ? Magnifique ! "
+    - "Vous avez rencontr\xE9 le Cerf ? Magnifique ! "
     - "Maintenant que j'y pense, je ne sais pas pourquoi vous teniez tant \xE0 le
       voir."
     - Mais j'imagine que vous avez eu ce que vous vouliez.
@@ -142,17 +141,17 @@ MonoBehaviour:
   dialogueQueteNonValide:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
+    - "Bonjour \xE0 vous, le Raton Laveur vous dite ? il a le sommeil lourd c'est
       vraie."
   dialogueQueteNonValide2:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
+    - "Bonjour \xE0 vous, le Raton Laveur vous dite ? il a le sommeil lourd c'est
       vraie."
   dialogueQueteNonValide3:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, le raton laveur vous dite ? il a le sommeil lourd c'est
+    - "Bonjour \xE0 vous, le Raton Laveur vous dite ? il a le sommeil lourd c'est
       vraie."
   dialogueQueteNonValideChien:
     name: Le Serpent

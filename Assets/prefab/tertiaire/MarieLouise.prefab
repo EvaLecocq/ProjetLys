@@ -124,7 +124,7 @@ MonoBehaviour:
     sentences:
     - "Bonjour, je suis... je suis... Ah oui Marie-Louise, difficile les nom compos\xE9,
       il faut retenir deux noms au lieux d'un, c'est pas une vie.\r"
-    - Pardon... Tu cherches le cerf, le cerf, ah oui, le cerf...
+    - Pardon... Tu cherches le Cerf, le Cerf, ah oui, le Cerf...
     - "Si j'avais 5 ans de moins, il serais passer dans mes griffes celui-l\xE0."
   dialogueSanglier:
     name: Marie-Louise
@@ -135,7 +135,7 @@ MonoBehaviour:
   dialogueSerpent:
     name: Marie-Louise
     sentences:
-    - "Le raton-laveur c'est mon voisin bien sur que je le connais bien.\r"
+    - "Le Raton Laveur c'est mon voisin bien sur que je le connais bien.\r"
     - "Toujours \xE0 rousp\xE9ter et \xE0 r\xE2ler, de mon temps on te laisser pas
       faire n'importe quoi comme cela.\r"
     - Il dort le jour et la nuit quand tu peux enfin lui parler il t'ignorerais presque.
@@ -149,10 +149,10 @@ MonoBehaviour:
   dialogueRenard:
     name: Marie-Louise
     sentences:
-    - "Si tu me dis que le renard \xE9tait \xE0 sa poursuite, il est peut-\xEAtre
-      d\xE9j\xE0 trop tard pour sauv\xE9 le lapin.\r"
+    - "Si tu me dis que le Renard \xE9tait \xE0 sa poursuite, il est peut-\xEAtre
+      d\xE9j\xE0 trop tard pour sauv\xE9 le Lapin.\r"
     - "Je ne veux pas te rendre triste, mais j'ai assez v\xE9cu pour savoir de quoi
-      est capable ce renard."
+      est capable ce Renard."
   dialogueChianChat:
     name: Marie-Louise
     sentences:
@@ -162,7 +162,7 @@ MonoBehaviour:
   dialogueRenard2:
     name: Marie-Louise
     sentences:
-    - Le charmant cerf est sorti, je vais aller le saluer, tu devrais faire pareil,
+    - Le charmant Cerf est sorti, je vais aller le saluer, tu devrais faire pareil,
       petit bonhomme.
   dialogueCerf:
     name: Marie-Louise
@@ -178,17 +178,17 @@ MonoBehaviour:
   dialogueQueteNonValide:
     name: Marie-Louise
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueQueteNonValide2:
     name: Marie-Louise
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueQueteNonValide3:
     name: Marie-Louise
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueQueteNonValideChien:
     name: Marie-Louise

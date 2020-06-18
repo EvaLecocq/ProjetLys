@@ -522,10 +522,10 @@ MonoBehaviour:
       par ici ? "
     - "Chien :\r\nPROMENER ? ON VA SE PROMENER ? \r\n"
     - "Chat :\r\nNON couch\xE9 !"
-    - "Chien :\r\nOh....d'accord\r\n"
+    - "Chien :\r\nOh....d'accord\r"
     - "Chat :\r\n...Bref, ne fais pas attention \xE0 lui il est hyperactif. Es tu
       perdu ? Oui ? "
-    - "Chat :\r\nTu cherches le lapin et le cerf ? c'est vrai qu'on les voit souvent."
+    - "Chat :\r\nTu cherches le Lapin et le Cerf ? c'est vrai qu'on les voit souvent."
     - "Chat :\r\nH\xE9 bien..... je pourrais t'aider mais tu vas faire quelque chose
       pour nous en \xE9change... "
     - "Chat :\r\nVois-tu, mon ami et moi, on arrive pas \xE0 se mettre d'accord, pour
@@ -535,7 +535,7 @@ MonoBehaviour:
       une fleur qui est \xE0 la fois blanche et pure comme le lys et violette comme
       l'orchid\xE9e."
     - "Chat :\nQuand tu l'auras tu reviens nous la donner et on te dira o\xF9 on a
-      vu le cerf.\r\n"
+      vu le Cerf.\r"
   dialogueChianChat:
     name: Chien - Chat
     sentences:
@@ -544,9 +544,9 @@ MonoBehaviour:
     - "Chien :\r\nELLE EST VIOLETTE ELLE EST JOLIE."
     - "Chat :\r\nOui c'est vrai elle est \xE0 la fois blanche et violette, pure et
       l\xE9g\xE8re, l'Hellebore, c'est par-fait. "
-    - "Ta partie est remplie, maintenant \xE0 nous. Le cerf est pass\xE9 nous dire
+    - "Ta partie est remplie, maintenant \xE0 nous. Le Cerf est pass\xE9 nous dire
       bonjour et est ensuite parti en direction du batiment du jardin botanique."
-    - Et nous n'avons pas vu le lapin depuis un bon moment, c'est tout.
+    - Et nous n'avons pas vu le Lapin depuis un bon moment, c'est tout.
   dialogueRenard2:
     name: Chien - Chat
     sentences:
@@ -562,12 +562,14 @@ MonoBehaviour:
     - "Chien :\r\nLE CERF EST SUPER GRAND, J'AIME BIEN JOUER AVEC LUI."
   dialogueQueteNonValideSanglier:
     name: Chien - Chat
-    sentences: []
+    sentences:
+    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r."
   dialogueQueteNonValide:
     name: Chien - Chat
     sentences:
     - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r."
   dialogueQueteNonValide2:
     name: Chien - Chat
     sentences:
@@ -581,8 +583,8 @@ MonoBehaviour:
   dialogueQueteNonValideChien:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "chat :\r\nnon tu n'as pas la bonne fleur\r"
+    - "chien :\r\nNON ELLE EST PAS JOLIE"
   dialogueQueteCourse:
     name: 
     sentences: []
