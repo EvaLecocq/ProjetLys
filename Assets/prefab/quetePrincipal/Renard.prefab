@@ -540,9 +540,9 @@ MonoBehaviour:
       mais ne t'en fais pas, tu n'y est pour rien, ainsi va la nature et la vie..."
     - "Tu me fais de la peine petit \xEAtre,\r je vais te dire comment faire venir
       le cerf."
-    - Pour cela tu dois aller au grand batiment de pierre sur la petite colline et
-      poser une fleur dans chaque pots.
-    - "Devant chaque pots se trouve une devinette \xE0 r\xE9soudre."
+    - "Pour cela tu dois aller au grand batiment de pierre sur la petite colline et
+      rempli les pots, \xE7a manque de fleur dans le coin."
+    - "Le Cerf ne viendra pas si on laisse le parc dans cet \xE9tat !"
     - "Et maintenant va, petit \xEAtre et fais attention \xE0 toi."
   dialogueRenard2:
     name: Le Renard

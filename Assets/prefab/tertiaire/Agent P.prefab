@@ -283,11 +283,11 @@ MonoBehaviour:
   dialogueRenard2:
     name: Agent P.
     sentences:
-    - "Mais qu'attend-tu le cerf est l\xE0, va le saluer !"
+    - Si les pots ne sont pas remplis, le Cerf risque de ne pas venir.
   dialogueCerf:
     name: Agent P.
     sentences:
-    - "Eh bien mission accomplie, tu as la cl\xE9s !"
+    - Eh bien mission accomplie, tu devrais aller voir le Cerf.
   dialogueQueteNonValideSanglier:
     name: Agent P.
     sentences:
