@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        //ChargementJeu();
+       
 
         if (s_Singleton != null)
         {
@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
         {
             s_Singleton = this;
         }
+       
+
+       // ChargementJeu();
     }
 
     private PlayerMovement persoT;
@@ -52,7 +55,7 @@ public class GameManager : MonoBehaviour
     public enum quete { debut, lapin, sanglier, serpent, ratonLaveur, renard, chienChat, renard2, cerf, fin };
     public quete principale;
 
-    private bool canSave;
+    public bool canSave;
 
     public bool clesDuParc = false;
     private int clesDuParcInt = 0;
@@ -105,6 +108,28 @@ public class GameManager : MonoBehaviour
     public int baton;
     public int graineGland;
 
+    [Header("pot")]
+    public int potTulipe;
+    public int potCirseCommun;
+    public int potChrysantheme;
+    public int potOrchidee;
+    public int potHibiscus;
+    public int potPaeoniaOfficinalis;
+    public int potEuphorbeReveilleMatin;
+    public int potGazaniaRigens;
+    public int potHelleboreOrient;
+    public int potFumariaOfficinalis;
+    public int potBleuMarie;
+    public int potAncolieDuCanada;
+    public int potKalanchoe;
+    public int potGerbera;
+    public int potAngeliqueDesEstuaires;
+    public int potAgapanthe;
+    public int potRose;
+    public int potFritillaire;
+    public int potFleurDeLys;
+
+    //sauvegarde a la fin de: pot, item, dialogue
 
     // Start is called before the first frame update
     void Start()
@@ -164,6 +189,9 @@ public class GameManager : MonoBehaviour
     public void nouvellePartie()
     {
         canSave = true;
+
+        PlayerPrefs.DeleteAll();
+
     }
 
     public void SauvegadeJeu()
@@ -197,6 +225,27 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Rose", Rose);
         PlayerPrefs.SetInt("Fritillaire", Fritillaire);
         PlayerPrefs.SetInt("FleurDeLys", FleurDeLys);
+
+        //pot
+        PlayerPrefs.SetInt("potTulipe", potTulipe);
+        PlayerPrefs.SetInt("potCirseCommun", potCirseCommun);
+        PlayerPrefs.SetInt("potChrysantheme", potChrysantheme);
+        PlayerPrefs.SetInt("potOrchidee", potOrchidee);
+        PlayerPrefs.SetInt("potHibiscus", potHibiscus);
+        PlayerPrefs.SetInt("potPaeoniaOfficinalis", potPaeoniaOfficinalis);
+        PlayerPrefs.SetInt("potEuphorbeReveilleMatin", potEuphorbeReveilleMatin);
+        PlayerPrefs.SetInt("potGazaniaRigens", potGazaniaRigens);
+        PlayerPrefs.SetInt("potHelleboreOrient", potHelleboreOrient);
+        PlayerPrefs.SetInt("potFumariaOfficinalis", potFumariaOfficinalis);
+        PlayerPrefs.SetInt("potBleuMarie", potBleuMarie);
+        PlayerPrefs.SetInt("potAncolieDuCanada", potAncolieDuCanada);
+        PlayerPrefs.SetInt("potKalanchoe", potKalanchoe);
+        PlayerPrefs.SetInt("potGerbera", potGerbera);
+        PlayerPrefs.SetInt("potAngeliqueDesEstuaires", potAngeliqueDesEstuaires);
+        PlayerPrefs.SetInt("potAgapanthe", potAgapanthe);
+        PlayerPrefs.SetInt("potRose", potRose);
+        PlayerPrefs.SetInt("potFritillaire", potFritillaire);
+        PlayerPrefs.SetInt("potFleurDeLys", potFleurDeLys);
 
         //obj
         PlayerPrefs.SetInt("graineGland", graineGland);
@@ -255,6 +304,28 @@ public class GameManager : MonoBehaviour
         Fritillaire = PlayerPrefs.GetInt("Fritillaire");
         FleurDeLys = PlayerPrefs.GetInt("FleurDeLys");
         Rose = PlayerPrefs.GetInt("Rose");
+
+
+        //pot
+        potTulipe = PlayerPrefs.GetInt("potTulipe");
+        potCirseCommun = PlayerPrefs.GetInt("potCirseCommun");
+        potChrysantheme = PlayerPrefs.GetInt("potChrysantheme");
+        potOrchidee = PlayerPrefs.GetInt("potOrchidee");
+        potHibiscus = PlayerPrefs.GetInt("potHibiscus");
+        potPaeoniaOfficinalis = PlayerPrefs.GetInt("potPaeoniaOfficinalis");
+        potEuphorbeReveilleMatin = PlayerPrefs.GetInt("potEuphorbeReveilleMatin");
+        potGazaniaRigens = PlayerPrefs.GetInt("potGazaniaRigens");
+        potHelleboreOrient = PlayerPrefs.GetInt("potHelleboreOrient");
+        potFumariaOfficinalis = PlayerPrefs.GetInt("potFumariaOfficinalis");
+        potBleuMarie = PlayerPrefs.GetInt("potBleuMarie");
+        potAncolieDuCanada = PlayerPrefs.GetInt("potAncolieDuCanada");
+        potKalanchoe = PlayerPrefs.GetInt("potKalanchoe");
+        potGerbera = PlayerPrefs.GetInt("potGerbera");
+        potAngeliqueDesEstuaires = PlayerPrefs.GetInt("potAngeliqueDesEstuaires");
+        potAgapanthe = PlayerPrefs.GetInt("potAgapanthe");
+        potFritillaire = PlayerPrefs.GetInt("potFritillaire");
+        potFleurDeLys = PlayerPrefs.GetInt("potFleurDeLys");
+        potRose = PlayerPrefs.GetInt("potRose");
 
         //obj
         graineGland = PlayerPrefs.GetInt("graineGland");

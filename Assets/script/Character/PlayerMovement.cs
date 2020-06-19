@@ -243,7 +243,11 @@ public class PlayerMovement : MonoBehaviour
             audioS.pitch = Random.Range(1, 1.4f);
             audioS.Play();
 
-            potActuel.PlaceFlower();
+            if(potActuel.full == false)
+            {
+                potActuel.PlaceFlower();
+            }
+           
             
         }
 
