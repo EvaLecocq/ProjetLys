@@ -257,14 +257,14 @@ MonoBehaviour:
     m_RotationOrder: 4
   DailyRotation: {fileID: 5605713185124898475}
   sun: {fileID: 5605713186866599712}
-  sunBaseIntensity: 1
+  sunBaseIntensity: 1.2
   sunVariation: 1.8
   sunColor:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
     key1: {r: 0.8584906, g: 0.53694224, b: 0.2713154, a: 1}
-    key2: {r: 0.9811321, g: 0.62590027, b: 0.32858673, a: 0}
-    key3: {r: 1, g: 0.8696898, b: 0.48584908, a: 0}
+    key2: {r: 1, g: 0.6598659, b: 0.3726415, a: 0}
+    key3: {r: 1, g: 0.8395866, b: 0.36320752, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -307,8 +307,8 @@ MonoBehaviour:
   moonColor:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0, g: 0.3540701, b: 0.8962264, a: 1}
-    key2: {r: 0, g: 0.37268546, b: 0.8867924, a: 0}
+    key1: {r: 0, g: 0.393013, b: 1, a: 1}
+    key2: {r: 0, g: 0.5479279, b: 0.8862745, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -405,8 +405,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  fogColorSun: {r: 0.990566, g: 0.7917732, b: 0.52799034, a: 1}
-  fogDistanceBase: 250
+  fogColorSun: {r: 0.4666667, g: 1, b: 0.79010713, a: 1}
+  fogDistanceBase: 150
   skyColorPluie:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
@@ -465,7 +465,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  fogColorPluie: {r: 0.3726415, g: 0.5205402, b: 1, a: 1}
+  fogColorPluie: {r: 0.37254906, g: 0.6492162, b: 1, a: 1}
   skyColorTempete:
     serializedVersion: 2
     key0: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 1}
@@ -524,7 +524,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  fogColorTempete: {r: 0.54159063, g: 0.5377359, b: 0.7169812, a: 1}
+  fogColorTempete: {r: 0.62362045, g: 0.61819154, b: 0.8679245, a: 1}
   skyColorBrouillard:
     serializedVersion: 2
     key0: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
@@ -583,8 +583,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  fogColorBrouillard: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
-  fogDistanceBrouillard: 100
+  fogColorBrouillard: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  fogDistanceBrouillard: 50
 --- !u!1 &5605713186866599902
 GameObject:
   m_ObjectHideFlags: 0
