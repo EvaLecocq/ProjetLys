@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Le lieux que tu veut
+  m_text: Jardin Botanique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8caf5eebf3b0b9e45ba4435760a52a94, type: 2}
   m_sharedMaterial: {fileID: -1728050701367964908, guid: 8caf5eebf3b0b9e45ba4435760a52a94,
@@ -325,10 +325,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4117082482411949539}
-    characterCount: 20
+    characterCount: 16
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -373,7 +373,7 @@ Transform:
   m_GameObject: {fileID: 2926586339111625836}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -30.895977, y: -81.0506, z: -27.498522}
-  m_LocalScale: {x: 1.8588535, y: 1.8588535, z: 1.8588535}
+  m_LocalScale: {x: 2.271705, y: 2.271705, z: 2.271705}
   m_Children:
   - {fileID: 3960722628300075194}
   - {fileID: 5342676870236304207}
