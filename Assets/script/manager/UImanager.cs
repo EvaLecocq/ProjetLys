@@ -16,6 +16,8 @@ public class UImanager : MonoBehaviour
     public Sprite[] weekDayImage;
     public GameObject textInteraction;
     public GameObject textQueteSpecial;
+    public GameObject boiteSanglier;
+    public GameObject boiteChien;
     
 
     private MouseLook mouseC;
@@ -241,33 +243,46 @@ public class UImanager : MonoBehaviour
     {
 
         textQueteSpecial.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourrait être un trophée pour le sanglier";
+        boiteSanglier.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "C'est pas mal oui, viens me montrer...";
 
     }
     public void sanglierTextSpawnFaux()
     {
 
         textQueteSpecial.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela risque de ne pas convenir au sanglier";
+        boiteSanglier.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Des bâtons et des pierres c'est une plaisanterie !?";
+    }
+    public void sanglierTextSpawnFauxFleur()
+    {
+
+        textQueteSpecial.SetActive(true);
+        boiteSanglier.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Des fleurs ?! Non c'est nul comme trophée !";
     }
 
     public void chienChatTextSpawn()
     {
 
         textQueteSpecial.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela pourrait être une fleur pour le chien et le chat";
+        boiteChien.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Non cette fleur est pas jolie, on en veut une blanche et violette !";
 
     }
     public void chienChatTextSpawnFaux()
     {
 
         textQueteSpecial.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Cela risque de ne pas convenir au chien et au chat";
+        boiteChien.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Oh ! Cette fleur peut faire l'affaire, ramène là nous";
     }
 
     public void sanglierTextDespawn()
     {
         textQueteSpecial.SetActive(false);
+        boiteChien.SetActive(false);
+        boiteSanglier.SetActive(false);
     }
 
 

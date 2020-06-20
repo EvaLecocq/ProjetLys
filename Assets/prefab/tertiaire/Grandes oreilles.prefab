@@ -115,12 +115,12 @@ MonoBehaviour:
   statut: 2
   parleLaNuit: 0
   dialogueDebut:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Hey, salut toi !
     - Tu devrais allez voir le Lapin devant le portail.
   dialogueLapin:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - "Hey, salut toi ! Je me pr\xE9sente : Grandes-oreilles."
     - "Pr\xE8s du pont ?"
@@ -134,57 +134,57 @@ MonoBehaviour:
     - "Mais si il est pass\xE9 pr\xE8s des grands saules, tu devrais demander au Serpent.
       Il guette tout ce qui se passe par l\xE0-bas."
   dialogueSerpent:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Le Raton Laveur ?
     - "Traverse le pont et \xE0 droite tu le trouveras."
   dialogueRatonLaveur:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Salut !
     - "Un animal rus\xE9 ?"
     - Je pense qu'il s'agit du Serpent aucun doute !
   dialogueRenard:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Salut.
     - "Le Lapin, il ne bouge jamais, il est toujours \xE0 l'entr\xE9e du parc."
   dialogueChianChat:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Yo !
     - Tu cherches toujours le Cerf ?
     - "Tu devrais demander \xE0 quelqu'un de tr\xE8s intelligent."
     - Genre le Serpent ou le Renard.
   dialogueRenard2:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Salut !
     - Apparamment le Cerf vient aujourd'hui.
   dialogueCerf:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - "Va au portail tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Salut l'ami !
     - "Ce qu'attends le sanglier ? Certainement des glands, il y en a partout l\xE0
       o\xF9 il y a plein d'arbres."
   dialogueQueteNonValide:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
   dialogueQueteNonValide2:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
   dialogueQueteNonValide3:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - "Bien s\xFBr, il se trouve \xE0 cot\xE9 du Sanglier."
   dialogueQueteNonValideChien:
-    name: Grandes Oreilles
+    name: G. Oreilles
     sentences:
     - Yo !
     - "Les fleurs ?! Pourquoi devrais-je m'y int\xE9resser ?"

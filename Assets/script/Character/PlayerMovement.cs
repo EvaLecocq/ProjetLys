@@ -209,9 +209,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 ui.sanglierTextSpawn();
             }
-            else if (item.itemType != itemPick.type.graineGland && GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == false)
+            else if (item.itemType == itemPick.type.baton && GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == false)
             {
                 ui.sanglierTextSpawnFaux();
+            }
+            else if (item.itemType != itemPick.type.graineGland && item.itemType != itemPick.type.baton && GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == false)
+            {
+                ui.sanglierTextSpawnFauxFleur();
             }
 
             if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)

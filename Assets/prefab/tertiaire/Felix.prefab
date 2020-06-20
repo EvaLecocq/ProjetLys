@@ -245,12 +245,12 @@ MonoBehaviour:
     name: Felix
     sentences:
     - 'Mon nom est Felix, et c''est tout ce que tu dois savoir pour le moment. '
-    - "Au revoir mon ch\xE8re humain !"
+    - Au revoir mon cher humain !
   dialogueLapin:
     name: Felix
     sentences:
     - 'Mon nom est Felix, et c''est tout ce que tu dois savoir pour le moment. '
-    - "Au revoir mon ch\xE8re humain !"
+    - Au revoir mon cher humain !
   dialogueSanglier:
     name: Felix
     sentences:

@@ -251,7 +251,7 @@ MonoBehaviour:
     - Bonjour !
     - "Tu cherches un animal pr\xE8s d'un pont ? \xE7a doit \xEAtre le sanglier, il
       passe son temps \xE0 se battre avec tout ceux qu'il croise."
-    - "Il vit au nord du parc apr\xE8s avoir travers\xE9 l'\xEEle central du lac."
+    - "Il vit au nord du parc apr\xE8s avoir travers\xE9 l'\xEEle centrale du lac."
   dialogueSanglier:
     name: Agent P.
     sentences:

@@ -71,6 +71,9 @@ public class GameManager : MonoBehaviour
     [Header("secondaire")]
     public int queteSecondaireAccompli;
     public int niveauHerbier = 0;
+    public int herbierPot = 0;
+    public int herbierFleurRare = 0;
+
     public int dialogueFait;
     public int gaspard;
 

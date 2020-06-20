@@ -35,7 +35,7 @@ public class AnimalManager : MonoBehaviour
             lapin.SetActive(false);
             chienChat.transform.position = chienChatSpot.position;
         }
-        if (GameManager.s_Singleton.progression >= 7)
+        if (GameManager.s_Singleton.progression >= 6)
         {
             renard.transform.position = renardSpot.position;
         }

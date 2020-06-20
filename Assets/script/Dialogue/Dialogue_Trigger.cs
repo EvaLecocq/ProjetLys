@@ -100,6 +100,8 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 GameManager.s_Singleton.QueteFini();
                 GameManager.s_Singleton.AncolieDuCanada++;
+
+                UImanager.FindObjectOfType<UImanager>().itemOpenHerbier();
             }
 
             else if(GameManager.s_Singleton.progression == 3 && type == Dialogue_Trigger.animal.ratonLaveur)// spam dialogue
