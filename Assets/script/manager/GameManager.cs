@@ -255,6 +255,8 @@ public class GameManager : MonoBehaviour
 
         //stat
         PlayerPrefs.SetInt("progression", progression);
+        PlayerPrefs.SetInt("herbierFleurRare", herbierFleurRare);
+        PlayerPrefs.SetInt("herbierPot", herbierPot);
 
         if (clesDuParc)
         {
@@ -335,6 +337,8 @@ public class GameManager : MonoBehaviour
 
         //stat
         progression = PlayerPrefs.GetInt("progression");
+        herbierFleurRare = PlayerPrefs.GetInt("herbierFleurRare" );
+        herbierPot = PlayerPrefs.GetInt("herbierPot" );
 
 
         clesDuParcInt = PlayerPrefs.GetInt("clesDuParcInt");

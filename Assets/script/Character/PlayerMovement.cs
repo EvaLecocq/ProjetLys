@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Dialogue_Trigger dialogueActuel;
     public banc bancActuel;
     public pot potActuel;
+    public cartePanneau panneau;
 
     private UImanager ui;
     public Animator anim;
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode rightWalk;
     public KeyCode interactionKey;
 
-    public enum interactionType { item, dialogue, banc, pot};
+    public enum interactionType { item, dialogue, banc, pot, panneau};
     public interactionType type;
 
 
@@ -266,6 +267,11 @@ public class PlayerMovement : MonoBehaviour
             dialogueActuel.EventDialogue();
 
         }
+
+        if (Input.GetKeyDown(interactionKey) && panneau != null && type == PlayerMovement.interactionType.panneau)
+        {
+            panneau.UpgradeMap();
+        }
     }
    
 
@@ -320,6 +326,24 @@ public class PlayerMovement : MonoBehaviour
                 
             
 
+
+        }
+
+        //panneau
+        if (other.CompareTag("panneau"))//outline
+        {
+            type = PlayerMovement.interactionType.panneau;
+
+            if (panneau == null)
+            {
+                panneau = other.gameObject.GetComponent<cartePanneau>();
+
+            }
+
+
+            panneau.outlinerItem.enabled = true;
+            panneau.interactionIcon.SetActive(true);
+             
 
         }
 
@@ -388,6 +412,18 @@ public class PlayerMovement : MonoBehaviour
             potActuel.interactionIcon.SetActive(false);
             potActuel.interactionIcon2.SetActive(false);
             potActuel = null;
+
+        }
+
+        //panneau
+        if (other.CompareTag("panneau") && panneau != null)
+        {
+
+
+            panneau.outlinerItem.enabled = false;
+            panneau.interactionIcon.SetActive(false);
+  
+            panneau = null;
 
         }
 

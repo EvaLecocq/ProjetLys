@@ -9,6 +9,7 @@ TagManager:
   - dialogue
   - pot
   - pickable
+  - panneau
   layers:
   - Default
   - TransparentFX

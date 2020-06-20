@@ -31,7 +31,8 @@ public class herbierMapUpgrade : MonoBehaviour
         {
             pot.SetActive(true);
         }
-        else if (GameManager.s_Singleton.herbierPot == 1)
+
+        if (GameManager.s_Singleton.herbierFleurRare == 1)
         {
             fleur.SetActive(true);
         }
