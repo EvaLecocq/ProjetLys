@@ -22,8 +22,8 @@ public class EndGameMnager : MonoBehaviour
 
         StartCoroutine(startScene());
 
-        InvokeRepeating("TocTocPorte", 5f, 8f);
-        Invoke("VoixOff", 14f);
+        InvokeRepeating("TocTocPorte", 14f, 8f);
+        Invoke("VoixOff", 24f);
     }
 
     public void TocTocPorte()

@@ -244,7 +244,7 @@ public class UImanager : MonoBehaviour
 
         textQueteSpecial.SetActive(true);
         boiteSanglier.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "C'est pas mal oui, viens me montrer...";
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Des glands mmmh, c'est pas mal oui, viens me montrer...";
 
     }
     public void sanglierTextSpawnFaux()

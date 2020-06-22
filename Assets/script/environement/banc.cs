@@ -36,12 +36,14 @@ public class banc : MonoBehaviour
         {
             cycle._timeOfDay += 0.001f / indiceRapport;
             cycle.elapsedTime += 6f / indiceRapport;
+
+            
         }
       
 
         if (Input.GetKeyDown(interactionKey) && isBanc)
         {
-          
+            
             speedTime = false;
            ExitBanc();
         }

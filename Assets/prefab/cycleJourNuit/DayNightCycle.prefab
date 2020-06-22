@@ -257,8 +257,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   DailyRotation: {fileID: 5605713185124898475}
   sun: {fileID: 5605713186866599712}
-  sunBaseIntensity: 1.2
-  sunVariation: 1.8
+  sunBaseIntensity: 1.3
+  sunVariation: 2
   sunColor:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
