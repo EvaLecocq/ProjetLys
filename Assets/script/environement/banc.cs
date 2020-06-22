@@ -11,7 +11,7 @@ public class banc : MonoBehaviour
     private PlayerMovement player;
     private DayNightCycle cycle;
     private bool speedTime = false;
-    private float indiceRapport = 3;
+    private float indiceRapport = 2;
 
     public Transform pos;
     public Collider coll;
@@ -34,10 +34,11 @@ public class banc : MonoBehaviour
     {
         if(speedTime)
         {
-            cycle._timeOfDay += 0.001f / indiceRapport;
-            cycle.elapsedTime += 6f / indiceRapport;
+            //cycle._timeOfDay += 0.001f / indiceRapport;
+            //cycle.elapsedTime += 6f / indiceRapport;
 
-            
+            cycle._timeOfDay += 0.002f / indiceRapport;
+            cycle.elapsedTime += 4f / indiceRapport;
         }
       
 
