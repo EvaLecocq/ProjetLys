@@ -30,8 +30,10 @@ public class herbierCarnet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region principale
+
         //principal
-        if( GameManager.s_Singleton.progression == 0)
+        if ( GameManager.s_Singleton.progression == 0)
         {
             etape[0].SetActive(true);
         }
@@ -41,7 +43,8 @@ public class herbierCarnet : MonoBehaviour
             etape[1].SetActive(true);
         }
 
-       
+
+        
 
         if ( GameManager.s_Singleton.progression == 2)
         {
@@ -155,7 +158,10 @@ public class herbierCarnet : MonoBehaviour
             etape[11].SetActive(true);
         }
 
+        #endregion
 
+
+        #region noteGlobale
         //note
         if (GameManager.s_Singleton.niveauHerbier == 1)
         {
@@ -196,6 +202,10 @@ public class herbierCarnet : MonoBehaviour
             note[4].SetActive(true);
             note[5].SetActive(true);
         }
+        #endregion
+
+
+
 
     }
 }
