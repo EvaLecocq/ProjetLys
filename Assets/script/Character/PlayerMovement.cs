@@ -218,6 +218,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 ui.sanglierTextSpawnFauxFleur();
             }
+            else if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == true)
+            {
+                ui.sanglierTextSpawnAccompli();
+            }
+
 
             if (item.itemType == itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)
             {
@@ -226,6 +231,10 @@ public class PlayerMovement : MonoBehaviour
             else if (item.itemType != itemPick.type.HelleboreOrient && GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == false)
             {
                 ui.chienChatTextSpawnFaux();
+            }
+            else if (GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == true)
+            {
+                ui.chienChatTextSpawnAccompli();
             }
         }
 

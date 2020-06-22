@@ -362,7 +362,7 @@ MonoBehaviour:
   dialogueCerf:
     name: "Ma\xEEtre Cerf"
     sentences:
-    - "Bonjour, toi,\r\nC'est inhabituel de voir un humain dans le parc apr\xE8s sa
+    - "Bonjour toi,\r C'est inhabituel de voir un humain dans le parc apr\xE8s sa
       fermeture,\r Pourquoi m'as-tu appel\xE9 ?"
     - "Maintenant je comprends, \rtu ne savais pas que le portail \xE9tait ferm\xE9
       et le Lapin t'a dit de venir me trouver."

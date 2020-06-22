@@ -247,6 +247,14 @@ public class UImanager : MonoBehaviour
         textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Des glands mmmh, c'est pas mal oui, viens me montrer...";
 
     }
+    public void sanglierTextSpawnAccompli()
+    {
+
+        textQueteSpecial.SetActive(true);
+        boiteSanglier.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Tu as déjà mon trophée, dépêche toi de me le ramener !!!";
+
+    }
     public void sanglierTextSpawnFaux()
     {
 
@@ -267,7 +275,15 @@ public class UImanager : MonoBehaviour
 
         textQueteSpecial.SetActive(true);
         boiteChien.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Non cette fleur est pas jolie, on en veut une blanche et violette !";
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Oh ! Cette fleur peut faire l'affaire, ramène là nous";
+
+    }
+    public void chienChatTextSpawnAccompli()
+    {
+
+        textQueteSpecial.SetActive(true);
+        boiteChien.SetActive(true);
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Stop, tu as une fleur qui nous plaît reviens";
 
     }
     public void chienChatTextSpawnFaux()
@@ -275,7 +291,7 @@ public class UImanager : MonoBehaviour
 
         textQueteSpecial.SetActive(true);
         boiteChien.SetActive(true);
-        textQueteSpecial.GetComponent<TextMeshProUGUI>().text = "Oh ! Cette fleur peut faire l'affaire, ramène là nous";
+        textQueteSpecial.GetComponent<TextMeshProUGUI>().text =  "Non cette fleur est pas jolie, on en veut une blanche et violette !";
     }
 
     public void sanglierTextDespawn()
@@ -412,6 +428,8 @@ public class UImanager : MonoBehaviour
 
     public void StartNewGame()
     {
+        //PlayerPrefs.DeleteAll();
+
         audioS.clip = clique;
         audioS.Play();
 

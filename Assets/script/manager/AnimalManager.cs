@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimalManager : MonoBehaviour
 {
+    public GameObject portailWall;
 
     [Header("animaux")]
     public GameObject lapin;
@@ -52,6 +53,8 @@ public class AnimalManager : MonoBehaviour
         if (GameManager.s_Singleton.progression >= 8)
         {
             cerf.SetActive(true);
+
+            portailWall.SetActive(false);
         }
     }
 }
