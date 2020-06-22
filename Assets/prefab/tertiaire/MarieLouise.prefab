@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 5
   statut: 2
+  nomAnimaltertiaire: 2
   parleLaNuit: 0
   dialogueDebut:
     name: Marie-Louise

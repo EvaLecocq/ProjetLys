@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   statut: 3
+  nomAnimaltertiaire: 9
   parleLaNuit: 0
   dialogueDebut:
     name: Lapin Relais

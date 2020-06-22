@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 5
   statut: 2
+  nomAnimaltertiaire: 7
   parleLaNuit: 0
   dialogueDebut:
     name: Chat Vinci
@@ -1017,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 3558393474965727463, guid: 106ab22f32c2f3c47b5a79cd9ce77596,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.51
+      value: -0.436
       objectReference: {fileID: 0}
     - target: {fileID: 3558393474965727463, guid: 106ab22f32c2f3c47b5a79cd9ce77596,
         type: 3}

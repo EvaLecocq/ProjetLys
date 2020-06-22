@@ -526,6 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 5
   statut: 3
+  nomAnimaltertiaire: 9
   parleLaNuit: 0
   dialogueDebut:
     name: Phil

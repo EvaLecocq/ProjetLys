@@ -75,7 +75,17 @@ public class GameManager : MonoBehaviour
     public int herbierFleurRare = 0;
 
     public int dialogueFait;
-    public int gaspard;
+
+    public int alizar;
+    public int cesar;
+    public int papillon;
+    public int franklin;
+    public int felix;
+    public int mariLouise;
+    public int gaspard; 
+    public int chatVinci; 
+    public int pog; 
+
 
     [Header("animaux")]
     public int lapin;
@@ -258,6 +268,17 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("herbierFleurRare", herbierFleurRare);
         PlayerPrefs.SetInt("herbierPot", herbierPot);
 
+
+        PlayerPrefs.SetInt("alizar", alizar);
+        PlayerPrefs.SetInt("cesar", cesar);
+        PlayerPrefs.SetInt("gaspard", gaspard);
+        PlayerPrefs.SetInt("papillon", papillon);
+        PlayerPrefs.SetInt("felix", felix);
+        PlayerPrefs.SetInt("mariLouise", mariLouise);
+        PlayerPrefs.SetInt("pog", pog);
+        PlayerPrefs.SetInt("chatVinci", chatVinci);
+        PlayerPrefs.SetInt("franklin", franklin);
+
         if (clesDuParc)
         {
             clesDuParcInt = 1;
@@ -340,6 +361,15 @@ public class GameManager : MonoBehaviour
         herbierFleurRare = PlayerPrefs.GetInt("herbierFleurRare" );
         herbierPot = PlayerPrefs.GetInt("herbierPot" );
 
+        alizar = PlayerPrefs.GetInt("alizar" );
+        cesar = PlayerPrefs.GetInt("cesar" );
+        gaspard = PlayerPrefs.GetInt("gaspard" );
+        papillon = PlayerPrefs.GetInt("papillon" );
+        felix = PlayerPrefs.GetInt("felix" );
+        mariLouise = PlayerPrefs.GetInt("mariLouise" );
+        pog = PlayerPrefs.GetInt("pog" );
+        chatVinci = PlayerPrefs.GetInt("chatVinci");
+        franklin = PlayerPrefs.GetInt("franklin");
 
         clesDuParcInt = PlayerPrefs.GetInt("clesDuParcInt");
         if (clesDuParcInt == 1)

@@ -259,6 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   statut: 2
+  nomAnimaltertiaire: 9
   parleLaNuit: 1
   dialogueDebut:
     name: Poil Doux

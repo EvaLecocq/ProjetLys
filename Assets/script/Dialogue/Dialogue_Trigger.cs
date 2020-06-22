@@ -11,6 +11,9 @@ public class Dialogue_Trigger : MonoBehaviour
     public enum classe { principal, secondaire, tertiaire, info};
     public classe statut;
 
+    public enum nom { papillon, franklin, mariLouise, cesar, felix, alizar, pog, chatvinci, gaspard, autre };
+    public nom nomAnimaltertiaire;
+
     public bool parleLaNuit = false;
 
     public Dialogue dialogueDebut;
@@ -137,6 +140,45 @@ public class Dialogue_Trigger : MonoBehaviour
             }
         }
         
+        if(statut == Dialogue_Trigger.classe.tertiaire)
+        {
+            if(nomAnimaltertiaire == Dialogue_Trigger.nom.alizar)
+            {
+                GameManager.s_Singleton.alizar = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.cesar)
+            {
+                GameManager.s_Singleton.cesar = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.felix)
+            {
+                GameManager.s_Singleton.felix = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.franklin)
+            {
+                GameManager.s_Singleton.franklin = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.mariLouise)
+            {
+                GameManager.s_Singleton.mariLouise = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.papillon)
+            {
+                GameManager.s_Singleton.papillon = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.chatvinci)
+            {
+                GameManager.s_Singleton.chatVinci = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.pog)
+            {
+                GameManager.s_Singleton.pog = 1;
+            }
+            if (nomAnimaltertiaire == Dialogue_Trigger.nom.gaspard)
+            {
+                GameManager.s_Singleton.gaspard = 1;
+            }
+        }
 
         ////secondaire
 

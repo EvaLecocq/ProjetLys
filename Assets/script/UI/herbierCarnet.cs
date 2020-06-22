@@ -14,6 +14,11 @@ public class herbierCarnet : MonoBehaviour
     public GameObject noteSpecial02;
     public GameObject noteSpecial03;
     public GameObject noteSpecial04;
+    public GameObject noteSpecial05;
+    public GameObject noteSpecial06;
+    public GameObject noteSpecial07;
+    public GameObject noteSpecial08;
+    public GameObject noteSpecial09;
 
     private void Start()
     {
@@ -205,7 +210,42 @@ public class herbierCarnet : MonoBehaviour
         #endregion
 
 
-
+        if(GameManager.s_Singleton.alizar == 1)
+        {
+            noteSpecial01.SetActive(true);
+        }
+        if (GameManager.s_Singleton.cesar == 1)
+        {
+            noteSpecial02.SetActive(true);
+        }
+        if (GameManager.s_Singleton.papillon == 1)
+        {
+            noteSpecial03.SetActive(true);
+        }
+        if (GameManager.s_Singleton.felix == 1)
+        {
+            noteSpecial04.SetActive(true);
+        }
+        if (GameManager.s_Singleton.mariLouise == 1)
+        {
+            noteSpecial05.SetActive(true);
+        }
+        if (GameManager.s_Singleton.franklin == 1)
+        {
+            noteSpecial06.SetActive(true);
+        }
+        if (GameManager.s_Singleton.pog == 1)
+        {
+            noteSpecial07.SetActive(true);
+        }
+        if (GameManager.s_Singleton.chatVinci == 1)
+        {
+            noteSpecial08.SetActive(true);
+        }
+        if (GameManager.s_Singleton.gaspard == 1)
+        {
+            noteSpecial09.SetActive(true);
+        }
 
     }
 }
