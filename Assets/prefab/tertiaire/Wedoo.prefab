@@ -307,7 +307,7 @@ MonoBehaviour:
   dialogueRenard2:
     name: Wedoo
     sentences:
-    - "Mais qu'attends-tu ? le Cerf est l\xE0, va le saluer !"
+    - Les fleurs rares il y en a dans les environs mais faut bien chercher.
   dialogueCerf:
     name: Wedoo
     sentences:

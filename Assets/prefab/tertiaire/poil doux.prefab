@@ -305,8 +305,8 @@ MonoBehaviour:
   dialogueRenard2:
     name: Poil Doux
     sentences:
-    - Le cerf est enfin de retour, je ne comprend pas toute cette effervescence !
-    - "Quand je suis l\xE0 il y a pas autant de bruit !"
+    - "Les pots devant le b\xE2timents, il y a une pancarte dans le Jardin Botanique."
+    - "Cela pourra t'aider \xE0 trouver les fleurs que tu cherches."
   dialogueCerf:
     name: Poil Doux
     sentences:

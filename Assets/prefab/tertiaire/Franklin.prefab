@@ -154,8 +154,9 @@ MonoBehaviour:
   dialogueRenard2:
     name: Franklin
     sentences:
-    - "Il est apparu, le Cerf que nous adorons. Merci d'avoir partag\xE9 ton imagination,
-      cela me donne de nouvelles id\xE9es pour mes chansons."
+    - 'Les fleurs rares que tu cherches, pas loin de moi elles poussent. '
+    - "Et merci d'avoir partag\xE9 ton imagination, cela me donne de nouvelles id\xE9es
+      pour mes chansons."
   dialogueCerf:
     name: Franklin
     sentences:

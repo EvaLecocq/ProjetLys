@@ -290,9 +290,9 @@ MonoBehaviour:
     sentences:
     - "Salut \xE0 toi humain."
     - Cette fois je vais vraiment t'aider, te tourmenter m'ennuie.
-    - "Le Cerf est pr\xE9sent dans son sanctuaire tu as juste \xE0 aller le voir."
-    - "Si le sanctuaire est ferm\xE9e, c'est que tu n'as pas r\xE9solue l'\xE9nigmes
-      des pots."
+    - "Pour trouver les plantes dans les pots il faut bien chercher, ce sont des fleurs
+      rares.\r"
+    - Si le cerf est pas apparu, c'est que tu n'as pas mis les fleurs dans les pots.
   dialogueCerf:
     name: Felix
     sentences:

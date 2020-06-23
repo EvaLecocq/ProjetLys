@@ -162,9 +162,9 @@ MonoBehaviour:
   dialogueRenard2:
     name: Gaspard
     sentences:
-    - "Je te conseille d'aller voir le Cerf sous le b\xE2timent du jardin botanique
-      !"
-    - "Et f\xE9licitation tu pourras bient\xF4t rentrer chez toi."
+    - Il y a un panneau dans le Jardin Botanique qui t'indique les fleurs a mettre
+      dans les pots, je te conseille d'aller voir !
+    - "Le Cerf va peut-\xEAtre apparaitre si tu d\xE9cores le parc."
   dialogueCerf:
     name: Gaspard
     sentences:

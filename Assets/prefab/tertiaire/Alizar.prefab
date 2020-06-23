@@ -237,8 +237,8 @@ MonoBehaviour:
   dialogueRenard2:
     name: Alizar
     sentences:
-    - "Ne va pas voir le Cerf il est dangereux !\r"
-    - Reste ici tu est bien non ?
+    - "Le Cerf pourquoi voir le Cerf !\r"
+    - Reste ici on est mieux, non ?
   dialogueCerf:
     name: Alizar
     sentences:

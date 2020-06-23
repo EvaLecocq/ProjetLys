@@ -184,8 +184,8 @@ MonoBehaviour:
   dialogueRenard2:
     name: Amor
     sentences:
-    - Oh je suis si impatient !
-    - Ce magnifique Cerf va nous rendre visite !!!
+    - "Si tu cherches les fleurs rares pour les pots, il y en derri\xE8re moi."
+    - "D\xE9p\xEAche toi, ce magnifique Cerf va nous rendre visite !!!"
   dialogueCerf:
     name: Amor
     sentences:

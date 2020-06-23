@@ -158,7 +158,8 @@ MonoBehaviour:
   dialogueRenard2:
     name: Chat Vinci
     sentences:
-    - Le cerf est apparu, je vais vite lui demander si il peut poser pour moi !
+    - "Derri\xE8re moi et un peu plus loin vers l'ouest ce trouves des fleurs rares."
+    - Bien sur je m'entoure que des plus belles fleurs.
   dialogueCerf:
     name: Chat Vinci
     sentences:

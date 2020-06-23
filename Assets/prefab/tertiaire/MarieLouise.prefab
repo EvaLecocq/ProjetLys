@@ -163,8 +163,8 @@ MonoBehaviour:
   dialogueRenard2:
     name: Marie-Louise
     sentences:
-    - Le charmant Cerf est sorti, je vais aller le saluer, tu devrais faire pareil,
-      petit bonhomme.
+    - "Oh tu cherches des fleurs pour les pots, si je me souviens bien, il y en a
+      quelque uns ici, je te conseil de faire attention o\xF9 tu mets les pieds."
   dialogueCerf:
     name: Marie-Louise
     sentences:
