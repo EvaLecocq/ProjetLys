@@ -153,20 +153,20 @@ MonoBehaviour:
   dialogueChianChat:
     name: G. Oreilles
     sentences:
-    - Yo !
+    - Salut.
     - Tu cherches toujours le Cerf ?
     - "Tu devrais demander \xE0 quelqu'un de tr\xE8s intelligent."
-    - Genre le Serpent ou le Renard.
+    - Comme le Serpent ou le Renard.
   dialogueRenard2:
     name: G. Oreilles
     sentences:
     - Salut, salut !
-    - Apparamment le Cerf vient aujourd'hui mais faut d'abord remplir les pots de
+    - Apparamment le Cerf vient aujourd'hui, mais faut d'abord remplir les pots de
       fleurs.
   dialogueCerf:
     name: G. Oreilles
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: G. Oreilles
     sentences:
@@ -188,7 +188,7 @@ MonoBehaviour:
   dialogueQueteNonValideChien:
     name: G. Oreilles
     sentences:
-    - Yo !
+    - Salut !
     - "Les fleurs ?! Pourquoi devrais-je m'y int\xE9resser ?"
   dialogueQueteCourse:
     name: 

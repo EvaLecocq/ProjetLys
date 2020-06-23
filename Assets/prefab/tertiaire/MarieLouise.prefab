@@ -126,55 +126,57 @@ MonoBehaviour:
     - "Bonjour, je suis... je suis... Ah oui Marie-Louise, difficile les nom compos\xE9,
       il faut retenir deux noms au lieux d'un, c'est pas une vie.\r"
     - Pardon... Tu cherches le Cerf, le Cerf, ah oui, le Cerf...
-    - "Si j'avais 5 ans de moins, il serais passer dans mes griffes celui-l\xE0."
+    - "Si j'avais 5 ans de moins, il serait pass\xE9 dans mes griffes celui-l\xE0."
   dialogueSanglier:
     name: Marie-Louise
     sentences:
-    - "Tu veux aller aux grands saules, je te le d\xE9conseille mon enfant, une vile
+    - "Tu veux aller aux grands saules ? Je te le d\xE9conseille mon enfant, une vile
       cr\xE9ature y r\xE9side.\r"
-    - Le monde est dangereux c'est temps si.
+    - Le monde est dangereux ces-temps-ci.
   dialogueSerpent:
     name: Marie-Louise
     sentences:
-    - "Le Raton Laveur c'est mon voisin bien sur que je le connais bien.\r"
-    - "Toujours \xE0 rousp\xE9ter et \xE0 r\xE2ler, de mon temps on te laisser pas
-      faire n'importe quoi comme cela.\r"
-    - Il dort le jour et la nuit quand tu peux enfin lui parler il t'ignorerais presque.
+    - "Le Raton Laveur c'est mon voisin, bien sur que je le connais bien.\r"
+    - "Toujours \xE0 rousp\xE9ter et \xE0 r\xE2ler, de mon temps on ne te laissais
+      pas faire n'importe quoi comme cela.\r"
+    - Il dort tout le jour ! Et la nuit, quand tu peux enfin lui parler, il t'ignorerais
+      presque.
   dialogueRatonLaveur:
     name: Marie-Louise
     sentences:
-    - "Rus\xE9, la ruse et la sagesse vient en vieillissent \xE7a je peux te l'affirmer.\r"
+    - "Rus\xE9, la ruse et la sagesse viennent en vieillissant, \xE7a je peux te l'affirmer.\r"
     - "J'ai peut-\xEAtre plus toute ma t\xEAte mais j'ai affront\xE9 la duret\xE9
       de la vie !\r"
-    - "Haha, n'\xE9coute pas toute les b\xEAtises que dit cette vieille Marie-Louise."
+    - "Haha, n'\xE9coute pas toutes les b\xEAtises que dit cette vieille Marie-Louise."
   dialogueRenard:
     name: Marie-Louise
     sentences:
     - "Si tu me dis que le Renard \xE9tait \xE0 sa poursuite, il est peut-\xEAtre
-      d\xE9j\xE0 trop tard pour sauv\xE9 le Lapin.\r"
+      d\xE9j\xE0 trop tard pour sauver le Lapin.\r"
     - "Je ne veux pas te rendre triste, mais j'ai assez v\xE9cu pour savoir de quoi
       est capable ce Renard."
   dialogueChianChat:
     name: Marie-Louise
     sentences:
     - "Oh tu viens me rendre visite !\r"
-    - "C'est tr\xE8s gentil, plus personne me rend visite, avoir de la compagnie \xE7a
-      fait toujours du bien."
+    - "C'est tr\xE8s gentil, plus personne ne me rend visite, avoir de la compagnie
+      \xE7a fait toujours du bien."
   dialogueRenard2:
     name: Marie-Louise
     sentences:
-    - "Oh tu cherches des fleurs pour les pots, si je me souviens bien, il y en a
-      quelque uns ici, je te conseil de faire attention o\xF9 tu mets les pieds."
+    - "Oh tu cherches des fleurs pour les pots. Si je me souviens bien, il y en a
+      quelque uns ici, je te conseille de faire attention o\xF9 tu mets les pattes."
   dialogueCerf:
     name: Marie-Louise
     sentences:
     - Tu viens me dire au revoir avant de partir ?! Comme c'est gentil...
-    - Prend bien soin de toi petit.
+    - Prend bien soin de toi mon petit.
   dialogueQueteNonValideSanglier:
     name: Marie-Louise
     sentences:
-    - "Un troph\xE9e, toujours \xE0 demander des trucs c'est grosse b\xEAte !\r"
-    - "Mais donner lui n'importe quoi, tient des glands \xE7a lui fera l'affaire !\r"
+    - "Un troph\xE9e, toujours \xE0 qu\xE9mander ces grosse b\xEAte !\r"
+    - "Mais donne lui n'importe quoi. Des glands \xE7a fera sans do\xFBte l'affaire
+      !\r"
     - "Non mais vraiment, toujours \xE0 r\xE9clamer ces jeunes."
   dialogueQueteNonValide:
     name: Marie-Louise
@@ -195,7 +197,7 @@ MonoBehaviour:
     name: Marie-Louise
     sentences:
     - "Tu recherches l'hellebore, oh oui quelle belle fleur.\r"
-    - Elle pousse un proche des arbres au nord.
+    - Elle pousse proche des arbres au Nord.
     - "C'est une tr\xE8s belle fleur blanche et violette comme tu le dis."
   dialogueQueteCourse:
     name: 

@@ -554,19 +554,19 @@ MonoBehaviour:
   dialogueQueteNonValideSanglier:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleurs."
+    - "Je suis occup\xE9 vas jouer ailleurs."
   dialogueQueteNonValide:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleurs."
+    - "Je suis occup\xE9 vas jouer ailleurs."
   dialogueQueteNonValide2:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleurs."
+    - "Je suis occup\xE9 vas jouer ailleurs."
   dialogueQueteNonValide3:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleurs."
+    - "Je suis occup\xE9 vas jouer ailleurs."
   dialogueQueteNonValideChien:
     name: Le Renard
     sentences:

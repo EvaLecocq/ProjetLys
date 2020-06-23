@@ -121,11 +121,11 @@ MonoBehaviour:
   dialogueLapin:
     name: Gaspard
     sentences:
-    - "Salut, mon ami, tu as l'air gentil mais aussi un peu na\xEFf. "
-    - "Dans ce parc, la plupart des animaux sont amicaux mais attention, le chat noir
-      prend un malin plaisir \xE0 dire le contraire de la v\xE9rit\xE9. "
+    - "Salut mon ami, tu as l'air gentil mais aussi un peu na\xEFf. "
+    - "Dans ce parc, la plupart des animaux sont amicaux mais attention, le Chat noir
+      prend un malin plaisir \xE0 mentir. "
     - "Prends garde de ne pas tomber dans ses pi\xE8ges..."
-    - "Sinon pour ton histoire, pr\xE8s du pont se trouve le sanglier, tu pourrais
+    - "Sinon pour ton histoire, pr\xE8s du pont se trouve le Sanglier, tu pourrais
       lui demander, mais bon..."
     - "J'essaie de pas trop m'approcher des bestioles pas tr\xE8s affectueuses envers
       les plus petites b\xEAtes."
@@ -133,48 +133,48 @@ MonoBehaviour:
     name: Gaspard
     sentences:
     - "Proche des grands saules, en es-tu s\xFBr ? "
-    - La-bas, il y a l'antre du serpent !
+    - La-bas, il y a l'antre du Serpent !
     - 'On dit qu''il ne faut pas s''en approcher. '
-    - "Si tu y vas fais attention \xE0 toi !"
+    - "Si tu y vas, fais attention \xE0 toi !"
   dialogueSerpent:
     name: Gaspard
     sentences:
-    - "Le serpent t'a aid\xE9 ?! Ce n'est peut \xEAtre pas un mauvais bougre finalement."
-    - Et sinon tu cherches le raton laveur ?
+    - "Le Serpent t'as aid\xE9 ?! Ce n'est peut \xEAtre pas un mauvais bougre finalement."
+    - Et sinon tu cherches le Raton Laveur ?
     - "Il est toujours allong\xE9 pas loin du premier pont. "
     - Il ne parle jamais, seulement quelque fois la nuit, je te conseille d'insister
       un peu.
   dialogueRatonLaveur:
     name: Gaspard
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueRenard:
     name: Gaspard
     sentences:
-    - "Mon ami le lapin est en danger, je ne sais pas o\xF9 il peut \xEAtre. "
+    - "Mon ami le Lapin est en danger, je ne sais pas o\xF9 il peut \xEAtre. "
     - "Je vais t'aider \xE0 le chercher. Vite !"
   dialogueChianChat:
     name: Gaspard
     sentences:
-    - 'C''est trop tard.... le lapin n''est plus de ce monde... '
-    - 'Si jamais je trouve ce renard, il va voir ce qu''il va voir !! '
+    - 'C''est trop tard.... le Lapin n''est plus de ce monde... '
+    - Si jamais je trouve ce Renard, il va m'entendre !
   dialogueRenard2:
     name: Gaspard
     sentences:
-    - Il y a un panneau dans le Jardin Botanique qui t'indique les fleurs a mettre
-      dans les pots, je te conseille d'aller voir !
+    - "Il y a un panneau dans le Jardin Botanique qui t'indique les fleurs \xE0 mettre
+      dans les pots, je te conseille d'aller voir !"
     - "Le Cerf va peut-\xEAtre apparaitre si tu d\xE9cores le parc."
   dialogueCerf:
     name: Gaspard
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Gaspard
     sentences:
-    - "Un troph\xE9e pour le sanglier ? "
+    - "Un troph\xE9e pour le Sanglier ? "
     - "Facile, ils adorent manger des glands ces grosses b\xEAtes ! Il y en a beaucoup
-      tout au nord du parc !"
+      tout au Nord du parc !"
   dialogueQueteNonValide:
     name: Gaspard
     sentences:
@@ -194,7 +194,7 @@ MonoBehaviour:
     name: Gaspard
     sentences:
     - C'est une description bien complexe.
-    - Malheuresement, je ne m'y connais pas tant en fleurs.
+    - Malheuresement, je ne m'y connais pas en fleurs.
   dialogueQueteCourse:
     name: 
     sentences: []

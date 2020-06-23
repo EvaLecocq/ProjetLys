@@ -187,65 +187,65 @@ MonoBehaviour:
     name: Choupinette
     sentences:
     - "Bonjour ! Choupinette, enchant\xE9e !"
-    - "Tu cherches le Cerf pr\xE8s d'un pont ? Non c'est le Raton Laveur qui habite
+    - "Tu cherches le Cerf pr\xE8s d'un pont ? Non, c'est le Raton Laveur qui habite
       l\xE0. "
     - "Il vit \xE0 c\xF4t\xE9 du petit pont sur l'\xEEle,\r il passe ses journ\xE9es
       \xE0 dormir et d\xE9teste \xEAtre r\xE9veill\xE9."
   dialogueSanglier:
     name: Choupinette
     sentences:
-    - 'Comment ? tu cherches le Cerf ? '
+    - 'Comment ? Tu cherches le Cerf ? '
     - "Si c'est pr\xE8s des saules, il doit \xEAtre avec le Serpent."
     - "On dit qu'il est dangeureux, je ne m'en approcherais pas \xE0 ta place."
   dialogueSerpent:
     name: Choupinette
     sentences:
-    - "Le Raton Laveur ? si j'\xE9tais toi je n'irais pas le d\xE9ranger"
+    - "Le Raton Laveur ? Si j'\xE9tais toi je n'irais pas le d\xE9ranger"
   dialogueRatonLaveur:
     name: Choupinette
     sentences:
-    - "Rus\xE9, d\xE9sol\xE9 je vois pas ce que tu veux dire !"
+    - "Rus\xE9 ? D\xE9sol\xE9, je vois pas ce que tu veux dire !"
   dialogueRenard:
     name: Choupinette
     sentences:
     - Salut !
-    - "Le lapin \xE0 fait son terrier proche du portail d'entr\xE9e, il est toujours
-      l\xE0-bas donc va voir !"
+    - "Le Lapin \xE0 fait son terrier \xE0 c\xF4t\xE9 du portail d'entr\xE9e, il est
+      toujours l\xE0-bas, vas-donc voir !"
   dialogueChianChat:
     name: Choupinette
     sentences:
     - Salut !
-    - "Le Cerf ?! Mmh il me semble l'avoir vu au Nord du parc apr\xE8s avoir pass\xE9
+    - "Le Cerf ? Mmh, il me semble l'avoir vu au Nord du parc apr\xE8s avoir pass\xE9
       le dernier pont."
-    - "Mais je ne suis pas s\xFBr..."
+    - "Mais je ne suis pas s\xFBre..."
   dialogueRenard2:
     name: Choupinette
     sentences:
     - Mais qu'attends-tu ?
-    - "Faut r\xE9cup\xE9r\xE9 toutes les fleurs pour faire apparaitre le Cerf."
+    - "Il faut r\xE9cup\xE9rer toutes les fleurs pour faire venir le Cerf."
     - Il y en a un peu plus bas, ou sinon il y a une pancarte dans le Jardin Botanique
-      qui te donne l'emplacement des fleurs rares.
+      qui montre les fleurs rares.
   dialogueCerf:
     name: Choupinette
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Choupinette
     sentences:
     - "De quoi ? Un troph\xE9e pour le Sanglier ?\r\n"
-    - "Je ne vois pas du tout d\xE9sol\xE9."
+    - "Je ne vois pas du tout, d\xE9sol\xE9."
   dialogueQueteNonValide:
     name: Choupinette
     sentences:
-    - "Le Raton Laveur ? si j'\xE9tais toi je n'irais pas le d\xE9ranger"
+    - "Le Raton Laveur ? Si j'\xE9tais toi je n'irais pas le d\xE9ranger"
   dialogueQueteNonValide2:
     name: Choupinette
     sentences:
-    - "Le Raton Laveur ? si j'\xE9tais toi je n'irais pas le d\xE9ranger"
+    - "Le Raton Laveur ? Si j'\xE9tais toi je n'irais pas le d\xE9ranger"
   dialogueQueteNonValide3:
     name: Choupinette
     sentences:
-    - "Le Raton Laveur ? si j'\xE9tais toi je n'irais pas le d\xE9ranger"
+    - "Le Raton Laveur ? Si j'\xE9tais toi je n'irais pas le d\xE9ranger"
   dialogueQueteNonValideChien:
     name: Choupinette
     sentences:

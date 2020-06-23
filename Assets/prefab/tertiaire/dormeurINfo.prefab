@@ -138,14 +138,14 @@ MonoBehaviour:
     name: Dormeur
     sentences:
     - "Salut !\r"
-    - "Si toi aussi tu es fatigu\xE9 d'attendre tu peux te reposer sur un banc, on
+    - "Si toi aussi tu es fatigu\xE9 d'attendre, tu peux te reposer sur un banc, on
       a vraiment l'impression que le temps passe beaucoup plus vite !\r"
     - "Mais pas celui-l\xE0 ! C'est mon banc !"
   dialogueLapin:
     name: Dormeur
     sentences:
     - "Tu cherches le Cerf pr\xE8s d'un pont ?"
-    - "Non c'est mon cousin le Raton Laveur qui habite l\xE0. "
+    - "Non, c'est mon cousin le Raton Laveur qui habite l\xE0. "
     - "Il vit \xE0 c\xF4t\xE9 des jeux d'enfants, il y a fait son habitat."
     - "Il passe ses journ\xE9es \xE0 dormir, faut attendre la nuit pour lui parler,
       et encore..."
@@ -157,37 +157,37 @@ MonoBehaviour:
   dialogueSerpent:
     name: Dormeur
     sentences:
-    - "Le Raton Laveur ? Il se trouve sur l'\xEEle au milieu du lac,\r\npour lui parler
-      il faut \xEAtre insitant, maintenant va."
+    - "Le Raton Laveur ? Il se trouve sur l'\xEEle au milieu du lac,\r pour lui parler
+      il faut \xEAtre insitant, maintenant vas."
   dialogueRatonLaveur:
     name: Dormeur
     sentences:
-    - "Un animal rus\xE9, avec moi bien entendu il y a le Renard."
-    - "Il est quand m\xEAme moins rus\xE9 que moi, \xE7a c'est s\xFBr !"
+    - "Un animal rus\xE9, en plus de moi il y a le Renard."
+    - "Il est quand m\xEAme moins rus\xE9 que moi, pour s\xFBr !"
   dialogueRenard:
     name: Dormeur
     sentences:
-    - Tu cherches le Lapin ? Tu as toujours besoin d'aider toi.
+    - Tu cherches le Lapin ? Tu as toujours besoin d'aide toi.
     - "G\xE9n\xE9reux que je suis, je t'annonce que je ne sais pas o\xF9 est le lapin
-      mais tr\xE8s certainement le chien et chat en savent quelque chose !"
+      mais tr\xE8s certainement le Chien et le Chat en savent quelque chose !"
   dialogueChianChat:
     name: Poil Doux
     sentences:
-    - "Mais si tu ne sais pas quoi faire va parler \xE0 ton animal rus\xE9 et laisse
+    - "Mais si tu ne sais pas quoi faire, va parler \xE0 ton animal rus\xE9 et laisse
       moi !"
   dialogueRenard2:
     name: Poil Doux
     sentences:
-    - Le cerf est enfin de retour, je ne comprend pas toute cette effervescence !
-    - "Quand je suis l\xE0 il y a pas autant de bruit !"
+    - Le Cerf est de retour. Je ne comprend pas toute cette effervescence !
+    - "Quand je suis l\xE0 il n'y a pas autant de bruit !"
   dialogueCerf:
     name: Poil Doux
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Poil Doux
     sentences:
-    - "Mmmmh navr\xE9 mais je ne m'int\xE9resse gu\xE8re \xE0 ce genre de choses."
+    - "Mmmmh navr\xE9, mais je ne m'int\xE9resse pas \xE0 ce genre de choses."
   dialogueQueteNonValide:
     name: Poil Doux
     sentences:

@@ -118,14 +118,13 @@ MonoBehaviour:
   dialogueDebut:
     name: Franklin
     sentences:
-    - ScROunCh... Chalut !
-    - Tu devrais allez voir le Lapin devant le portail.
+    - Celui qui lira cette phrase aura une belle et longue vie.
   dialogueLapin:
     name: Franklin
     sentences:
-    - "Bonjour toi, petit \xEAtre de bois. Je suis Franklin, le chanteur du jardin
+    - "Bonjour toi, petit \xEAtre des bois. Je suis Franklin, le chanteur du jardin
       !"
-    - "Le cerf est pass\xE9 pr\xE8s d'un pont. Si tu veux mon opinion, tu devrais
+    - "Le Cerf est pass\xE9 pr\xE8s d'un pont. Si tu veux mon opinion, tu devrais
       aller ailleurs et demander au sanglier baroudeur."
   dialogueSanglier:
     name: Franklin
@@ -144,17 +143,17 @@ MonoBehaviour:
   dialogueRenard:
     name: Franklin
     sentences:
-    - "Si je me souviens bien, le terrier du lapin se trouve proche du portail, \xE7a
+    - "Si je me souviens bien, le terrier du Lapin se trouve proche du portail, \xE7a
       lui fait un bon petit bercail."
   dialogueChianChat:
     name: Franklin
     sentences:
     - "Si tu es perdu, ne soit pas abattu, le renard est \xE0 l'aff\xFBt, son aide
-      sera la bien venue."
+      sera la bienvenue."
   dialogueRenard2:
     name: Franklin
     sentences:
-    - 'Les fleurs rares que tu cherches, pas loin de moi elles poussent. '
+    - "Les fleurs rares que tu cherches, pr\xE8s de moi elles apparaissent. "
     - "Et merci d'avoir partag\xE9 ton imagination, cela me donne de nouvelles id\xE9es
       pour mes chansons."
   dialogueCerf:
@@ -182,7 +181,7 @@ MonoBehaviour:
     name: Franklin
     sentences:
     - La fleur que tu cherches est l'hellebore, elle se trouve aux abords des arbres
-      de la partie nord.
+      de la partie Nord.
   dialogueQueteCourse:
     name: 
     sentences: []

@@ -264,13 +264,13 @@ MonoBehaviour:
   dialogueDebut:
     name: Poil Doux
     sentences:
-    - "Hello !!! Tu es un dr\xF4le d'animal toi."
-    - Tu devrais allez voir le Lapin devant le portail.
+    - "Hey ! Tu es un dr\xF4le d'animal toi."
+    - Tu devrais aller voir le Lapin devant le portail.
   dialogueLapin:
     name: Poil Doux
     sentences:
-    - "Hey !!! Tu es un dr\xF4le d'animal toi. "
-    - "Je suis un super raton laveur du nom de Poil-Doux ! \r\n"
+    - "Hey ! Tu es un dr\xF4le d'animal toi. "
+    - "Je suis un super Raton Laveur du nom de Poil-Doux ! \r\n"
     - "Tu cherches le Cerf pr\xE8s d'un pont ? Il y a mon cousin le Raton Laveur qui
       habite l\xE0. \r"
     - "Il vit \xE0 c\xF4t\xE9 des jeux d'enfants, il y a fait son habitat.\r"
@@ -279,42 +279,41 @@ MonoBehaviour:
   dialogueSanglier:
     name: Poil Doux
     sentences:
-    - "Pr\xE8s des saules ? Je n'ai pas le temps l\xE0, je suis tr\xE8s occup\xE9
+    - "Pr\xE8s des saules ? Je n'ai pas vraiment le temps l\xE0, je suis tr\xE8s occup\xE9
       !"
   dialogueSerpent:
     name: Poil Doux
     sentences:
-    - "Le Raton Laveur ? Il se trouve sur l'\xEEle au milieu du lac,\r\npour lui parler
-      il faut \xEAtre insitant, maintenant va."
+    - "Le Raton Laveur ? Il se trouve sur l'\xEEle au milieu du lac. Pour lui parler
+      il faut \xEAtre insitant, maintenant vas."
   dialogueRatonLaveur:
     name: Poil Doux
     sentences:
-    - "Un animal rus\xE9, avec moi bien entendu il y a le Renard."
-    - "Il est quand m\xEAme moins rus\xE9 que moi, \xE7a c'est s\xFBr !"
+    - "Un animal rus\xE9, \xE0 part moi il y a le Renard."
+    - "Il est quand m\xEAme moins rus\xE9 que moi, pour s\xFBr !"
   dialogueRenard:
     name: Poil Doux
     sentences:
-    - Tu cherches le Lapin ? Tu as toujours besoin d'aider toi.
-    - "G\xE9n\xE9reux que je suis, je t'annonce que je ne sais pas o\xF9 est le lapin
-      mais tr\xE8s certainement le chien et chat en savent quelque chose !"
+    - Tu cherches le Lapin ? Tu as toujours besoin d'aide toi.
+    - "G\xE9n\xE9reux que je suis, je t'annonce que je ne sais pas o\xF9 est le Lapin.
+      Par contre le Chien et le Chat en savent certainement quelque chose !"
   dialogueChianChat:
     name: Poil Doux
     sentences:
-    - "Mais si tu ne sais pas quoi faire va parler \xE0 ton animal rus\xE9 et laisse
-      moi !"
+    - "Si tu t'ennuies va parler \xE0 ton animal rus\xE9 et laisse moi !"
   dialogueRenard2:
     name: Poil Doux
     sentences:
-    - "Les pots devant le b\xE2timents, il y a une pancarte dans le Jardin Botanique."
+    - "Les pots devant le b\xE2timent, il y a une pancarte dans le Jardin Botanique."
     - "Cela pourra t'aider \xE0 trouver les fleurs que tu cherches."
   dialogueCerf:
     name: Poil Doux
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Poil Doux
     sentences:
-    - "Mmmmh navr\xE9 mais je ne m'int\xE9resse gu\xE8re \xE0 ce genre de choses."
+    - "Mmmmh, navr\xE9, mais je ne m'int\xE9resse pas \xE0 ce genre de choses."
   dialogueQueteNonValide:
     name: Poil Doux
     sentences:

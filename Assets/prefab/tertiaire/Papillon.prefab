@@ -124,11 +124,11 @@ MonoBehaviour:
     name: M. Papillon
     sentences:
     - Salut ! Salut ! On m'appelle Papillon.
-    - 'Comment !? Un cerf ? Un pont ? '
-    - "Y'a plein de ponts ici ! Y'a m\xEAme des oiseaux qui nagent dessous."
-    - "Ce sont mes amis ! Je leurs court apr\xE8s et ils battent des ailes ! J'adore
+    - 'Comment !? Le Cerf ? Un pont ? '
+    - "Y'a plein de ponts ici ! Y'a m\xEAme des gros oiseaux qui nagent dessous."
+    - "Ce sont mes amis ! Je leur court apr\xE8s et ils battent des ailes ! J'adore
       les ponts !"
-    - Le cerf ? Non, pas vu !
+    - Le Cerf ? Non, pas vu !
     - Mais les ponts j'adore !
   dialogueSanglier:
     name: M. Papillon
@@ -185,12 +185,10 @@ MonoBehaviour:
       !"
     - "Certains de mes amis font leurs nids \xE0 l'int\xE9rieur ! C'est pratique,
       parce que je peux les surprendre pour ensuite leurs courir apr\xE8s !"
-    - "C'est pratique, parce que je peux les surprendre pour ensuite leurs courir
-      apr\xE8s !"
   dialogueCerf:
     name: M. Papillon
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: M. Papillon
     sentences:
@@ -198,7 +196,6 @@ MonoBehaviour:
     - "Un troph\xE9e ? Oh je sais !"
     - Des os !!! Des os !!!
     - "Mes amis les oiseaux m'aident \xE0 en trouver !"
-    - Je suis un bon chien !
   dialogueQueteNonValide:
     name: M. Papillon
     sentences:

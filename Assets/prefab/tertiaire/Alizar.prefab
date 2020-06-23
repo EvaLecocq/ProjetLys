@@ -203,14 +203,14 @@ MonoBehaviour:
     sentences:
     - Ssssalut, Alizar je ssuiiiss.
     - SsssSSSss que me veux-tu ?
-    - "Le Cerf ? Il n'est pas pr\xE8s des ponts, ce Lapin t'a menti tu devrais te
+    - "Le Cerf ? Il n'est pas pr\xE8s des ponts, ce Lapin t'as menti. Tu devrais te
       m\xE9fier de lui.\r"
     - Le Cerf est devant le batiment du parc.
   dialogueSanglier:
     name: Alizar
     sentences:
     - "Proche des saules !? C'est la que vit mon comp\xE8re Serpent.\r"
-    - "Il est dangereux pour toi, tu doit te fier qu'\xE0 moi.\r Ce que tu cherche
+    - "Il est dangereux pour toi, tu ne doit te fier qu'\xE0 moi.\r Ce que tu cherches
       se trouve tout au Nord apr\xE8s le pont."
   dialogueSerpent:
     name: Alizar
@@ -222,27 +222,27 @@ MonoBehaviour:
   dialogueRatonLaveur:
     name: Alizar
     sentences:
-    - "SsssSSSs sssS rus\xE9 il y en \xE0 plein\r"
-    - "Tu devrait parler \xE0 tout les chats c'est le seul moyen d'y arriver."
+    - "SsssSSSs sssS des animaux rus\xE9s, il y en a plein\r"
+    - "Tu devrais parler \xE0 tous les chats. C'est le seul moyen d'y arriver."
   dialogueRenard:
     name: Alizar
     sentences:
-    - Le Lapin est un menteur ne te soucis pas de lui SsssSSSSs.
+    - Le Lapin est un menteur, ne te soucis pas de lui SsssSSSSs.
   dialogueChianChat:
     name: Alizar
     sentences:
     - "Oui ssssSSSsss ?\r"
-    - "Je pense que M. papillon, le brave chien est le seul \xE0 savoir.\r"
+    - "Je pense que M. Papillon, le brave chien, est le seul \xE0 savoir.\r"
     - "Tu le trouvera de l'autre cot\xE9 du lac au Nord."
   dialogueRenard2:
     name: Alizar
     sentences:
-    - "Le Cerf pourquoi voir le Cerf !\r"
-    - Reste ici on est mieux, non ?
+    - "Le Cerf ? Pourquoi voir le Cerf !\r"
+    - Reste ici ! On est mieux, non ?
   dialogueCerf:
     name: Alizar
     sentences:
-    - Reste ici tu est bien non ?
+    - Reste ici ! On est bien, non ?
   dialogueQueteNonValideSanglier:
     name: Alizar
     sentences:
@@ -266,8 +266,8 @@ MonoBehaviour:
   dialogueQueteNonValideChien:
     name: Alizar
     sentences:
-    - "SsssSSSss les fleurs je m'y connais ouiii.\r"
-    - "Le Chat et le Chien veulent sans aucun doute une Euphorbe Reveille Matin.\r"
+    - "SsssSSSss les fleurs je m'y connais oui.\r"
+    - "Le Chat et le Chien veulent sans aucun doute une Euphorbe R\xE9veille-Matin.\r"
     - "Bonne chance \xE0 toi sssssSs."
   dialogueQueteCourse:
     name: 

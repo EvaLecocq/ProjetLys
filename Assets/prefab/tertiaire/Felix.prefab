@@ -255,7 +255,7 @@ MonoBehaviour:
   dialogueSanglier:
     name: Felix
     sentences:
-    - "Un serpent ? Il y en a un proche du b\xE2timent principal !"
+    - "Un Serpent ? Il y en a un aux alentours du b\xE2timent principal !"
   dialogueSerpent:
     name: Felix
     sentences:
@@ -269,12 +269,12 @@ MonoBehaviour:
     - "Tu cherches un animal rus\xE9 ? il est juste devant toi !"
     - "H\xE9 h\xE9 je suis dr\xF4le, nan ?"
     - "Enfin bref, ton animal rus\xE9 est sans doute \xE0 l'Est du parc, ou peut \xEAtre
-      pas j'en sais rien, apr\xE8s tout je ne suis qu'un chat !"
+      pas. Je n'en sais rien, apr\xE8s tout je ne suis qu'un chat !"
   dialogueRenard:
     name: Felix
     sentences:
     - "Mmmhh voil\xE0 l'humain."
-    - En quoi ma personne peut t'aider ?
+    - En quoi puis-je t'aider ?
     - Ton ami le Lapin ?
     - "Je lui aurais bien couru apr\xE8s mais on dirait que le Renard joue avec lui."
     - "Tu devrais regarder \xE0 la sortie du parc."
@@ -283,7 +283,7 @@ MonoBehaviour:
     sentences:
     - "Roooaaaaarrr que je suis fatigu\xE9 !"
     - Que diable me veux-tu ?
-    - "Le cerf ? je ne sais pas mais va demander \xE0 quelqu'un de plus rus\xE9..."
+    - "Le Cerf ? Je ne sais pas mais va demander \xE0 quelqu'un de plus rus\xE9..."
     - Hmmm vers le Sud cette fois, j'aime bien le sud, il fait chaud au sud.
   dialogueRenard2:
     name: Felix
@@ -292,11 +292,11 @@ MonoBehaviour:
     - Cette fois je vais vraiment t'aider, te tourmenter m'ennuie.
     - "Pour trouver les plantes dans les pots il faut bien chercher, ce sont des fleurs
       rares.\r"
-    - Si le cerf est pas apparu, c'est que tu n'as pas mis les fleurs dans les pots.
+    - Si le Cerf n'est pas apparu, c'est que tu n'as pas mis les fleurs dans les pots.
   dialogueCerf:
     name: Felix
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Felix
     sentences:

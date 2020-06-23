@@ -276,7 +276,7 @@ MonoBehaviour:
   dialogueSanglier:
     name: Wedoo
     sentences:
-    - "Pr\xE8s des saules ? C'est la o\xF9 vit Le Serpent ? on dit qu'il est dangeureux,
+    - "Pr\xE8s des saules ? C'est la que vit Le Serpent ? on dit qu'il est dangeureux,
       ne t'en approche pas"
   dialogueSerpent:
     name: Wedoo
@@ -290,7 +290,7 @@ MonoBehaviour:
     sentences:
     - Bonjour, que veux tu ?
     - "Tu cherches un animal rus\xE9 et malin ? "
-    - "Le Renard ! c'est \xE7a d\xE9finition m\xEAme !"
+    - "Le Renard ! C'est sa d\xE9finition m\xEAme !"
   dialogueRenard:
     name: Wedoo
     sentences:
@@ -300,9 +300,9 @@ MonoBehaviour:
   dialogueChianChat:
     name: Wedoo
     sentences:
-    - "Tu recherches toujours le cerf, pour cela va voir le renard, m\xEAme si cela
+    - "Tu recherches toujours le Cerf, pour cela va voir le Renard, m\xEAme si cela
       ne m'enchante pas. "
-    - "Il est toujours proche du cerf, il sera s\xFBrement t'aider mieux que moi.\r\n"
+    - "Il est toujours proche du Cerf, il sera s\xFBrement t'aider mieux que moi.\r\n"
     - "Mais fais attention \xE0 lui."
   dialogueRenard2:
     name: Wedoo
@@ -311,7 +311,7 @@ MonoBehaviour:
   dialogueCerf:
     name: Wedoo
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Wedoo
     sentences:

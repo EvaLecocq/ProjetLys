@@ -124,7 +124,7 @@ MonoBehaviour:
     name: Pog
     sentences:
     - ScROunCh... Chalut ! Mon nom ch'est Pog !
-    - "Tu cherche le Cherf ? Pr\xE8s d'un pont ?"
+    - "Tu cherches le Cherf ? Pr\xE8s d'un pont ?"
     - Ch'sais pas, en tout cas il y a pas de pont part ichi !
   dialogueSanglier:
     name: Pog
@@ -142,7 +142,7 @@ MonoBehaviour:
     name: Pog
     sentences:
     - Chalut !
-    - "Tu cherches un animal ruch\xE9 ... mmmh ..."
+    - "Tu cherches un animal ruch\xE9... mmmh..."
     - "Je penche que ch'est le Renard mais je chuis pas trop ch\xFBr."
   dialogueRenard:
     name: Pog
@@ -164,11 +164,11 @@ MonoBehaviour:
   dialogueCerf:
     name: Pog
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Fonche au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Pog
     sentences:
-    - "Arrrhh mon chopain cherche un troph\xE9e !"
+    - "Arrrhh mon copain cherche un troph\xE9e !"
     - "Offre lui \xE0 mancher ch'est ce qu'on aime le pluch nous les changliers."
   dialogueQueteNonValide:
     name: Pog

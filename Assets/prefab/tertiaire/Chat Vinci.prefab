@@ -120,70 +120,70 @@ MonoBehaviour:
     name: Chat Vinci
     sentences:
     - 'Mon nom est Felix, et c''est tout ce que tu dois savoir pour le moment. '
-    - "Au revoir mon ch\xE8re humain !"
+    - Au revoir mon cher humain !
   dialogueLapin:
     name: Chat Vinci
     sentences:
     - "Bien le bonjour, je suis le chat artiste, Le Chat Vinci !\r"
-    - Il y a bien un pont ici, mais aucun cerf n'est venu.
-    - Va plus a l'est on pourra mieux te renseigner.
+    - Il y a bien un pont ici, mais aucun Cerf n'est venu.
+    - "Vas plus \xE0 l'est, on pourra mieux te renseigner."
   dialogueSanglier:
     name: Chat Vinci
     sentences:
-    - "Les grands saules quel magnifique endroit, le grand batiment qui s'\xE9l\xE8ve
-      derri\xE8re et splandide et imposant. "
-    - "Mais on dit que l'endroit et mal fr\xE9quent\xE9, haa quel dommage !"
+    - "Les grands saules, quel magnifique endroit. Le grand batiment qui s'\xE9l\xE8ve
+      derri\xE8re est splendide et imposant. "
+    - "Mais on dit que l'endroit et mal fr\xE9quent\xE9, quel dommage !"
   dialogueSerpent:
     name: Chat Vinci
     sentences:
-    - 'Le raton laveur j''ai entendu des echos de cette animal, il parait qu''il est
-      grognon pas digne d''un artiste. '
+    - 'Le Raton Laveur ? J''ai entendu des echos de cet animal, il parait qu''il est
+      grognon et pas digne d''un artiste. '
   dialogueRatonLaveur:
     name: Chat Vinci
     sentences:
     - "Tu parles sans doute de mon mod\xE8le pr\xE9f\xE9r\xE9 lors de mes s\xE9ances
-      de croquis, je parle bien sur du renard, quel charme il d\xE9gage, et quel regard
+      de croquis, je parle bien sur du Renard, quel charme il d\xE9gage, et ce regard
       fourbe..."
   dialogueRenard:
     name: Chat Vinci
     sentences:
-    - Le lapin ! Mon cher je suis beaucoup trop loin pour pouvoir savoir que fait
-      cette adorable boule de poil au quotidien.
+    - "Le Lapin ? Voyons mon cher, je suis beaucoup trop occup\xE9 pour savoir ce
+      que fait cette adorable boule de poil au quotidien."
   dialogueChianChat:
     name: Chat Vinci
     sentences:
-    - "Comme je te l'ai dit le renard est un mod\xE8le et pas que pour mes dessins."
-    - Dans le parc quand on sait pas quoi faire, on demande toujours conseil au renard,
+    - "Comme je te l'ai dit le Renard est un mod\xE8le et pas que pour mes dessins."
+    - Dans le parc quand on sait pas quoi faire, on demande toujours conseil au Renard,
       tu devrais essayer.
   dialogueRenard2:
     name: Chat Vinci
     sentences:
-    - "Derri\xE8re moi et un peu plus loin vers l'ouest ce trouves des fleurs rares."
-    - Bien sur je m'entoure que des plus belles fleurs.
+    - "Derri\xE8re moi et un peu plus loin vers l'ouest se trouvent des fleurs rares."
+    - Car je sais m'entourer de belles choses.
   dialogueCerf:
     name: Chat Vinci
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Chat Vinci
     sentences:
-    - Cherche et tu trouveras des merveilles, les artistes savent toujours chercher
-      la ou il faut !
+    - "Cherches et tu trouveras des merveilles. Les artistes savent toujours chercher
+      l\xE0 o\xF9 il faut !"
   dialogueQueteNonValide:
     name: Chat Vinci
     sentences:
-    - 'Le raton laveur j''ai entendu des echos de cette animal, il parait qu''il est
-      grognon pas digne d''un artiste. '
+    - 'Le Raton Laveur ? J''ai entendu des echos de cet animal, il parait qu''il est
+      grognon et pas digne d''un artiste. '
   dialogueQueteNonValide2:
     name: Chat Vinci
     sentences:
-    - 'Le raton laveur j''ai entendu des echos de cette animal, il parait qu''il est
-      grognon pas digne d''un artiste. '
+    - 'Le Raton Laveur ? J''ai entendu des echos de cet animal, il parait qu''il est
+      grognon et pas digne d''un artiste. '
   dialogueQueteNonValide3:
     name: Chat Vinci
     sentences:
-    - 'Le raton laveur j''ai entendu des echos de cette animal, il parait qu''il est
-      grognon pas digne d''un artiste. '
+    - 'Le Raton Laveur ? J''ai entendu des echos de cet animal, il parait qu''il est
+      grognon et pas digne d''un artiste. '
   dialogueQueteNonValideChien:
     name: Chat Vinci
     sentences:

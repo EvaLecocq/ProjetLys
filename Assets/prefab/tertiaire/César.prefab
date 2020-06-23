@@ -512,41 +512,42 @@ MonoBehaviour:
   dialogueDebut:
     name: "C\xE9sar"
     sentences:
-    - "Bonjour, C\xE9sar te salue.\r"
-    - "C\xE9sar sait ce que tu cherche, le chemin indique clairement le deuxi\xE8me
-      ponts apr\xE8s l'aire de jeu.\r\n"
+    - "C\xE9sar te salue.\r"
+    - "C\xE9sar sait ce que tu cherches, le chemin te m\xE8neras au deuxi\xE8me pont
+      apr\xE8s l'aire de jeu.\r"
     - Le Cerf n'y est pas mais le Sanglier t'aidera...
   dialogueLapin:
     name: "C\xE9sar"
     sentences:
-    - "Bonjour, C\xE9sar te salue.\r"
-    - "C\xE9sar sait ce que tu cherche, le chemin indique clairement le deuxi\xE8me
-      pont apr\xE8s l'aire de jeu.\r"
+    - "C\xE9sar te salue.\r"
+    - "C\xE9sar sait ce que tu cherches, le chemin te m\xE8neras au deuxi\xE8me pont
+      apr\xE8s l'aire de jeu.\r"
     - Le Cerf n'y est pas mais le Sanglier t'aidera...
   dialogueSanglier:
     name: "C\xE9sar"
     sentences:
     - "Oui ?\r"
     - "Proche des grands saules, tu y verras ma\xEEtre Serpent.\r"
-    - "Cela se trouve pr\xE8s du grand batiment de ce parc.\r"
+    - "Cet endroit se trouve pr\xE8s du grand b\xE2timent de ce parc.\r"
     - "Il te donnera la solution \xE0 tes questions."
   dialogueSerpent:
     name: "C\xE9sar"
     sentences:
-    - "Le Raton Laveur s'\xE9veille que la nuit, tu devras le rencontrer sous la lune.\r"
-    - "Ou est-il ?\r"
-    - Avec le Sanglier naturellement.
+    - "Le Raton Laveur ne s'\xE9veille que la nuit, tu devras le rencontrer sous la
+      lune.\r"
+    - "O\xF9 est-il ?\r"
+    - Avec le Sanglier, naturellement.
   dialogueRatonLaveur:
     name: "C\xE9sar"
     sentences:
-    - "Rus\xE9 cela ne correspond pas \xE0 C\xE9sar.\r"
+    - "Rus\xE9 ? Cela ne correspond pas \xE0 C\xE9sar.\r"
     - "C\xE9sar est au dessus de tout cela...\r"
-    - Ton animal, proche du batiment tu le trouvera.
+    - "Ton animal, pr\xE8s du batiment tu le trouveras."
   dialogueRenard:
     name: "C\xE9sar"
     sentences:
-    - "Le sort du Lapin est scell\xE9 et ce d\xE8s que tu as parl\xE9 au Renard.\r\n"
-    - "Le Chien et le Chat se trouvent \xE0 l'entr\xE9e, questionne les et tu avanceras..."
+    - "Le sort du Lapin est scell\xE9, et ce d\xE8s que tu as parl\xE9 au Renard.\r\n"
+    - "Le Chien et le Chat se trouvent \xE0 l'entr\xE9e, questionnes-les et tu avanceras..."
   dialogueChianChat:
     name: "C\xE9sar"
     sentences:
@@ -559,30 +560,33 @@ MonoBehaviour:
   dialogueCerf:
     name: "C\xE9sar"
     sentences:
-    - "Vers le portail ton chemin s'arr\xEAte, prend soi de toi humain !"
+    - "Vers le portail ton chemin s'arr\xEAte, prend soi de toi !"
   dialogueQueteNonValideSanglier:
     name: "C\xE9sar"
     sentences:
-    - "Tu cherche un troph\xE9e, cela C\xE9sar le sait d\xE9j\xE0.\r"
-    - "Sanglier n'a qu'un d\xE9sir, et se sont des glands.\r"
-    - "Tu trouvera ce que tu cherche au Nord pr\xE8s des grands arbres.\r"
+    - "Tu cherches un troph\xE9e, cela C\xE9sar le sait d\xE9j\xE0.\r"
+    - "L'unique tr\xE9sor de Sanglier sont les glands.\r"
+    - "Tu trouveras ce que tu cherches au Nord, pr\xE8s des grands arbres.\r"
   dialogueQueteNonValide:
     name: "C\xE9sar"
     sentences:
-    - "Le Raton Laveur s'\xE9veille que la nuit, tu devras le rencontrer sous la lune.\r"
+    - "Le Raton Laveur ne s'\xE9veille que la nuit, tu devras le rencontrer sous la
+      lune.\r"
   dialogueQueteNonValide2:
     name: "C\xE9sar"
     sentences:
-    - "Le Raton Laveur s'\xE9veille que la nuit, tu devras le rencontrer sous la lune.\r"
+    - "Le Raton Laveur ne s'\xE9veille que la nuit, tu devras le rencontrer sous la
+      lune.\r"
   dialogueQueteNonValide3:
     name: "C\xE9sar"
     sentences:
-    - "Le Raton Laveur s'\xE9veille que la nuit, tu devras le rencontrer sous la lune.\r"
+    - "Le Raton Laveur ne s'\xE9veille que la nuit, tu devras le rencontrer sous la
+      lune.\r"
   dialogueQueteNonValideChien:
     name: "C\xE9sar"
     sentences:
     - "Une devinette pour C\xE9sar ?\r"
-    - "Le chat est joueur...\r"
+    - "Le Chat est joueur...\r"
     - "Hellebore dit C\xE9sar, elle pousse vers les ponts."
   dialogueQueteCourse:
     name: 

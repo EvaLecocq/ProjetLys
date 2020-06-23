@@ -138,22 +138,22 @@ MonoBehaviour:
     name: Amor
     sentences:
     - "Oh, enchant\xE9 petit bonhomme."
-    - Tu devrais allez voir le Lapin devant le portail.
+    - Tu devrais aller voir le Lapin devant le portail.
   dialogueLapin:
     name: Amor
     sentences:
     - "Oh, enchant\xE9 petit bonhomme."
     - Je me nomme Amor.
     - Mmmmh tu recherches le beau et grand Cerf ?
-    - "Va voir vers le lac, je pense que cet Apollon de Sanglier sait o\xF9 il se
-      terre."
+    - "Vas voir vers le lac, je pense que cet apollon de Sanglier sait o\xF9 il se
+      trouve."
   dialogueSanglier:
     name: Amor
     sentences:
     - Que puis-je faire pour toi ?
-    - "Comment ? Le Cerf seraient proches des grands saules ? Cela m'\xE9tonnerait
-      beaucoup de sa part."
-    - "Cherche plut\xF4t derri\xE8re le grand batiment du parc, c'est l\xE0 qu'il
+    - "Comment ? Le Cerf serait proche des grands saules ? Cela m'\xE9tonnerait beaucoup
+      de sa part."
+    - "Cherche plut\xF4t derri\xE8re le grand b\xE2timent du parc, c'est l\xE0 qu'il
       se trouve en g\xE9n\xE9ral."
   dialogueSerpent:
     name: Amor
@@ -166,57 +166,57 @@ MonoBehaviour:
   dialogueRatonLaveur:
     name: Amor
     sentences:
-    - Salut jeune homme !
+    - Salut petit bonhomme !
     - "Tu cherches un animal rus\xE9 ?"
     - "Cela doit \xEAtre le Chat, si beau et \xE9l\xE9gant !"
   dialogueRenard:
     name: Amor
     sentences:
-    - Oh, salut !
-    - Le resplendissant lapin ? cela fait longtemps que je ne l'ai pas vu.
+    - Salut petit bonhomme !
+    - Le resplendissant Lapin ? Cela fait longtemps que je ne l'ai pas vu.
     - "Je ne peux pas t'aider, navr\xE9."
   dialogueChianChat:
     name: Amor
     sentences:
-    - "Toujours \xE0 la recherche du cerf ?"
+    - "Toujours \xE0 la recherche du Cerf ?"
     - "Tu es s\xFBr que tu as bien parl\xE9 au Chat ?"
-    - "Il est tr\xE8s intelligent il pourrait t'aider."
+    - "Il est tr\xE8s intelligent et pourrait t'aider."
   dialogueRenard2:
     name: Amor
     sentences:
     - "Si tu cherches les fleurs rares pour les pots, il y en derri\xE8re moi."
-    - "D\xE9p\xEAche toi, ce magnifique Cerf va nous rendre visite !!!"
+    - "D\xE9p\xEAches toi, ce magnifique Cerf va nous rendre visite !!!"
   dialogueCerf:
     name: Amor
     sentences:
-    - "Va au portail tu as la cl\xE9 !"
+    - "Vas au portail, tu as la cl\xE9 !"
   dialogueQueteNonValideSanglier:
     name: Amor
     sentences:
     - "Oh cette beaut\xE9 veut un troph\xE9e ?"
-    - Eh bien une rose ferait bien l'affaire !
+    - Eh bien une rose devrait faire l'affaire !
   dialogueQueteNonValide:
     name: Amor
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueQueteNonValide2:
     name: Amor
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueQueteNonValide3:
     name: Amor
     sentences:
-    - "On dit souvent que le renard est associ\xE9 \xE0 la ruse, je pense que c'est
+    - "On dit souvent que le Renard est associ\xE9 \xE0 la ruse, je pense que c'est
       une bonne piste."
   dialogueQueteNonValideChien:
     name: Amor
     sentences:
     - Salutation.
     - "Une fleur de cette qualit\xE9 ?"
-    - mmmh...
-    - "Je dirais que c'est une Hellebore que cherche le Chien et le Chat. D'ailleurs
+    - Mmmh...
+    - "Je dirais que c'est une Hellebore que cherchent le Chien et le Chat. D'ailleurs
       tu peux en trouver une derri\xE8re moi."
   dialogueQueteCourse:
     name: 

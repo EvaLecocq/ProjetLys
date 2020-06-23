@@ -161,7 +161,7 @@ Transform:
   m_Children:
   - {fileID: 3919427490673423411}
   - {fileID: 6046959346785804105}
-  - {fileID: 5385925245520385191}
+  - {fileID: 926054952917337846}
   - {fileID: 9148220335156300257}
   - {fileID: 5321977866891661152}
   m_Father: {fileID: 0}
@@ -250,37 +250,38 @@ MonoBehaviour:
     name: Agent P.
     sentences:
     - Bonjour !
-    - "Tu cherches un animal pr\xE8s d'un pont ? \xE7a doit \xEAtre le sanglier, il
+    - "Tu cherches un animal pr\xE8s d'un pont ? \xC7a doit \xEAtre le Sanglier, il
       passe son temps \xE0 se battre avec tout ceux qu'il croise."
-    - "Il vit au nord du parc apr\xE8s avoir travers\xE9 l'\xEEle centrale du lac."
+    - "Il vit au nord du parc, tu le trouveras apr\xE8s avoir travers\xE9 l'\xEEle
+      centrale du lac."
   dialogueSanglier:
     name: Agent P.
     sentences:
-    - Le serpent, on dit qu'il est dangeureux, ne t'y en approche pas.
+    - Le Serpent ? On dit qu'il est dangeureux, ne t'en approche pas.
   dialogueSerpent:
     name: Agent P.
     sentences:
     - Bonjour, que veux tu ?
-    - "Le raton laveur ? Oui il d\xE9teste \xEAtre r\xE9veill\xE9 mais si tu le secoues
-      assez de fois,\r il va forc\xE9ment te r\xE9pondre mais fait gaffe \xE0 sa col\xE8re. "
+    - "Le Raton Laveur ? Oui, il d\xE9teste \xEAtre r\xE9veill\xE9. Mais si tu le
+      secoues suffisamment,\r il va te r\xE9pondre. Mais m\xE9fies toi de sa col\xE8re. "
     - Il fait peur...
   dialogueRatonLaveur:
     name: Agent P.
     sentences:
     - Salut !
     - "Tu cherches un animal rus\xE9 et malin ? "
-    - "Le raton laveur est clairement l'animal le plus rus\xE9 du parc."
+    - "Le Raton Laveur est clairement l'animal le plus rus\xE9 du parc."
     - "Il dort toute la journ\xE9e mais la nuit il disparait !"
     - "Comme il a un pelage fonc\xE9 on ne le voit plus, \rou du moins moi je ne le
       vois plus."
   dialogueRenard:
     name: Agent P.
     sentences:
-    - "Coucou toi, le lapin ? non je ne l'ai pas vu, d\xE9sol\xE9."
+    - "Coucou toi ! Le Lapin ? Non je ne l'ai pas vu, d\xE9sol\xE9."
   dialogueChianChat:
     name: Agent P.
     sentences:
-    - "Le cerf \xE0 moi aussi \xE7a fait longtemps que je l'ai pas vu."
+    - "Le Cerf ? Moi aussi \xE7a fait longtemps que je l'ai pas vu."
   dialogueRenard2:
     name: Agent P.
     sentences:
@@ -288,25 +289,25 @@ MonoBehaviour:
   dialogueCerf:
     name: Agent P.
     sentences:
-    - Eh bien mission accomplie, tu devrais aller voir le Cerf.
+    - Eh bien, mission accomplie ! Tu devrais aller voir le Cerf.
   dialogueQueteNonValideSanglier:
     name: Agent P.
     sentences:
     - Au rapport !
-    - "Un troph\xE9e pour le sanglier ?! Pff  un d\xE9chet fera l'affaire !"
+    - "Un troph\xE9e pour le Sanglier ?! Pfff, un d\xE9chet fera l'affaire !"
   dialogueQueteNonValide:
     name: Agent P.
     sentences:
-    - Le raton laveur ne repond pas ?
-    - "Peut \xEAtre qu'il veut rester tranquille"
+    - Le Raton Laveur ne repond pas ?
+    - "Peut-\xEAtre qu'il veut rester tranquille"
   dialogueQueteNonValide2:
     name: Agent P.
     sentences:
-    - Si il ne repond pas c'est qu'il ne veut pas te parler.
+    - Si il ne repond pas, c'est qu'il ne veut pas te parler.
   dialogueQueteNonValide3:
     name: Agent P.
     sentences:
-    - "Je ne peut pas t'aider plus d\xE9sol\xE9."
+    - "Je ne peut pas t'aider davantage, d\xE9sol\xE9."
   dialogueQueteNonValideChien:
     name: Agent P.
     sentences:
@@ -348,6 +349,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &4893158432993330583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5385925245520385191}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5385925245520385191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
+    type: 3}
+  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893158432993330583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 926054952917337846}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5446333891517678187
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,6 +550,38 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
+--- !u!1 &7902754561018236952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926054952917337846}
+  m_Layer: 0
+  m_Name: Lapin (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926054952917337846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902754561018236952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3695897784846755541}
+  - {fileID: 5385925245520385191}
+  m_Father: {fileID: 3937415897264594057}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8832183602505816861
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +649,39 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 5633164469481776728}
+--- !u!1 &8999880499364882100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3960117040185250916, guid: e69ea2be7d39b324abade40c73c3d686,
+    type: 3}
+  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3695897784846755541}
+  - component: {fileID: 5848419598321293612}
+  - component: {fileID: 2355110236171069264}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3695897784846755541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 5337001773325185744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999880499364882100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 926054952917337846}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &5848419598321293612
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -716,15 +813,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69ea2be7d39b324abade40c73c3d686, type: 3}
---- !u!1 &8999880499364882100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3960117040185250916, guid: e69ea2be7d39b324abade40c73c3d686,
-    type: 3}
-  m_PrefabInstance: {fileID: 5337001773325185744}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5385925245520385191 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 49100545127900791, guid: e69ea2be7d39b324abade40c73c3d686,
-    type: 3}
-  m_PrefabInstance: {fileID: 5337001773325185744}
-  m_PrefabAsset: {fileID: 0}
