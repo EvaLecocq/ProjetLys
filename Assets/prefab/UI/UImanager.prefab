@@ -230,8 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 16
-  pageRempli: {fileID: 21300000, guid: 5789adbd6c8d86846912f489e2c257f7, type: 3}
+  page: 1
+  pageRempli: {fileID: 21300000, guid: cabf7a3e273bdd7449e00ff9f3745881, type: 3}
   conditionRempli: 0
   indexPage: 3
 --- !u!1 &97157468
@@ -267,7 +267,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -347,10 +347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 16
+  pageRempli: {fileID: 21300000, guid: b0bd2b56c0146be4fb30287f162d75ba, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 9
 --- !u!1 &307785163
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +384,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ca8612d51c8032b499a041bc295c2c6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d63d0db51f72774ba8e9f7aac79b244, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -464,10 +464,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 18
+  pageRempli: {fileID: 21300000, guid: cafd83259a1d9e24fa7afe4789163c71, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 11
 --- !u!1 &427940890
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +618,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -735,7 +735,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -815,10 +815,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 15
+  pageRempli: {fileID: 21300000, guid: 8d904f0a3ae6f974387b1778c0657fd9, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 8
 --- !u!1 &906897452
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +852,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -932,8 +932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 1
-  pageRempli: {fileID: 21300000, guid: 8f861d62201b45d4fa6217df0f37fc87, type: 3}
+  page: 0
+  pageRempli: {fileID: 21300000, guid: 3375bf526b3b36241b3fece8e2e6131c, type: 3}
   conditionRempli: 0
   indexPage: 2
 --- !u!1 &907280371
@@ -1049,10 +1049,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 18
+  pageRempli: {fileID: 21300000, guid: 0e244b0f3b2789842855e8d5426f10f5, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 11
 --- !u!1 &1044187375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1166,10 +1166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 17
+  pageRempli: {fileID: 21300000, guid: fefa604caa184c24cb84fa432fadcf70, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 10
 --- !u!1 &1277319940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1239,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1553,10 +1553,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 17
+  pageRempli: {fileID: 21300000, guid: 8f519276b9e9fc34681a35bb5ae6e7e4, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 10
 --- !u!1 &1845053496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,10 +1826,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 16
+  pageRempli: {fileID: 21300000, guid: e132819061ccf984ca58344614035b8d, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 9
 --- !u!1 &1973285079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,10 +2423,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 8
+  pageRempli: {fileID: 21300000, guid: cabb9566edfb721489c2b0348ef7f32b, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 5
 --- !u!1 &484461041396111113
 GameObject:
   m_ObjectHideFlags: 0
@@ -7318,7 +7318,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7535,13 +7535,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 7172956623070047444}
-    characterCount: 26
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -7728,13 +7728,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5789075629236354125}
-    characterCount: 38
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -7957,13 +7957,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2945354660644461999}
-    characterCount: 40
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -8113,13 +8113,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1970908818865944398}
-    characterCount: 36
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -8169,7 +8169,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8249,10 +8249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 11
+  pageRempli: {fileID: 21300000, guid: ccbd83b396aad7242b90bfe9cf6a6549, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 6
 --- !u!1 &1529552869296458921
 GameObject:
   m_ObjectHideFlags: 0
@@ -8526,13 +8526,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3925607503010726459}
-    characterCount: 33
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -8875,13 +8875,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5083548040551716280}
-    characterCount: 37
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -9107,13 +9107,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6036934989387360262}
-    characterCount: 27
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -9667,10 +9667,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 11
+  pageRempli: {fileID: 21300000, guid: dedb5fc05d3fe3d428d661b0656c5d97, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 6
 --- !u!1 &2445050549674814952
 GameObject:
   m_ObjectHideFlags: 0
@@ -10098,10 +10098,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 12
+  pageRempli: {fileID: 21300000, guid: f87d076b18439a643b7c57fa4622843a, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 7
 --- !u!1 &2685907353596348365
 GameObject:
   m_ObjectHideFlags: 0
@@ -10426,7 +10426,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 33
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10490,9 +10490,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3410799706414057881}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 0
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &3410799706414520056
 GameObject:
@@ -10527,7 +10527,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10607,8 +10607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 15
-  pageRempli: {fileID: 21300000, guid: b996d499c4fe6134ea13ba82ff28dcfa, type: 3}
+  page: 13
+  pageRempli: {fileID: 21300000, guid: 526d2d60d9dc44049bbe0cbc5da0ed9a, type: 3}
   conditionRempli: 0
   indexPage: 4
 --- !u!1 &3410799706482640728
@@ -10826,7 +10826,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.87152046, y: 0.87152046, z: 0.87152046}
   m_Children:
-  - {fileID: 820834565264710050}
   - {fileID: 951593556624714927}
   - {fileID: 999359284235785339}
   - {fileID: 1447587811313512881}
@@ -10843,6 +10842,7 @@ RectTransform:
   - {fileID: 3410799707668537327}
   - {fileID: 906897457}
   - {fileID: 9110656280913127170}
+  - {fileID: 3410799706414057862}
   - {fileID: 4729084213983820348}
   - {fileID: 3410799706952767579}
   - {fileID: 6219926571602863150}
@@ -10859,7 +10859,7 @@ RectTransform:
   - {fileID: 3410799708340882980}
   - {fileID: 9672635}
   - {fileID: 3410799707494879391}
-  - {fileID: 3410799706414057862}
+  - {fileID: 820834565264710050}
   - {fileID: 3410799707378093760}
   - {fileID: 3410799706785956308}
   - {fileID: 3410799707638810987}
@@ -10935,7 +10935,7 @@ MonoBehaviour:
   interactable: 0
   enableShadowEffect: 1
   hasTransparentPages: 1
-  currentPaper: 1
+  currentPaper: 0
   papers:
   - Front: {fileID: 3410799706414057881}
     Back: {fileID: 8211974808266500264}
@@ -11278,7 +11278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3410799707067883716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11781,7 +11781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   page: 0
-  pageRempli: {fileID: 21300000, guid: c33bc96d2f5b7904ba4a40facc581938, type: 3}
+  pageRempli: {fileID: 21300000, guid: 2c9bf096eb690f94baf90df7715044aa, type: 3}
   conditionRempli: 0
   indexPage: 2
 --- !u!1 &3410799707638810984
@@ -11890,7 +11890,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11970,8 +11970,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 17
-  pageRempli: {fileID: 21300000, guid: 63e14948b05ec1c419bba213d3daba4f, type: 3}
+  page: 1
+  pageRempli: {fileID: 21300000, guid: fb884a3a952b5ef46a24a0e7eb218f93, type: 3}
   conditionRempli: 0
   indexPage: 3
 --- !u!1 &3410799707804066348
@@ -13032,8 +13032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 18
-  pageRempli: {fileID: 21300000, guid: 5dfe44505e25e2d43aa2a194e186a273, type: 3}
+  page: 13
+  pageRempli: {fileID: 21300000, guid: 05618745966bfb6478a2948b84686f30, type: 3}
   conditionRempli: 0
   indexPage: 4
 --- !u!1 &3570511211777554696
@@ -13765,13 +13765,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5602866534113343023}
-    characterCount: 44
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -14340,13 +14340,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2967613140272237951}
-    characterCount: 33
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -15432,13 +15432,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3918311499330164103}
-    characterCount: 42
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -15562,7 +15562,7 @@ RectTransform:
   - {fileID: 7403479120935920818}
   - {fileID: 3410799707212460094}
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15792,7 +15792,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15872,10 +15872,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 12
+  pageRempli: {fileID: 21300000, guid: 6e777b2fca2c19c429fa6c38c8f177d9, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 7
 --- !u!1 &6263915999287054342
 GameObject:
   m_ObjectHideFlags: 0
@@ -16082,13 +16082,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4920076211696925873}
-    characterCount: 36
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -16530,13 +16530,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3763419613616496708}
-    characterCount: 37
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -17071,13 +17071,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6714219423517236707}
-    characterCount: 21
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -17130,7 +17130,7 @@ RectTransform:
   - {fileID: 8802653248453449812}
   - {fileID: 117201028532034081}
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17576,13 +17576,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1646559129421061976}
-    characterCount: 37
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -18008,7 +18008,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18088,10 +18088,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 8
+  pageRempli: {fileID: 21300000, guid: 4e9f58e82fa16454b921783ee8a48155, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 5
 --- !u!1 &7680696446630625432
 GameObject:
   m_ObjectHideFlags: 0
@@ -18417,7 +18417,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18707,13 +18707,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8237252963022458405}
-    characterCount: 40
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -18765,7 +18765,7 @@ RectTransform:
   - {fileID: 2030534053}
   - {fileID: 3410799707067883716}
   m_Father: {fileID: 3410799706909628594}
-  m_RootOrder: 0
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18829,9 +18829,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8211974808266500264}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &2846947757233073008
 MonoBehaviour:
@@ -18907,8 +18907,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20503724, y: 0.15839985}
   m_AnchorMax: {x: 0.81814075, y: 0.7909122}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.3299866, y: 5.75}
+  m_SizeDelta: {x: 25.67, y: 11.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3666656171632313016
 CanvasRenderer:
@@ -19225,13 +19225,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2737449496064753064}
-    characterCount: 36
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -19454,13 +19454,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2540910358783435214}
-    characterCount: 43
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 9
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -19590,10 +19590,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce9c9d4eafc4f4bb1df05992eb2d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  page: 0
-  pageRempli: {fileID: 0}
+  page: 15
+  pageRempli: {fileID: 21300000, guid: 618a2016e4d6bae46a780938388c6185, type: 3}
   conditionRempli: 0
-  indexPage: 0
+  indexPage: 8
 --- !u!1 &9128734866917424183
 GameObject:
   m_ObjectHideFlags: 0
