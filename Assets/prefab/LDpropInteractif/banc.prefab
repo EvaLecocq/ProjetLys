@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab07def5dd6c2a24f91cfdfb2e608068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 75
   target: {fileID: 7863959752170118732}
   lockerCam: 1
 --- !u!114 &1348460508455710371
