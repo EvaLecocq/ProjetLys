@@ -483,100 +483,94 @@ MonoBehaviour:
   dialogueDebut:
     name: Le Renard
     sentences:
-    - Passe ton chemin humain.
+    - Passes ton chemin petit humain.
   dialogueLapin:
     name: Le Renard
     sentences:
     - Bonjour petit humain, tu es bien loin de ta maison.
     - Tout seul qui plus est.
     - Tu ferais mieux de rentrer chez toi, si tu le peux.
-    - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
-    - "Surtout pour un petit \xEAtre comme toi."
   dialogueSanglier:
     name: Le Renard
     sentences:
     - Bonjour petit humain, tu es bien loin de ta maison.
     - Tout seul qui plus est.
     - Tu ferais mieux de rentrer chez toi, si tu le peux.
-    - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
-    - "Surtout pour un petit \xEAtre comme toi."
   dialogueSerpent:
     name: Le Renard
     sentences:
     - Bonjour petit humain, tu es bien loin de ta maison.
     - Tout seul qui plus est.
     - Tu ferais mieux de rentrer chez toi, si tu le peux.
-    - "Ce monde n'est pas d\xE9nu\xE9 de dangers."
-    - "Surtout pour un petit \xEAtre comme toi."
   dialogueRatonLaveur:
     name: Le Renard
     sentences:
-    - "H\xE9 bien, qu'avons nous l\xE0 ? Belle journ\xE9e petit \xEAtre, que viens
+    - "H\xE9 bien, qu'avons-nous l\xE0 ? Belle journ\xE9e petit humain, que viens
       tu faire dans mon domaine ?"
-    - "Le cerf ? Oui je lui ai parl\xE9, je saurais ais\xE9ment te montrer la marche
-      \xE0 suivre mais..... en ai je l'envie ?"
+    - "Le Cerf ? Oui je lui ai parl\xE9, je saurais ais\xE9ment te montrer la marche
+      \xE0 suivre mais... En ai je l'envie ?"
     - "J'ai si faim, c'est tr\xE8s p\xE9nible pour moi de parler, mais je ne peux
       pas manger n'importe quoi..."
-    - Je suis un carnivore ! j'ai besoin de viande !
+    - Je suis un carnivore ! J'ai besoin de viande !
     - 'Oh je sais, un lapin. Il se balade toujours devant le portail, peux tu me l''amener
       ? '
     - "Non pas besoin, la seule pens\xE9e suffit \xE0 me revigorer,\r je vais le chercher
       moi m\xEAme !"
-    - 'Comment ? Ne pas le manger ? HA HA HA HA quel comique, n''as tu pas compris
+    - 'Comment ? Ne pas le manger ? Ha ha... Quel petit comique, n''as tu pas compris
       ? '
-    - "La nature est ainsi faite, peut importe que tu le veuilles ou non, des \xE9v\xE8nements
+    - "La nature est ainsi faite, peu importe que tu le veuilles ou non, des \xE9v\xE8nements
       arriveront et cela, \rpeu importe ta vision des choses, ainsi est la vie."
     - "Apr\xE8s, si le lapin \xE9tait pr\xE9venu de mon arriv\xE9e, il pourrait s'enfuir
       et retarder l'\xE9ch\xE9ance..."
-    - "L'heure tourne petit \xEAtre, et mon estomac r\xE9clame un tribu."
+    - "L'heure tourne petit humain, et mon estomac r\xE9clame un tribu."
   dialogueRenard:
     name: Le Renard
     sentences:
-    - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
+    - "H\xE9 bien, petit humain ? Va pr\xE9venir ton cher ami aux grandes oreilles."
     - Tu ne voudrais pas qu'il lui arrrive quelque chose ?
   dialogueChianChat:
     name: Le Renard
     sentences:
-    - "Trop tard petit \xEAtre, la vie t'a rattrap\xE9, et la sienne l'a quitt\xE9,
-      mais ne t'en fais pas, tu n'y est pour rien, ainsi va la nature et la vie..."
-    - "Tu me fais de la peine petit \xEAtre,\r je vais te dire comment faire venir
-      le cerf."
-    - "Pour cela tu dois aller au grand batiment de pierre sur la petite colline et
-      rempli les pots, \xE7a manque de fleur dans le coin."
+    - "Trop tard petit humain, le temps t'as rattrap\xE9, et sa vie l'a quitt\xE9.
+      Mais ne t'en fais pas, tu n'y est pour rien, ainsi va la nature et la vie..."
+    - "Tu me fais de la peine petit humain,\r je vais te dire comment faire venir
+      le Cerf."
+    - "Pour cela tu dois aller au grand b\xE2timent de pierres sur la petite colline
+      et remplir les pots, \xE7a manque de fleurs dans le coin."
     - "Le Cerf ne viendra pas si on laisse le parc dans cet \xE9tat !"
-    - "Et maintenant va, petit \xEAtre et fais attention \xE0 toi."
+    - "Et maintenant va, petit humain, et fais attention \xE0 toi."
   dialogueRenard2:
     name: Le Renard
     sentences:
-    - "Va vers le batiment petit \xEAtre et rempli les pots, \xE7a manque de fleur
+    - "Vas vers le batiment petit humain et rempli les pots, \xE7a manque de fleurs
       dans le coin."
     - "Le Cerf ne viendra pas si on laisse le parc dans cet \xE9tat !"
   dialogueCerf:
     name: Le Renard
     sentences:
-    - "Maintenant que tu as rencontr\xE9 le cerf, je te sugg\xE8re de partir petit
-      \xEAtre ..."
+    - "Maintenant que tu as rencontr\xE9 le Cerf, je te sugg\xE8re de partir petit
+      humain..."
     - Ta famille t'attend.
   dialogueQueteNonValideSanglier:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleur."
+    - "Je suis occup\xE9 va jouer ailleurs."
   dialogueQueteNonValide:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleur."
+    - "Je suis occup\xE9 va jouer ailleurs."
   dialogueQueteNonValide2:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleur."
+    - "Je suis occup\xE9 va jouer ailleurs."
   dialogueQueteNonValide3:
     name: Le Renard
     sentences:
-    - "Je suis occup\xE9 va jouer ailleur."
+    - "Je suis occup\xE9 va jouer ailleurs."
   dialogueQueteNonValideChien:
     name: Le Renard
     sentences:
-    - "H\xE9 bien, petit \xEAtre? Va pr\xE9venir ton cher ami aux grandes oreilles."
+    - "H\xE9 bien, petit humain ? Va pr\xE9venir ton cher ami aux grandes oreilles."
     - Tu ne voudrais pas qu'il lui arrrive quelque chose ?
   dialogueQueteCourse:
     name: 

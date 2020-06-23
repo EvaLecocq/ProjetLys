@@ -464,11 +464,11 @@ MonoBehaviour:
   dialogueDebut:
     name: Le Sanglier
     sentences:
-    - Grrrr ...
+    - Grrrr...
   dialogueLapin:
     name: Le Sanglier
     sentences:
-    - "J\u2019allais gagner ! j'ai uniquement perdu \xE0 cause de ses bois, je suis
+    - "J\u2019allais gagner ! J'ai uniquement perdu \xE0 cause de ses boix, je suis
       le plus fort."
     - Quoi ?
     - 'Tu veux te battre gamin ? '
@@ -483,7 +483,7 @@ MonoBehaviour:
     - "Int\xE9ressant !!! Ce sont de beaux glands que tu m'as apport\xE9 l\xE0, petit
       perdant. "
     - "C'est un bon troph\xE9e."
-    - "Il est temps de mettre une racl\xE9e \xE0 ce satan\xE9 cerf. Toi aussi tu le
+    - "Il est temps de mettre une racl\xE9e \xE0 ce satan\xE9 Cerf. Toi aussi tu le
       cherche ? Ne t'y crois pas trop, tu pourras jamais le battre."
     - "Je l'ai vu trainer pr\xE8s des grands saules, pas loin du batiment principal.
       Moi je reste ici avec mon troph\xE9e."

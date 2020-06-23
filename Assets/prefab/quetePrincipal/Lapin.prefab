@@ -444,7 +444,7 @@ MonoBehaviour:
   dialogueDebut:
     name: Le Lapin
     sentences:
-    - "HEY TOI L\xC0 ! "
+    - "Hey toi l\xE0 ! "
     - "Que fais tu ici !? Le portail est ferm\xE9, non ? \xC7a veut dire que le parc
       est ferm\xE9, n'est ce pas ? "
     - "Comment \xE7a \"quel parc ?\" !? Tu es au Jardin Public de Bordeaux mon petit
@@ -456,8 +456,8 @@ MonoBehaviour:
       jeux, le th\xE9\xE2tre de marionnettes ou m\xEAme le cirque !"
     - "Plein d'autres \xE9v\xE9nements apparaitront tout au long de la semaine."
     - "... Oh pardon ! Quand je commence \xE0 parler, je ne m'arr\xEAte plus."
-    - Mais tu m'intrigue... Que vient faire un enfant de 6 ans dans le parc tout seul
-      ?
+    - Mais tu m'intrigues... Que vient faire un enfant de 6 ans dans le parc tout
+      seul ?
     - "C'est pas normal que tu sois l\xE0... Es-tu perdu ?"
     - "Emb\xEAtant, c'est emb\xEAtant ! Tu ne peux pas rester ici sans tes parents
       ! Mais ne te fais pas de soucis, je vais te donner un coup de patte ! "
@@ -472,21 +472,21 @@ MonoBehaviour:
   dialogueLapin:
     name: Le Lapin
     sentences:
-    - "Tu as trouv\xE9 le cerf ?"
-    - "N'oublie pas, je l'avais vu pr\xE8s d'un pont."
+    - "Tu as trouv\xE9 le Cerf ?"
+    - "N'oublies pas, je l'avais vu pr\xE8s d'un pont."
   dialogueSanglier:
     name: Le Lapin
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
-    - "Tu as trouv\xE9 le cerf ?"
-    - "Zut il est vrai qu'il se d\xE9place tr\xE8s souvent."
+    - "Tu as trouv\xE9 le Cerf ?"
+    - "Zut, il est vrai qu'il se d\xE9place tr\xE8s souvent."
   dialogueSerpent:
     name: Le Lapin
     sentences:
     - "Rebonjour, comment vas-tu depuis la derni\xE8re fois ? "
-    - "Tu as trouv\xE9 le cerf ? Le sanglier s'est battu avec lui ?"
+    - "Tu as trouv\xE9 le Cerf ? Le Sanglier s'est battu avec lui ?"
     - Impressionnant !
-    - "Et apr\xE8s il est partie dans les hautes herbes ?"
+    - "Et apr\xE8s il est parti dans les hautes herbes ?"
     - Je me demande quel animal pourrait s'y trouver...
   dialogueRatonLaveur:
     name: Le Lapin
@@ -518,20 +518,20 @@ MonoBehaviour:
   dialogueQueteNonValideSanglier:
     name: Le Lapin
     sentences:
-    - "Le sanglier veut un troph\xE9e ?"
-    - Essaye de ramasser toutes les cochoneries par terre.
+    - "Le Sanglier veut un troph\xE9e ?"
+    - Essaye de ramasser tout ce que tu vois par terre.
   dialogueQueteNonValide:
     name: Le Lapin
     sentences:
-    - Ah oui le raton laveur est dur au reveil.
+    - Ah oui, le raton laveur est dur au reveil.
   dialogueQueteNonValide2:
     name: Le Lapin
     sentences:
-    - "Si il ne se r\xE9veille pas, rappel le."
+    - "Si il ne se r\xE9veille pas, rappelles le."
   dialogueQueteNonValide3:
     name: Le Lapin
     sentences:
-    - Appel le encore, il va bien finir par se lever.
+    - Appelles le encore, il va bien finir par se lever.
   dialogueQueteNonValideChien:
     name: Le Lapin
     sentences:

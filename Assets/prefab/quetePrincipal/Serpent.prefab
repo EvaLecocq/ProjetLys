@@ -70,62 +70,62 @@ MonoBehaviour:
   dialogueDebut:
     name: Le Serpent
     sentences:
-    - SSsssSsss ...
+    - SSsssSsss...
   dialogueLapin:
     name: Le Serpent
     sentences:
-    - "**Bruit \xE9trange**"
+    - SSsssSsss...
   dialogueSanglier:
     name: Le Serpent
     sentences:
-    - "Heu....heu....bonjour ? vous vous \xEAtes perdue ? le sentier est derri\xE8re
+    - "Heu... Heu... Bonjour ? Vous vous \xEAtes perdue ? Le sentier est derri\xE8re
       vous, vos amis doivent vous attendre..."
     - "Comment ? Vous \xEAtes venu pour me parler ? \xC0 moi ?"
     - "Oh....*snif* merci \xE0 vous."
     - 'Peu d''animaux viennent me parler, je leur fait trop peur. *snif* Merci encore
-      *snif*...... le cerf ? '
+      *snif*... Le Cerf ? '
     - Je l'ai vu passer par ici mais je ne vois pas grand chose dans mon nid.
     - "Le Raton Laveur sait peut \xEAtre quelque chose."
-    - "Il n'aime pas parler alors il faut insistez tr\xE8s fort avec lui et il vous
-      dira tout ce qu'il sait."
-    - "Oh et avant de partir, prenez \xE7a, c'est ma jolie fleur, elle ne pousse qu'ici,
+    - "Il n'aime pas parler alors il faut insistez tr\xE8s longtemps avec lui. Si
+      vous \xEAtes assez patient, il vous dira tout ce qu'il sait."
+    - "Oh et avant de partir, prenez \xE7a. C'est ma jolie fleur, elle ne pousse qu'ici,
       \rvoyez \xE7a comme un cadeau pour m'avoir remont\xE9 le moral. "
     - Bonne chance pour trouver le Cerf !
   dialogueSerpent:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
-    - "Avez vous parl\xE9 au Raton Laveur ? Il faut beaucoup insistez pour qu'il vous
+    - "Avez vous parl\xE9 au Raton Laveur ? Il faut beaucoup insister pour qu'il vous
       parle."
   dialogueRatonLaveur:
     name: Le Serpent
     sentences:
-    - "Ha ha ! Le Raton Laveur s'est agac\xE9 ? Il s'\xE9nerver facilement, c'est
-      un sanguin !"
+    - "Ha ha ! Le Raton Laveur s'est agac\xE9 ? Il s'\xE9nerve facilement, c'est un
+      sanguin !"
     - "Mais s'il a r\xE9pondu \xE0 votre question, tout se passe bien !"
     - "Tu es sur la piste d'un animal rus\xE9 et malin ?"
-    - "C'est tr\xE8s vague, je ne saurais pas \xEAtre en mesure de t'assister, d\xE9sol\xE9."
+    - "C'est tr\xE8s vague, je ne suis pas capable de t'assister, d\xE9sol\xE9."
   dialogueRenard:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - 'Le Lapin a disparu ? '
-    - "Je ne l'ai pas vu pass\xE9 depuis un bon moment,\r je ne vous serais pas d'une
+    - "Je ne l'ai pas vu passer depuis un bon moment,\r je ne vous serais pas d'une
       grande aide."
   dialogueChianChat:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Une fleur blanche comme le lys et violette comme l'orchid\xE9e ?"
-    - "Hormis ma fleur je ne connais pas beaucoup de fleurs, \r\nla fumeterre et le
-      circe commun sont les deux plantes qui me viennent \xE0 l'esprit."
+    - "Hormis ma fleur, je ne connais pas beaucoup de fleurs. D\xE9sol\xE9, bonne
+      chance."
   dialogueRenard2:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, comment allez vous depuis la derni\xE8re fois ?"
     - "Le Renard a mang\xE9 le Lapin ?!"
     - "H\xE9 bien oui se sont des choses qui arrivent, m\xEAme si \xE7a me rend triste."
-    - "Ne t'en fais pas tu n'y est pour rien,\r repense aux bons moments que tu as
+    - "Ne t'en fais pas tu n'y est pour rien,\r repenses aux bons moments que tu as
       pass\xE9 avec le Lapin et \xE7a ira mieux"
   dialogueCerf:
     name: Le Serpent
@@ -142,23 +142,23 @@ MonoBehaviour:
   dialogueQueteNonValide:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, le Raton Laveur vous dite ? il a le sommeil lourd c'est
-      vraie."
+    - "Bonjour \xE0 vous, le Raton Laveur vous d\xEEtes ? Il a le sommeil lourd c'est
+      vrai."
   dialogueQueteNonValide2:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, le Raton Laveur vous dite ? il a le sommeil lourd c'est
-      vraie."
+    - "Bonjour \xE0 vous, le Raton Laveur vous d\xEEtes ? Il a le sommeil lourd c'est
+      vrai."
   dialogueQueteNonValide3:
     name: Le Serpent
     sentences:
-    - "Bonjour \xE0 vous, le Raton Laveur vous dite ? il a le sommeil lourd c'est
-      vraie."
+    - "Bonjour \xE0 vous, le Raton Laveur vous d\xEEtes ? Il a le sommeil lourd c'est
+      vrai."
   dialogueQueteNonValideChien:
     name: Le Serpent
     sentences:
     - "Bonjour \xE0 vous, en quoi puis-je vous \xEAtre utile ?"
-    - "Une fleur ? Navr\xE9 je ne m'y connais pas trop."
+    - "Une fleur ? Navr\xE9, je ne m'y connais pas trop."
   dialogueQueteCourse:
     name: 
     sentences: []

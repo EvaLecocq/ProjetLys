@@ -363,15 +363,15 @@ MonoBehaviour:
   dialogueCerf:
     name: "Ma\xEEtre Cerf"
     sentences:
-    - "Bonjour toi,\r C'est inhabituel de voir un humain dans le parc apr\xE8s sa
-      fermeture,\r Pourquoi m'as-tu appel\xE9 ?"
+    - "Bonjour toi,\r c'est inhabituel de voir un humain dans le parc apr\xE8s sa
+      fermeture,\r pourquoi m'as-tu appel\xE9 ?"
     - "Maintenant je comprends, \rtu ne savais pas que le portail \xE9tait ferm\xE9
-      et le Lapin t'a dit de venir me trouver."
+      et le Lapin t'as dit de venir me trouver."
     - "Ce qu'il a dit est vrai, je poss\xE8de la cl\xE9 du parc,\r et si je peux te
       venir en aide, je le fais avec joie !"
     - "Tiens, prends la cl\xE9 et retourne \xE0 ta maison."
     - "J'imagine que tu as appris beaucoup de choses pendant que tu me cherchais,\r
-      puisse ces derni\xE8res t'\xEAtre utiles \xE0 l'avenir."
+      j'esp\xE8re qu'elles te seront utiles \xE0 l'avenir."
     - "Allez, ne tardes pas, retourne aupr\xE8s de ta famille."
   dialogueQueteNonValideSanglier:
     name: "Ma\xEEtre Cerf"

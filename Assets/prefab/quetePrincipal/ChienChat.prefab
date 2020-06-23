@@ -484,108 +484,109 @@ MonoBehaviour:
   dialogueDebut:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nOh SALUT !"
+    - "Chien :\r\nOh salut !"
   dialogueLapin:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
-    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r."
+    - "Chien :\r\nAh bon ? On joue \xE0 quoi ?"
+    - "Chat :\r\nAu roi du silence, alors tais-toi !"
   dialogueSanglier:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
-    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r."
+    - "Chien :\r\nAh bon ? On joue \xE0 quoi ?"
+    - "Chat :\r\nAu roi du silence, alors tais-toi !"
   dialogueSerpent:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
-    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r.\n"
+    - "Chien :\r\nAh bon ? On joue \xE0 quoi ?"
+    - "Chat :\r\nAu roi du silence, alors tais-toi !"
   dialogueRatonLaveur:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
-    - "Chien :\r\nAH BON ? ON JOUE \xC0 QUOI ? "
-    - "Chat :\r\nAu roi du silence alors tais toi !"
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r.\n"
+    - "Chien :\r\nAh bon ? On joue \xE0 quoi ?"
+    - "Chat :\r\nAu roi du silence, alors tais-toi !"
   dialogueRenard:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nOH UN COPAIN, H\xC9 H\xC9 TU VEUX JOUER ?"
-    - "Chat :\r\nCalme toi le chien, tu m'\xE9nerves."
-    - "Chien :\r\nOh d'accord...."
-    - "Chat :\r\nSalut \xE0 toi petit bonhomme, que fait un enfant \xE0 se promener
+    - "Chien :\r\nOh un copain ! H\xE9 ! Tu veux jouer ?"
+    - "Chat :\r\nCalmes toi le chien, tu m'\xE9nerves."
+    - "Chien :\r\nOh, d'accord..."
+    - "Chat :\r\nSalut \xE0 toi petit bonhomme. Que fait un enfant \xE0 se promener
       par ici ? "
-    - "Chien :\r\nPROMENER ? ON VA SE PROMENER ? \r\n"
-    - "Chat :\r\nNON couch\xE9 !"
-    - "Chien :\r\nOh....d'accord\r"
-    - "Chat :\r\n...Bref, ne fais pas attention \xE0 lui il est hyperactif. Es tu
-      perdu ? Oui ? "
-    - "Chat :\r\nTu cherches le Lapin et le Cerf ? c'est vrai qu'on les voit souvent."
-    - "Chat :\r\nH\xE9 bien..... je pourrais t'aider mais tu vas faire quelque chose
+    - "Chien :\r\nPromener ? On va se promener ? \r\n"
+    - "Chat :\r\nNON ! Couch\xE9 !"
+    - "Chien :\r\nOh, d'accord\r..."
+    - "Chat :\r\nBref, ne fais pas attention \xE0 lui, il est hyperactif. Es-tu perdu
+      ? Oui ? "
+    - "Chat :\r\nTu cherches le Lapin et le Cerf ?"
+    - "Chat :\r\nH\xE9 bien... Je pourrais t'aider, mais tu vas faire quelque chose
       pour nous en \xE9change... "
-    - "Chat :\r\nVois-tu, mon ami et moi, on arrive pas \xE0 se mettre d'accord, pour
-      moi la fleur la plus jolie est la fleur de lys."
-    - "Chien :\r\nNON C'EST PAS ELLE C'EST L'ORCHID\xC9E ELLE EST VIOLETTE"
-    - "Chat :\r\nTu vois ? c'est comme \xE7a sans arr\xEAt, donc,\r tu vas nous trouver
-      une fleur qui est \xE0 la fois blanche et pure comme le lys et violette comme
-      l'orchid\xE9e."
-    - "Chat :\nQuand tu l'auras tu reviens nous la donner et on te dira o\xF9 on a
-      vu le Cerf.\r"
+    - "Chat :\r\nVois-tu, mon ami et moi, on arrive pas \xE0 se mettre d'accord. Pour
+      moi, la fleur la plus jolie, c'est la fleur de lys."
+    - "Chien :\r\nNon c'est pas elle ! La plus belle c'est l'orchid\xE9e, parcequ'elle
+      est violette."
+    - "Chat :\r\nTu vois ? C'est comme \xE7a sans arr\xEAt. Donc,\r je voudrais que
+      tu trouves une fleur qui est \xE0 la fois blanche et pure comme le lys, et violette
+      comme l'orchid\xE9e."
+    - "Chat :\nQuand tu l'auras, tu reviens nous la donner et on te diras o\xF9 on
+      a vu le Cerf.\r"
   dialogueChianChat:
     name: Chien - Chat
     sentences:
-    - "Chat :\r\nWow, quelle magnifique fleur que tu as l\xE0, une forme et une couleur
-      blan..."
-    - "Chien :\r\nELLE EST VIOLETTE ELLE EST JOLIE."
-    - "Chat :\r\nOui c'est vrai elle est \xE0 la fois blanche et violette, pure et
-      l\xE9g\xE8re, l'Hellebore, c'est par-fait. "
-    - "Ta partie est remplie, maintenant \xE0 nous. Le Cerf est pass\xE9 nous dire
-      bonjour et est ensuite parti en direction du batiment du jardin botanique."
-    - Et nous n'avons pas vu le Lapin depuis un bon moment, c'est tout.
+    - "Chat :\r\nWow, quelle magnifique fleur tu as l\xE0 ! Une forme sublime, et
+      une couleur blan..."
+    - "Chien :\r\nElle est violette ! Elle est belle !"
+    - "Chat :\r\nOui c'est vrai. Elle est \xE0 la fois blanche et violette, pure et
+      l\xE9g\xE8re. L'hellebore, c'est par-fait. "
+    - "Chat :\r\nTa mission est accomplie jeune ami ! Maintenant, \xE0 nous. Le Cerf
+      est parti en direction du batiment du jardin botanique."
+    - "Chat :\r\nEt nous n'avons pas vu le Lapin depuis un bon moment, c'est tout."
   dialogueRenard2:
     name: Chien - Chat
     sentences:
     - "Chat :\r\nSalut petit bonhomme."
-    - "Chien :\r\nSALUT."
-    - "Chat :\r\nAs tu trouv\xE9 le cerf ? non ? "
+    - "Chien :\r\nSalut."
+    - "Chat :\r\nAs-tu trouv\xE9 le Cerf ? Non ? "
     - "Chat :\nH\xE9 bien, nous n'allons pas te d\xE9ranger plus longtemps."
   dialogueCerf:
     name: Chien - Chat
     sentences:
-    - "Chat :\r\nTu as rencontr\xE9 le cerf ? bravo, j'imagine qu'il a pu r\xE9pondre
+    - "Chat :\r\nTu as rencontr\xE9 le Cerf ? Bravo, j'imagine qu'il a pu r\xE9pondre
       \xE0 tes questions."
-    - "Chien :\r\nLE CERF EST SUPER GRAND, J'AIME BIEN JOUER AVEC LUI."
+    - "Chien :\r\nLe Cerf est super grand ! J'adore jouer avec lui."
   dialogueQueteNonValideSanglier:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r."
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r."
   dialogueQueteNonValide:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r."
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r."
   dialogueQueteNonValide2:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r."
   dialogueQueteNonValide3:
     name: Chien - Chat
     sentences:
-    - "Chien :\r\nH\xC9 SALUT TU VEUX JOUER ! ALLEZ ALLEZ VIENS."
-    - "Chat : \nCalme toi, on est d\xE9j\xE0 entrain de jouer tout les deux\r.\n"
+    - "Chien :\r\nH\xE9 salut ! Tu veux jouer ?!"
+    - "Chat : \nCalmes toi, on est d\xE9j\xE0 entrain de jouer tous les deux\r."
   dialogueQueteNonValideChien:
     name: Chien - Chat
     sentences:
-    - "chat :\r\nnon tu n'as pas la bonne fleur\r"
-    - "chien :\r\nNON ELLE EST PAS JOLIE"
+    - "Chat :\r\nNon, ce n'est pas vraiment \xE0 \xE7a que je m'attends..."
+    - "Chien :\r\nElle est pas jolie !"
   dialogueQueteCourse:
     name: 
     sentences: []
