@@ -14,6 +14,7 @@ public class AnimalManager : MonoBehaviour
     public GameObject renard;
     public GameObject chienChat;
     public GameObject cerf;
+    public GameObject cerfEffect;
 
     [Header("spot")]
     public Transform chienChatSpot;
@@ -53,6 +54,8 @@ public class AnimalManager : MonoBehaviour
         if (GameManager.s_Singleton.progression >= 8)
         {
             cerf.SetActive(true);
+            cerfEffect.SetActive(true);
+            cerfEffect.GetComponent<ParticleSystem>().Play();
 
             portailWall.SetActive(false);
         }

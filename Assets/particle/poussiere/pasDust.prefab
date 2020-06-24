@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3918523362636479158}
   - component: {fileID: 6973955592783934485}
   - component: {fileID: 8725637918817961198}
-  - component: {fileID: -1054507672354399252}
   m_Layer: 0
   m_Name: pasDust
   m_TagString: Untagged
@@ -4813,18 +4812,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &-1054507672354399252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5919975128348889520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9de25130bd2c374aba1693e7f7da161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6969506399296718774
 GameObject:
   m_ObjectHideFlags: 0

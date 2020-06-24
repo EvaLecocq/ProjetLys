@@ -160,7 +160,10 @@ public class PlayerMovement : MonoBehaviour
                     if (Time.time > nextActionTime)
                     {
                         nextActionTime += period;
-                        Instantiate(particulePas, pasPivot.transform.position, pasPivot.transform.rotation);
+                        //Instantiate(particulePas, pasPivot.transform.position, pasPivot.transform.rotation);
+
+                        particulePas.GetComponent<ParticleSystem>().Play();
+
                         audioS.clip = walkSFX[Random.Range(0, walkSFX.Length)];
                         audioS.Play();
                     }
