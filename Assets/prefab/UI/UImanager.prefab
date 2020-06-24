@@ -17736,7 +17736,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Direction Artistique :\nEva Lecocq\n\nSound Design :\nClement Cousseau,
-    Liam Rogron\n\nNarrative Design :\nEva Lecocq, Th\xE9o Martin\n"
+    Eva Lecocq\n\nNarrative Design :\nEva Lecocq, Th\xE9o Martin, Killian Delias\n\nRemerciement
+    Sp\xE9ciaux :\nTonesprod, Eric Delias\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8caf5eebf3b0b9e45ba4435760a52a94, type: 2}
   m_sharedMaterial: {fileID: -1728050701367964908, guid: 8caf5eebf3b0b9e45ba4435760a52a94,
@@ -17806,12 +17807,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8794869867985108413}
-    characterCount: 124
+    characterCount: 187
     spriteCount: 0
-    spaceCount: 21
-    wordCount: 16
+    spaceCount: 30
+    wordCount: 23
     linkCount: 0
-    lineCount: 8
+    lineCount: 11
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
