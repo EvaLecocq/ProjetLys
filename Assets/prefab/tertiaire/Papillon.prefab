@@ -19,7 +19,7 @@ GameObject:
   m_TagString: dialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &3937415897264594057
 Transform:
@@ -269,7 +269,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &5708328744142300199
 Transform:
@@ -396,7 +396,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &5633164469481776728
 Transform:
@@ -439,7 +439,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 0
 --- !u!4 &9148220335156300257
 Transform:
@@ -566,7 +566,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &3919427490673423411
 Transform:
@@ -632,7 +632,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 96
   m_IsActive: 1
 --- !u!4 &6046959346785804105
 Transform:
@@ -674,10 +674,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3937415897264594057}
     m_Modifications:
+    - target: {fileID: 2392432288213007826, guid: 01005bf2b2630a840a2c30b757437228,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
+      objectReference: {fileID: 0}
     - target: {fileID: 6346689007945583136, guid: 01005bf2b2630a840a2c30b757437228,
         type: 3}
       propertyPath: m_Name
       value: ChienHuskyM
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346689007945583136, guid: 01005bf2b2630a840a2c30b757437228,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 7946779517986535475, guid: 01005bf2b2630a840a2c30b757437228,
         type: 3}
