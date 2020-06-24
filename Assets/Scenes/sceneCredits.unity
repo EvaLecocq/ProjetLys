@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5265815, y: 0}
   m_AnchorMax: {x: 0.9285434, y: 1}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.000015258789, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57301382
@@ -176,9 +176,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Eva Lecocq\n\nKillian Delias\n\nEva Lecocq\nKillian Delias\n\nTh\xE9o Martin\nCl\xE9ment
-    Cousseau\n\nEva Lecocq\n\nCl\xE9ment Cousseau\nLiam Rogron\n\nTh\xE9o Martin\nEva
-    Lecocq\n\nPolygon City\nPolygon Nature\nPage CURL Pro\nMixamo\n\nLiam Rogron (voix
-    des animaux)\nEric Delias (voix du p\xE8re)\nTonesProd\n\n"
+    Cousseau\n\nEva Lecocq\n\nCl\xE9ment Cousseau\nEva Lecocq\n\nTh\xE9o Martin\nEva
+    Lecocq\nKillian Delias\n\nPolygon City\nPolygon Nature\nPage CURL Pro\nMixamo\n\nEric
+    Delias (voix du p\xE8re)\nTonesProd\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8caf5eebf3b0b9e45ba4435760a52a94, type: 2}
   m_sharedMaterial: {fileID: -1728050701367964908, guid: 8caf5eebf3b0b9e45ba4435760a52a94,
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 200
+  m_firstOverflowCharacterIndex: 207
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -248,10 +248,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 57301382}
-    characterCount: 270
+    characterCount: 253
     spriteCount: 0
-    spaceCount: 50
-    wordCount: 41
+    spaceCount: 47
+    wordCount: 38
     linkCount: 0
     lineCount: 27
     pageCount: 1
@@ -949,6 +949,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467394840}
   m_CullTransparentMesh: 0
+--- !u!1 &1643238929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1643238930}
+  - component: {fileID: 1643238932}
+  - component: {fileID: 1643238931}
+  m_Layer: 5
+  m_Name: logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1643238930
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643238929}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2105743638}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.2195076}
+  m_AnchorMax: {x: 0.66522896, y: 0.5}
+  m_AnchoredPosition: {x: -43, y: -381}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1643238931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643238929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 99cbaf7a014dc074db3c7dedc4bdb931, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1643238932
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643238929}
+  m_CullTransparentMesh: 0
 --- !u!1 &1749543284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,9 +1077,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CHEF DE PROJET\n\nPROGRAMMATION\n\nLEVEL DESIGN\n\n\nMODELISATION 3D\n\n\nDIRECTION
-    ARTISTIQUE\n\nSOUND DESIGN\n\n\nNARRATIVE DESIGN\n\n\nASSET\n\n\n\n\nREMERCIEMENT
-    SP\xC9CIAUX\n"
+  m_text: "Chef de Projet\n\nProgrammation\n\nLevel Design\n\n\nMod\xE9lisation 3D\n\n\nDirection
+    Artistique\n\nSound Design\n\n\nNarrative Design\n\n\n\nAsset\n\n\n\n\nRemerciement
+    Sp\xE9ciaux\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8caf5eebf3b0b9e45ba4435760a52a94, type: 2}
   m_sharedMaterial: {fileID: -1728050701367964908, guid: 8caf5eebf3b0b9e45ba4435760a52a94,
@@ -1076,12 +1149,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1749543286}
-    characterCount: 152
+    characterCount: 153
     spriteCount: 0
-    spaceCount: 32
+    spaceCount: 33
     wordCount: 17
     linkCount: 0
-    lineCount: 24
+    lineCount: 25
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1204,6 +1277,7 @@ RectTransform:
   - {fileID: 1749543285}
   - {fileID: 57301381}
   - {fileID: 761098488}
+  - {fileID: 1643238930}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
