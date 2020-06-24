@@ -184,7 +184,7 @@ public class GameManager : MonoBehaviour
         {
             
             SauvegadeJeu();
-            InvokeRepeating("SauvegadeJeu", 0f, 30f);
+            //InvokeRepeating("SauvegadeJeu", 0f, 30f);
 
             canSave = false;
         }
@@ -292,13 +292,13 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetInt("clesDuParcInt", clesDuParcInt);
 
-        x = persoT.transform.position.x;
+        /*x = persoT.transform.position.x;
         y = persoT.transform.position.y;
         z = persoT.transform.position.z;
 
         PlayerPrefs.SetFloat("x", x);
         PlayerPrefs.SetFloat("y", y);
-        PlayerPrefs.SetFloat("z", z);
+        PlayerPrefs.SetFloat("z", z);*/
     }
 
     public void ChargementJeu()
@@ -383,12 +383,13 @@ public class GameManager : MonoBehaviour
             clesDuParc = false;
         }
 
+        /*
         x = PlayerPrefs.GetFloat("x");
         y = PlayerPrefs.GetFloat("y");
         z = PlayerPrefs.GetFloat("z");
 
         persoT.transform.position = new Vector3(x, y, z);
-
+        */
         canSave = true;
     }
 

@@ -248,6 +248,8 @@ public class PlayerMovement : MonoBehaviour
             audioS.pitch = Random.Range(1, 1.4f);
             audioS.Play();
 
+            GameManager.s_Singleton.SauvegadeJeu();
+
             StartCoroutine(CollectItem());
         }
         if (Input.GetKeyDown(interactionKey) && potActuel != null && type == PlayerMovement.interactionType.pot)
@@ -257,7 +259,9 @@ public class PlayerMovement : MonoBehaviour
             audioS.pitch = Random.Range(1, 1.4f);
             audioS.Play();
 
-            if(potActuel.full == false)
+            GameManager.s_Singleton.SauvegadeJeu();
+
+            if (potActuel.full == false)
             {
                 potActuel.PlaceFlower();
             }
@@ -279,6 +283,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(interactionKey) && panneau != null && type == PlayerMovement.interactionType.panneau)
         {
+            GameManager.s_Singleton.SauvegadeJeu();
+
             panneau.UpgradeMap();
         }
     }

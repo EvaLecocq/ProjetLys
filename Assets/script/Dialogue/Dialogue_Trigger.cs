@@ -78,6 +78,8 @@ public class Dialogue_Trigger : MonoBehaviour
             UpgradeQuest();
             UpgradeAnimalTalk();
 
+            GameManager.s_Singleton.SauvegadeJeu();
+
             StartCoroutine(FonduNoirStopDialogue());
 
             manager.triggerEnd = false;
@@ -413,7 +415,7 @@ public class Dialogue_Trigger : MonoBehaviour
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueRenard2);
         }
 
-         if (GameManager.s_Singleton.progression == 8)
+         if (GameManager.s_Singleton.progression >= 8)
         {
             FindObjectOfType<Dialogue_Manager>().StartDialogue(dialogueCerf);
         }
