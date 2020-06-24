@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
     public int RatonSpam;
     public bool queteChien = false;
 
+    public bool cadeauSanglierLivrer = false;
+    public bool cadeauChienLivrer = false;
 
     public bool queteActuelValider = false;
 

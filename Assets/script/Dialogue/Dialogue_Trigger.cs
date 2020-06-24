@@ -99,6 +99,12 @@ public class Dialogue_Trigger : MonoBehaviour
                 GameManager.s_Singleton.QueteFini();
 
             }
+            else if (type == Dialogue_Trigger.animal.sanglier && GameManager.s_Singleton.queteSanglier == true)
+            {
+               
+                GameManager.s_Singleton.cadeauSanglierLivrer = true;
+
+            }
             else if(GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier == true && type == Dialogue_Trigger.animal.serpent)// +finir quete sanglier
             {
                 GameManager.s_Singleton.QueteFini();
@@ -129,6 +135,14 @@ public class Dialogue_Trigger : MonoBehaviour
             {
                 GameManager.s_Singleton.QueteFini();
             }
+
+            else if (type == Dialogue_Trigger.animal.chienChat && GameManager.s_Singleton.queteChien == true)
+            {
+
+                GameManager.s_Singleton.cadeauChienLivrer = true;
+
+            }
+
             else if(GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien == true && type == Dialogue_Trigger.animal.renard)// + finir quete chien chat
             {
                 GameManager.s_Singleton.QueteFini();

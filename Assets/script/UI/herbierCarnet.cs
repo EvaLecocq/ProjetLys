@@ -58,7 +58,7 @@ public class herbierCarnet : MonoBehaviour
             etape[2].SetActive(true);
          
         }
-        if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.queteSanglier)
+        if (GameManager.s_Singleton.progression == 2 && GameManager.s_Singleton.cadeauSanglierLivrer)
         {
             etape[0].SetActive(true);
             etape[1].SetActive(true);
@@ -107,7 +107,7 @@ public class herbierCarnet : MonoBehaviour
             etape[7].SetActive(true);
         }
 
-        if ( GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.queteChien)
+        if ( GameManager.s_Singleton.progression == 6 && GameManager.s_Singleton.cadeauChienLivrer)
         {
             etape[0].SetActive(true);
             etape[1].SetActive(true);

@@ -135,11 +135,11 @@ public class PlayerMovement : MonoBehaviour
 
 
                 if (Input.GetKey(runKey))//course
-                {
+                {/*
                         speed = runSpeed;
                     anim.SetBool("isRunning", false);
                     anim.SetBool("isWalking", true);
-
+                    */
                     
                         
                 }
