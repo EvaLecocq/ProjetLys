@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     public int day;
     private DayNightCycle cycle;
 
-    
+    public bool useSaveSystem = true;
     
 
     [Header("principale")]
@@ -211,186 +211,196 @@ public class GameManager : MonoBehaviour
 
     public void SauvegadeJeu()
     {
-        //bete
-        PlayerPrefs.SetInt("lapin", lapin);
-        PlayerPrefs.SetInt("sanglier", sanglier);
-        PlayerPrefs.SetInt("serpent", serpent);
-        PlayerPrefs.SetInt("ratonLaveur", ratonLaveur);
-        PlayerPrefs.SetInt("renard", renard);
-        PlayerPrefs.SetInt("chienChat", chienChat);
-        PlayerPrefs.SetInt("cerf", cerf);
-
-        //fleur
-        PlayerPrefs.SetInt("Tulipe", Tulipe);
-        PlayerPrefs.SetInt("CirseCommun", CirseCommun);
-        PlayerPrefs.SetInt("Chrysantheme", Chrysantheme);
-        PlayerPrefs.SetInt("Orchidee", Orchidee);
-        PlayerPrefs.SetInt("Hibiscus", Hibiscus);
-        PlayerPrefs.SetInt("PaeoniaOfficinalis", PaeoniaOfficinalis);
-        PlayerPrefs.SetInt("EuphorbeReveilleMatin", EuphorbeReveilleMatin);
-        PlayerPrefs.SetInt("GazaniaRigens", GazaniaRigens);
-        PlayerPrefs.SetInt("HelleboreOrient", HelleboreOrient);
-        PlayerPrefs.SetInt("FumariaOfficinalis", FumariaOfficinalis);
-        PlayerPrefs.SetInt("BleuMarie", BleuMarie);
-        PlayerPrefs.SetInt("AncolieDuCanada", AncolieDuCanada);
-        PlayerPrefs.SetInt("Kalanchoe", Kalanchoe);
-        PlayerPrefs.SetInt("Gerbera", Gerbera);
-        PlayerPrefs.SetInt("AngeliqueDesEstuaires", AngeliqueDesEstuaires);
-        PlayerPrefs.SetInt("Agapanthe", Agapanthe);
-        PlayerPrefs.SetInt("Rose", Rose);
-        PlayerPrefs.SetInt("Fritillaire", Fritillaire);
-        PlayerPrefs.SetInt("FleurDeLys", FleurDeLys);
-
-        //pot
-        PlayerPrefs.SetInt("potTulipe", potTulipe);
-        PlayerPrefs.SetInt("potCirseCommun", potCirseCommun);
-        PlayerPrefs.SetInt("potChrysantheme", potChrysantheme);
-        PlayerPrefs.SetInt("potOrchidee", potOrchidee);
-        PlayerPrefs.SetInt("potHibiscus", potHibiscus);
-        PlayerPrefs.SetInt("potPaeoniaOfficinalis", potPaeoniaOfficinalis);
-        PlayerPrefs.SetInt("potEuphorbeReveilleMatin", potEuphorbeReveilleMatin);
-        PlayerPrefs.SetInt("potGazaniaRigens", potGazaniaRigens);
-        PlayerPrefs.SetInt("potHelleboreOrient", potHelleboreOrient);
-        PlayerPrefs.SetInt("potFumariaOfficinalis", potFumariaOfficinalis);
-        PlayerPrefs.SetInt("potBleuMarie", potBleuMarie);
-        PlayerPrefs.SetInt("potAncolieDuCanada", potAncolieDuCanada);
-        PlayerPrefs.SetInt("potKalanchoe", potKalanchoe);
-        PlayerPrefs.SetInt("potGerbera", potGerbera);
-        PlayerPrefs.SetInt("potAngeliqueDesEstuaires", potAngeliqueDesEstuaires);
-        PlayerPrefs.SetInt("potAgapanthe", potAgapanthe);
-        PlayerPrefs.SetInt("potRose", potRose);
-        PlayerPrefs.SetInt("potFritillaire", potFritillaire);
-        PlayerPrefs.SetInt("potFleurDeLys", potFleurDeLys);
-
-        //obj
-        PlayerPrefs.SetInt("graineGland", graineGland);
-
-        //stat
-        PlayerPrefs.SetInt("progression", progression);
-        PlayerPrefs.SetInt("herbierFleurRare", herbierFleurRare);
-        PlayerPrefs.SetInt("herbierPot", herbierPot);
-
-
-        PlayerPrefs.SetInt("alizar", alizar);
-        PlayerPrefs.SetInt("cesar", cesar);
-        PlayerPrefs.SetInt("gaspard", gaspard);
-        PlayerPrefs.SetInt("papillon", papillon);
-        PlayerPrefs.SetInt("felix", felix);
-        PlayerPrefs.SetInt("mariLouise", mariLouise);
-        PlayerPrefs.SetInt("pog", pog);
-        PlayerPrefs.SetInt("chatVinci", chatVinci);
-        PlayerPrefs.SetInt("franklin", franklin);
-
-        if (clesDuParc)
+        if(useSaveSystem)
         {
-            clesDuParcInt = 1;
+            //bete
+            PlayerPrefs.SetInt("lapin", lapin);
+            PlayerPrefs.SetInt("sanglier", sanglier);
+            PlayerPrefs.SetInt("serpent", serpent);
+            PlayerPrefs.SetInt("ratonLaveur", ratonLaveur);
+            PlayerPrefs.SetInt("renard", renard);
+            PlayerPrefs.SetInt("chienChat", chienChat);
+            PlayerPrefs.SetInt("cerf", cerf);
+
+            //fleur
+            PlayerPrefs.SetInt("Tulipe", Tulipe);
+            PlayerPrefs.SetInt("CirseCommun", CirseCommun);
+            PlayerPrefs.SetInt("Chrysantheme", Chrysantheme);
+            PlayerPrefs.SetInt("Orchidee", Orchidee);
+            PlayerPrefs.SetInt("Hibiscus", Hibiscus);
+            PlayerPrefs.SetInt("PaeoniaOfficinalis", PaeoniaOfficinalis);
+            PlayerPrefs.SetInt("EuphorbeReveilleMatin", EuphorbeReveilleMatin);
+            PlayerPrefs.SetInt("GazaniaRigens", GazaniaRigens);
+            PlayerPrefs.SetInt("HelleboreOrient", HelleboreOrient);
+            PlayerPrefs.SetInt("FumariaOfficinalis", FumariaOfficinalis);
+            PlayerPrefs.SetInt("BleuMarie", BleuMarie);
+            PlayerPrefs.SetInt("AncolieDuCanada", AncolieDuCanada);
+            PlayerPrefs.SetInt("Kalanchoe", Kalanchoe);
+            PlayerPrefs.SetInt("Gerbera", Gerbera);
+            PlayerPrefs.SetInt("AngeliqueDesEstuaires", AngeliqueDesEstuaires);
+            PlayerPrefs.SetInt("Agapanthe", Agapanthe);
+            PlayerPrefs.SetInt("Rose", Rose);
+            PlayerPrefs.SetInt("Fritillaire", Fritillaire);
+            PlayerPrefs.SetInt("FleurDeLys", FleurDeLys);
+
+            //pot
+            PlayerPrefs.SetInt("potTulipe", potTulipe);
+            PlayerPrefs.SetInt("potCirseCommun", potCirseCommun);
+            PlayerPrefs.SetInt("potChrysantheme", potChrysantheme);
+            PlayerPrefs.SetInt("potOrchidee", potOrchidee);
+            PlayerPrefs.SetInt("potHibiscus", potHibiscus);
+            PlayerPrefs.SetInt("potPaeoniaOfficinalis", potPaeoniaOfficinalis);
+            PlayerPrefs.SetInt("potEuphorbeReveilleMatin", potEuphorbeReveilleMatin);
+            PlayerPrefs.SetInt("potGazaniaRigens", potGazaniaRigens);
+            PlayerPrefs.SetInt("potHelleboreOrient", potHelleboreOrient);
+            PlayerPrefs.SetInt("potFumariaOfficinalis", potFumariaOfficinalis);
+            PlayerPrefs.SetInt("potBleuMarie", potBleuMarie);
+            PlayerPrefs.SetInt("potAncolieDuCanada", potAncolieDuCanada);
+            PlayerPrefs.SetInt("potKalanchoe", potKalanchoe);
+            PlayerPrefs.SetInt("potGerbera", potGerbera);
+            PlayerPrefs.SetInt("potAngeliqueDesEstuaires", potAngeliqueDesEstuaires);
+            PlayerPrefs.SetInt("potAgapanthe", potAgapanthe);
+            PlayerPrefs.SetInt("potRose", potRose);
+            PlayerPrefs.SetInt("potFritillaire", potFritillaire);
+            PlayerPrefs.SetInt("potFleurDeLys", potFleurDeLys);
+
+            //obj
+            PlayerPrefs.SetInt("graineGland", graineGland);
+
+            //stat
+            PlayerPrefs.SetInt("progression", progression);
+            PlayerPrefs.SetInt("herbierFleurRare", herbierFleurRare);
+            PlayerPrefs.SetInt("herbierPot", herbierPot);
+
+
+            PlayerPrefs.SetInt("alizar", alizar);
+            PlayerPrefs.SetInt("cesar", cesar);
+            PlayerPrefs.SetInt("gaspard", gaspard);
+            PlayerPrefs.SetInt("papillon", papillon);
+            PlayerPrefs.SetInt("felix", felix);
+            PlayerPrefs.SetInt("mariLouise", mariLouise);
+            PlayerPrefs.SetInt("pog", pog);
+            PlayerPrefs.SetInt("chatVinci", chatVinci);
+            PlayerPrefs.SetInt("franklin", franklin);
+
+            if (clesDuParc)
+            {
+                clesDuParcInt = 1;
+            }
+            else
+            {
+                clesDuParcInt = 0;
+            }
+
+            PlayerPrefs.SetInt("clesDuParcInt", clesDuParcInt);
+
+            /*x = persoT.transform.position.x;
+            y = persoT.transform.position.y;
+            z = persoT.transform.position.z;
+
+            PlayerPrefs.SetFloat("x", x);
+            PlayerPrefs.SetFloat("y", y);
+            PlayerPrefs.SetFloat("z", z);*/
         }
-        else
-        {
-            clesDuParcInt = 0;
-        }
 
-        PlayerPrefs.SetInt("clesDuParcInt", clesDuParcInt);
-
-        /*x = persoT.transform.position.x;
-        y = persoT.transform.position.y;
-        z = persoT.transform.position.z;
-
-        PlayerPrefs.SetFloat("x", x);
-        PlayerPrefs.SetFloat("y", y);
-        PlayerPrefs.SetFloat("z", z);*/
     }
 
     public void ChargementJeu()
     {
-        //bete
-        lapin = PlayerPrefs.GetInt("lapin");
-        sanglier = PlayerPrefs.GetInt("sanglier");
-        serpent = PlayerPrefs.GetInt("serpent");
-        ratonLaveur = PlayerPrefs.GetInt("ratonLaveur");
-        renard = PlayerPrefs.GetInt("renard");
-        chienChat = PlayerPrefs.GetInt("chienChat");
-        cerf = PlayerPrefs.GetInt("cerf");
-
-        //fleur
-        Tulipe = PlayerPrefs.GetInt("Tulipe");
-        CirseCommun = PlayerPrefs.GetInt("CirseCommun");
-        Chrysantheme = PlayerPrefs.GetInt("Chrysantheme");
-        Orchidee = PlayerPrefs.GetInt("Orchidee");
-        Hibiscus = PlayerPrefs.GetInt("Hibiscus");
-        PaeoniaOfficinalis = PlayerPrefs.GetInt("PaeoniaOfficinalis");
-        EuphorbeReveilleMatin = PlayerPrefs.GetInt("EuphorbeReveilleMatin");
-        GazaniaRigens = PlayerPrefs.GetInt("GazaniaRigens");
-        HelleboreOrient = PlayerPrefs.GetInt("HelleboreOrient");
-        FumariaOfficinalis = PlayerPrefs.GetInt("FumariaOfficinalis");
-        BleuMarie = PlayerPrefs.GetInt("BleuMarie");
-        AncolieDuCanada = PlayerPrefs.GetInt("AncolieDuCanada");
-        Kalanchoe = PlayerPrefs.GetInt("Kalanchoe");
-        Gerbera = PlayerPrefs.GetInt("Gerbera");
-        AngeliqueDesEstuaires = PlayerPrefs.GetInt("AngeliqueDesEstuaires");
-        Agapanthe = PlayerPrefs.GetInt("Agapanthe");
-        Fritillaire = PlayerPrefs.GetInt("Fritillaire");
-        FleurDeLys = PlayerPrefs.GetInt("FleurDeLys");
-        Rose = PlayerPrefs.GetInt("Rose");
-
-
-        //pot
-        potTulipe = PlayerPrefs.GetInt("potTulipe");
-        potCirseCommun = PlayerPrefs.GetInt("potCirseCommun");
-        potChrysantheme = PlayerPrefs.GetInt("potChrysantheme");
-        potOrchidee = PlayerPrefs.GetInt("potOrchidee");
-        potHibiscus = PlayerPrefs.GetInt("potHibiscus");
-        potPaeoniaOfficinalis = PlayerPrefs.GetInt("potPaeoniaOfficinalis");
-        potEuphorbeReveilleMatin = PlayerPrefs.GetInt("potEuphorbeReveilleMatin");
-        potGazaniaRigens = PlayerPrefs.GetInt("potGazaniaRigens");
-        potHelleboreOrient = PlayerPrefs.GetInt("potHelleboreOrient");
-        potFumariaOfficinalis = PlayerPrefs.GetInt("potFumariaOfficinalis");
-        potBleuMarie = PlayerPrefs.GetInt("potBleuMarie");
-        potAncolieDuCanada = PlayerPrefs.GetInt("potAncolieDuCanada");
-        potKalanchoe = PlayerPrefs.GetInt("potKalanchoe");
-        potGerbera = PlayerPrefs.GetInt("potGerbera");
-        potAngeliqueDesEstuaires = PlayerPrefs.GetInt("potAngeliqueDesEstuaires");
-        potAgapanthe = PlayerPrefs.GetInt("potAgapanthe");
-        potFritillaire = PlayerPrefs.GetInt("potFritillaire");
-        potFleurDeLys = PlayerPrefs.GetInt("potFleurDeLys");
-        potRose = PlayerPrefs.GetInt("potRose");
-
-        //obj
-        graineGland = PlayerPrefs.GetInt("graineGland");
-
-        //stat
-        progression = PlayerPrefs.GetInt("progression");
-        herbierFleurRare = PlayerPrefs.GetInt("herbierFleurRare" );
-        herbierPot = PlayerPrefs.GetInt("herbierPot" );
-
-        alizar = PlayerPrefs.GetInt("alizar" );
-        cesar = PlayerPrefs.GetInt("cesar" );
-        gaspard = PlayerPrefs.GetInt("gaspard" );
-        papillon = PlayerPrefs.GetInt("papillon" );
-        felix = PlayerPrefs.GetInt("felix" );
-        mariLouise = PlayerPrefs.GetInt("mariLouise" );
-        pog = PlayerPrefs.GetInt("pog" );
-        chatVinci = PlayerPrefs.GetInt("chatVinci");
-        franklin = PlayerPrefs.GetInt("franklin");
-
-        clesDuParcInt = PlayerPrefs.GetInt("clesDuParcInt");
-        if (clesDuParcInt == 1)
+        if(useSaveSystem)
         {
-            clesDuParc = true;
-        }
-        else
-        {
-            clesDuParc = false;
+            //bete
+            lapin = PlayerPrefs.GetInt("lapin");
+            sanglier = PlayerPrefs.GetInt("sanglier");
+            serpent = PlayerPrefs.GetInt("serpent");
+            ratonLaveur = PlayerPrefs.GetInt("ratonLaveur");
+            renard = PlayerPrefs.GetInt("renard");
+            chienChat = PlayerPrefs.GetInt("chienChat");
+            cerf = PlayerPrefs.GetInt("cerf");
+
+            //fleur
+            Tulipe = PlayerPrefs.GetInt("Tulipe");
+            CirseCommun = PlayerPrefs.GetInt("CirseCommun");
+            Chrysantheme = PlayerPrefs.GetInt("Chrysantheme");
+            Orchidee = PlayerPrefs.GetInt("Orchidee");
+            Hibiscus = PlayerPrefs.GetInt("Hibiscus");
+            PaeoniaOfficinalis = PlayerPrefs.GetInt("PaeoniaOfficinalis");
+            EuphorbeReveilleMatin = PlayerPrefs.GetInt("EuphorbeReveilleMatin");
+            GazaniaRigens = PlayerPrefs.GetInt("GazaniaRigens");
+            HelleboreOrient = PlayerPrefs.GetInt("HelleboreOrient");
+            FumariaOfficinalis = PlayerPrefs.GetInt("FumariaOfficinalis");
+            BleuMarie = PlayerPrefs.GetInt("BleuMarie");
+            AncolieDuCanada = PlayerPrefs.GetInt("AncolieDuCanada");
+            Kalanchoe = PlayerPrefs.GetInt("Kalanchoe");
+            Gerbera = PlayerPrefs.GetInt("Gerbera");
+            AngeliqueDesEstuaires = PlayerPrefs.GetInt("AngeliqueDesEstuaires");
+            Agapanthe = PlayerPrefs.GetInt("Agapanthe");
+            Fritillaire = PlayerPrefs.GetInt("Fritillaire");
+            FleurDeLys = PlayerPrefs.GetInt("FleurDeLys");
+            Rose = PlayerPrefs.GetInt("Rose");
+
+
+            //pot
+            potTulipe = PlayerPrefs.GetInt("potTulipe");
+            potCirseCommun = PlayerPrefs.GetInt("potCirseCommun");
+            potChrysantheme = PlayerPrefs.GetInt("potChrysantheme");
+            potOrchidee = PlayerPrefs.GetInt("potOrchidee");
+            potHibiscus = PlayerPrefs.GetInt("potHibiscus");
+            potPaeoniaOfficinalis = PlayerPrefs.GetInt("potPaeoniaOfficinalis");
+            potEuphorbeReveilleMatin = PlayerPrefs.GetInt("potEuphorbeReveilleMatin");
+            potGazaniaRigens = PlayerPrefs.GetInt("potGazaniaRigens");
+            potHelleboreOrient = PlayerPrefs.GetInt("potHelleboreOrient");
+            potFumariaOfficinalis = PlayerPrefs.GetInt("potFumariaOfficinalis");
+            potBleuMarie = PlayerPrefs.GetInt("potBleuMarie");
+            potAncolieDuCanada = PlayerPrefs.GetInt("potAncolieDuCanada");
+            potKalanchoe = PlayerPrefs.GetInt("potKalanchoe");
+            potGerbera = PlayerPrefs.GetInt("potGerbera");
+            potAngeliqueDesEstuaires = PlayerPrefs.GetInt("potAngeliqueDesEstuaires");
+            potAgapanthe = PlayerPrefs.GetInt("potAgapanthe");
+            potFritillaire = PlayerPrefs.GetInt("potFritillaire");
+            potFleurDeLys = PlayerPrefs.GetInt("potFleurDeLys");
+            potRose = PlayerPrefs.GetInt("potRose");
+
+            //obj
+            graineGland = PlayerPrefs.GetInt("graineGland");
+
+            //stat
+            progression = PlayerPrefs.GetInt("progression");
+            herbierFleurRare = PlayerPrefs.GetInt("herbierFleurRare");
+            herbierPot = PlayerPrefs.GetInt("herbierPot");
+
+            alizar = PlayerPrefs.GetInt("alizar");
+            cesar = PlayerPrefs.GetInt("cesar");
+            gaspard = PlayerPrefs.GetInt("gaspard");
+            papillon = PlayerPrefs.GetInt("papillon");
+            felix = PlayerPrefs.GetInt("felix");
+            mariLouise = PlayerPrefs.GetInt("mariLouise");
+            pog = PlayerPrefs.GetInt("pog");
+            chatVinci = PlayerPrefs.GetInt("chatVinci");
+            franklin = PlayerPrefs.GetInt("franklin");
+
+            clesDuParcInt = PlayerPrefs.GetInt("clesDuParcInt");
+            if (clesDuParcInt == 1)
+            {
+                clesDuParc = true;
+            }
+            else
+            {
+                clesDuParc = false;
+            }
+
+            /*
+            x = PlayerPrefs.GetFloat("x");
+            y = PlayerPrefs.GetFloat("y");
+            z = PlayerPrefs.GetFloat("z");
+
+            persoT.transform.position = new Vector3(x, y, z);
+            */
+
+            canSave = true;
         }
 
-        /*
-        x = PlayerPrefs.GetFloat("x");
-        y = PlayerPrefs.GetFloat("y");
-        z = PlayerPrefs.GetFloat("z");
-
-        persoT.transform.position = new Vector3(x, y, z);
-        */
-        canSave = true;
+        
     }
 
     public void upgradeHerbier()
