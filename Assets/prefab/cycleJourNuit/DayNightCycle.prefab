@@ -261,7 +261,7 @@ MonoBehaviour:
   sunVariation: 1.8
   sunColor:
     serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
     key1: {r: 0.8584906, g: 0.53694224, b: 0.2713154, a: 1}
     key2: {r: 1, g: 0.6598659, b: 0.3726415, a: 0}
     key3: {r: 1, g: 0.8395866, b: 0.36320752, a: 0}
@@ -306,7 +306,7 @@ MonoBehaviour:
   moon: {fileID: 5605713185498585223}
   moonColor:
     serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
     key1: {r: 0, g: 0.393013, b: 1, a: 1}
     key2: {r: 0, g: 0.5479279, b: 0.8862745, a: 0}
     key3: {r: 0, g: 0.5479279, b: 0.8862745, a: 0}
