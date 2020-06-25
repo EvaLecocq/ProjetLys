@@ -194,7 +194,8 @@ MonoBehaviour:
     name: Gaspard
     sentences:
     - C'est une description bien complexe.
-    - Malheuresement, je ne m'y connais pas en fleurs.
+    - Tu devrais chercher vers le Nord je pense.
+    - "Je ne peut pas t'aider plus d\xE9sol\xE9."
   dialogueQueteCourse:
     name: 
     sentences: []

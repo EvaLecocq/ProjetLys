@@ -15,6 +15,7 @@ public class AnimalManager : MonoBehaviour
     public GameObject chienChat;
     public GameObject cerf;
     public GameObject cerfEffect;
+    private bool triggerEffect = true;
 
     [Header("spot")]
     public Transform chienChatSpot;
@@ -54,10 +55,18 @@ public class AnimalManager : MonoBehaviour
         if (GameManager.s_Singleton.progression >= 8)
         {
             cerf.SetActive(true);
-            cerfEffect.SetActive(true);
-            cerfEffect.GetComponent<ParticleSystem>().Play();
+           
 
             portailWall.SetActive(false);
+
+            if(triggerEffect)
+            {
+                cerfEffect.SetActive(true);
+                cerfEffect.GetComponent<ParticleSystem>().Play();
+
+                triggerEffect = false;
+            }
+            
         }
     }
 }

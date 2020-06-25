@@ -541,8 +541,8 @@ MonoBehaviour:
   dialogueChianChat:
     name: Chien - Chat
     sentences:
-    - "Chat :\r\nWow, quelle magnifique fleur tu as l\xE0 ! Une forme sublime, et
-      une couleur blan..."
+    - "Chat :\r\nWow, quelle magnifique fleur tu as l\xE0 ! Une forme sublime, une
+      couleur blanche..."
     - "Chien :\r\nElle est violette ! Elle est belle !"
     - "Chat :\r\nOui c'est vrai. Elle est \xE0 la fois blanche et violette, pure et
       l\xE9g\xE8re. L'hellebore, c'est par-fait. "

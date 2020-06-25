@@ -333,7 +333,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  baseIntensity: 1
+  baseIntensity: 1.2
 --- !u!114 &5605713186619105664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,9 +409,9 @@ MonoBehaviour:
   fogDistanceBase: 150
   skyColorPluie:
     serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0.083659664, g: 0.14750715, b: 0.3773585, a: 1}
-    key2: {r: 0.17194732, g: 0.24422912, b: 0.5283019, a: 0}
+    key0: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
+    key1: {r: 0.15263441, g: 0.2677227, b: 0.6603774, a: 1}
+    key2: {r: 0.25663045, g: 0.35328695, b: 0.745283, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -438,11 +438,11 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   horizonColorPluie:
     serializedVersion: 2
-    key0: {r: 0.17254902, g: 0.27058825, b: 0.6039216, a: 1}
-    key1: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    key2: {r: 0.29334286, g: 0.6037736, b: 0.59481883, a: 0}
-    key3: {r: 0.1517444, g: 0.5849056, b: 0.57147425, a: 0}
-    key4: {r: 0.6884568, g: 0.764151, b: 0.7540584, a: 0}
+    key0: {r: 0.2236116, g: 0.33359697, b: 0.7075472, a: 1}
+    key1: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+    key2: {r: 0.33259168, g: 0.6981132, b: 0.68885946, a: 0}
+    key3: {r: 0.18111429, g: 0.6981132, b: 0.68401325, a: 0}
+    key4: {r: 0.73860806, g: 0.8113208, b: 0.7998398, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
